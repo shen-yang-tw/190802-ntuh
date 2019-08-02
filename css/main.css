@@ -17904,7 +17904,7 @@ address, dl, fieldset, figure, ol, p, pre, ul {
     height: 100%;
   }
 
-  input {
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     opacity: 1;
   }
 }
