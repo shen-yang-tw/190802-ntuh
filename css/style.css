@@ -1,0 +1,40 @@
+.logo_bg {
+  background: url('../img/logo-ntuh.svg#svgView(preserveAspectRatio(xMinYMid))') no-repeat left center;
+}
+footer .logo_bg {
+  background: url('../img/logo-ntuh.svg#svgView(preserveAspectRatio(xMinYMin))') no-repeat left center;
+}
+
+.uk-slideshow-items {min-height: auto !important;}
+
+@media (min-width: 960px) {
+  /* .bg_bar {padding: 30px 0} */
+}
+
+/**** Just replace the right logo ratio '1.96' or the background-position and the background-size ****/
+/* .logo_control .logo_text_control .logo_position .logo_bg, .logo_control .logo_text_control .logo_position-up .logo_bg {
+  max-width: calc(40px*1.96);
+}
+@media (min-width: 1200px) {
+  .logo_control .logo_text_control .logo_position .logo_bg, .logo_control .logo_text_control .logo_position-up .logo_bg {
+    max-width: calc(50px*1.96);
+  }
+  .logo_control .logo_text_control .logo_position-up .logo_text .logo_bg {
+    min-width: calc((50px + 15px) * 1.96);
+    min-height: calc(50px + 15px);
+    background-position-y: calc(50% - 2px);
+    background-size: 100% calc(100% - 2px);
+  }
+}
+@media (min-width: 1600px) {
+  .logo_control .logo_text_control .logo_position-up .logo_text .logo_bg {
+    max-width: calc((40px + 15px) * 1.96);
+  }
+} */
+
+/*---------- IE10+ ------------------------------*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* .logo_control .logo_bg {
+    background: url('../img/logo-ntuh.svg#svgView(preserveAspectRatio(xMinYMax))') no-repeat left center;
+  } */
+}

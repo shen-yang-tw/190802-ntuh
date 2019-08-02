@@ -1,0 +1,12 @@
+﻿node_modules
+Assets
+temp
+gulpfile*
+package*
+README*
+*.psd
+*.ai
+*.zip
+*複製*
+*old*
+*-i.*

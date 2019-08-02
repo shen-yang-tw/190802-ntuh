@@ -1,0 +1,1440 @@
+.color_primary, .color_primary > * {
+  color: #a99b13;
+}
+
+.color_primary-light, .color_primary-light > * {
+  color: #f1e67e;
+}
+
+.color_primary-lighter, .color_primary-lighter > * {
+  color: #f6efac;
+}
+
+.color_primary-dark, .color_primary-dark > * {
+  color: #c0b015;
+}
+
+.color_primary-darker, .color_primary-darker > * {
+  color: #928610;
+}
+
+.color_primary-darkest, .color_primary-darkest > * {
+  color: #7b710e;
+}
+
+.color_primary-black, .color_primary-black > * {
+  color: #453f08;
+}
+
+.color_primary\!, .color_primary\! > * {
+  color: #a99b13 !important;
+}
+
+.color_primary-light\!, .color_primary-light\! > * {
+  color: #f1e67e !important;
+}
+
+.color_primary-lighter\!, .color_primary-lighter\! > * {
+  color: #f6efac !important;
+}
+
+.color_primary-dark\!, .color_primary-dark\! > * {
+  color: #c0b015 !important;
+}
+
+.color_primary-darker\!, .color_primary-darker\! > * {
+  color: #928610 !important;
+}
+
+.color_primary-darkest\!, .color_primary-darkest\! > * {
+  color: #7b710e !important;
+}
+
+.color_primary-black\!, .color_primary-black\! > * {
+  color: #453f08 !important;
+}
+
+.color_secondary, .color_secondary > * {
+  color: #a45009;
+}
+
+.color_secondary-light, .color_secondary-light > * {
+  color: #f7a969;
+}
+
+.color_secondary-lighter, .color_secondary-lighter > * {
+  color: #fac599;
+}
+
+.color_secondary-darker, .color_secondary-darker > * {
+  color: #8c4408;
+}
+
+.color_secondary-darkest, .color_secondary-darkest > * {
+  color: #743806;
+}
+
+.color_secondary-black, .color_secondary-black > * {
+  color: #492304;
+}
+
+.color_secondary\!, .color_secondary\! > * {
+  color: #a45009 !important;
+}
+
+.color_secondary-light\!, .color_secondary-light\! > * {
+  color: #f7a969 !important;
+}
+
+.color_secondary-lighter\!, .color_secondary-lighter\! > * {
+  color: #fac599 !important;
+}
+
+.color_secondary-darker\!, .color_secondary-darker\! > * {
+  color: #8c4408 !important;
+}
+
+.color_secondary-darkest\!, .color_secondary-darkest\! > * {
+  color: #743806 !important;
+}
+
+.color_secondary-black\!, .color_secondary-black\! > * {
+  color: #492304 !important;
+}
+
+.color3, .color3 > * {
+  color: #547926;
+}
+
+.color3-light, .color3-light > * {
+  color: #add67b;
+}
+
+.color3-lighter, .color3-lighter > * {
+  color: #c5e2a2;
+}
+
+.color3-darker, .color3-darker > * {
+  color: #466620;
+}
+
+.color3-darkest, .color3-darkest > * {
+  color: #39521a;
+}
+
+.color3-black, .color3-black > * {
+  color: #283a12;
+}
+
+.color3\!, .color3\! > * {
+  color: #547926 !important;
+}
+
+.color3-light\!, .color3-light\! > * {
+  color: #add67b !important;
+}
+
+.color3-lighter\!, .color3-lighter\! > * {
+  color: #c5e2a2 !important;
+}
+
+.color3-darker\!, .color3-darker\! > * {
+  color: #466620 !important;
+}
+
+.color3-darkest\!, .color3-darkest\! > * {
+  color: #39521a !important;
+}
+
+.color3-black\!, .color3-black\! > * {
+  color: #283a12 !important;
+}
+
+.color4, .color4 > * {
+  color: #3a702a;
+}
+
+.color4-light, .color4-light > * {
+  color: #90ce7e;
+}
+
+.color4-lighter, .color4-lighter > * {
+  color: #b0dca3;
+}
+
+.color4-darker, .color4-darker > * {
+  color: #305d23;
+}
+
+.color4-darkest, .color4-darkest > * {
+  color: #274b1c;
+}
+
+.color4-black, .color4-black > * {
+  color: #1d3715;
+}
+
+.color4\!, .color4\! > * {
+  color: #3a702a !important;
+}
+
+.color4-light\!, .color4-light\! > * {
+  color: #90ce7e !important;
+}
+
+.color4-lighter\!, .color4-lighter\! > * {
+  color: #b0dca3 !important;
+}
+
+.color4-darker\!, .color4-darker\! > * {
+  color: #305d23 !important;
+}
+
+.color4-darkest\!, .color4-darkest\! > * {
+  color: #274b1c !important;
+}
+
+.color4-black\!, .color4-black\! > * {
+  color: #1d3715 !important;
+}
+
+.bg_primary, .btn_primary, a.bg_primary, button.bg_primary {
+  background-color: #e9d839;
+}
+
+.bg_primary, .btn_primary, .bg_primary *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_primary *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_primary, a.bg_primary *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_primary, button.bg_primary *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #655c0b;
+}
+
+a.bg_primary:hover, a.btn_primary:hover, button.bg_primary:hover, button.btn_primary:hover {
+  background-color: #d7c518;
+  text-decoration: none;
+}
+
+a.bg_primary:hover, a.btn_primary:hover, a.bg_primary:hover *, a.btn_primary:hover *, button.bg_primary:hover, button.btn_primary:hover, button.bg_primary:hover *, button.btn_primary:hover *, .bg_primary a:hover, .btn_primary a:hover, .bg_primary a:hover *, .btn_primary a:hover * {
+  color: #373206 !important;
+}
+
+.bg_primary-light, .btn_primary-light, a.bg_primary-light, button.bg_primary-light {
+  background-color: #f1e67e;
+}
+
+.bg_primary-light, .btn_primary-light, .bg_primary-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_primary-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_primary-light, a.bg_primary-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_primary-light, button.bg_primary-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #6e650c;
+}
+
+a.bg_primary-light:hover, a.btn_primary-light:hover, button.bg_primary-light:hover, button.btn_primary-light:hover {
+  background-color: #ecdd50;
+  text-decoration: none;
+}
+
+a.bg_primary-light:hover, a.btn_primary-light:hover, a.bg_primary-light:hover *, a.btn_primary-light:hover *, button.bg_primary-light:hover, button.btn_primary-light:hover, button.bg_primary-light:hover *, button.btn_primary-light:hover *, .bg_primary-light a:hover, .btn_primary-light a:hover, .bg_primary-light a:hover *, .btn_primary-light a:hover * {
+  color: #403b07 !important;
+}
+
+.bg_primary-lighter, .btn_primary-lighter, a.bg_primary-lighter, button.bg_primary-lighter {
+  background-color: #f6efac;
+}
+
+.bg_primary-lighter, .btn_primary-lighter, .bg_primary-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_primary-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_primary-lighter, a.bg_primary-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_primary-lighter, button.bg_primary-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #73690d;
+}
+
+a.bg_primary-lighter:hover, a.btn_primary-lighter:hover, button.bg_primary-lighter:hover, button.btn_primary-lighter:hover {
+  background-color: #f1e67e;
+  text-decoration: none;
+}
+
+a.bg_primary-lighter:hover, a.btn_primary-lighter:hover, a.bg_primary-lighter:hover *, a.btn_primary-lighter:hover *, button.bg_primary-lighter:hover, button.btn_primary-lighter:hover, button.bg_primary-lighter:hover *, button.btn_primary-lighter:hover *, .bg_primary-lighter a:hover, .btn_primary-lighter a:hover, .bg_primary-lighter a:hover *, .btn_primary-lighter a:hover * {
+  color: #453f08 !important;
+}
+
+.bg_primary-dark, .btn_primary-dark, a.bg_primary-dark, button.bg_primary-dark {
+  background-color: #c0b015;
+}
+
+.bg_primary-dark, .btn_primary-dark, .bg_primary-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_primary-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_primary-dark, a.bg_primary-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_primary-dark, button.bg_primary-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #494308;
+}
+
+a.bg_primary-dark:hover, a.btn_primary-dark:hover, button.bg_primary-dark:hover, button.btn_primary-dark:hover {
+  background-color: #928610;
+  text-decoration: none;
+}
+
+a.bg_primary-dark:hover, a.btn_primary-dark:hover, a.bg_primary-dark:hover *, a.btn_primary-dark:hover *, button.bg_primary-dark:hover, button.btn_primary-dark:hover, button.bg_primary-dark:hover *, button.btn_primary-dark:hover *, .bg_primary-dark a:hover, .btn_primary-dark a:hover, .bg_primary-dark a:hover *, .btn_primary-dark a:hover * {
+  color: #776d0d !important;
+}
+
+.bg_primary-darker, .btn_primary-darker, a.bg_primary-darker, button.bg_primary-darker {
+  background-color: #928610;
+}
+
+.bg_primary-darker, .btn_primary-darker, .bg_primary-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_primary-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_primary-darker, a.bg_primary-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_primary-darker, button.bg_primary-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #201d04;
+}
+
+a.bg_primary-darker:hover, a.btn_primary-darker:hover, button.bg_primary-darker:hover, button.btn_primary-darker:hover {
+  background-color: #645c0b;
+  text-decoration: none;
+}
+
+a.bg_primary-darker:hover, a.btn_primary-darker:hover, a.bg_primary-darker:hover *, a.btn_primary-darker:hover *, button.bg_primary-darker:hover, button.btn_primary-darker:hover, button.bg_primary-darker:hover *, button.btn_primary-darker:hover *, .bg_primary-darker a:hover, .btn_primary-darker a:hover, .bg_primary-darker a:hover *, .btn_primary-darker a:hover * {
+  color: #4e4709 !important;
+}
+
+.bg_primary-darkest, .btn_primary-darkest, a.bg_primary-darkest, button.bg_primary-darkest {
+  background-color: #7b710e;
+}
+
+.bg_primary-darkest, .btn_primary-darkest, .bg_primary-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_primary-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_primary-darkest, a.bg_primary-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_primary-darkest, button.bg_primary-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #f9f5cd;
+}
+
+a.bg_primary-darkest:hover, a.btn_primary-darkest:hover, button.bg_primary-darkest:hover, button.btn_primary-darkest:hover {
+  background-color: #4d4709;
+  text-decoration: none;
+}
+
+a.bg_primary-darkest:hover, a.btn_primary-darkest:hover, a.bg_primary-darkest:hover *, a.btn_primary-darkest:hover *, button.bg_primary-darkest:hover, button.btn_primary-darkest:hover, button.bg_primary-darkest:hover *, button.btn_primary-darkest:hover *, .bg_primary-darkest a:hover, .btn_primary-darkest a:hover, .bg_primary-darkest a:hover *, .btn_primary-darkest a:hover * {
+  color: #fefefa !important;
+}
+
+.bg_secondary, .btn_secondary, a.bg_secondary, button.bg_secondary {
+  background-color: #f38020;
+}
+
+.bg_secondary, .btn_secondary, .bg_secondary *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_secondary *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_secondary, a.bg_secondary *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_secondary, button.bg_secondary *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #572a05;
+}
+
+a.bg_secondary:hover, a.btn_secondary:hover, button.bg_secondary:hover, button.btn_secondary:hover {
+  background-color: #d5670b;
+  text-decoration: none;
+}
+
+a.bg_secondary:hover, a.btn_secondary:hover, a.bg_secondary:hover *, a.btn_secondary:hover *, button.bg_secondary:hover, button.btn_secondary:hover, button.bg_secondary:hover *, button.btn_secondary:hover *, .bg_secondary a:hover, .btn_secondary a:hover, .bg_secondary a:hover *, .btn_secondary a:hover * {
+  color: #271302 !important;
+}
+
+.bg_secondary-light, .btn_secondary-light, a.bg_secondary-light, button.bg_secondary-light {
+  background-color: #f7a969;
+}
+
+.bg_secondary-light, .btn_secondary-light, .bg_secondary-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_secondary-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_secondary-light, a.bg_secondary-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_secondary-light, button.bg_secondary-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #743806;
+}
+
+a.bg_secondary-light:hover, a.btn_secondary-light:hover, button.bg_secondary-light:hover, button.btn_secondary-light:hover {
+  background-color: #f48e38;
+  text-decoration: none;
+}
+
+a.bg_secondary-light:hover, a.btn_secondary-light:hover, a.bg_secondary-light:hover *, a.btn_secondary-light:hover *, button.bg_secondary-light:hover, button.btn_secondary-light:hover, button.bg_secondary-light:hover *, button.btn_secondary-light:hover *, .bg_secondary-light a:hover, .btn_secondary-light a:hover, .bg_secondary-light a:hover *, .btn_secondary-light a:hover * {
+  color: #442104 !important;
+}
+
+.bg_secondary-lighter, .btn_secondary-lighter, a.bg_secondary-lighter, button.bg_secondary-lighter {
+  background-color: #fac599;
+}
+
+.bg_secondary-lighter, .btn_secondary-lighter, .bg_secondary-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_secondary-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_secondary-lighter, a.bg_secondary-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_secondary-lighter, button.bg_secondary-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #8c4408;
+}
+
+a.bg_secondary-lighter:hover, a.btn_secondary-lighter:hover, button.bg_secondary-lighter:hover, button.btn_secondary-lighter:hover {
+  background-color: #f7a969;
+  text-decoration: none;
+}
+
+a.bg_secondary-lighter:hover, a.btn_secondary-lighter:hover, a.bg_secondary-lighter:hover *, a.btn_secondary-lighter:hover *, button.bg_secondary-lighter:hover, button.btn_secondary-lighter:hover, button.bg_secondary-lighter:hover *, button.btn_secondary-lighter:hover *, .bg_secondary-lighter a:hover, .btn_secondary-lighter a:hover, .bg_secondary-lighter a:hover *, .btn_secondary-lighter a:hover * {
+  color: #5c2d05 !important;
+}
+
+.bg_secondary-dark, .btn_secondary-dark, a.bg_secondary-dark, button.bg_secondary-dark {
+  background-color: #bc5b0a;
+}
+
+.bg_secondary-dark, .btn_secondary-dark, .bg_secondary-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_secondary-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_secondary-dark, a.bg_secondary-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_secondary-dark, button.bg_secondary-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #333333;
+}
+
+a.bg_secondary-dark:hover, a.btn_secondary-dark:hover, button.bg_secondary-dark:hover, button.btn_secondary-dark:hover {
+  background-color: #8c4408;
+  text-decoration: none;
+}
+
+a.bg_secondary-dark:hover, a.btn_secondary-dark:hover, a.bg_secondary-dark:hover *, a.btn_secondary-dark:hover *, button.bg_secondary-dark:hover, button.btn_secondary-dark:hover, button.bg_secondary-dark:hover *, button.btn_secondary-dark:hover *, .bg_secondary-dark a:hover, .btn_secondary-dark a:hover, .bg_secondary-dark a:hover *, .btn_secondary-dark a:hover * {
+  color: #4d4d4d !important;
+}
+
+.bg_secondary-darker, .btn_secondary-darker, a.bg_secondary-darker, button.bg_secondary-darker {
+  background-color: #8c4408;
+}
+
+.bg_secondary-darker, .btn_secondary-darker, .bg_secondary-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_secondary-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_secondary-darker, a.bg_secondary-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_secondary-darker, button.bg_secondary-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #fac599;
+}
+
+a.bg_secondary-darker:hover, a.btn_secondary-darker:hover, button.bg_secondary-darker:hover, button.btn_secondary-darker:hover {
+  background-color: #5c2c05;
+  text-decoration: none;
+}
+
+a.bg_secondary-darker:hover, a.btn_secondary-darker:hover, a.bg_secondary-darker:hover *, a.btn_secondary-darker:hover *, button.bg_secondary-darker:hover, button.btn_secondary-darker:hover, button.bg_secondary-darker:hover *, button.btn_secondary-darker:hover *, .bg_secondary-darker a:hover, .btn_secondary-darker a:hover, .bg_secondary-darker a:hover *, .btn_secondary-darker a:hover * {
+  color: #fce1ca !important;
+}
+
+.bg_secondary-darkest, .btn_secondary-darkest, a.bg_secondary-darkest, button.bg_secondary-darkest {
+  background-color: #743806;
+}
+
+.bg_secondary-darkest, .btn_secondary-darkest, .bg_secondary-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_secondary-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_secondary-darkest, a.bg_secondary-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_secondary-darkest, button.bg_secondary-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #f7a764;
+}
+
+a.bg_secondary-darkest:hover, a.btn_secondary-darkest:hover, button.bg_secondary-darkest:hover, button.btn_secondary-darkest:hover {
+  background-color: #432104;
+  text-decoration: none;
+}
+
+a.bg_secondary-darkest:hover, a.btn_secondary-darkest:hover, a.bg_secondary-darkest:hover *, a.btn_secondary-darkest:hover *, button.bg_secondary-darkest:hover, button.btn_secondary-darkest:hover, button.bg_secondary-darkest:hover *, button.btn_secondary-darkest:hover *, .bg_secondary-darkest a:hover, .btn_secondary-darkest a:hover, .bg_secondary-darkest a:hover *, .btn_secondary-darkest a:hover * {
+  color: #f9c295 !important;
+}
+
+.bg_color3, .btn_color3, a.bg_color3, button.bg_color3 {
+  background-color: #89c441;
+}
+
+.bg_color3, .btn_color3, .bg_color3 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_color3 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color3, a.bg_color3 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color3, button.bg_color3 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #334a17;
+}
+
+a.bg_color3:hover, a.btn_color3:hover, button.bg_color3:hover, button.btn_color3:hover {
+  background-color: #6ea032;
+  text-decoration: none;
+}
+
+a.bg_color3:hover, a.btn_color3:hover, a.bg_color3:hover *, a.btn_color3:hover *, button.bg_color3:hover, button.btn_color3:hover, button.bg_color3:hover *, button.btn_color3:hover *, .bg_color3 a:hover, .btn_color3 a:hover, .bg_color3 a:hover *, .btn_color3 a:hover * {
+  color: #18230b !important;
+}
+
+.bg_color3-light, .btn_color3-light, a.bg_color3-light, button.bg_color3-light {
+  background-color: #add67b;
+}
+
+.bg_color3-light, .btn_color3-light, .bg_color3-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_color3-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color3-light, a.bg_color3-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color3-light, button.bg_color3-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #405d1d;
+}
+
+a.bg_color3-light:hover, a.btn_color3-light:hover, button.bg_color3-light:hover, button.btn_color3-light:hover {
+  background-color: #95ca54;
+  text-decoration: none;
+}
+
+a.bg_color3-light:hover, a.btn_color3-light:hover, a.bg_color3-light:hover *, a.btn_color3-light:hover *, button.bg_color3-light:hover, button.btn_color3-light:hover, button.bg_color3-light:hover *, button.btn_color3-light:hover *, .bg_color3-light a:hover, .btn_color3-light a:hover, .bg_color3-light a:hover *, .btn_color3-light a:hover * {
+  color: #263611 !important;
+}
+
+.bg_color3-lighter, .btn_color3-lighter, a.bg_color3-lighter, button.bg_color3-lighter {
+  background-color: #c5e2a2;
+}
+
+.bg_color3-lighter, .btn_color3-lighter, .bg_color3-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_color3-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color3-lighter, a.bg_color3-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color3-lighter, button.bg_color3-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #46651f;
+}
+
+a.bg_color3-lighter:hover, a.btn_color3-lighter:hover, button.bg_color3-lighter:hover, button.btn_color3-lighter:hover {
+  background-color: #add67b;
+  text-decoration: none;
+}
+
+a.bg_color3-lighter:hover, a.btn_color3-lighter:hover, a.bg_color3-lighter:hover *, a.btn_color3-lighter:hover *, button.bg_color3-lighter:hover, button.btn_color3-lighter:hover, button.bg_color3-lighter:hover *, button.btn_color3-lighter:hover *, .bg_color3-lighter a:hover, .btn_color3-lighter a:hover, .bg_color3-lighter a:hover *, .btn_color3-lighter a:hover * {
+  color: #2b3e13 !important;
+}
+
+.bg_color3-dark, .btn_color3-dark, a.bg_color3-dark, button.bg_color3-dark {
+  background-color: #618d2c;
+}
+
+.bg_color3-dark, .btn_color3-dark, .bg_color3-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_color3-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color3-dark, a.bg_color3-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color3-dark, button.bg_color3-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #131b08;
+}
+
+a.bg_color3-dark:hover, a.btn_color3-dark:hover, button.bg_color3-dark:hover, button.btn_color3-dark:hover {
+  background-color: #466620;
+  text-decoration: none;
+}
+
+a.bg_color3-dark:hover, a.btn_color3-dark:hover, a.bg_color3-dark:hover *, a.btn_color3-dark:hover *, button.bg_color3-dark:hover, button.btn_color3-dark:hover, button.bg_color3-dark:hover *, button.btn_color3-dark:hover *, .bg_color3-dark a:hover, .btn_color3-dark a:hover, .bg_color3-dark a:hover *, .btn_color3-dark a:hover * {
+  color: #2e4215 !important;
+}
+
+.bg_color3-darker, .btn_color3-darker, a.bg_color3-darker, button.bg_color3-darker {
+  background-color: #466620;
+}
+
+.bg_color3-darker, .btn_color3-darker, .bg_color3-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_color3-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color3-darker, a.bg_color3-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color3-darker, button.bg_color3-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #c0e09a;
+}
+
+a.bg_color3-darker:hover, a.btn_color3-darker:hover, button.bg_color3-darker:hover, button.btn_color3-darker:hover {
+  background-color: #2b3f14;
+  text-decoration: none;
+}
+
+a.bg_color3-darker:hover, a.btn_color3-darker:hover, a.bg_color3-darker:hover *, a.btn_color3-darker:hover *, button.bg_color3-darker:hover, button.btn_color3-darker:hover, button.bg_color3-darker:hover *, button.btn_color3-darker:hover *, .bg_color3-darker a:hover, .btn_color3-darker a:hover, .bg_color3-darker a:hover *, .btn_color3-darker a:hover * {
+  color: #d8ecc1 !important;
+}
+
+.bg_color3-darkest, .btn_color3-darkest, a.bg_color3-darkest, button.bg_color3-darkest {
+  background-color: #39521a;
+}
+
+.bg_color3-darkest, .btn_color3-darkest, .bg_color3-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_color3-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color3-darkest, a.bg_color3-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color3-darkest, button.bg_color3-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #95ca54;
+}
+
+a.bg_color3-darkest:hover, a.btn_color3-darkest:hover, button.bg_color3-darkest:hover, button.btn_color3-darkest:hover {
+  background-color: #1e2b0e;
+  text-decoration: none;
+}
+
+a.bg_color3-darkest:hover, a.btn_color3-darkest:hover, a.bg_color3-darkest:hover *, a.btn_color3-darkest:hover *, button.bg_color3-darkest:hover, button.btn_color3-darkest:hover, button.bg_color3-darkest:hover *, button.btn_color3-darkest:hover *, .bg_color3-darkest a:hover, .btn_color3-darkest a:hover, .bg_color3-darkest a:hover *, .btn_color3-darkest a:hover * {
+  color: #add67b !important;
+}
+
+.bg_color4, .btn_color4, a.bg_color4, button.bg_color4 {
+  background-color: #60b947;
+}
+
+.bg_color4, .btn_color4, .bg_color4 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_color4 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color4, a.bg_color4 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color4, button.bg_color4 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #224319;
+}
+
+a.bg_color4:hover, a.btn_color4:hover, button.bg_color4:hover, button.btn_color4:hover {
+  background-color: #4d9538;
+  text-decoration: none;
+}
+
+a.bg_color4:hover, a.btn_color4:hover, a.bg_color4:hover *, a.btn_color4:hover *, button.bg_color4:hover, button.btn_color4:hover, button.bg_color4:hover *, button.btn_color4:hover *, .bg_color4 a:hover, .btn_color4 a:hover, .bg_color4 a:hover *, .btn_color4 a:hover * {
+  color: #0f1e0b !important;
+}
+
+.bg_color4-light, .btn_color4-light, a.bg_color4-light, button.bg_color4-light {
+  background-color: #90ce7e;
+}
+
+.bg_color4-light, .btn_color4-light, .bg_color4-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_color4-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color4-light, a.bg_color4-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color4-light, button.bg_color4-light *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #2c5520;
+}
+
+a.bg_color4-light:hover, a.btn_color4-light:hover, button.bg_color4-light:hover, button.btn_color4-light:hover {
+  background-color: #70c059;
+  text-decoration: none;
+}
+
+a.bg_color4-light:hover, a.btn_color4-light:hover, a.bg_color4-light:hover *, a.btn_color4-light:hover *, button.bg_color4-light:hover, button.btn_color4-light:hover, button.bg_color4-light:hover *, button.btn_color4-light:hover *, .bg_color4-light a:hover, .btn_color4-light a:hover, .bg_color4-light a:hover *, .btn_color4-light a:hover * {
+  color: #193012 !important;
+}
+
+.bg_color4-lighter, .btn_color4-lighter, a.bg_color4-lighter, button.bg_color4-lighter {
+  background-color: #b0dca3;
+}
+
+.bg_color4-lighter, .btn_color4-lighter, .bg_color4-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_color4-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color4-lighter, a.bg_color4-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color4-lighter, button.bg_color4-lighter *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #346426;
+}
+
+a.bg_color4-lighter:hover, a.btn_color4-lighter:hover, button.bg_color4-lighter:hover, button.btn_color4-lighter:hover {
+  background-color: #90ce7e;
+  text-decoration: none;
+}
+
+a.bg_color4-lighter:hover, a.btn_color4-lighter:hover, a.bg_color4-lighter:hover *, a.btn_color4-lighter:hover *, button.bg_color4-lighter:hover, button.btn_color4-lighter:hover, button.bg_color4-lighter:hover *, button.btn_color4-lighter:hover *, .bg_color4-lighter a:hover, .btn_color4-lighter a:hover, .bg_color4-lighter a:hover *, .btn_color4-lighter a:hover * {
+  color: #203f18 !important;
+}
+
+.bg_color4-dark, .btn_color4-dark, a.bg_color4-dark, button.bg_color4-dark {
+  background-color: #438231;
+}
+
+.bg_color4-dark, .btn_color4-dark, .bg_color4-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_color4-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color4-dark, a.bg_color4-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color4-dark, button.bg_color4-dark *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #f9fcf8;
+}
+
+a.bg_color4-dark:hover, a.btn_color4-dark:hover, button.bg_color4-dark:hover, button.btn_color4-dark:hover {
+  background-color: #305d23;
+  text-decoration: none;
+}
+
+a.bg_color4-dark:hover, a.btn_color4-dark:hover, a.bg_color4-dark:hover *, a.btn_color4-dark:hover *, button.bg_color4-dark:hover, button.btn_color4-dark:hover, button.bg_color4-dark:hover *, button.btn_color4-dark:hover *, .bg_color4-dark a:hover, .btn_color4-dark a:hover, .bg_color4-dark a:hover *, .btn_color4-dark a:hover * {
+  color: white !important;
+}
+
+.bg_color4-darker, .btn_color4-darker, a.bg_color4-darker, button.bg_color4-darker {
+  background-color: #305d23;
+}
+
+.bg_color4-darker, .btn_color4-darker, .bg_color4-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_color4-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color4-darker, a.bg_color4-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color4-darker, button.bg_color4-darker *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #9fd590;
+}
+
+a.bg_color4-darker:hover, a.btn_color4-darker:hover, button.bg_color4-darker:hover, button.btn_color4-darker:hover {
+  background-color: #1d3815;
+  text-decoration: none;
+}
+
+a.bg_color4-darker:hover, a.btn_color4-darker:hover, a.bg_color4-darker:hover *, a.btn_color4-darker:hover *, button.bg_color4-darker:hover, button.btn_color4-darker:hover, button.bg_color4-darker:hover *, button.btn_color4-darker:hover *, .bg_color4-darker a:hover, .btn_color4-darker a:hover, .bg_color4-darker a:hover *, .btn_color4-darker a:hover * {
+  color: #bfe3b5 !important;
+}
+
+.bg_color4-darkest, .btn_color4-darkest, a.bg_color4-darkest, button.bg_color4-darkest {
+  background-color: #274b1c;
+}
+
+.bg_color4-darkest, .btn_color4-darkest, .bg_color4-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), .btn_color4-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color4-darkest, a.bg_color4-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color4-darkest, button.bg_color4-darkest *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #73c15c;
+}
+
+a.bg_color4-darkest:hover, a.btn_color4-darkest:hover, button.bg_color4-darkest:hover, button.btn_color4-darkest:hover {
+  background-color: #13260e;
+  text-decoration: none;
+}
+
+a.bg_color4-darkest:hover, a.btn_color4-darkest:hover, a.bg_color4-darkest:hover *, a.btn_color4-darkest:hover *, button.bg_color4-darkest:hover, button.btn_color4-darkest:hover, button.bg_color4-darkest:hover *, button.btn_color4-darkest:hover *, .bg_color4-darkest a:hover, .btn_color4-darkest a:hover, .bg_color4-darkest a:hover *, .btn_color4-darkest a:hover * {
+  color: #92cf81 !important;
+}
+
+.bg_primary\!, a.bg_primary\!, button.bg_primary\! {
+  background-color: #e9d839 !important;
+}
+
+.bg_primary\!, .bg_primary\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_primary\!, a.bg_primary\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_primary\!, button.bg_primary\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #655c0b;
+}
+
+a.bg_primary\!:hover, button.bg_primary\!:hover {
+  background-color: #d7c518 !important;
+  text-decoration: none;
+}
+
+a.bg_primary\!:hover, a.bg_primary\!:hover *, button.bg_primary\!:hover, button.bg_primary\!:hover *, .bg_primary\! a:hover, .bg_primary\! a:hover * {
+  color: #373206 !important;
+}
+
+.bg_primary-light\!, a.bg_primary-light\!, button.bg_primary-light\! {
+  background-color: #f1e67e !important;
+}
+
+.bg_primary-light\!, .bg_primary-light\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_primary-light\!, a.bg_primary-light\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_primary-light\!, button.bg_primary-light\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #6e650c;
+}
+
+a.bg_primary-light\!:hover, button.bg_primary-light\!:hover {
+  background-color: #ecdd50 !important;
+  text-decoration: none;
+}
+
+a.bg_primary-light\!:hover, a.bg_primary-light\!:hover *, button.bg_primary-light\!:hover, button.bg_primary-light\!:hover *, .bg_primary-light\! a:hover, .bg_primary-light\! a:hover * {
+  color: #403b07 !important;
+}
+
+.bg_primary-lighter\!, a.bg_primary-lighter\!, button.bg_primary-lighter\! {
+  background-color: #f6efac !important;
+}
+
+.bg_primary-lighter\!, .bg_primary-lighter\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_primary-lighter\!, a.bg_primary-lighter\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_primary-lighter\!, button.bg_primary-lighter\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #73690d;
+}
+
+a.bg_primary-lighter\!:hover, button.bg_primary-lighter\!:hover {
+  background-color: #f1e67e !important;
+  text-decoration: none;
+}
+
+a.bg_primary-lighter\!:hover, a.bg_primary-lighter\!:hover *, button.bg_primary-lighter\!:hover, button.bg_primary-lighter\!:hover *, .bg_primary-lighter\! a:hover, .bg_primary-lighter\! a:hover * {
+  color: #453f08 !important;
+}
+
+.bg_primary-dark\!, a.bg_primary-dark\!, button.bg_primary-dark\! {
+  background-color: #c0b015 !important;
+}
+
+.bg_primary-dark\!, .bg_primary-dark\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_primary-dark\!, a.bg_primary-dark\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_primary-dark\!, button.bg_primary-dark\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #494308;
+}
+
+a.bg_primary-dark\!:hover, button.bg_primary-dark\!:hover {
+  background-color: #928610 !important;
+  text-decoration: none;
+}
+
+a.bg_primary-dark\!:hover, a.bg_primary-dark\!:hover *, button.bg_primary-dark\!:hover, button.bg_primary-dark\!:hover *, .bg_primary-dark\! a:hover, .bg_primary-dark\! a:hover * {
+  color: #776d0d !important;
+}
+
+.bg_primary-darker\!, a.bg_primary-darker\!, button.bg_primary-darker\! {
+  background-color: #928610 !important;
+}
+
+.bg_primary-darker\!, .bg_primary-darker\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_primary-darker\!, a.bg_primary-darker\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_primary-darker\!, button.bg_primary-darker\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #201d04;
+}
+
+a.bg_primary-darker\!:hover, button.bg_primary-darker\!:hover {
+  background-color: #645c0b !important;
+  text-decoration: none;
+}
+
+a.bg_primary-darker\!:hover, a.bg_primary-darker\!:hover *, button.bg_primary-darker\!:hover, button.bg_primary-darker\!:hover *, .bg_primary-darker\! a:hover, .bg_primary-darker\! a:hover * {
+  color: #4e4709 !important;
+}
+
+.bg_primary-darkest\!, a.bg_primary-darkest\!, button.bg_primary-darkest\! {
+  background-color: #7b710e !important;
+}
+
+.bg_primary-darkest\!, .bg_primary-darkest\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_primary-darkest\!, a.bg_primary-darkest\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_primary-darkest\!, button.bg_primary-darkest\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #f9f5cd;
+}
+
+a.bg_primary-darkest\!:hover, button.bg_primary-darkest\!:hover {
+  background-color: #4d4709 !important;
+  text-decoration: none;
+}
+
+a.bg_primary-darkest\!:hover, a.bg_primary-darkest\!:hover *, button.bg_primary-darkest\!:hover, button.bg_primary-darkest\!:hover *, .bg_primary-darkest\! a:hover, .bg_primary-darkest\! a:hover * {
+  color: #fefefa !important;
+}
+
+.bg_secondary\!, a.bg_secondary\!, button.bg_secondary\! {
+  background-color: #f38020 !important;
+}
+
+.bg_secondary\!, .bg_secondary\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_secondary\!, a.bg_secondary\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_secondary\!, button.bg_secondary\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #572a05;
+}
+
+a.bg_secondary\!:hover, button.bg_secondary\!:hover {
+  background-color: #d5670b !important;
+  text-decoration: none;
+}
+
+a.bg_secondary\!:hover, a.bg_secondary\!:hover *, button.bg_secondary\!:hover, button.bg_secondary\!:hover *, .bg_secondary\! a:hover, .bg_secondary\! a:hover * {
+  color: #271302 !important;
+}
+
+.bg_secondary-light\!, a.bg_secondary-light\!, button.bg_secondary-light\! {
+  background-color: #f7a969 !important;
+}
+
+.bg_secondary-light\!, .bg_secondary-light\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_secondary-light\!, a.bg_secondary-light\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_secondary-light\!, button.bg_secondary-light\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #743806;
+}
+
+a.bg_secondary-light\!:hover, button.bg_secondary-light\!:hover {
+  background-color: #f48e38 !important;
+  text-decoration: none;
+}
+
+a.bg_secondary-light\!:hover, a.bg_secondary-light\!:hover *, button.bg_secondary-light\!:hover, button.bg_secondary-light\!:hover *, .bg_secondary-light\! a:hover, .bg_secondary-light\! a:hover * {
+  color: #442104 !important;
+}
+
+.bg_secondary-lighter\!, a.bg_secondary-lighter\!, button.bg_secondary-lighter\! {
+  background-color: #fac599 !important;
+}
+
+.bg_secondary-lighter\!, .bg_secondary-lighter\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_secondary-lighter\!, a.bg_secondary-lighter\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_secondary-lighter\!, button.bg_secondary-lighter\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #8c4408;
+}
+
+a.bg_secondary-lighter\!:hover, button.bg_secondary-lighter\!:hover {
+  background-color: #f7a969 !important;
+  text-decoration: none;
+}
+
+a.bg_secondary-lighter\!:hover, a.bg_secondary-lighter\!:hover *, button.bg_secondary-lighter\!:hover, button.bg_secondary-lighter\!:hover *, .bg_secondary-lighter\! a:hover, .bg_secondary-lighter\! a:hover * {
+  color: #5c2d05 !important;
+}
+
+.bg_secondary-dark\!, a.bg_secondary-dark\!, button.bg_secondary-dark\! {
+  background-color: #bc5b0a !important;
+}
+
+.bg_secondary-dark\!, .bg_secondary-dark\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_secondary-dark\!, a.bg_secondary-dark\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_secondary-dark\!, button.bg_secondary-dark\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #333333;
+}
+
+a.bg_secondary-dark\!:hover, button.bg_secondary-dark\!:hover {
+  background-color: #8c4408 !important;
+  text-decoration: none;
+}
+
+a.bg_secondary-dark\!:hover, a.bg_secondary-dark\!:hover *, button.bg_secondary-dark\!:hover, button.bg_secondary-dark\!:hover *, .bg_secondary-dark\! a:hover, .bg_secondary-dark\! a:hover * {
+  color: #4d4d4d !important;
+}
+
+.bg_secondary-darker\!, a.bg_secondary-darker\!, button.bg_secondary-darker\! {
+  background-color: #8c4408 !important;
+}
+
+.bg_secondary-darker\!, .bg_secondary-darker\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_secondary-darker\!, a.bg_secondary-darker\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_secondary-darker\!, button.bg_secondary-darker\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #fac599;
+}
+
+a.bg_secondary-darker\!:hover, button.bg_secondary-darker\!:hover {
+  background-color: #5c2c05 !important;
+  text-decoration: none;
+}
+
+a.bg_secondary-darker\!:hover, a.bg_secondary-darker\!:hover *, button.bg_secondary-darker\!:hover, button.bg_secondary-darker\!:hover *, .bg_secondary-darker\! a:hover, .bg_secondary-darker\! a:hover * {
+  color: #fce1ca !important;
+}
+
+.bg_secondary-darkest\!, a.bg_secondary-darkest\!, button.bg_secondary-darkest\! {
+  background-color: #743806 !important;
+}
+
+.bg_secondary-darkest\!, .bg_secondary-darkest\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_secondary-darkest\!, a.bg_secondary-darkest\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_secondary-darkest\!, button.bg_secondary-darkest\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #f7a764;
+}
+
+a.bg_secondary-darkest\!:hover, button.bg_secondary-darkest\!:hover {
+  background-color: #432104 !important;
+  text-decoration: none;
+}
+
+a.bg_secondary-darkest\!:hover, a.bg_secondary-darkest\!:hover *, button.bg_secondary-darkest\!:hover, button.bg_secondary-darkest\!:hover *, .bg_secondary-darkest\! a:hover, .bg_secondary-darkest\! a:hover * {
+  color: #f9c295 !important;
+}
+
+.bg_color3\!, a.bg_color3\!, button.bg_color3\! {
+  background-color: #89c441 !important;
+}
+
+.bg_color3\!, .bg_color3\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color3\!, a.bg_color3\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color3\!, button.bg_color3\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #334a17;
+}
+
+a.bg_color3\!:hover, button.bg_color3\!:hover {
+  background-color: #6ea032 !important;
+  text-decoration: none;
+}
+
+a.bg_color3\!:hover, a.bg_color3\!:hover *, button.bg_color3\!:hover, button.bg_color3\!:hover *, .bg_color3\! a:hover, .bg_color3\! a:hover * {
+  color: #18230b !important;
+}
+
+.bg_color3-light\!, a.bg_color3-light\!, button.bg_color3-light\! {
+  background-color: #add67b !important;
+}
+
+.bg_color3-light\!, .bg_color3-light\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color3-light\!, a.bg_color3-light\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color3-light\!, button.bg_color3-light\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #405d1d;
+}
+
+a.bg_color3-light\!:hover, button.bg_color3-light\!:hover {
+  background-color: #95ca54 !important;
+  text-decoration: none;
+}
+
+a.bg_color3-light\!:hover, a.bg_color3-light\!:hover *, button.bg_color3-light\!:hover, button.bg_color3-light\!:hover *, .bg_color3-light\! a:hover, .bg_color3-light\! a:hover * {
+  color: #263611 !important;
+}
+
+.bg_color3-lighter\!, a.bg_color3-lighter\!, button.bg_color3-lighter\! {
+  background-color: #c5e2a2 !important;
+}
+
+.bg_color3-lighter\!, .bg_color3-lighter\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color3-lighter\!, a.bg_color3-lighter\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color3-lighter\!, button.bg_color3-lighter\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #46651f;
+}
+
+a.bg_color3-lighter\!:hover, button.bg_color3-lighter\!:hover {
+  background-color: #add67b !important;
+  text-decoration: none;
+}
+
+a.bg_color3-lighter\!:hover, a.bg_color3-lighter\!:hover *, button.bg_color3-lighter\!:hover, button.bg_color3-lighter\!:hover *, .bg_color3-lighter\! a:hover, .bg_color3-lighter\! a:hover * {
+  color: #2b3e13 !important;
+}
+
+.bg_color3-dark\!, a.bg_color3-dark\!, button.bg_color3-dark\! {
+  background-color: #618d2c !important;
+}
+
+.bg_color3-dark\!, .bg_color3-dark\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color3-dark\!, a.bg_color3-dark\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color3-dark\!, button.bg_color3-dark\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #131b08;
+}
+
+a.bg_color3-dark\!:hover, button.bg_color3-dark\!:hover {
+  background-color: #466620 !important;
+  text-decoration: none;
+}
+
+a.bg_color3-dark\!:hover, a.bg_color3-dark\!:hover *, button.bg_color3-dark\!:hover, button.bg_color3-dark\!:hover *, .bg_color3-dark\! a:hover, .bg_color3-dark\! a:hover * {
+  color: #2e4215 !important;
+}
+
+.bg_color3-darker\!, a.bg_color3-darker\!, button.bg_color3-darker\! {
+  background-color: #466620 !important;
+}
+
+.bg_color3-darker\!, .bg_color3-darker\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color3-darker\!, a.bg_color3-darker\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color3-darker\!, button.bg_color3-darker\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #c0e09a;
+}
+
+a.bg_color3-darker\!:hover, button.bg_color3-darker\!:hover {
+  background-color: #2b3f14 !important;
+  text-decoration: none;
+}
+
+a.bg_color3-darker\!:hover, a.bg_color3-darker\!:hover *, button.bg_color3-darker\!:hover, button.bg_color3-darker\!:hover *, .bg_color3-darker\! a:hover, .bg_color3-darker\! a:hover * {
+  color: #d8ecc1 !important;
+}
+
+.bg_color3-darkest\!, a.bg_color3-darkest\!, button.bg_color3-darkest\! {
+  background-color: #39521a !important;
+}
+
+.bg_color3-darkest\!, .bg_color3-darkest\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color3-darkest\!, a.bg_color3-darkest\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color3-darkest\!, button.bg_color3-darkest\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #95ca54;
+}
+
+a.bg_color3-darkest\!:hover, button.bg_color3-darkest\!:hover {
+  background-color: #1e2b0e !important;
+  text-decoration: none;
+}
+
+a.bg_color3-darkest\!:hover, a.bg_color3-darkest\!:hover *, button.bg_color3-darkest\!:hover, button.bg_color3-darkest\!:hover *, .bg_color3-darkest\! a:hover, .bg_color3-darkest\! a:hover * {
+  color: #add67b !important;
+}
+
+.bg_color4\!, a.bg_color4\!, button.bg_color4\! {
+  background-color: #60b947 !important;
+}
+
+.bg_color4\!, .bg_color4\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color4\!, a.bg_color4\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color4\!, button.bg_color4\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #224319;
+}
+
+a.bg_color4\!:hover, button.bg_color4\!:hover {
+  background-color: #4d9538 !important;
+  text-decoration: none;
+}
+
+a.bg_color4\!:hover, a.bg_color4\!:hover *, button.bg_color4\!:hover, button.bg_color4\!:hover *, .bg_color4\! a:hover, .bg_color4\! a:hover * {
+  color: #0f1e0b !important;
+}
+
+.bg_color4-light\!, a.bg_color4-light\!, button.bg_color4-light\! {
+  background-color: #90ce7e !important;
+}
+
+.bg_color4-light\!, .bg_color4-light\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color4-light\!, a.bg_color4-light\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color4-light\!, button.bg_color4-light\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #2c5520;
+}
+
+a.bg_color4-light\!:hover, button.bg_color4-light\!:hover {
+  background-color: #70c059 !important;
+  text-decoration: none;
+}
+
+a.bg_color4-light\!:hover, a.bg_color4-light\!:hover *, button.bg_color4-light\!:hover, button.bg_color4-light\!:hover *, .bg_color4-light\! a:hover, .bg_color4-light\! a:hover * {
+  color: #193012 !important;
+}
+
+.bg_color4-lighter\!, a.bg_color4-lighter\!, button.bg_color4-lighter\! {
+  background-color: #b0dca3 !important;
+}
+
+.bg_color4-lighter\!, .bg_color4-lighter\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color4-lighter\!, a.bg_color4-lighter\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color4-lighter\!, button.bg_color4-lighter\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #346426;
+}
+
+a.bg_color4-lighter\!:hover, button.bg_color4-lighter\!:hover {
+  background-color: #90ce7e !important;
+  text-decoration: none;
+}
+
+a.bg_color4-lighter\!:hover, a.bg_color4-lighter\!:hover *, button.bg_color4-lighter\!:hover, button.bg_color4-lighter\!:hover *, .bg_color4-lighter\! a:hover, .bg_color4-lighter\! a:hover * {
+  color: #203f18 !important;
+}
+
+.bg_color4-dark\!, a.bg_color4-dark\!, button.bg_color4-dark\! {
+  background-color: #438231 !important;
+}
+
+.bg_color4-dark\!, .bg_color4-dark\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color4-dark\!, a.bg_color4-dark\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color4-dark\!, button.bg_color4-dark\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #f9fcf8;
+}
+
+a.bg_color4-dark\!:hover, button.bg_color4-dark\!:hover {
+  background-color: #305d23 !important;
+  text-decoration: none;
+}
+
+a.bg_color4-dark\!:hover, a.bg_color4-dark\!:hover *, button.bg_color4-dark\!:hover, button.bg_color4-dark\!:hover *, .bg_color4-dark\! a:hover, .bg_color4-dark\! a:hover * {
+  color: white !important;
+}
+
+.bg_color4-darker\!, a.bg_color4-darker\!, button.bg_color4-darker\! {
+  background-color: #305d23 !important;
+}
+
+.bg_color4-darker\!, .bg_color4-darker\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color4-darker\!, a.bg_color4-darker\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color4-darker\!, button.bg_color4-darker\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #9fd590;
+}
+
+a.bg_color4-darker\!:hover, button.bg_color4-darker\!:hover {
+  background-color: #1d3815 !important;
+  text-decoration: none;
+}
+
+a.bg_color4-darker\!:hover, a.bg_color4-darker\!:hover *, button.bg_color4-darker\!:hover, button.bg_color4-darker\!:hover *, .bg_color4-darker\! a:hover, .bg_color4-darker\! a:hover * {
+  color: #bfe3b5 !important;
+}
+
+.bg_color4-darkest\!, a.bg_color4-darkest\!, button.bg_color4-darkest\! {
+  background-color: #274b1c !important;
+}
+
+.bg_color4-darkest\!, .bg_color4-darkest\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_color4-darkest\!, a.bg_color4-darkest\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_color4-darkest\!, button.bg_color4-darkest\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+  color: #73c15c;
+}
+
+a.bg_color4-darkest\!:hover, button.bg_color4-darkest\!:hover {
+  background-color: #13260e !important;
+  text-decoration: none;
+}
+
+a.bg_color4-darkest\!:hover, a.bg_color4-darkest\!:hover *, button.bg_color4-darkest\!:hover, button.bg_color4-darkest\!:hover *, .bg_color4-darkest\! a:hover, .bg_color4-darkest\! a:hover * {
+  color: #92cf81 !important;
+}
+
+.btn_primary.active, .btn_primary:hover {
+  background-color: #d7c518;
+  color: #57500a !important;
+  text-decoration: none;
+}
+
+.btn_primary-light.active, .btn_primary-light:hover {
+  background-color: #ecdd50;
+  color: #6a610c !important;
+  text-decoration: none;
+}
+
+.btn_primary-lighter.active, .btn_primary-lighter:hover {
+  background-color: #f1e67e;
+  color: #6e650c !important;
+  text-decoration: none;
+}
+
+.btn_primary-dark.active, .btn_primary-dark:hover {
+  background-color: #928610;
+  color: #201d04 !important;
+  text-decoration: none;
+}
+
+.btn_primary-darker.active, .btn_primary-darker:hover {
+  background-color: #645c0b;
+  color: #e7d527 !important;
+  text-decoration: none;
+}
+
+.btn_primary-darkest.active, .btn_primary-darkest:hover {
+  background-color: #4d4709;
+  color: #cccccc !important;
+  text-decoration: none;
+}
+
+.btn_secondary.active, .btn_secondary:hover {
+  background-color: #d5670b;
+  color: #301703 !important;
+  text-decoration: none;
+}
+
+.btn_secondary-light.active, .btn_secondary-light:hover {
+  background-color: #f48e38;
+  color: #612f05 !important;
+  text-decoration: none;
+}
+
+.btn_secondary-lighter.active, .btn_secondary-lighter:hover {
+  background-color: #f7a969;
+  color: #743806 !important;
+  text-decoration: none;
+}
+
+.btn_secondary-dark.active, .btn_secondary-dark:hover {
+  background-color: #8c4408;
+  color: #fac599 !important;
+  text-decoration: none;
+}
+
+.btn_secondary-darker.active, .btn_secondary-darker:hover {
+  background-color: #5c2c05;
+  color: #f4862a !important;
+  text-decoration: none;
+}
+
+.btn_secondary-darkest.active, .btn_secondary-darkest:hover {
+  background-color: #432104;
+  color: #cccccc !important;
+  text-decoration: none;
+}
+
+.btn_color3.active, .btn_color3:hover {
+  background-color: #6ea032;
+  color: #202f0f !important;
+  text-decoration: none;
+}
+
+.btn_color3-light.active, .btn_color3-light:hover {
+  background-color: #95ca54;
+  color: #385219 !important;
+  text-decoration: none;
+}
+
+.btn_color3-lighter.active, .btn_color3-lighter:hover {
+  background-color: #add67b;
+  color: #405d1d !important;
+  text-decoration: none;
+}
+
+.btn_color3-dark.active, .btn_color3-dark:hover {
+  background-color: #466620;
+  color: #c0e09a !important;
+  text-decoration: none;
+}
+
+.btn_color3-darker.active, .btn_color3-darker:hover {
+  background-color: #2b3f14;
+  color: #cccccc !important;
+  text-decoration: none;
+}
+
+.btn_color3-darkest.active, .btn_color3-darkest:hover {
+  background-color: #1e2b0e;
+  color: #cccccc !important;
+  text-decoration: none;
+}
+
+.btn_color4.active, .btn_color4:hover {
+  background-color: #4d9538;
+  color: #11210d !important;
+  text-decoration: none;
+}
+
+.btn_color4-light.active, .btn_color4-light:hover {
+  background-color: #70c059;
+  color: #264a1c !important;
+  text-decoration: none;
+}
+
+.btn_color4-lighter.active, .btn_color4-lighter:hover {
+  background-color: #90ce7e;
+  color: #2c5520 !important;
+  text-decoration: none;
+}
+
+.btn_color4-dark.active, .btn_color4-dark:hover {
+  background-color: #305d23;
+  color: #9fd590 !important;
+  text-decoration: none;
+}
+
+.btn_color4-darker.active, .btn_color4-darker:hover {
+  background-color: #1d3815;
+  color: #cccccc !important;
+  text-decoration: none;
+}
+
+.btn_color4-darkest.active, .btn_color4-darkest:hover {
+  background-color: #13260e;
+  color: #cccccc !important;
+  text-decoration: none;
+}
+
+.border_primary, .border_primary *::before {
+  border-color: #e9d839;
+}
+
+.border_primary-light, .border_primary-light *::before {
+  border-color: #f1e67e;
+}
+
+.border_primary-lighter, .border_primary-lighter *::before {
+  border-color: #f6efac;
+}
+
+.border_primary-dark, .border_primary-dark *::before {
+  border-color: #c0b015;
+}
+
+.border_primary-darker, .border_primary-darker *::before {
+  border-color: #928610;
+}
+
+.border_primary-darkest, .border_primary-darkest *::before {
+  border-color: #7b710e;
+}
+
+.border_primary-black, .border_primary-black *::before {
+  border-color: #453f08;
+}
+
+.border_secondary, .border_secondary *::before {
+  border-color: #f38020;
+}
+
+.border_secondary-light, .border_secondary-light *::before {
+  border-color: #f7a969;
+}
+
+.border_secondary-lighter, .border_secondary-lighter *::before {
+  border-color: #fac599;
+}
+
+.border_secondary-dark, .border_secondary-dark *::before {
+  border-color: #bc5b0a;
+}
+
+.border_secondary-darker, .border_secondary-darker *::before {
+  border-color: #8c4408;
+}
+
+.border_secondary-darkest, .border_secondary-darkest *::before {
+  border-color: #743806;
+}
+
+.border_secondary-black, .border_secondary-black *::before {
+  border-color: #492304;
+}
+
+.border_color3, .border_color3 *::before {
+  border-color: #89c441;
+}
+
+.border_color3-light, .border_color3-light *::before {
+  border-color: #add67b;
+}
+
+.border_color3-lighter, .border_color3-lighter *::before {
+  border-color: #c5e2a2;
+}
+
+.border_color3-dark, .border_color3-dark *::before {
+  border-color: #618d2c;
+}
+
+.border_color3-darker, .border_color3-darker *::before {
+  border-color: #466620;
+}
+
+.border_color3-darkest, .border_color3-darkest *::before {
+  border-color: #39521a;
+}
+
+.border_color3-black, .border_color3-black *::before {
+  border-color: #283a12;
+}
+
+.border_color4, .border_color4 *::before {
+  border-color: #60b947;
+}
+
+.border_color4-light, .border_color4-light *::before {
+  border-color: #90ce7e;
+}
+
+.border_color4-lighter, .border_color4-lighter *::before {
+  border-color: #b0dca3;
+}
+
+.border_color4-dark, .border_color4-dark *::before {
+  border-color: #438231;
+}
+
+.border_color4-darker, .border_color4-darker *::before {
+  border-color: #305d23;
+}
+
+.border_color4-darkest, .border_color4-darkest *::before {
+  border-color: #274b1c;
+}
+
+.border_color4-black, .border_color4-black *::before {
+  border-color: #1d3715;
+}
+
+.border_primary\!, .border_primary\! *::before {
+  border-color: #e9d839 !important;
+}
+
+.border_primary-light\!, .border_primary-light\! *::before {
+  border-color: #f1e67e !important;
+}
+
+.border_primary-lighter\!, .border_primary-lighter\! *::before {
+  border-color: #f6efac !important;
+}
+
+.border_primary-dark\!, .border_primary-dark\! *::before {
+  border-color: #c0b015 !important;
+}
+
+.border_primary-darker\!, .border_primary-darker\! *::before {
+  border-color: #928610 !important;
+}
+
+.border_primary-darkest\!, .border_primary-darkest\! *::before {
+  border-color: #7b710e !important;
+}
+
+.border_primary-black\!, .border_primary-black\! *::before {
+  border-color: #453f08 !important;
+}
+
+.border_secondary\!, .border_secondary\! *::before {
+  border-color: #f38020 !important;
+}
+
+.border_secondary-light\!, .border_secondary-light\! *::before {
+  border-color: #f7a969 !important;
+}
+
+.border_secondary-lighter\!, .border_secondary-lighter\! *::before {
+  border-color: #fac599 !important;
+}
+
+.border_secondary-dark\!, .border_secondary-dark\! *::before {
+  border-color: #bc5b0a !important;
+}
+
+.border_secondary-darker\!, .border_secondary-darker\! *::before {
+  border-color: #8c4408 !important;
+}
+
+.border_secondary-darkest\!, .border_secondary-darkest\! *::before {
+  border-color: #743806 !important;
+}
+
+.border_secondary-black\!, .border_secondary-black\! *::before {
+  border-color: #492304 !important;
+}
+
+.border_color3\!, .border_color3\! *::before {
+  border-color: #89c441 !important;
+}
+
+.border_color3-light\!, .border_color3-light\! *::before {
+  border-color: #add67b !important;
+}
+
+.border_color3-lighter\!, .border_color3-lighter\! *::before {
+  border-color: #c5e2a2 !important;
+}
+
+.border_color3-dark\!, .border_color3-dark\! *::before {
+  border-color: #618d2c !important;
+}
+
+.border_color3-darker\!, .border_color3-darker\! *::before {
+  border-color: #466620 !important;
+}
+
+.border_color3-darkest\!, .border_color3-darkest\! *::before {
+  border-color: #39521a !important;
+}
+
+.border_color3-black\!, .border_color3-black\! *::before {
+  border-color: #283a12 !important;
+}
+
+.border_color4\!, .border_color4\! *::before {
+  border-color: #60b947 !important;
+}
+
+.border_color4-light\!, .border_color4-light\! *::before {
+  border-color: #90ce7e !important;
+}
+
+.border_color4-lighter\!, .border_color4-lighter\! *::before {
+  border-color: #b0dca3 !important;
+}
+
+.border_color4-dark\!, .border_color4-dark\! *::before {
+  border-color: #438231 !important;
+}
+
+.border_color4-darker\!, .border_color4-darker\! *::before {
+  border-color: #305d23 !important;
+}
+
+.border_color4-darkest\!, .border_color4-darkest\! *::before {
+  border-color: #274b1c !important;
+}
+
+.border_color4-black\!, .border_color4-black\! *::before {
+  border-color: #1d3715 !important;
+}
+
+.list_tabs > li.active, .list_tabs > li.active > a, .list_tabs > li .active > a, .list_tabs > li .uk-active > a, .list_tabs-bullet > li.active, .list_tabs-bullet > li.active > a, .list_tabs-bullet > li .active > a, .list_tabs-bullet > li .uk-active > a {
+  background-color: #e9d839;
+  border-color: #e9d839;
+  color: #655c0b;
+}
+
+.list_tabs-secondary > li.active, .list_tabs-secondary > li.active > a, .list_tabs-secondary > li .active > a, .list_tabs-secondary > li .uk-active > a, .list_tabs-bullet.list_tabs-secondary > li.active, .list_tabs-bullet.list_tabs-secondary > li.active > a, .list_tabs-bullet.list_tabs-secondary > li .active > a, .list_tabs-bullet.list_tabs-secondary > li .uk-active > a {
+  background-color: #f38020;
+  border-color: #f38020;
+  color: #572a05;
+}
+
+.list_tabs-color3 > li.active, .list_tabs-color3 > li.active > a, .list_tabs-color3 > li .active > a, .list_tabs-color3 > li .uk-active > a, .list_tabs-bullet.list_tabs-color3 > li.active, .list_tabs-bullet.list_tabs-color3 > li.active > a, .list_tabs-bullet.list_tabs-color3 > li .active > a, .list_tabs-bullet.list_tabs-color3 > li .uk-active > a {
+  background-color: #89c441;
+  border-color: #89c441;
+  color: #334a17;
+}
+
+.list_tabs-color4 > li.active, .list_tabs-color4 > li.active > a, .list_tabs-color4 > li .active > a, .list_tabs-color4 > li .uk-active > a, .list_tabs-bullet.list_tabs-color4 > li.active, .list_tabs-bullet.list_tabs-color4 > li.active > a, .list_tabs-bullet.list_tabs-color4 > li .active > a, .list_tabs-bullet.list_tabs-color4 > li .uk-active > a {
+  background-color: #60b947;
+  border-color: #60b947;
+  color: #224319;
+}
+
+/* Uikit 3 Style
+---------------------------------------------------- */
+.uk-pagination > .uk-active > span, .uk-subnav-pill > .uk-active > a {
+  background: #e9d839;
+  color: #655c0b !important;
+}
+
+.nav_bar-primary .nav_bar > * > a {
+  color: #655c0b;
+}
+.nav_bar-secondary .nav_bar > * > a {
+  color: #572a05;
+}
+.nav_bar-color3 .nav_bar > * > a {
+  color: #334a17;
+}
+.nav_bar-color4 .nav_bar > * > a {
+  color: #224319;
+}
+
+/* End Uikit 3 Style
+---------------------------------------------------- */
+/*---------- Fullcalendar Style
+---------------------------------------------------------------------------------- */
+.fc-event, .fc-event-dot {
+  background-color: #e9d839;
+}
+
+/*---------- End Fullcalendar Style
+---------------------------------------------------------------------------------- */
+
+/*# sourceMappingURL=colors.css.map */
