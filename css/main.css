@@ -17903,6 +17903,10 @@ address, dl, fieldset, figure, ol, p, pre, ul {
   .height_ie {
     height: 100%;
   }
+
+  input {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
