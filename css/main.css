@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("http://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Noto+Serif+TC|Poppins|Material+Icons&display=swap&subset=chinese-traditional");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Noto+Serif+TC|Poppins|Material+Icons&display=swap&subset=chinese-traditional");
 /*---------- Text ------------------------------*/
 html {
   font-size: calc(16rem/16);
@@ -1621,7 +1621,7 @@ a.bg_white:hover, a.bg_white:hover *, button.bg_white:hover, button.bg_white:hov
 }
 
 .bg_black, .bg_black *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_black, a.bg_black *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_black, button.bg_black *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
-  color: #cccccc;
+  color: #e6e6e6;
 }
 
 a.bg_black:hover, button.bg_black:hover {
@@ -1630,7 +1630,7 @@ a.bg_black:hover, button.bg_black:hover {
 }
 
 a.bg_black:hover, a.bg_black:hover *, button.bg_black:hover, button.bg_black:hover *, .bg_black a:hover, .bg_black a:hover * {
-  color: #e6e6e6 !important;
+  color: white !important;
 }
 
 .bg_dark, a.bg_dark, button.bg_dark {
@@ -2080,7 +2080,7 @@ a.bg_orange-600:hover, a.bg_orange-600:hover *, button.bg_orange-600:hover, butt
 }
 
 .bg_orange-700, .bg_orange-700 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_orange-700, a.bg_orange-700 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_orange-700, button.bg_orange-700 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
-  color: #333333;
+  color: #1a1a1a;
 }
 
 a.bg_orange-700:hover, button.bg_orange-700:hover {
@@ -2089,7 +2089,7 @@ a.bg_orange-700:hover, button.bg_orange-700:hover {
 }
 
 a.bg_orange-700:hover, a.bg_orange-700:hover *, button.bg_orange-700:hover, button.bg_orange-700:hover *, .bg_orange-700 a:hover, .bg_orange-700 a:hover * {
-  color: #4d4d4d !important;
+  color: #333333 !important;
 }
 
 .bg_orange-800, a.bg_orange-800, button.bg_orange-800 {
@@ -2386,7 +2386,7 @@ a.bg_green-600:hover, a.bg_green-600:hover *, button.bg_green-600:hover, button.
 }
 
 .bg_green-700, .bg_green-700 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_green-700, a.bg_green-700 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_green-700, button.bg_green-700 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
-  color: #333333;
+  color: #1a1a1a;
 }
 
 a.bg_green-700:hover, button.bg_green-700:hover {
@@ -2395,7 +2395,7 @@ a.bg_green-700:hover, button.bg_green-700:hover {
 }
 
 a.bg_green-700:hover, a.bg_green-700:hover *, button.bg_green-700:hover, button.bg_green-700:hover *, .bg_green-700 a:hover, .bg_green-700 a:hover * {
-  color: #4d4d4d !important;
+  color: #333333 !important;
 }
 
 .bg_green-800, a.bg_green-800, button.bg_green-800 {
@@ -2896,7 +2896,7 @@ a.bg_indigo-900:hover, a.bg_indigo-900:hover *, button.bg_indigo-900:hover, butt
 }
 
 .bg_purple-100, .bg_purple-100 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_purple-100, a.bg_purple-100 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_purple-100, button.bg_purple-100 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
-  color: #333333;
+  color: #1a1a1a;
 }
 
 a.bg_purple-100:hover, button.bg_purple-100:hover {
@@ -2905,7 +2905,7 @@ a.bg_purple-100:hover, button.bg_purple-100:hover {
 }
 
 a.bg_purple-100:hover, a.bg_purple-100:hover *, button.bg_purple-100:hover, button.bg_purple-100:hover *, .bg_purple-100 a:hover, .bg_purple-100 a:hover * {
-  color: #1a1a1a !important;
+  color: black !important;
 }
 
 .bg_purple-200, a.bg_purple-200, button.bg_purple-200 {
@@ -2913,7 +2913,7 @@ a.bg_purple-100:hover, a.bg_purple-100:hover *, button.bg_purple-100:hover, butt
 }
 
 .bg_purple-200, .bg_purple-200 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_purple-200, a.bg_purple-200 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_purple-200, button.bg_purple-200 *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
-  color: #333333;
+  color: #1a1a1a;
 }
 
 a.bg_purple-200:hover, button.bg_purple-200:hover {
@@ -2922,7 +2922,7 @@ a.bg_purple-200:hover, button.bg_purple-200:hover {
 }
 
 a.bg_purple-200:hover, a.bg_purple-200:hover *, button.bg_purple-200:hover, button.bg_purple-200:hover *, .bg_purple-200 a:hover, .bg_purple-200 a:hover * {
-  color: #1a1a1a !important;
+  color: black !important;
 }
 
 .bg_purple-300, a.bg_purple-300, button.bg_purple-300 {
@@ -3579,7 +3579,7 @@ a.bg_white\!:hover, a.bg_white\!:hover *, button.bg_white\!:hover, button.bg_whi
 }
 
 .bg_black\!, .bg_black\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_black\!, a.bg_black\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_black\!, button.bg_black\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
-  color: #cccccc;
+  color: #e6e6e6;
 }
 
 a.bg_black\!:hover, button.bg_black\!:hover {
@@ -3588,7 +3588,7 @@ a.bg_black\!:hover, button.bg_black\!:hover {
 }
 
 a.bg_black\!:hover, a.bg_black\!:hover *, button.bg_black\!:hover, button.bg_black\!:hover *, .bg_black\! a:hover, .bg_black\! a:hover * {
-  color: #e6e6e6 !important;
+  color: white !important;
 }
 
 .bg_dark\!, a.bg_dark\!, button.bg_dark\! {
@@ -4038,7 +4038,7 @@ a.bg_orange-600\!:hover, a.bg_orange-600\!:hover *, button.bg_orange-600\!:hover
 }
 
 .bg_orange-700\!, .bg_orange-700\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_orange-700\!, a.bg_orange-700\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_orange-700\!, button.bg_orange-700\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
-  color: #333333;
+  color: #1a1a1a;
 }
 
 a.bg_orange-700\!:hover, button.bg_orange-700\!:hover {
@@ -4047,7 +4047,7 @@ a.bg_orange-700\!:hover, button.bg_orange-700\!:hover {
 }
 
 a.bg_orange-700\!:hover, a.bg_orange-700\!:hover *, button.bg_orange-700\!:hover, button.bg_orange-700\!:hover *, .bg_orange-700\! a:hover, .bg_orange-700\! a:hover * {
-  color: #4d4d4d !important;
+  color: #333333 !important;
 }
 
 .bg_orange-800\!, a.bg_orange-800\!, button.bg_orange-800\! {
@@ -4344,7 +4344,7 @@ a.bg_green-600\!:hover, a.bg_green-600\!:hover *, button.bg_green-600\!:hover, b
 }
 
 .bg_green-700\!, .bg_green-700\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_green-700\!, a.bg_green-700\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_green-700\!, button.bg_green-700\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
-  color: #333333;
+  color: #1a1a1a;
 }
 
 a.bg_green-700\!:hover, button.bg_green-700\!:hover {
@@ -4353,7 +4353,7 @@ a.bg_green-700\!:hover, button.bg_green-700\!:hover {
 }
 
 a.bg_green-700\!:hover, a.bg_green-700\!:hover *, button.bg_green-700\!:hover, button.bg_green-700\!:hover *, .bg_green-700\! a:hover, .bg_green-700\! a:hover * {
-  color: #4d4d4d !important;
+  color: #333333 !important;
 }
 
 .bg_green-800\!, a.bg_green-800\!, button.bg_green-800\! {
@@ -4854,7 +4854,7 @@ a.bg_indigo-900\!:hover, a.bg_indigo-900\!:hover *, button.bg_indigo-900\!:hover
 }
 
 .bg_purple-100\!, .bg_purple-100\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_purple-100\!, a.bg_purple-100\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_purple-100\!, button.bg_purple-100\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
-  color: #333333;
+  color: #1a1a1a;
 }
 
 a.bg_purple-100\!:hover, button.bg_purple-100\!:hover {
@@ -4863,7 +4863,7 @@ a.bg_purple-100\!:hover, button.bg_purple-100\!:hover {
 }
 
 a.bg_purple-100\!:hover, a.bg_purple-100\!:hover *, button.bg_purple-100\!:hover, button.bg_purple-100\!:hover *, .bg_purple-100\! a:hover, .bg_purple-100\! a:hover * {
-  color: #1a1a1a !important;
+  color: black !important;
 }
 
 .bg_purple-200\!, a.bg_purple-200\!, button.bg_purple-200\! {
@@ -4871,7 +4871,7 @@ a.bg_purple-100\!:hover, a.bg_purple-100\!:hover *, button.bg_purple-100\!:hover
 }
 
 .bg_purple-200\!, .bg_purple-200\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a.bg_purple-200\!, a.bg_purple-200\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button.bg_purple-200\!, button.bg_purple-200\! *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
-  color: #333333;
+  color: #1a1a1a;
 }
 
 a.bg_purple-200\!:hover, button.bg_purple-200\!:hover {
@@ -4880,7 +4880,7 @@ a.bg_purple-200\!:hover, button.bg_purple-200\!:hover {
 }
 
 a.bg_purple-200\!:hover, a.bg_purple-200\!:hover *, button.bg_purple-200\!:hover, button.bg_purple-200\!:hover *, .bg_purple-200\! a:hover, .bg_purple-200\! a:hover * {
-  color: #1a1a1a !important;
+  color: black !important;
 }
 
 .bg_purple-300\!, a.bg_purple-300\!, button.bg_purple-300\! {

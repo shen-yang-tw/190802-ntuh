@@ -10,7 +10,7 @@
 
 //### Font ###------------------------------------------------//
 @mixin google-font($family) {
-  @import url("http://fonts.googleapis.com/css?family=#{$family}&display=swap&subset=chinese-traditional");
+  @import url("https://fonts.googleapis.com/css?family=#{$family}&display=swap&subset=chinese-traditional");
 }
 
 @mixin mi {
