@@ -82,19 +82,23 @@ function thisYear(thisSelector) {
 
 //onmouseover="viewHeight('[uk-dropdown]', 'nav.bg_primary')"
 function viewHeight(sel, upperSelector) {
-  var topHeight = document.querySelector(upperSelector).getBoundingClientRect().top + document.querySelector(upperSelector).getBoundingClientRect().height;
-  var target = document.querySelectorAll(sel);
-  for (var i = 0; i < target.length; i++) {
-    target[i].style.maxHeight = window.innerHeight - topHeight + "px";
+  if (document.querySelector(sel)!=null && document.querySelector(upperSelector)!=null) {
+    var topHeight = document.querySelector(upperSelector).getBoundingClientRect().top + document.querySelector(upperSelector).getBoundingClientRect().height;
+    var target = document.querySelectorAll(sel);
+    for (var i = 0; i < target.length; i++) {
+      target[i].style.maxHeight = window.innerHeight - topHeight + "px";
+    }
   }
 }
 
 //viewHeightMiddle(".uk-slideshow-items", "header", ".bg_bar") - uk-slideshow height, working with CSS {min-height: auto !important};
 //Subtracts the height of preceding and following element
 function viewHeightMiddle(sel, upperSelector, lowerSelector) {
-  var topHeight = document.querySelector(upperSelector).clientTop + document.querySelector(upperSelector).clientHeight;
-  var lowerHeight = document.querySelector(lowerSelector).clientHeight;
-  document.querySelector(sel).style.height = window.innerHeight - topHeight - lowerHeight + "px";
+  if (document.querySelector(sel)!=null && document.querySelector(upperSelector)!=null && document.querySelector(lowerSelector)!=null) {
+    var topHeight = document.querySelector(upperSelector).clientTop + document.querySelector(upperSelector).clientHeight;
+    var lowerHeight = document.querySelector(lowerSelector).clientHeight;
+    document.querySelector(sel).style.height = window.innerHeight - topHeight - lowerHeight + "px";
+  }
   // var w = window.outerWidth;
   // if (w <= 959) {
   //   document.querySelector(sel).style.height = window.innerHeight - topHeight - lowerHeight + "px";
@@ -136,22 +140,21 @@ function fontResize(classFontM, classFontL, classButtonFont, classButtonFontS, c
 
 //------------- End font resize ------------------------------------------------//
 
+
 if (document.querySelector(".text_size") != null) {
   window.fontResize("text-m", "text-l", "text_size", "text_size-s", "text_size-m", "text_size-l", "active");
 }
 window.removeAll("p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty, .ifEmpty:empty");
-// window.thisYear(".year");
 
-window.addEventListener("scroll", function () {gotoTop("#gototop", "opacity-100")});
-// window.onscroll = function() {gotoTop("#gototop", "fadeIn")};
-// window.addEventListener("resize", function () {viewHeight});
+window.onload = function() {gotoTop("#gototop", "opacity-100")};
+window.onscroll = function() {gotoTop("#gototop", "opacity-100")};
 
 window.fitText( document.querySelector(".logo_cht"), 2.2, { minFontSize: '10px', maxFontSize: '20px' } );
 window.fitText( document.querySelector(".logo_eng"), 3, { minFontSize: '7px', maxFontSize: '16px' } );
 
 //uk-slideshow height, working with CSS {min-height: auto !important}
-viewHeightMiddle(".uk-slideshow-items", "header", ".bg_bar");
-window.addEventListener("resize", function () {viewHeightMiddle(".uk-slideshow-items", "header", ".bg_bar")});
+window.onload = function() {viewHeightMiddle(".uk-slideshow-items", "header", ".bg_bar")};
+window.onresize = function() {viewHeightMiddle(".uk-slideshow-items", "header", ".bg_bar")};
 
 //--------------- end pure js ----------------------------------------------------------//
 

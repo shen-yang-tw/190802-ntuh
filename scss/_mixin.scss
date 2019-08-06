@@ -57,6 +57,15 @@
 }
 
 //### Colors & Opacity ###------------------------------------------------//
+@mixin color($selector:&, $important:$boolean, $prefix:"", $suffix:"", $color:$color-primary-text) {
+  @if $important {
+    #{$selector}#{$suffix}, #{$selector}#{$suffix}>*  {color:$color !important;}
+    #{$prefix}#{$selector}#{$suffix}:hover, #{$prefix}#{$selector}#{$suffix}:hover * {color:darken($color, 10%) !important;}
+  } @else {
+    #{$selector}#{$suffix}, #{$selector}#{$suffix}>*  {color:$color;}
+    #{$prefix}#{$selector}#{$suffix}:hover, #{$prefix}#{$selector}#{$suffix}:hover * {color:darken($color, 10%)}
+  }
+}
 @mixin gradient($selector:&, $type:linear-gradient, $direction:bottom, $color1:black 100%, $color2:rgba(black, 0) 0%, $important:$boolean, $prefix:"", $suffix:"") {
   @if $important {
     #{$prefix}#{$selector}#{$suffix} {
@@ -328,7 +337,7 @@ $z-index:0 !default;
 }
 
 //### Width & Height & Scroll ###------------------------------------------------//
-@mixin grid-width($min:2, $max:12, $important:$boolean, $media:""){
+@mixin grid-width($min:2, $max:12, $property:width, $important:$boolean, $media:""){
   @if $min <= 1 {@error "Property #{$min} must be greater than 1.";}
   $i:$min; 
   @while $i <= $max {
@@ -344,9 +353,9 @@ $z-index:0 !default;
         }
         @if not $factor or $j == 1 {
           @if $important {
-            width:calc(100%*#{$j}/#{$i}) !important;
+            #{$property}:calc(100%*#{$j}/#{$i}) !important;
           } @else {
-            width:calc(100%*#{$j}/#{$i});
+            #{$property}:calc(100%*#{$j}/#{$i});
           }
         } 
       }
