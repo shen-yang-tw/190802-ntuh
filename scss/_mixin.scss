@@ -87,7 +87,7 @@
     }
     #{$selector}#{$important-sign}, #{$selector}#{$important-sign} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a#{$selector}#{$important-sign}, a#{$selector}#{$important-sign} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button#{$selector}#{$important-sign}, button#{$selector}#{$important-sign} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
       color:text-color($bg-color);
-      fill:text-color($bg-color);
+      // fill:text-color($bg-color);
     }
     a#{$selector}#{$important-sign}:hover, button#{$selector}#{$important-sign}:hover {
       @if $selector == $bg-black {
@@ -101,7 +101,8 @@
       &, * {
         // color:text-color($bg-color) !important;
         @if lightness($bg-color) <= 50% {color:lighten(text-color($bg-color), 10%) !important;}
-        @else {color:darken(text-color($bg-color), 10%) !important; fill:darken(text-color($bg-color), 10%) !important;}
+        @else {color:darken(text-color($bg-color), 10%) !important;}
+        // @else {color:darken(text-color($bg-color), 10%) !important; fill:darken(text-color($bg-color), 10%) !important;}
       }
     }
 
@@ -111,7 +112,7 @@
     }
     #{$selector}, #{$selector} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a#{$selector}, a#{$selector} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button#{$selector}, button#{$selector} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
       color:text-color($bg-color);
-      fill:text-color($bg-color);
+      // fill:text-color($bg-color);
     }
     a#{$selector}:hover, button#{$selector}:hover {
       @if $selector == $bg-black {
@@ -125,7 +126,8 @@
       &, * {
         // color:text-color($bg-color) !important;
         @if lightness($bg-color) <= 50% {color:lighten(text-color($bg-color), 10%) !important;}
-        @else {color:darken(text-color($bg-color), 10%) !important; fill:darken(text-color($bg-color), 10%) !important;}
+        @else {color:darken(text-color($bg-color), 10%) !important;}
+        // @else {color:darken(text-color($bg-color), 10%) !important; fill:darken(text-color($bg-color), 10%) !important;}
       }
     }
   }
