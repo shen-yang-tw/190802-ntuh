@@ -60,12 +60,21 @@
 @mixin color($selector:&, $important:$boolean, $prefix:"", $suffix:"", $color:$color-primary-text) {
   @if $important {
     #{$selector}#{$suffix}, #{$selector}#{$suffix}>*  {color:$color !important;}
-    #{$selector}#{$suffix} *  {fill:$color !important;}
     #{$prefix}#{$selector}#{$suffix}:hover, #{$prefix}#{$selector}#{$suffix}:hover * {color:darken($color, 10%) !important;}
   } @else {
     #{$selector}#{$suffix}, #{$selector}#{$suffix}>*  {color:$color;}
-    #{$selector}#{$suffix} *  {fill:$color;}
     #{$prefix}#{$selector}#{$suffix}:hover, #{$prefix}#{$selector}#{$suffix}:hover * {color:darken($color, 10%)}
+  }
+}
+@mixin fillcolor($selector:&, $important:$boolean, $prefix:"a", $suffix:"", $color:$color-primary-text) {
+  @if $important {
+    #{$selector}#{$suffix}, #{$selector}#{$suffix}>*  {fill:$color !important;}
+    // #{$selector}#{$suffix} *  {fill:$color !important;}
+    #{$prefix}#{$selector}#{$suffix}:hover, #{$prefix}#{$selector}#{$suffix}:hover * {fill:darken($color, 10%) !important;}
+  } @else {
+    #{$selector}#{$suffix}, #{$selector}#{$suffix}>*  {fill:$color;}
+    // #{$selector}#{$suffix} *  {fill:$color;}
+    #{$prefix}#{$selector}#{$suffix}:hover, #{$prefix}#{$selector}#{$suffix}:hover * {fill:darken($color, 10%)}
   }
 }
 @mixin gradient($selector:&, $type:linear-gradient, $direction:bottom, $color1:black 100%, $color2:rgba(black, 0) 0%, $important:$boolean, $prefix:"", $suffix:"") {
