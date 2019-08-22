@@ -5,7 +5,8 @@ footer .logo_bg {
   background: url('../img/logo-ntuh.svg#svgView(preserveAspectRatio(xMinYMin))') no-repeat left center;
 }
 
-.uk-slideshow-items {min-height: auto !important;}
+#slideshow .uk-slideshow-items {min-height: auto !important;}
+
 
 @media (min-width: 960px) {
   /* .bg_bar {padding: 30px 0} */

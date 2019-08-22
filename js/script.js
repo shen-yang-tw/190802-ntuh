@@ -45,13 +45,23 @@ function removeAll(sel) {
   }
 }
 
-//toggle all class by array - onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.detail'), 'hidden')"
+//toggle all class by array - onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.detail'), 'hidden'); return false;"
 //return false - avoid the page jumping straight to the top"
-function toggleAllClass(allChildren, cls) {
+function toggleAllClass(allChildren, cls1, cls2) {
   for (var i = 0; i < allChildren.length; i++) {
-    allChildren[i].classList.toggle(cls);
+    allChildren[i].classList.toggle(cls1);
+    if (cls2!=null) {
+      allChildren[i].classList.toggle(cls2);
+    }
   }
   // return false; //not working
+}
+//toggle two classes - onmouseover="removeAddClasses(findChildren(findParent(this, 'LI'), 'p'), 'uk-text-truncate', 'flex-wrap')" onmouseout="removeAddClasses(findChildren(findParent(this, 'LI'), 'p'), 'flex-wrap', 'uk-text-truncate')"
+function removeAddClasses(allChildren, classRemove, classAdd) {
+  for (var i = 0; i < allChildren.length; i++) {
+    allChildren[i].classList.remove(classRemove);
+    allChildren[i].classList.add(classAdd);
+  }
 }
 function findParent(thisElement, parentTagName) {
   while ((thisElement = thisElement.parentElement) && (thisElement.tagName != parentTagName));
@@ -97,12 +107,8 @@ function viewHeightMiddle(sel, upperSelector, lowerSelector) {
   if (document.querySelector(sel)!=null && document.querySelector(upperSelector)!=null && document.querySelector(lowerSelector)!=null) {
     var topHeight = document.querySelector(upperSelector).clientTop + document.querySelector(upperSelector).clientHeight;
     var lowerHeight = document.querySelector(lowerSelector).clientHeight;
-    document.querySelector(sel).style.height = window.innerHeight - topHeight - lowerHeight + "px";
+    document.querySelector(sel).style.height = window.innerHeight - topHeight - lowerHeight + "px"; //CANNOT use "px !important"
   }
-  // var w = window.outerWidth;
-  // if (w <= 959) {
-  //   document.querySelector(sel).style.height = window.innerHeight - topHeight - lowerHeight + "px";
-  // }
 }
 
 //------------- font resize ------------------------------------------------//
@@ -140,6 +146,20 @@ function fontResize(classFontM, classFontL, classButtonFont, classButtonFontS, c
 
 //------------- End font resize ------------------------------------------------//
 
+//------------- Form ------------------------------------------------//
+
+
+//select onchange Event - <select onchange="showOption()">
+function showOption(thisSelect, index, cls) {
+  var showDiv = document.querySelector(cls);
+  if (thisSelect.selectedIndex == index) {
+    showDiv.style.setProperty("display", "block", "important");
+  } else {
+    showDiv.style.setProperty("display", "none", "important");
+  }
+}
+
+//------------- End Form ------------------------------------------------//
 
 if (document.querySelector(".text_size") != null) {
   window.fontResize("text-m", "text-l", "text_size", "text_size-s", "text_size-m", "text_size-l", "active");
@@ -153,9 +173,10 @@ window.fitText( document.querySelector(".logo_cht"), 2.2, { minFontSize: '10px',
 window.fitText( document.querySelector(".logo_eng"), 3, { minFontSize: '7px', maxFontSize: '16px' } );
 
 //uk-slideshow height, working with CSS {min-height: auto !important}
-window.onload = function() {viewHeightMiddle(".uk-slideshow-items", "header", ".bg_bar")};
-window.onresize = function() {viewHeightMiddle(".uk-slideshow-items", "header", ".bg_bar")};
+window.onload = function() {viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")};
+window.onresize = function() {viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")};
 
+// document.querySelector(".list>li>div>a").onmouseover = function() {toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'uk-text-truncate', 'hover', this)};
 //--------------- end pure js ----------------------------------------------------------//
 
 

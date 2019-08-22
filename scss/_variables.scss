@@ -28,7 +28,7 @@ $font-fa:'Font Awesome 5 Free' !default;
 $font-mi:'Material Icons' !default;
 $font-def:$font-cht-hei !default;
 
-$fontwight:100 !default;
+$fontwight:300 !default;
 $font-base:16px !default;
 $fontsize:calc(#{strip-unit($font-base)}rem/16) !default; //it equals 18px=(18/16)rem, browser default fnot size in body:1rem=16px
 
@@ -48,7 +48,7 @@ $max-fontsize:strip-unit(48px) !default;
 
 
 //### Text ###------------------------------------------------//
-$line-normal:normal !default;
+$line-normal-val:normal !default;
 $line-height:1.5 !default;
 $min-line-height:1 !default;
 $max-line-height:2 !default;
@@ -63,7 +63,8 @@ $mi:"[class*=material-]" !default;
 $font-def-name:".font_default" !default;
 $font-size-name:".font_size-" !default;
 $font-weight-name:".fontweight-" !default;
-$line-def-name:".line_default" !default;
+$line-default:".line-default" !default;
+$line-normal:".line-normal" !default;
 $line-height-name:".line-" !default;
 $text-m:".text-m" !default;
 $text-l:".text-l" !default;
@@ -76,6 +77,7 @@ $font-number-name:".font_number" !default;
 $focus-emphasis:"a:focus, button:focus, input:focus, select:focus, textarea:focus" !default;
 $focus-visible:".focus-visible" !default;
 $url-fix:"p, .url_fix" !default;
+$color-exclude:":not([class*=bg_]):not([class*=btn_]):not([class*=color_]):not([class*=bg-]):not([class*=text-])" !default;
 $text-color-white:".color_white" !default;
 $text-color-black:".color_black" !default;
 $text-color-dark:".color_dark" !default;
@@ -284,16 +286,6 @@ $border-black-opacity:".border_black_opacity-" !default;
 $divider-dashed:".divider_dashed" !default;
 $divider-child:".divider_child" !default;
 $opacity-name:".opacity-" !default;
-// $btn-primary:".btn_primary" !default;
-// $btn-primary-light:".btn_primary-light" !default;
-// $btn-primary-lighter:".btn_primary-lighter" !default;
-// $btn-primary-dark:".btn_primary-dark" !default;
-// $btn-primary-darker:".btn_primary-darker" !default;
-// $btn-secondary:".btn_secondary" !default;
-// $btn-secondary-light:".btn_secondary-light" !default;
-// $btn-secondary-lighter:".btn_secondary-lighter" !default;
-// $btn-secondary-dark:".btn_secondary-dark" !default;
-// $btn-secondary-darker:".btn_secondary-darker" !default;
 $active:".active" !default;
 $disabled:".disabled" !default;
 $inline-block:a, span, label, strong, small !default;
@@ -379,7 +371,7 @@ $pagination-padding-s:".pagination_padding_s" !default;
 $pagination-bg:".pagination_bg" !default;
 $pagination-link:".pagination_link" !default;
 $pagination:".pagination" !default;
-$button:".btn" !default;
+$button:".button" !default;
 $accordion-icon-l:".accordion_icon-l" !default;
 $accordion-icon-r:".accordion_icon-r" !default;
 $accordion-icon-r-arrow:".accordion_icon-r-arrow" !default;
@@ -394,6 +386,7 @@ $nav-bar-primary:".nav_bar-primary" !default;
 $nav-bar-secondary:".nav_bar-secondary" !default;
 $nav-bar-color3:".nav_bar-color3" !default;
 $nav-bar-color4:".nav_bar-color4" !default;
+$nav-header-dotted:".nav_header-dotted" !default;
 $link-line:".link_line" !default;
 $bottom-line:".btm_line" !default;
 $logo:".logo" !default;
@@ -472,6 +465,7 @@ $uk-logo:".uk-logo" !default;
 $uk-offcanvas-close:".uk-offcanvas-close" !default;
 $uk-offcanvas-bar:".uk-offcanvas-bar" !default;
 $uk-offcanvas-bar-a:".uk-offcanvas-bar .uk-nav-default .uk-nav-sub a" !default;
+$uk-uk-first-column:".uk-first-column" !default;
 
 $height-ie:".height_ie" !default;
 

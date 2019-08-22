@@ -1,0 +1,104 @@
+header {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+header > nav {
+  background-color: #f6efac !important;
+}
+
+header > :nth-child(2) > nav > :nth-child(2) .logo_text {
+  justify-content: center;
+}
+
+.logo_bg {
+  width: 100px !important;
+}
+
+.logo_cht, .logo_eng {
+  width: auto !important;
+}
+
+[uk-slideshow] ~ section > div > .uk-grid div > h4 {
+  background-color: #e9d839;
+  color: #655c0b;
+}
+
+[uk-slideshow] ~ section > div > .uk-grid div > h4 * {
+  color: #655c0b !important;
+}
+
+[uk-slideshow] ~ section > div > .uk-grid > div > div {
+  max-height: inherit;
+}
+
+[uk-slideshow] ~ section > div > .uk-grid > :nth-child(2) > div {
+  overflow: inherit;
+  padding: 0;
+}
+
+[uk-slideshow] ~ section > div > form:last-child,
+[uk-slideshow] ~ section > div > .uk-grid:nth-child(2) > :nth-child(2n+1) > a, footer > :first-child, header > :nth-child(2) > nav > :nth-child(2) > div > :nth-child(2), [uk-slideshow] ~ section:nth-of-type(2), [uk-slideshow] ~ section:nth-of-type(1) > div > :nth-child(2), header hr, [uk-slideshow] ~ section > div > .uk-grid > :nth-child(2) > div:after {
+  display: none !important;
+}
+
+.bg_bar form {
+  margin: 0 !important;
+}
+
+@media (min-width: 960px) {
+  header > :nth-child(2) > nav {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  header > :nth-child(2) > nav > div {
+    background-color: transparent;
+  }
+
+  .logo_text .flex {
+    width: auto !important;
+  }
+
+  .logo_cht {
+    font-size: 1.7rem !important;
+  }
+
+  [uk-slideshow] {
+    margin-top: -128px;
+  }
+}
+@media (min-width: 1200px) {
+  body::before {
+    padding-top: 350px;
+  }
+
+  .logo_position-up .logo_bg {
+    margin-top: 0;
+  }
+
+  .logo_control .logo_text_control .logo_position-up,
+.logo_control .logo_text_control .logo_position-up .logo_text .logo_bg {
+    min-height: 70px;
+  }
+
+  .logo_control .logo_text_control .logo_position-up .logo_text .logo_bg {
+    width: calc(70px*1.96);
+    max-width: inherit;
+    max-height: inherit;
+  }
+
+  .logo_text .flex {
+    margin-top: 15px;
+  }
+
+  [uk-slideshow] {
+    margin-top: -158px;
+  }
+
+  .bg_bar {
+    padding: 10px 20px;
+  }
+}
+
+/*# sourceMappingURL=style-dept.css.map */

@@ -1,0 +1,108 @@
+@import 'variables', 'colors-variables', 'color', 'mixin', 'functions';
+
+.logo_bg {
+  background: url('../img/logo-ntuch.svg#svgView(preserveAspectRatio(xMinYMid))') left center no-repeat;
+  width: 60px !important;
+}
+
+footer .logo_bg {
+  background: url('../img/logo-ntuch.svg#svgView(preserveAspectRatio(xMinYMin))') left center no-repeat;
+}
+
+#footer {
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: calc(100% * 510 / 1920); /* background photo Aspect Ratio: 408x1921 */
+    background: url("../img/index-ntuch-bg.png") left top no-repeat;
+    background-size: 100%;
+  }
+  >:first-child {background-color: $color4;}
+}
+#footer, footer {
+  background-color: transparent;
+  &, *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) *:not([class*=bg]) {color: text-color($color4) !important;}
+  *, #{$uk-grid-divider}>:not(#{$uk-uk-first-column})::before, &#{$uk-grid-divider}#{$uk-grid-stack}>#{$uk-grid-margin}::before {border-color: text-color($color4);}
+}
+
+header>nav {
+  background-color: $color-grey-200 !important;
+}
+
+header>:nth-child(2)>nav>:first-child {
+  background-color: $color-secondary;
+  color: text-color($color-secondary);
+}
+
+// header>:nth-child(2)>nav>:nth-child(2) {
+//   background-color: $color-grey-200;
+//   color: text-color($color-grey-200);
+// }
+
+#slideshow~section>div>.uk-grid div>h4 {
+  background-color: $color-primary;
+  color: text-color($color-primary);
+}
+
+#slideshow~section>div>.uk-grid div>h4 * {
+  color: text-color($color-primary) !important;
+}
+
+#slideshow~section>div>form:last-child,
+#slideshow~section>div>.uk-grid:nth-child(2)>:nth-child(2n+1)>a, footer>:first-child {
+  display: none !important;
+}
+
+// section:last-of-type>div>:nth-last-child(2)>a {
+//   background-color: $color3;
+//   color: text-color($color3);
+//   &:hover {
+//     background-color:$color3-hover;
+//     color:text-color($color3-hover) !important;
+//     text-decoration: none;
+//   }
+// }
+
+@media (min-width: 960px) {
+  .logo_bg {width: 120px !important;}
+  header>:nth-child(2)>nav>:nth-child(2) {
+    background-color: $color-white;
+    color: text-color($color-white);
+  }
+}
+@media (min-width: 1200px) {
+  $h: 70px;
+
+  .logo_position-up .logo_bg {
+    margin-top: 0;
+  }
+
+  .logo_control .logo_text_control .logo_position-up,
+  .logo_control .logo_text_control .logo_position-up .logo_text .logo_bg {
+    min-height: $h
+  }
+
+  .logo_control .logo_text_control .logo_position-up .logo_text .logo_bg {
+    width: calc(#{$h}*1.96);
+    max-width: inherit;
+    max-height: inherit;
+  }
+  .logo_eng {
+    font-size: 0.87rem !important;
+  }
+}
+
+@media (min-width: 1500px) {
+  // body::after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   width: 168px;
+  //   height: 171px;
+  //   background: url('../img/index-ntuch-sun.png') no-repeat left top;
+  //   background-size: contain;
+  //   left: 50px;
+  //   top: 15px;
+  // }
+}

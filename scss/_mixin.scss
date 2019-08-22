@@ -60,9 +60,11 @@
 @mixin color($selector:&, $important:$boolean, $prefix:"", $suffix:"", $color:$color-primary-text) {
   @if $important {
     #{$selector}#{$suffix}, #{$selector}#{$suffix}>*  {color:$color !important;}
+    #{$selector}#{$suffix} *  {fill:$color !important;}
     #{$prefix}#{$selector}#{$suffix}:hover, #{$prefix}#{$selector}#{$suffix}:hover * {color:darken($color, 10%) !important;}
   } @else {
     #{$selector}#{$suffix}, #{$selector}#{$suffix}>*  {color:$color;}
+    #{$selector}#{$suffix} *  {fill:$color;}
     #{$prefix}#{$selector}#{$suffix}:hover, #{$prefix}#{$selector}#{$suffix}:hover * {color:darken($color, 10%)}
   }
 }
@@ -85,6 +87,7 @@
     }
     #{$selector}#{$important-sign}, #{$selector}#{$important-sign} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a#{$selector}#{$important-sign}, a#{$selector}#{$important-sign} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button#{$selector}#{$important-sign}, button#{$selector}#{$important-sign} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
       color:text-color($bg-color);
+      fill:text-color($bg-color);
     }
     a#{$selector}#{$important-sign}:hover, button#{$selector}#{$important-sign}:hover {
       @if $selector == $bg-black {
@@ -98,7 +101,7 @@
       &, * {
         // color:text-color($bg-color) !important;
         @if lightness($bg-color) <= 50% {color:lighten(text-color($bg-color), 10%) !important;}
-        @else {color:darken(text-color($bg-color), 10%) !important;}
+        @else {color:darken(text-color($bg-color), 10%) !important; fill:darken(text-color($bg-color), 10%) !important;}
       }
     }
 
@@ -108,6 +111,7 @@
     }
     #{$selector}, #{$selector} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a#{$selector}, a#{$selector} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button#{$selector}, button#{$selector} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
       color:text-color($bg-color);
+      fill:text-color($bg-color);
     }
     a#{$selector}:hover, button#{$selector}:hover {
       @if $selector == $bg-black {
@@ -121,7 +125,7 @@
       &, * {
         // color:text-color($bg-color) !important;
         @if lightness($bg-color) <= 50% {color:lighten(text-color($bg-color), 10%) !important;}
-        @else {color:darken(text-color($bg-color), 10%) !important;}
+        @else {color:darken(text-color($bg-color), 10%) !important; fill:darken(text-color($bg-color), 10%) !important;}
       }
     }
   }
@@ -326,7 +330,7 @@ $z-index:0 !default;
 }
 
 //### Indent ###------------------------------------------------//
-@mixin flex-indent($align:start, $margin:calc(5rem/16)) {
+@mixin flex-indent($align:flex-start, $margin:calc(5rem/16)) {
   display:flex;
   align-items:$align;
   &>* {
@@ -334,6 +338,7 @@ $z-index:0 !default;
     margin-right:$margin;
   }
   &>:last-child {margin-right:0;}
+  &>svg {margin-top: $space; margin-right: $space;}
 }
 
 //### Width & Height & Scroll ###------------------------------------------------//
@@ -509,14 +514,14 @@ $z-index:0 !default;
           &#{$childSelector} {
             @if $important {
               @if $property and $calc {#{$property-name}:calc(#{$i}#{$unit-val}/#{strip-unit($denominator)})!important}
-              @if $property and $unit {#{$property-name}:#{$i}$unit-val!important}
+              @if $property and $unit {#{$property-name}:$i+$unit-val!important}
               @if $property and not $unit and not $calc {#{$property-name}:#{$i}!important}
               @if $bg {@include bg-opacity($color:$color-val, $val:$i, $important:true)}
               @if $opacity {@include opacity($val:$i, $important:true)}
               @if $border-opacity {@include border-opacity($color:$color-border, $val:$i, $important:true)}
             } @else {
               @if $property and $calc {#{$property-name}:calc(#{$i}#{$unit-val}/#{strip-unit($denominator)})}
-              @if $property and $unit {#{$property-name}:#{$i}$unit-val}
+              @if $property and $unit {#{$property-name}:$i+$unit-val}
               @if $property and not $unit and not $calc {#{$property-name}:#{$i}}
               @if $bg {@include bg-opacity($color:$color-val, $val:$i)}
               @if $opacity {@include opacity($val:$i)}
@@ -528,14 +533,14 @@ $z-index:0 !default;
         &#{$i*$percent}#{$important-sign}#{$media}#{$suffix} {
           @if $important {
             @if $property and $calc {#{$property-name}:calc(#{$i}#{$unit-val}/#{strip-unit($denominator)})!important}
-            @if $property and $unit {#{$property-name}:#{$i}$unit-val!important}
+            @if $property and $unit {#{$property-name}:$i+$unit-val!important}
             @if $property and not $unit and not $calc {#{$property-name}:#{$i}!important}
             @if $bg {@include bg-opacity($color:$color-val, $val:$i, $important:true)}
             @if $opacity {@include opacity($val:$i, $important:true)}
             @if $border-opacity {@include border-opacity($color:$color-border, $val:$i, $important:true)}
           } @else {
             @if $property and $calc {#{$property-name}:calc(#{$i}#{$unit-val}/#{strip-unit($denominator)})}
-            @if $property and $unit {#{$property-name}:#{$i}$unit-val}
+            @if $property and $unit {#{$property-name}:$i+$unit-val}
             @if $property and not $unit and not $calc {#{$property-name}:#{$i}}
             @if $bg {@include bg-opacity($color:$color-val, $val:$i)}
             @if $opacity {@include opacity($val:$i)}
