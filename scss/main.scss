@@ -513,7 +513,8 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
 
 /*---------- Display & Visibility ------------------------------*/
 #{$inline-block} {display:inline-block;}
-#{$empty} {display:none;}
+#{$empty}, #{$ifEmpty}:empty {display:none;}
+#{$ifEmpty}[class*=border]:empty {border: none !important;}
 
 /*---------- Border ------------------------------*/
 *, *::before, *::after {box-sizing: border-box;} //prevent the errors of the padding changing width
@@ -526,6 +527,9 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
 @include min-max($selector:$border-black-opacity, $percent:100, $min:.01, $max:.09, $step:.01, $border-opacity:true, $border-color:black, $important:true, $child:true, $childSelector:", * , *::before");
 @include min-max($selector:$border-black-opacity, $percent:100, $min:.1, $max:.9, $step:.1, $border-opacity:true, $border-color:black, $important:true, $child:true, $childSelector:", * , *::before");
 
+#{$border}2, #{$border}2 li a {border-width:2px}
+#{$border}3, #{$border}3 li a {border-width:3px}
+#{$border}4, #{$border}4 li a {border-width:4px}
 #{$bottom-line} {border-bottom: 1px solid $color-border; margin-bottom:$space-l; padding-bottom:$space}
 
 #{$border-group} {
@@ -759,7 +763,11 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
 }
 
 /*---------- Indent ------------------------------*/
-#{$hanging-indent} {@include flex-indent($margin:calc(10rem/16))}
+#{$hanging-indent} {@include indent($margin:calc(10rem/16), $flex:true)}
+#{$listFaIcon-indent} {@include indent($padding:1.25rem, $indent:-1.25rem)}
+#{$listFaIcon-indent}-2 {@include indent($padding:2rem, $indent:-2rem)}
+#{$listFaIcon-indent}-3 {@include indent($padding:3rem, $indent:-3rem)}
+#{$listFaIcon-indent}-4 {@include indent($padding:4rem, $indent:-4rem)}
 #{$reset-indent} {display:inherit;}
 
 /*---------- Width & Height & Scroll ------------------------------*/
@@ -856,14 +864,14 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
 
 /*---------- Aspect Ratio - padding-top:calc(100%*height/width) ------------------------------*/
 #{$aspect} {
-  &#{$not-uk-width} {@include overflow-hidden; display:block; width:100%; padding:0;}
-  &:before {@include pseudo-content($display:block, $content:true); padding-top:100%;}
-  &#{$ratio}3\/4:before {padding-top:calc(100%*4/3);}
-  &#{$ratio}9\/16:before {padding-top:calc(100%*16/9);}
-  &#{$ratio}9\/21:before {padding-top:calc(100%*21/9);}
-  &#{$ratio}4\/3:before {padding-top:calc(100%*3/4);}
-  &#{$ratio}16\/9:before {padding-top:calc(100%*9/16);}
-  &#{$ratio}21\/9:before {padding-top:calc(100%*9/21);}
+  &#{$not-uk-width} {width:100%; padding-top:100%;}
+  // &:before {@include pseudo-content($display:block, $content:true); padding-top:100%;}
+  &#{$ratio}3\/4 {padding-top:calc(100%*4/3);}
+  &#{$ratio}9\/16 {padding-top:calc(100%*16/9);}
+  &#{$ratio}9\/21 {padding-top:calc(100%*21/9);}
+  &#{$ratio}4\/3 {padding-top:calc(100%*3/4);}
+  &#{$ratio}16\/9 {padding-top:calc(100%*9/16);}
+  &#{$ratio}21\/9 {padding-top:calc(100%*9/21);}
   >* {@include cover}
 }
 
@@ -888,10 +896,7 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
 // }
 #{$pseudo-parentheses}:before {@include pseudo-content($content:true, $content-val:"("); @include space($property:margin-left, $size:3px, $calc:true); @include space($property:padding-right, $size:1px)}
 #{$pseudo-parentheses}:after {@include pseudo-content($content:true, $content-val:")"); @include space($property:padding-left, $size:1px)}
-#{$pseudo-line-vertical} {
-  position:relative;
-  &:not(:last-child):after {@include pseudo-content($pos:absolute, $content:true, $property:width, $property-val:1px, $background:true, $bg:$color-grey-light, $bg-txt:false, $t:0, $r:0, $b:0);}
-}
+#{$pseudo-line-vertical}:not(:last-child):after {@include pseudo-content($content:true, $content-val:"│", $property:padding, $property-val:0 $space)}
 #{$pseudo-slash}:not(:last-child):after {@include pseudo-content($content:true, $content-val:"/", $property:padding-left, $property-val:$space)}
 #{$pseudo-bottom-line}:not(:last-child):after {@include pseudo-content($pos:absolute, $content:true, $property:height, $property-val:1px, $background:true, $bg:$color-grey-light, $bg-txt:false, $l:0, $r:0, $b:0)}
 #{$pseudo-comma}:not(:last-child):after {@include pseudo-content($content:true, $content-val:",", $property:padding-right, $property-val:$space-m)}
@@ -1126,7 +1131,22 @@ address, dl, fieldset, figure, ol, p, pre, ul {
   >#{$uk-active}>a, >#{$active}>a, >li>a:focus, >li>a:hover {border-color: white !important; background-color: transparent;}
 }
 
-#{$uk-dropdown-nav} {li a, #{$uk-nav-sub} a {color:$color-link; &:hover {color:$color-link-hover;}}; li>span {font-size: $fontsize-s; font-weight: 400;}}
+#{$uk-dropdown-nav} {
+  li a, #{$uk-nav-sub} a {
+    color:$color-link; &:hover {color:$color-link-hover;}
+  }
+  li {
+    a {
+      &:not([class*=underline])::after {content: ""; display: block; @include bordered($property:border-bottom, $style:dotted, $color:transparent)}
+      &:not([class*=underline]):hover {text-decoration: none !important;}
+      &:not([class*=underline]):hover::after {content: ""; display: block; @include bordered($property:border-bottom, $style:dotted, $color:$color-border-dark)}
+    }
+    &#{$active}, &#{$uk-active} {
+      a:not([class*=underline])::after {content: ""; display: block; @include bordered($property:border-bottom, $style:dotted, $color:$color-border-dark)}
+    }
+  }
+  li>span {font-size: $fontsize-s; font-weight: 400;}
+}
 
 #{$uk-subnav} {
   margin-left: $space-m-negative;

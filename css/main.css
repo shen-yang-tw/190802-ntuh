@@ -6039,8 +6039,12 @@ a, span, label, strong, small {
   display: inline-block;
 }
 
-.empty {
+.empty, .ifEmpty:empty {
   display: none;
+}
+
+.ifEmpty[class*=border]:empty {
+  border: none !important;
 }
 
 /*---------- Border ------------------------------*/
@@ -6270,6 +6274,18 @@ a, span, label, strong, small {
 }
 .border_black_opacity-90\!, .border_black_opacity-90\! *, .border_black_opacity-90\! *::before {
   border-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.border2, .border2 li a {
+  border-width: 2px;
+}
+
+.border3, .border3 li a {
+  border-width: 3px;
+}
+
+.border4, .border4 li a {
+  border-width: 4px;
 }
 
 .btm_line {
@@ -7357,6 +7373,30 @@ a, span, label, strong, small {
 .hanging_indent > svg {
   margin-top: 5px;
   margin-right: 5px;
+}
+
+.listFaIcon_indent {
+  padding-left: 1.25rem;
+  text-indent: -1.25rem;
+  /*work with fa-fw & no margin*/
+}
+
+.listFaIcon_indent-2 {
+  padding-left: 1.25rem;
+  text-indent: -1.25rem;
+  /*work with fa-fw & no margin*/
+}
+
+.listFaIcon_indent-3 {
+  padding-left: 1.25rem;
+  text-indent: -1.25rem;
+  /*work with fa-fw & no margin*/
+}
+
+.listFaIcon_indent-4 {
+  padding-left: 1.25rem;
+  text-indent: -1.25rem;
+  /*work with fa-fw & no margin*/
 }
 
 .reset_indent {
@@ -23148,33 +23188,25 @@ a, span, label, strong, small {
 
 /*---------- Aspect Ratio - padding-top:calc(100%*height/width) ------------------------------*/
 .aspect:not([class*=uk-width]) {
-  overflow: hidden;
-  position: relative;
-  display: block;
   width: 100%;
-  padding: 0;
-}
-.aspect:before {
-  display: block;
-  content: "";
   padding-top: 100%;
 }
-.aspect.ratio-3\/4:before {
+.aspect.ratio-3\/4 {
   padding-top: calc(100%*4/3);
 }
-.aspect.ratio-9\/16:before {
+.aspect.ratio-9\/16 {
   padding-top: calc(100%*16/9);
 }
-.aspect.ratio-9\/21:before {
+.aspect.ratio-9\/21 {
   padding-top: calc(100%*21/9);
 }
-.aspect.ratio-4\/3:before {
+.aspect.ratio-4\/3 {
   padding-top: calc(100%*3/4);
 }
-.aspect.ratio-16\/9:before {
+.aspect.ratio-16\/9 {
   padding-top: calc(100%*9/16);
 }
-.aspect.ratio-21\/9:before {
+.aspect.ratio-21\/9 {
   padding-top: calc(100%*9/21);
 }
 .aspect > * {
@@ -23243,17 +23275,9 @@ a, span, label, strong, small {
   padding-left: 1px;
 }
 
-.pseudo\:line_v {
-  position: relative;
-}
 .pseudo\:line_v:not(:last-child):after {
-  position: absolute;
-  content: "";
-  background: #d1d1d1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 1px;
+  content: "│";
+  padding: 0 5px;
 }
 
 .pseudo\:slash:not(:last-child):after {
@@ -23715,6 +23739,24 @@ address, dl, fieldset, figure, ol, p, pre, ul {
 }
 .uk-dropdown-nav li a:hover, .uk-dropdown-nav .uk-nav-sub a:hover {
   color: black;
+}
+.uk-dropdown-nav li a:not([class*=underline])::after {
+  content: "";
+  display: block;
+  border-bottom: 1px dotted transparent;
+}
+.uk-dropdown-nav li a:not([class*=underline]):hover {
+  text-decoration: none !important;
+}
+.uk-dropdown-nav li a:not([class*=underline]):hover::after {
+  content: "";
+  display: block;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+}
+.uk-dropdown-nav li.active a:not([class*=underline])::after, .uk-dropdown-nav li.uk-active a:not([class*=underline])::after {
+  content: "";
+  display: block;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
 }
 .uk-dropdown-nav li > span {
   font-size: calc(14rem/16);
