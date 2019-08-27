@@ -1578,11 +1578,11 @@ button:focus {
 }
 
 /*---------- Long words wrap (Parent tag CANNOT be inline-block or flex) ------------------------------*/
-p, .url_fix {
+p, .urlFix {
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
-p > *, .url_fix > * {
+p > *, .urlFix > * {
   display: inline !important;
 }
 
@@ -23835,6 +23835,32 @@ address, dl, fieldset, figure, ol, p, pre, ul {
 }
 .uk-light .uk-dotnav > .uk-active > *, .uk-light .uk-dotnav > * > :focus, .uk-light .uk-dotnav > * > :hover {
   background-color: white;
+}
+
+.uk-lightbox {
+  background: rgba(0, 0, 0, 0.8);
+}
+.uk-lightbox.uk-active .uk-lightbox-button * {
+  color: rgba(255, 255, 255, 0.7);
+}
+.uk-lightbox.uk-active .uk-lightbox-button:hover * {
+  color: white !important;
+}
+.uk-lightbox .uk-lightbox-toolbar {
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.uk-lightbox .uk-lightbox-toolbar * {
+  color: rgba(255, 255, 255, 0.7);
+}
+.uk-lightbox .uk-lightbox-toolbar .uk-close:hover * {
+  color: white !important;
+}
+.uk-lightbox .uk-lightbox-toolbar.uk-position-top {
+  width: 50px;
+  right: 0;
+  left: auto;
 }
 
 /* Pagination */

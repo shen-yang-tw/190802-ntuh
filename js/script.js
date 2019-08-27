@@ -114,7 +114,8 @@ function viewHeightMiddle(sel, upperSelector, lowerSelector) {
 //------------- font resize ------------------------------------------------//
 function fontResize(classFontM, classFontL, classButtonFont, classButtonFontS, classButtonFontM, classButtonFontL, classActive) {
   if (document.querySelector("." + classButtonFontS).classList.contains(classActive)) {
-    document.querySelector("html").classList.remove(classFontM, classFontL);
+    document.querySelector("html").classList.remove(classFontM);
+    document.querySelector("html").classList.remove(classFontL);
   }
   if (document.querySelector("." + classButtonFontM).classList.contains(classActive)) {
     document.querySelector("html").classList.remove(classFontL);
@@ -130,7 +131,8 @@ function fontResize(classFontM, classFontL, classButtonFont, classButtonFontS, c
       RemoveClass("." + classButtonFont, classActive); //Outer function
       this.classList.add(classActive); //Error: Cannot use 'btnFont[i]' to replace 'this'
       if (this.classList.contains(classButtonFontS)) { //Error: Cannot use 'buttonFontS' (it's a selector not the class name)
-        document.querySelector("html").classList.remove(classFontM, classFontL);
+        document.querySelector("html").classList.remove(classFontM);
+        document.querySelector("html").classList.remove(classFontL);
       }
       if (this.classList.contains(classButtonFontM)) {
         document.querySelector("html").classList.remove(classFontL);
