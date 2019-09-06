@@ -46,14 +46,22 @@
     @for $light from 0% through 100% {
       $color: change-color($bg-color, $lightness: $light);
       $contrast: contrast($bg-color, $color);
-      @if $contrast >= $contrast-val {@if lightness($color) < 50% {@return darken(white, 10%);} @return $color;}
+      // @if $contrast >= $contrast-val {@if lightness($color) < 50% {@return darken(white, 10%);} @return $color;}
+      @if $contrast >= $contrast-val {
+        @if lightness($color) < 50% {@return darken(white, 10%);}
+        @else {@return $color;}
+      }
     }
   }
   @else {
     @for $dark from 100% through 0% {
       $color: change-color($bg-color, $lightness: $dark);
       $contrast: contrast($bg-color, $color);
-      @if $contrast >= $contrast-val {@if lightness($color) > 50% {@return lighten(black, 10%);} @return $color;}
+      // @if $contrast >= $contrast-val {@if lightness($color) > 50% {@return lighten(black, 10%);} @return $color;}
+      @if $contrast >= $contrast-val {
+        @if lightness($color) > 50% {@return lighten(black, 10%);}
+        @else {@return $color;}
+      }
     }
   }
 }

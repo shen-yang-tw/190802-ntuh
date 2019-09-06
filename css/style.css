@@ -7,9 +7,119 @@ footer .logo_bg {
 
 #slideshow .uk-slideshow-items {min-height: auto !important;}
 
+.gradient {background: linear-gradient(to bottom, #007ebd 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 80%, rgba(0,0,0,20) 100%);}
+
+.clouds{
+	width:500%;
+	height: 40%;
+	background: transparent url("../img/clouds.png") right bottom;
+  background-repeat: repeat-x;
+	background-size: contain;
+  position: absolute;
+  right: 0%;
+  top: -5%;
+
+  -moz-animation:move-background 150s linear infinite;
+  -ms-animation:move-background 150s linear infinite;
+  -o-animation:move-background 150s linear infinite;
+  -webkit-animation:move-background 150s linear infinite;
+  animation:move-background 150s linear infinite;
+}
+@keyframes move-background {
+  0% {
+		transform: translate3d(0px, 0px, 0px);
+		-webkit-transform: translate3d(0px, 0px, 0px);
+    opacity:0;
+	}
+  3%  {
+		transform: translate3d(3%, 0px, 0px);
+		-webkit-transform: translate3d(3%, 0px, 0px);
+    opacity:1;
+  }
+  97%  {
+		transform: translate3d(97%, 0px, 0px);
+		-webkit-transform: translate3d(97%, 0px, 0px);
+    opacity:1;
+  }
+	100% { 
+		transform: translate3d(100%, 0px, 0px);
+		-webkit-transform: translate3d(100%, 0px, 0px);
+    opacity:0;
+	}
+}
+@-webkit-keyframes move-background {
+  0% {
+		transform: translate3d(0px, 0px, 0px);
+		-webkit-transform: translate3d(0px, 0px, 0px);
+    opacity:0;
+	}
+  3%  {
+		transform: translate3d(3%, 0px, 0px);
+		-webkit-transform: translate3d(3%, 0px, 0px);
+    opacity:1;
+  }
+  97%  {
+		transform: translate3d(97%, 0px, 0px);
+		-webkit-transform: translate3d(97%, 0px, 0px);
+    opacity:1;
+  }
+	100% { 
+		transform: translate3d(100%, 0px, 0px);
+		-webkit-transform: translate3d(100%, 0px, 0px);
+    opacity:0;
+	}
+}
+
+@-moz-keyframes move-background {
+	0% {
+		transform: translate3d(0px, 0px, 0px);
+		-webkit-transform: translate3d(0px, 0px, 0px);
+    opacity:0;
+	}
+  3%  {
+		transform: translate3d(3%, 0px, 0px);
+		-webkit-transform: translate3d(3%, 0px, 0px);
+    opacity:1;
+  }
+  97%  {
+		transform: translate3d(97%, 0px, 0px);
+		-webkit-transform: translate3d(97%, 0px, 0px);
+    opacity:1;
+  }
+	100% { 
+		transform: translate3d(100%, 0px, 0px);
+		-webkit-transform: translate3d(100%, 0px, 0px);
+	}
+}
+
+@-webkit-keyframes move-background {
+	0% {
+		transform: translate3d(0px, 0px, 0px);
+		-webkit-transform: translate3d(0px, 0px, 0px);
+    opacity:0;
+	}
+  3%  {
+		transform: translate3d(3%, 0px, 0px);
+		-webkit-transform: translate3d(3%, 0px, 0px);
+    opacity:1;
+  }
+  97%  {
+		transform: translate3d(97%, 0px, 0px);
+		-webkit-transform: translate3d(97%, 0px, 0px);
+    opacity:1;
+  }
+	100% { 
+		transform: translate3d(100%, 0px, 0px);
+		-webkit-transform: translate3d(100%, 0px, 0px);
+	}
+}
 
 @media (min-width: 960px) {
-  /* .bg_bar {padding: 30px 0} */
+  .clouds{
+    width:150%;
+    height: 40%;
+    top: -5%;
+  }
 }
 
 /**** Just replace the right logo ratio '1.96' or the background-position and the background-size ****/

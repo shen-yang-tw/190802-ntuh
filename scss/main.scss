@@ -30,12 +30,12 @@ body {
   #{$text-l} & {font-size:calc(#{strip-unit($font-base)+2}rem/#{$fontsize-l-integer})}
 }
 
-@include min-max($selector:$font-size-name, $min:$min-fontsize, $max:$max-fontsize, $step:2, $property:true, $property-name:font-size, $calc:true);
-@include min-max($selector:$font-size-name, $min:$min-fontsize, $max:$max-fontsize, $step:2, $property:true, $property-name:font-size, $calc:true, $important:true);
-@include min-max($selector:$font-size-name, $min:$min-fontsize, $max:$max-fontsize, $step:2, $property:true, $property-name:font-size, $calc:true, $denominator:$fontsize-m-integer, $html-class:$text-m);
-@include min-max($selector:$font-size-name, $min:$min-fontsize, $max:$max-fontsize, $step:2, $property:true, $property-name:font-size, $calc:true, $denominator:$fontsize-m-integer, $html-class:$text-m, $important:true);
-@include min-max($selector:$font-size-name, $min:$min-fontsize, $max:$max-fontsize, $step:2, $property:true, $property-name:font-size, $calc:true, $denominator:$fontsize-l-integer, $html-class:$text-l);
-@include min-max($selector:$font-size-name, $min:$min-fontsize, $max:$max-fontsize, $step:2, $property:true, $property-name:font-size, $calc:true, $denominator:$fontsize-l-integer, $html-class:$text-l, $important:true);
+@include min-max($selector:$font-size-name, $percent:10, $min:0.1, $max:6, $step:0.1, $property:true, $property-name:font-size, $unit:true);
+@include min-max($selector:$font-size-name, $percent:10, $min:0.1, $max:6, $step:0.1, $property:true, $property-name:font-size, $unit:true, $important:true);
+@include min-max($selector:$font-size-name, $percent:10, $min:0.1, $max:6, $step:0.1, $property:true, $property-name:font-size, $unit:true);
+@include min-max($selector:$font-size-name, $percent:10, $min:0.1, $max:6, $step:0.1, $property:true, $property-name:font-size, $unit:true, $important:true);
+@include min-max($selector:$font-size-name, $percent:10, $min:0.1, $max:6, $step:0.1, $property:true, $property-name:font-size, $unit:true);
+@include min-max($selector:$font-size-name, $percent:10, $min:0.1, $max:6, $step:0.1, $property:true, $property-name:font-size, $unit:true, $important:true);
 @include min-max($selector:$font-weight-name, $min:100, $max:900, $step:100, $property:true, $property-name:font-weight);
 #{$line-normal} {line-height:$line-normal-val;}
 @include min-max($selector:$line-height-name, $min:10, $max:50, $property:true, $property-name:line-height, $unit:true, $unit-val:px);
@@ -43,7 +43,7 @@ body {
 
 /*uk-@s*/
 @media (min-width:640px) {
-  @include min-max($selector:$font-size-name, $min:$min-fontsize, $max:$max-fontsize, $step:2, $property:true, $property-name:font-size, $calc:true, $media:\@s);
+  @include min-max($selector:$font-size-name, $percent:10, $min:0.1, $max:6, $step:0.1, $property:true, $property-name:font-size, $unit:true, $media:\@s);
   @include min-max($selector:$font-weight-name, $min:100, $max:900, $step:100, $property:true, $property-name:font-weight, $media:\@s);
   #{$line-normal}\@s {line-height:$line-normal-val;}
   @include min-max($selector:$line-height-name, $min:10, $max:50, $property:true, $property-name:line-height, $unit:true, $unit-val:px, $media:\@s);
@@ -51,7 +51,7 @@ body {
 
 /*uk-@m*/
 @media (min-width:960px) {
-  @include min-max($selector:$font-size-name, $min:$min-fontsize, $max:$max-fontsize, $step:2, $property:true, $property-name:font-size, $calc:true, $media:\@m);
+  @include min-max($selector:$font-size-name, $percent:10, $min:0.1, $max:6, $step:0.1, $property:true, $property-name:font-size, $unit:true, $media:\@m);
   @include min-max($selector:$font-weight-name, $min:100, $max:900, $step:100, $property:true, $property-name:font-weight, $media:\@m);
   #{$line-normal}\@m {line-height:$line-normal-val;}
   @include min-max($selector:$line-height-name, $min:10, $max:50, $property:true, $property-name:line-height, $unit:true, $unit-val:px, $media:\@m);
@@ -59,7 +59,7 @@ body {
 
 /*uk-@l*/
 @media (min-width:1200px) {
-  @include min-max($selector:$font-size-name, $min:$min-fontsize, $max:$max-fontsize, $step:2, $property:true, $property-name:font-size, $calc:true, $media:\@l);
+  @include min-max($selector:$font-size-name, $percent:10, $min:0.1, $max:6, $step:0.1, $property:true, $property-name:font-size, $unit:true, $media:\@l);
   @include min-max($selector:$font-weight-name, $min:100, $max:900, $step:100, $property:true, $property-name:font-weight, $media:\@l);
   #{$line-normal}\@l {line-height:$line-normal-val;}
   @include min-max($selector:$line-height-name, $min:10, $max:50, $property:true, $property-name:line-height, $unit:true, $unit-val:px, $media:\@l);
@@ -67,7 +67,7 @@ body {
 
 /*uk-@xl*/
 @media (min-width:1600px) {
-  @include min-max($selector:$font-size-name, $min:$min-fontsize, $max:$max-fontsize, $step:2, $property:true, $property-name:font-size, $calc:true, $media:\@xl);
+  @include min-max($selector:$font-size-name, $percent:10, $min:0.1, $max:6, $step:0.1, $property:true, $property-name:font-size, $unit:true, $media:\@xl);
   @include min-max($selector:$font-weight-name, $min:100, $max:900, $step:100, $property:true, $property-name:font-weight, $media:\@xl);
   #{$line-normal}\@xl {line-height:$line-normal-val;}
   @include min-max($selector:$line-height-name, $min:10, $max:50, $property:true, $property-name:line-height, $unit:true, $unit-val:px, $media:\@xl);
@@ -101,13 +101,16 @@ button:focus {background-color: inherit;} //fix Materialize
 }
 
 /*---------- Color ------------------------------*/
+#{$text-shadow-black} {text-shadow: 0px 1px 2px #000000;}
 #{$text-color-white}, #{$text-color-white} * {color:white;}
 #{$text-color-black}, #{$text-color-black} * {color:black;}
+#{$text-color-default}, #{$text-color-default} * {color:$color-text;}
 #{$text-color-dark}, #{$text-color-dark} * {color:$color-text-dark;}
 #{$text-color-grey}, #{$text-color-grey} * {color:$color-text-grey;}
 #{$text-color-grey}#{$disabled}, #{$text-color-grey}#{$disabled} * {color:$color-grey;}
 #{$text-color-white}\!, #{$text-color-white}\! * {color:white !important;}
 #{$text-color-black}\!, #{$text-color-black}\! * {color:black !important;}
+#{$text-color-default}\!, #{$text-color-default}\! * {color:$color-text !important;}
 #{$text-color-dark}\!, #{$text-color-dark}\! * {color:$color-text-dark !important;}
 #{$text-color-grey}\!, #{$text-color-grey}\! * {color:$color-text-grey !important;}
 #{$text-grey-100} {color:$color-grey-100;}
@@ -553,10 +556,10 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
 #{$margin-y-all-child}>:not(#{$footer}) ,#{$margin-y-all-child-even}>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space)}
 #{$margin-y-all-child-m}>:not(#{$footer}) ,#{$margin-y-all-child-even-m}>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space-m)}
 #{$margin-y-all-child-l}>:not(#{$footer}) ,#{$margin-y-all-child-even-l}>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space-l)}
-@include min-max($selector:$left, $min:5, $max:50, $step:5, $property:true, $property-name:left, $calc:true);
-@include min-max($selector:$top, $min:5, $max:50, $step:5, $property:true, $property-name:top, $calc:true);
-@include min-max($selector:$right, $min:5, $max:50, $step:5, $property:true, $property-name:right, $calc:true);
-@include min-max($selector:$bottom, $min:5, $max:50, $step:5, $property:true, $property-name:bottom, $calc:true);
+@include min-max($selector:$left, $min:5, $max:50, $step:5, $property:true, $property-name:left);
+@include min-max($selector:$top, $min:5, $max:50, $step:5, $property:true, $property-name:top);
+@include min-max($selector:$right, $min:5, $max:50, $step:5, $property:true, $property-name:right);
+@include min-max($selector:$bottom, $min:5, $max:50, $step:5, $property:true, $property-name:bottom);
 
 /*uk-@s*/
 @media (min-width:640px) {
@@ -569,10 +572,10 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
   #{$margin-y-all-child}\@s>:not(#{$footer}) ,#{$margin-y-all-child-even}\@s>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space)}
   #{$margin-y-all-child-m}\@s>:not(#{$footer}) ,#{$margin-y-all-child-even-m}\@s>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space-m)}
   #{$margin-y-all-child-l}\@s>:not(#{$footer}) ,#{$margin-y-all-child-even-l}\@s>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space-l)}
-  @include min-max($selector:$left, $min:5, $max:50, $step:5, $property:true, $property-name:left, $calc:true, $media:\@s);
-  @include min-max($selector:$top, $min:5, $max:50, $step:5, $property:true, $property-name:top, $calc:true, $media:\@s);
-  @include min-max($selector:$right, $min:5, $max:50, $step:5, $property:true, $property-name:right, $calc:true, $media:\@s);
-  @include min-max($selector:$bottom, $min:5, $max:50, $step:5, $property:true, $property-name:bottom, $calc:true, $media:\@s);
+  @include min-max($selector:$left, $min:5, $max:50, $step:5, $property:true, $property-name:left, $media:\@s);
+  @include min-max($selector:$top, $min:5, $max:50, $step:5, $property:true, $property-name:top, $media:\@s);
+  @include min-max($selector:$right, $min:5, $max:50, $step:5, $property:true, $property-name:right, $media:\@s);
+  @include min-max($selector:$bottom, $min:5, $max:50, $step:5, $property:true, $property-name:bottom, $media:\@s);
 }
 
 /*uk-@m*/
@@ -586,10 +589,10 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
   #{$margin-y-all-child}\@m>:not(#{$footer}) ,#{$margin-y-all-child-even}\@m>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space)}
   #{$margin-y-all-child-m}\@m>:not(#{$footer}) ,#{$margin-y-all-child-even-m}\@m>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space-m)}
   #{$margin-y-all-child-l}\@m>:not(#{$footer}) ,#{$margin-y-all-child-even-l}\@m>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space-l)}
-  @include min-max($selector:$left, $min:5, $max:50, $step:5, $property:true, $property-name:left, $calc:true, $media:\@m);
-  @include min-max($selector:$top, $min:5, $max:50, $step:5, $property:true, $property-name:top, $calc:true, $media:\@m);
-  @include min-max($selector:$right, $min:5, $max:50, $step:5, $property:true, $property-name:right, $calc:true, $media:\@m);
-  @include min-max($selector:$bottom, $min:5, $max:50, $step:5, $property:true, $property-name:bottom, $calc:true, $media:\@m);
+  @include min-max($selector:$left, $min:5, $max:50, $step:5, $property:true, $property-name:left, $media:\@m);
+  @include min-max($selector:$top, $min:5, $max:50, $step:5, $property:true, $property-name:top, $media:\@m);
+  @include min-max($selector:$right, $min:5, $max:50, $step:5, $property:true, $property-name:right, $media:\@m);
+  @include min-max($selector:$bottom, $min:5, $max:50, $step:5, $property:true, $property-name:bottom, $media:\@m);
 }
 
 /*uk-@l*/
@@ -603,10 +606,10 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
   #{$margin-y-all-child}\@l>:not(#{$footer}) ,#{$margin-y-all-child-even}\@l>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space)}
   #{$margin-y-all-child-m}\@l>:not(#{$footer}) ,#{$margin-y-all-child-even-m}\@l>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space-m)}
   #{$margin-y-all-child-l}\@l>:not(#{$footer}) ,#{$margin-y-all-child-even-l}\@l>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space-l)}
-  @include min-max($selector:$left, $min:5, $max:50, $step:5, $property:true, $property-name:left, $calc:true, $media:\@l);
-  @include min-max($selector:$top, $min:5, $max:50, $step:5, $property:true, $property-name:top, $calc:true, $media:\@l);
-  @include min-max($selector:$right, $min:5, $max:50, $step:5, $property:true, $property-name:right, $calc:true, $media:\@l);
-  @include min-max($selector:$bottom, $min:5, $max:50, $step:5, $property:true, $property-name:bottom, $calc:true, $media:\@l);
+  @include min-max($selector:$left, $min:5, $max:50, $step:5, $property:true, $property-name:left, $media:\@l);
+  @include min-max($selector:$top, $min:5, $max:50, $step:5, $property:true, $property-name:top, $media:\@l);
+  @include min-max($selector:$right, $min:5, $max:50, $step:5, $property:true, $property-name:right, $media:\@l);
+  @include min-max($selector:$bottom, $min:5, $max:50, $step:5, $property:true, $property-name:bottom, $media:\@l);
 }
 
 /*uk-@xl*/
@@ -620,10 +623,10 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
   #{$margin-y-all-child}\@xl>:not(#{$footer}) ,#{$margin-y-all-child-even}\@xl>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space)}
   #{$margin-y-all-child-m}\@xl>:not(#{$footer}) ,#{$margin-y-all-child-even-m}\@xl>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space-m)}
   #{$margin-y-all-child-l}\@xl>:not(#{$footer}) ,#{$margin-y-all-child-even-l}\@xl>:nth-child(even):not(#{$footer}) {@include space($property:margin-bottom, $size:$space-l)}
-  @include min-max($selector:$left, $min:5, $max:50, $step:5, $property:true, $property-name:left, $calc:true, $media:\@xl);
-  @include min-max($selector:$top, $min:5, $max:50, $step:5, $property:true, $property-name:top, $calc:true, $media:\@xl);
-  @include min-max($selector:$right, $min:5, $max:50, $step:5, $property:true, $property-name:right, $calc:true, $media:\@xl);
-  @include min-max($selector:$bottom, $min:5, $max:50, $step:5, $property:true, $property-name:bottom, $calc:true, $media:\@xl);
+  @include min-max($selector:$left, $min:5, $max:50, $step:5, $property:true, $property-name:left, $media:\@xl);
+  @include min-max($selector:$top, $min:5, $max:50, $step:5, $property:true, $property-name:top, $media:\@xl);
+  @include min-max($selector:$right, $min:5, $max:50, $step:5, $property:true, $property-name:right, $media:\@xl);
+  @include min-max($selector:$bottom, $min:5, $max:50, $step:5, $property:true, $property-name:bottom, $media:\@xl);
 }
 
 /*---------- List ------------------------------*/
@@ -775,16 +778,18 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
 #{$width} {@include grid-width($important:true)}
 #{$min-width} {@include min-width}
 #{$min-width} {@include min-width($important:true)}
+#{$max-width} {@include max-width}
+#{$max-width} {@include max-width($important:true)}
 #{$min-width} {@include grid-width($property:min-width)}
 #{$min-width} {@include grid-width($property:min-width, $important:true)}
 #{$max-width} {@include grid-width($property:max-width)}
 #{$max-width} {@include grid-width($property:max-width, $important:true)}
-@include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true);
-@include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true);
-@include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true, $denominator:$fontsize-m-integer, $html-class:$text-m);
-@include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true, $denominator:$fontsize-m-integer, $html-class:$text-m);
-@include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true, $denominator:$fontsize-l-integer, $html-class:$text-l);
-@include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true, $denominator:$fontsize-l-integer, $html-class:$text-l);
+@include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height);
+@include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height);
+@include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height);
+@include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height);
+@include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height);
+@include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height);
 
 /*uk-@s*/
 @media (min-width:640px) {
@@ -796,12 +801,12 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
   #{$min-width} {@include grid-width($property:min-width, $important:true, $media:\@s)}
   #{$max-width} {@include grid-width($property:max-width, $media:\@s)}
   #{$max-width} {@include grid-width($property:max-width, $important:true, $media:\@s)}
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true, $media:\@s);
-  @include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true, $media:\@s);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true, $media:\@s, $denominator:$fontsize-m-integer, $html-class:$text-m);
-  @include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true, $media:\@s, $denominator:$fontsize-m-integer, $html-class:$text-m);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true, $media:\@s, $denominator:$fontsize-l-integer, $html-class:$text-l);
-  @include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true, $media:\@s, $denominator:$fontsize-l-integer, $html-class:$text-l);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@s);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@s);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@s);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@s);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@s);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@s);
 }
 
 /*uk-@m*/
@@ -814,12 +819,12 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
   #{$min-width} {@include grid-width($property:min-width, $important:true, $media:\@m)}
   #{$max-width} {@include grid-width($property:max-width, $media:\@m)}
   #{$max-width} {@include grid-width($property:max-width, $important:true, $media:\@m)}
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true, $media:\@m);
-  @include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true, $media:\@m);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true, $media:\@m, $denominator:$fontsize-m-integer, $html-class:$text-m);
-  @include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true, $media:\@m, $denominator:$fontsize-m-integer, $html-class:$text-m);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true, $media:\@m, $denominator:$fontsize-l-integer, $html-class:$text-l);
-  @include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true, $media:\@m, $denominator:$fontsize-l-integer, $html-class:$text-l);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@m);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@m);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@m);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@m);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@m);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@m);
 }
 
 /*uk-@l*/
@@ -832,12 +837,12 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
   #{$min-width} {@include grid-width($property:min-width, $important:true, $media:\@l)}
   #{$max-width} {@include grid-width($property:max-width, $media:\@l)}
   #{$max-width} {@include grid-width($property:max-width, $important:true, $media:\@l)}
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true, $media:\@l);
-  @include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true, $media:\@l);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true, $media:\@l, $denominator:$fontsize-m-integer, $html-class:$text-m);
-  @include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true, $media:\@l, $denominator:$fontsize-m-integer, $html-class:$text-m);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true, $media:\@l, $denominator:$fontsize-l-integer, $html-class:$text-l);
-  @include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true, $media:\@l, $denominator:$fontsize-l-integer, $html-class:$text-l);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@l);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@l);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@l);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@l);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@l);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@l);
 }
 
 /*uk-@xl*/
@@ -850,12 +855,12 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
   #{$min-width} {@include grid-width($property:min-width, $important:true, $media:\@xl)}
   #{$max-width} {@include grid-width($property:max-width, $media:\@xl)}
   #{$max-width} {@include grid-width($property:max-width, $important:true, $media:\@xl)}
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true, $media:\@xl);
-  @include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true, $media:\@xl);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true, $media:\@xl, $denominator:$fontsize-m-integer, $html-class:$text-m);
-  @include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true, $media:\@xl, $denominator:$fontsize-m-integer, $html-class:$text-m);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:10, $property:true, $property-name:min-height, $calc:true, $media:\@xl, $denominator:$fontsize-l-integer, $html-class:$text-l);
-  @include min-max($selector:$max-height, $min:100, $max:1000, $step:10, $property:true, $property-name:max-height, $calc:true, $media:\@xl, $denominator:$fontsize-l-integer, $html-class:$text-l);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@xl);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@xl);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@xl);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@xl);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@xl);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@xl);
 }
 
 #{$overflow-hidden} {@include overflow-hidden($mask:true)}
@@ -878,11 +883,11 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
 /*---------- Pseudo ------------------------------*/
 // @include pseudo-content($display:inherit, $pos:inherit, $content:$boolean, $content-val:"", $property:"", $property-val:$space, $fontsize:inherit, $icon:"", $font:$font-fa, $weight:900, $color:inherit, $background:$boolean, $bg:$color-grey-light, $bg-txt:true, $l:auto, $t:auto, $r:auto, $b:auto, $radius:0, $margin:inherit, $padding:inherit, $line:inherit, $h:auto, $pointer-off:$boolean);
 
-#{$pseudo-item-pipe} {@include pseudo-content($content:true, $content-val:"▍", $property:padding-right)}
+#{$pseudo-item-pipe}:before {@include pseudo-content($content:true, $content-val:"▍", $property:padding-right)}
 #{$pseudo-item-pipe},#{$pseudo-item-circle},#{$pseudo-item-dot},#{$pseudo-item-link} {@include space($property:margin-right, $size:$space-l)}
 #{$pseudo-item-circle}:before {@include pseudo-content($display:inline-block, $content:true, $content-val:"○", $property:margin-right, $property-val:1px); transform:scale(0.6) translate($space-negative, 1px);}
-#{$pseudo-item-dot}:before {@include pseudo-content($display:inline-block, $content:true, $content-val:"·"); transform:scale(3) translate(1px, 1px-negative); @include space($property:margin-left, $size:-17px, $calc:true); @include space($property:margin-right, $size:12px, $calc:true)}
-#{$pseudo-item-dot} {@include space($property:padding-left, $size:17px, $calc:true)}
+#{$pseudo-item-dot}:before {@include pseudo-content($display:inline-block, $content:true, $content-val:"·"); transform:scale(3) translate(1px, -1px); @include space($property:margin-left, $size:-17px); @include space($property:margin-right, $size:12px)}
+#{$pseudo-item-dot} {@include space($property:padding-left, $size:17px)}
 #{$pseudo-item-link} {@include pseudo-content($content:true, $content-val:"§", $property:padding-right, $color:$color-text-light)}
 #{$pseudo-fa-angle-right}:before {@include pseudo-content($content:true, $content-val:"\f105", $icon:fa)}
 // $icons-fa:
@@ -894,14 +899,14 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
 //     @include pseudo-content($content:true, $content-val:$glyph, $icon:fa, $weight:$weight-val);
 //   }
 // }
-#{$pseudo-parentheses}:before {@include pseudo-content($content:true, $content-val:"("); @include space($property:margin-left, $size:3px, $calc:true); @include space($property:padding-right, $size:1px)}
+#{$pseudo-parentheses}:before {@include pseudo-content($content:true, $content-val:"("); @include space($property:margin-left, $size:3px); @include space($property:padding-right, $size:1px)}
 #{$pseudo-parentheses}:after {@include pseudo-content($content:true, $content-val:")"); @include space($property:padding-left, $size:1px)}
 #{$pseudo-line-vertical}:not(:last-child):after {@include pseudo-content($content:true, $content-val:"│", $property:padding, $property-val:0 $space)}
 #{$pseudo-slash}:not(:last-child):after {@include pseudo-content($content:true, $content-val:"/", $property:padding-left, $property-val:$space)}
 #{$pseudo-bottom-line}:not(:last-child):after {@include pseudo-content($pos:absolute, $content:true, $property:height, $property-val:1px, $background:true, $bg:$color-grey-light, $bg-txt:false, $l:0, $r:0, $b:0)}
 #{$pseudo-comma}:not(:last-child):after {@include pseudo-content($content:true, $content-val:",", $property:padding-right, $property-val:$space-m)}
 #{$pseudo-comma-ch}:not(:last-child):after {@include pseudo-content($content:true, $content-val:"、")}
-#{$pseudo-comma-dot}:not(:last-child):after {@include pseudo-content($display:inline-block, $content:true, $content-val:"·"); @include space($property:margin-left, $size:$space); @include space($property:margin-right, $size:$space); transform:scale(2) translate(1px, 1px-negative)}
+#{$pseudo-comma-dot}:not(:last-child):after {@include pseudo-content($display:inline-block, $content:true, $content-val:"·"); @include space($property:margin-left, $size:$space); @include space($property:margin-right, $size:$space); transform:scale(2) translate(1px, -1px)}
 #{$pseudo-arrow}:not(:last-child):after {@include pseudo-content($content:true, $content-val:"→"); @include space($property:padding-left, $size:$space); @include space($property:padding-right, $size:$space)}
 #{$pseudo-plus}:not(:last-child):after {@include pseudo-content($content:true, $content-val:"+"); @include space($property:padding-left, $size:$space); @include space($property:padding-right, $size:$space)}
  /*The below works with <q> */
@@ -1164,7 +1169,7 @@ address, dl, fieldset, figure, ol, p, pre, ul {
 #{$uk-nav-sub}, ul#{$uk-nav-sub} {padding: 5px 0 5px 15px; & ul {padding-left: 15px;}}
 
 #{$uk-offcanvas-bar-a} {color: inherit;}
-#{$uk-open}>#{$uk-offcanvas-bar} {padding-top: 40px;}
+#{$uk-offcanvas-bar} {padding-top: 40px !important;}
 #{$uk-offcanvas-close} {top: 10px;}
 
 #{$uk-slideshow} {

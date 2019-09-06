@@ -50,7 +50,7 @@ function removeAll(sel) {
 function toggleAllClass(allChildren, cls1, cls2) {
   for (var i = 0; i < allChildren.length; i++) {
     allChildren[i].classList.toggle(cls1);
-    if (cls2!=null) {
+    if (cls2 != null) {
       allChildren[i].classList.toggle(cls2);
     }
   }
@@ -63,11 +63,13 @@ function removeAddClasses(allChildren, classRemove, classAdd) {
     allChildren[i].classList.add(classAdd);
   }
 }
+
 function findParent(thisElement, parentTagName) {
   while ((thisElement = thisElement.parentElement) && (thisElement.tagName != parentTagName));
   //Searching loop only stop while parent is founded
   return thisElement; //if searching no one will return null
 }
+
 function findChildren(parentEL, sl) {
   return parentEL.querySelectorAll(sl);
 }
@@ -92,7 +94,7 @@ function thisYear(thisSelector) {
 
 //onmouseover="viewHeight('[uk-dropdown]', 'nav.bg_primary')"
 function viewHeight(sel, upperSelector) {
-  if (document.querySelector(sel)!=null && document.querySelector(upperSelector)!=null) {
+  if (document.querySelector(sel) != null && document.querySelector(upperSelector) != null) {
     var topHeight = document.querySelector(upperSelector).getBoundingClientRect().top + document.querySelector(upperSelector).getBoundingClientRect().height;
     var target = document.querySelectorAll(sel);
     for (var i = 0; i < target.length; i++) {
@@ -104,7 +106,7 @@ function viewHeight(sel, upperSelector) {
 //viewHeightMiddle(".uk-slideshow-items", "header", ".bg_bar") - uk-slideshow height, working with CSS {min-height: auto !important};
 //Subtracts the height of preceding and following element
 function viewHeightMiddle(sel, upperSelector, lowerSelector) {
-  if (document.querySelector(sel)!=null && document.querySelector(upperSelector)!=null && document.querySelector(lowerSelector)!=null) {
+  if (document.querySelector(sel) != null && document.querySelector(upperSelector) != null && document.querySelector(lowerSelector) != null) {
     var topHeight = document.querySelector(upperSelector).clientTop + document.querySelector(upperSelector).clientHeight;
     var lowerHeight = document.querySelector(lowerSelector).clientHeight;
     document.querySelector(sel).style.height = window.innerHeight - topHeight - lowerHeight + "px"; //CANNOT use "px !important"
@@ -152,12 +154,17 @@ function fontResize(classFontM, classFontL, classButtonFont, classButtonFontS, c
 
 
 //select onchange Event - <select onchange="showOption()">
-function showOption(thisSelect, index, cls) {
-  var showDiv = document.querySelector(cls);
+function showOption(thisSelect, index, sl) {
+  var showEl = document.querySelectorAll(sl);
+  var i;
   if (thisSelect.selectedIndex == index) {
-    showDiv.style.setProperty("display", "block", "important");
+    for (i = 0; i < showEl.length; i++) {
+      showEl[i].style.setProperty("display", "block", "important");
+    }
   } else {
-    showDiv.style.setProperty("display", "none", "important");
+    for (i = 0; i < showEl.length; i++) {
+      showEl[i].style.setProperty("display", "none", "important");
+    }
   }
 }
 
@@ -168,17 +175,30 @@ if (document.querySelector(".text_size") != null) {
 }
 window.removeAll("p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty, .ifEmpty:empty");
 
-window.onload = function() {gotoTop("#gototop", "opacity-100")};
-window.onscroll = function() {gotoTop("#gototop", "opacity-100")};
+window.onload = function() {
+  gotoTop("#gototop", "opacity-100")
+};
+window.onscroll = function() {
+  gotoTop("#gototop", "opacity-100")
+};
 
-window.fitText( document.querySelector(".logo_cht"), 2.2, { minFontSize: '10px', maxFontSize: '20px' } );
-window.fitText( document.querySelector(".logo_eng"), 3, { minFontSize: '7px', maxFontSize: '16px' } );
-
+if (document.querySelector(".logo_cht, logo_eng") != null) {
+  window.fitText(document.querySelector(".logo_cht"), 2.2, {
+    minFontSize: '10px',
+    maxFontSize: '20px'
+  });
+  window.fitText(document.querySelector(".logo_eng"), 3, {
+    minFontSize: '7px',
+    maxFontSize: '16px'
+  });
+}
 //uk-slideshow height, working with CSS {min-height: auto !important}
-window.onload = function() {viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")};
-window.onresize = function() {viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")};
+window.onload = function() {
+  viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
+};
+window.onresize = function() {
+  viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
+};
 
 // document.querySelector(".list>li>div>a").onmouseover = function() {toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'uk-text-truncate', 'hover', this)};
 //--------------- end pure js ----------------------------------------------------------//
-
-

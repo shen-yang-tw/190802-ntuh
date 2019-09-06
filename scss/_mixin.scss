@@ -59,10 +59,20 @@
 //### Colors & Opacity ###------------------------------------------------//
 @mixin color($selector:&, $important:$boolean, $prefix:"", $suffix:"", $color:$color-primary-text) {
   @if $important {
-    #{$selector}#{$suffix}, #{$selector}#{$suffix}>*  {color:$color !important;}
+    #{$selector}#{$suffix}, #{$selector}#{$suffix}>*  {
+      // color:$color !important;
+      @if lightness($color) < 20% {color:change-color($color, $lightness: 20%) !important;}
+      @else if lightness($color) > 80% {color:change-color($color, $lightness: 80%) !important;}
+      @else {color:$color !important;}
+    }
     #{$prefix}#{$selector}#{$suffix}:hover, #{$prefix}#{$selector}#{$suffix}:hover * {color:darken($color, 10%) !important;}
   } @else {
-    #{$selector}#{$suffix}, #{$selector}#{$suffix}>*  {color:$color;}
+    #{$selector}#{$suffix}, #{$selector}#{$suffix}>*  {
+      // color:$color;
+      @if lightness($color) < 20% {color:change-color($color, $lightness: 20%);}
+      @else if lightness($color) > 80% {color:change-color($color, $lightness: 80%);}
+      @else {color:$color;}
+    }
     #{$prefix}#{$selector}#{$suffix}:hover, #{$prefix}#{$selector}#{$suffix}:hover * {color:darken($color, 10%)}
   }
 }
@@ -94,9 +104,11 @@
     #{$selector}#{$important-sign}, a#{$selector}#{$important-sign}, button#{$selector}#{$important-sign} {
       background-color:$bg-color !important;
     }
-    #{$selector}#{$important-sign}, #{$selector}#{$important-sign} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a#{$selector}#{$important-sign}, a#{$selector}#{$important-sign} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button#{$selector}#{$important-sign}, button#{$selector}#{$important-sign} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
-      color:text-color($bg-color);
+    #{$selector}#{$important-sign}, #{$selector}#{$important-sign} *, a#{$selector}#{$important-sign}, a#{$selector}#{$important-sign} *, button#{$selector}#{$important-sign}, button#{$selector}#{$important-sign} * {
+      color:text-color($bg-color) !important;
       // fill:text-color($bg-color);
+      // @if lightness($bg-color) > 50% {color:darken(text-color($bg-color), 5%) !important;}
+      // @else {color:text-color($bg-color) !important;}
     }
     a#{$selector}#{$important-sign}:hover, button#{$selector}#{$important-sign}:hover {
       @if $selector == $bg-black {
@@ -119,9 +131,11 @@
     #{$selector}, a#{$selector}, button#{$selector} {
       background-color:$bg-color;
     }
-    #{$selector}, #{$selector} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), a#{$selector}, a#{$selector} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), button#{$selector}, button#{$selector} *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) {
+    #{$selector}, #{$selector} *, a#{$selector}, a#{$selector} *, button#{$selector}, button#{$selector} * {
       color:text-color($bg-color);
       // fill:text-color($bg-color);
+      // @if lightness($bg-color) > 50% {color:darken(text-color($bg-color), 5%);}
+      // @else {color:text-color($bg-color);}
     }
     a#{$selector}:hover, button#{$selector}:hover {
       @if $selector == $bg-black {
@@ -395,6 +409,22 @@ $z-index:0 !default;
         min-width:calc(#{$i}rem/16) !important;
       } @else {
         min-width:calc(#{$i}rem/16);
+      }
+    }
+    $i:$i + strip-unit($step);
+  }
+}
+@mixin max-width($min:10px, $max:1000px, $step:10, $important:$boolean, $media:""){
+  @if $min < 0 {@error "Property #{$min} must be greater than 0.";}
+  $i:strip-unit($min);
+  @while $i <= strip-unit($max) {
+    $selector:"";
+    @if $important {$selector:#{$i}\!#{$media};} @else {$selector:#{$i}#{$media};}
+    &#{$selector} {
+      @if $important {
+        max-width:calc(#{$i}rem/16) !important;
+      } @else {
+        max-width:calc(#{$i}rem/16);
       }
     }
     $i:$i + strip-unit($step);

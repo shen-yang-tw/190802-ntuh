@@ -43,8 +43,8 @@ $fontsize-integer:strip-unit($font-base) !default;
 $fontsize-m-integer:strip-unit($font-base)+2 !default;
 $fontsize-l-integer:strip-unit($font-base)+2*2 !default;
 $fontsize-xl-integer:strip-unit($font-base)+2*3 !default;
-$min-fontsize:strip-unit(12px) !default; //browser default display minimum fnot size, even smaller than 12px
-$max-fontsize:strip-unit(48px) !default;
+$min-fontsize:strip-unit(10px) !default; //browser default display minimum fnot size, even smaller than 12px
+$max-fontsize:strip-unit(200px) !default;
 
 
 //### Text ###------------------------------------------------//
@@ -77,9 +77,11 @@ $font-number-name:".font_number" !default;
 $focus-emphasis:"a:focus, button:focus, input:focus, select:focus, textarea:focus" !default;
 $focus-visible:".focus-visible" !default;
 $url-fix:"p, .urlFix" !default;
-$color-exclude:":not([class*=bg_]):not([class*=btn_]):not([class*=color_]):not([class*=bg-]):not([class*=text-])" !default;
+$color-exclude:":not([class*=bg_]):not([class*=btn_]):not([class*=color_]):not([class*=text-])" !default;
+$text-shadow-black:".text_shadow-black" !default;
 $text-color-white:".color_white" !default;
 $text-color-black:".color_black" !default;
+$text-color-default:".color_default" !default;
 $text-color-dark:".color_dark" !default;
 $text-color-grey:".color_grey" !default;
 $text-grey-100:".color_grey-100" !default;
