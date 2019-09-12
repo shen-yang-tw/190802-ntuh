@@ -22,9 +22,19 @@ footer .logo_bg {
 }
 #footer, footer {
   background-color: transparent;
-  &, *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) *:not([class*=bg]) {color: text-color($color4) !important;}
+  &, *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) *:not([class*=bg]) {color: text-color($color4);}
   *, #{$uk-grid-divider}>:not(#{$uk-uk-first-column})::before, &#{$uk-grid-divider}#{$uk-grid-stack}>#{$uk-grid-margin}::before {border-color: text-color($color4);}
 }
+footer a.hover\:color_black\! {* {color: black !important} &:hover * {color:white !important}}
+
+footer>:nth-child(2)>:nth-child(2)>:last-child {
+    width: auto !important;
+}
+footer>:nth-child(2)>:nth-child(2)>:last-child>div {
+    margin-right: 10px !important;
+}
+
+a#AZ {color: text-color($color4) !important;}
 
 header>nav {
   background-color: $color-grey-200 !important;

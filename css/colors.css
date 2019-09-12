@@ -23,7 +23,7 @@ a.color_primary-light:hover, a.color_primary-light:hover * {
 }
 
 .color_primary-lighter, .color_primary-lighter > * {
-  color: #f5eda3;
+  color: #f6efac;
 }
 
 a.color_primary-lighter:hover, a.color_primary-lighter:hover * {
@@ -55,7 +55,7 @@ a.color_primary-darkest:hover, a.color_primary-darkest:hover * {
 }
 
 .color_primary-black, .color_primary-black > * {
-  color: #5c540a;
+  color: #453f08;
 }
 
 a.color_primary-black:hover, a.color_primary-black:hover * {
@@ -87,7 +87,7 @@ a.color_primary-light\!:hover, a.color_primary-light\!:hover * {
 }
 
 .color_primary-lighter\!, .color_primary-lighter\! > * {
-  color: #f5eda3 !important;
+  color: #f6efac !important;
 }
 
 a.color_primary-lighter\!:hover, a.color_primary-lighter\!:hover * {
@@ -119,7 +119,7 @@ a.color_primary-darkest\!:hover, a.color_primary-darkest\!:hover * {
 }
 
 .color_primary-black\!, .color_primary-black\! > * {
-  color: #5c540a !important;
+  color: #453f08 !important;
 }
 
 a.color_primary-black\!:hover, a.color_primary-black\!:hover * {
@@ -183,7 +183,7 @@ a.color_secondary-darkest:hover, a.color_secondary-darkest:hover * {
 }
 
 .color_secondary-black, .color_secondary-black > * {
-  color: #612f05;
+  color: #492304;
 }
 
 a.color_secondary-black:hover, a.color_secondary-black:hover * {
@@ -247,7 +247,7 @@ a.color_secondary-darkest\!:hover, a.color_secondary-darkest\!:hover * {
 }
 
 .color_secondary-black\!, .color_secondary-black\! > * {
-  color: #612f05 !important;
+  color: #492304 !important;
 }
 
 a.color_secondary-black\!:hover, a.color_secondary-black\!:hover * {
@@ -311,7 +311,7 @@ a.color3-darkest:hover, a.color3-darkest:hover * {
 }
 
 .color3-black, .color3-black > * {
-  color: #364e18;
+  color: #283a12;
 }
 
 a.color3-black:hover, a.color3-black:hover * {
@@ -375,7 +375,7 @@ a.color3-darkest\!:hover, a.color3-darkest\!:hover * {
 }
 
 .color3-black\!, .color3-black\! > * {
-  color: #364e18 !important;
+  color: #283a12 !important;
 }
 
 a.color3-black\!:hover, a.color3-black\!:hover * {
@@ -439,7 +439,7 @@ a.color4-darkest:hover, a.color4-darkest:hover * {
 }
 
 .color4-black, .color4-black > * {
-  color: #264a1c;
+  color: #1d3715;
 }
 
 a.color4-black:hover, a.color4-black:hover * {
@@ -503,7 +503,7 @@ a.color4-darkest\!:hover, a.color4-darkest\!:hover * {
 }
 
 .color4-black\!, .color4-black\! > * {
-  color: #264a1c !important;
+  color: #1d3715 !important;
 }
 
 a.color4-black\!:hover, a.color4-black\!:hover * {

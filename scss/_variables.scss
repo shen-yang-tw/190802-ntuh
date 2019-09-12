@@ -77,7 +77,6 @@ $font-number-name:".font_number" !default;
 $focus-emphasis:"a:focus, button:focus, input:focus, select:focus, textarea:focus" !default;
 $focus-visible:".focus-visible" !default;
 $url-fix:"p, .urlFix" !default;
-$color-exclude:":not([class*=bg_]):not([class*=btn_]):not([class*=color_]):not([class*=text-])" !default;
 $text-shadow-black:".text_shadow-black" !default;
 $text-color-white:".color_white" !default;
 $text-color-black:".color_black" !default;
@@ -433,6 +432,7 @@ $uk-navbar-toggle:".uk-navbar-toggle" !default;
 $uk-navbar-toggle-icon:".uk-navbar-toggle-icon" !default;
 $uk-slideshow:".uk-slideshow" !default;
 $uk-light:".uk-light" !default;
+$uk-slider:".uk-slider" !default;
 $uk-slidenav:".uk-slidenav" !default;
 $uk-modal:".uk-modal" !default;
 $uk-modal-dialog-lightbox:".uk-modal-dialog-lightbox" !default;
@@ -480,9 +480,10 @@ $uk-uk-first-column:".uk-first-column" !default;
 $height-ie:".height_ie" !default;
 
 //### Exclude Selectors ###------------------------------------------------//
-$not-fa:":not([class*=fa-])" !default;
+$not-fa:":not([class^=fa-])" !default;
 $fa-exclude:":not(.fa-layers-text):not(.font_default)" !default;
-$not-bg:":not([class*=bg_]):not([class*=btn_])" !default;
+$color-exclude:":not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-])" !default;
+$not-bg:":not([class^=bg_]):not([class^=btn_])" !default;
 $not-uk-width:":not([class*=uk-width])" !default;
 
 //### Line Height ###------------------------------------------------//

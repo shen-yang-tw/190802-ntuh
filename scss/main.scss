@@ -97,19 +97,19 @@ button:focus {background-color: inherit;} //fix Materialize
 /*---------- Long words wrap (Parent tag CANNOT be inline-block or flex) ------------------------------*/
 #{$url-fix} {
   @include break-word;
-  >* {display:inline !important;}
+  >*:not(table) {display:inline !important;}
 }
 
 /*---------- Color ------------------------------*/
 #{$text-shadow-black} {text-shadow: 0px 1px 2px #000000;}
-#{$text-color-white}, #{$text-color-white} * {color:white;}
-#{$text-color-black}, #{$text-color-black} * {color:black;}
+#{$text-color-white}, #{$text-color-white} *, #{$hover}\:#{str-slice($text-color-white, 2, -1)}:hover, #{$hover}\:#{str-slice($text-color-white, 2, -1)}:hover * {color:white;}
+#{$text-color-black}, #{$text-color-black} *, #{$hover}\:#{str-slice($text-color-black, 2, -1)}:hover, #{$hover}\:#{str-slice($text-color-black, 2, -1)}:hover * {color:black;}
 #{$text-color-default}, #{$text-color-default} * {color:$color-text;}
 #{$text-color-dark}, #{$text-color-dark} * {color:$color-text-dark;}
 #{$text-color-grey}, #{$text-color-grey} * {color:$color-text-grey;}
 #{$text-color-grey}#{$disabled}, #{$text-color-grey}#{$disabled} * {color:$color-grey;}
-#{$text-color-white}\!, #{$text-color-white}\! * {color:white !important;}
-#{$text-color-black}\!, #{$text-color-black}\! * {color:black !important;}
+#{$text-color-white}\!, #{$text-color-white}\! *, #{$hover}\:#{str-slice($text-color-white, 2, -1)}\!:hover, #{$hover}\:#{str-slice($text-color-white, 2, -1)}\!:hover * {color:white !important;}
+#{$text-color-black}\!, #{$text-color-black}\! *, #{$hover}\:#{str-slice($text-color-black, 2, -1)}\!:hover, #{$hover}\:#{str-slice($text-color-black, 2, -1)}\!:hover * {color:black !important;}
 #{$text-color-default}\!, #{$text-color-default}\! * {color:$color-text !important;}
 #{$text-color-dark}\!, #{$text-color-dark}\! * {color:$color-text-dark !important;}
 #{$text-color-grey}\!, #{$text-color-grey}\! * {color:$color-text-grey !important;}
@@ -489,7 +489,9 @@ button:focus {background-color: inherit;} //fix Materialize
 $brand-text:$text-color-facebook $facebook, $text-color-twitter $twitter, $text-color-googleplus $googleplus, $text-color-linkedin $linkedin, $text-color-line $line;
 @each $name, $color in $brand-text {
   #{$name} {&, & * {color:$color;}}
+  #{$name}\! {&, & * {color:$color !important;}}
   a#{$name}:hover, a#{$name}:hover * {color:darken($color, 10%);}
+  a#{$name}\!:hover, a#{$name}\!:hover * {color:darken($color, 10%) !important;}
 }
 $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googleplus, $bg-linkedin $linkedin, $bg-line $line;
 @each $name, $color in $brand-bg {
@@ -497,6 +499,17 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
 }
 @each $name, $color in $brand-bg {
   @include bg-color($selector:$name, $bg-color:$color, $important:true)
+}
+$hover-brand-bg:"bg_facebook" $facebook, "bg_twitter" $twitter, "bg_googleplus" $googleplus, "bg_linkedin" $linkedin, "bg_line" $line;
+@each $name, $color in $hover-brand-bg {
+  // .hover\:#{$name}, .hover\:#{$name} * {color:text-color($color);}
+  a.hover\:#{$name}:hover, a.hover\:#{$name}:hover * {color:lighten(text-color($color), 10%);}
+  a.hover\:#{$name}:hover {background-color:$color;}
+}
+@each $name, $color in $hover-brand-bg {
+  // .hover\:#{$name}\!, .hover\:#{$name}\! * {color:text-color($color) !important;}
+  a.hover\:#{$name}\!:hover, a.hover\:#{$name}\!:hover * {color:lighten(text-color($color), 10%) !important;}
+  a.hover\:#{$name}\!:hover {background-color:$color !important;}
 }
 @include min-max($selector:$bg-white-opacity, $percent:100, $min:.1, $max:.95, $step:.05, $bg:true);
 @include min-max($selector:$bg-black-opacity, $percent:100, $min:.1, $max:.95, $step:.05, $bg:true, $color-val:black);
@@ -784,12 +797,10 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
 #{$min-width} {@include grid-width($property:min-width, $important:true)}
 #{$max-width} {@include grid-width($property:max-width)}
 #{$max-width} {@include grid-width($property:max-width, $important:true)}
-@include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height);
-@include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height);
-@include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height);
-@include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height);
-@include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height);
-@include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height);
+@include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px);
+@include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px);
+@include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $important:true);
+@include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px, $important:true);
 
 /*uk-@s*/
 @media (min-width:640px) {
@@ -801,12 +812,10 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
   #{$min-width} {@include grid-width($property:min-width, $important:true, $media:\@s)}
   #{$max-width} {@include grid-width($property:max-width, $media:\@s)}
   #{$max-width} {@include grid-width($property:max-width, $important:true, $media:\@s)}
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@s);
-  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@s);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@s);
-  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@s);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@s);
-  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@s);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@s);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px, $media:\@s);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@s, $important:true);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px, $media:\@s, $important:true);
 }
 
 /*uk-@m*/
@@ -819,12 +828,10 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
   #{$min-width} {@include grid-width($property:min-width, $important:true, $media:\@m)}
   #{$max-width} {@include grid-width($property:max-width, $media:\@m)}
   #{$max-width} {@include grid-width($property:max-width, $important:true, $media:\@m)}
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@m);
-  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@m);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@m);
-  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@m);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@m);
-  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@m);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@m);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px, $media:\@m);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@m, $important:true);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px, $media:\@m, $important:true);
 }
 
 /*uk-@l*/
@@ -837,12 +844,10 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
   #{$min-width} {@include grid-width($property:min-width, $important:true, $media:\@l)}
   #{$max-width} {@include grid-width($property:max-width, $media:\@l)}
   #{$max-width} {@include grid-width($property:max-width, $important:true, $media:\@l)}
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@l);
-  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@l);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@l);
-  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@l);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@l);
-  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@l);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@l);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px, $media:\@l);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@l, $important:true);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px, $media:\@l, $important:true);
 }
 
 /*uk-@xl*/
@@ -855,12 +860,10 @@ $brand-bg:$bg-facebook $facebook, $bg-twitter $twitter, $bg-googleplus $googlepl
   #{$min-width} {@include grid-width($property:min-width, $important:true, $media:\@xl)}
   #{$max-width} {@include grid-width($property:max-width, $media:\@xl)}
   #{$max-width} {@include grid-width($property:max-width, $important:true, $media:\@xl)}
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@xl);
-  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@xl);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@xl);
-  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@xl);
-  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $media:\@xl);
-  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $media:\@xl);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@xl);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px, $media:\@xl);
+  @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@xl, $important:true);
+  @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px, $media:\@xl, $important:true);
 }
 
 #{$overflow-hidden} {@include overflow-hidden($mask:true)}
@@ -1172,19 +1175,19 @@ address, dl, fieldset, figure, ol, p, pre, ul {
 #{$uk-offcanvas-bar} {padding-top: 40px !important;}
 #{$uk-offcanvas-close} {top: 10px;}
 
-#{$uk-slideshow} {
-  #{$uk-light} #{$uk-slidenav} * {
+#{$uk-slideshow}, #{$uk-slider} {
+  #{$uk-light} #{$uk-slidenav}:not([class*=-out]) * {
     color: rgba(255, 255, 255, 0) !important;
   }
   &:hover {
     #{$uk-light} #{$uk-slidenav} {
       * {color: rgba(255, 255, 255, 0.5) !important; text-shadow: 0 0 5px rgba(0, 0, 0, 0.7) !important;}
-      &-previous {background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);}
-      &-next {background: linear-gradient(to left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);}
+      &-previous:not([class*=-out]) {background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);}
+      &-next:not([class*=-out]) {background: linear-gradient(to left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);}
     }
   }
 }
-#{$uk-slideshow} #{$uk-light} #{$uk-slidenav}:hover *, #{$uk-modal-dialog-lightbox} #{$uk-lightbox-content} {color: rgba(255, 255, 255, 1) !important; text-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;}
+#{$uk-slideshow} #{$uk-light} #{$uk-slidenav}:hover *, #{$uk-slider} #{$uk-light} #{$uk-slidenav}:not([class*=-out]):hover *, #{$uk-modal-dialog-lightbox} #{$uk-lightbox-content} {color: rgba(255, 255, 255, 1) !important; text-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;}
 
 #{$uk-light} #{$uk-dotnav} {
   &>*>* {width: $space-l; height: $space-l; border: 1px solid white; @include box-shadow}

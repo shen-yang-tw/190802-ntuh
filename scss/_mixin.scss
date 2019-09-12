@@ -61,16 +61,16 @@
   @if $important {
     #{$selector}#{$suffix}, #{$selector}#{$suffix}>*  {
       // color:$color !important;
-      @if lightness($color) < 20% {color:change-color($color, $lightness: 20%) !important;}
-      @else if lightness($color) > 80% {color:change-color($color, $lightness: 80%) !important;}
+      @if lightness($color) < 10% {color:change-color($color, $lightness: 15%) !important;}
+      @else if lightness($color) > 90% {color:change-color($color, $lightness: 85%) !important;}
       @else {color:$color !important;}
     }
     #{$prefix}#{$selector}#{$suffix}:hover, #{$prefix}#{$selector}#{$suffix}:hover * {color:darken($color, 10%) !important;}
   } @else {
     #{$selector}#{$suffix}, #{$selector}#{$suffix}>*  {
       // color:$color;
-      @if lightness($color) < 20% {color:change-color($color, $lightness: 20%);}
-      @else if lightness($color) > 80% {color:change-color($color, $lightness: 80%);}
+      @if lightness($color) < 10% {color:change-color($color, $lightness: 15%);}
+      @else if lightness($color) > 90% {color:change-color($color, $lightness: 85%);}
       @else {color:$color;}
     }
     #{$prefix}#{$selector}#{$suffix}:hover, #{$prefix}#{$selector}#{$suffix}:hover * {color:darken($color, 10%)}

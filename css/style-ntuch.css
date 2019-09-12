@@ -24,10 +24,29 @@ footer .logo_bg {
   background-color: transparent;
 }
 #footer, #footer *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), #footer *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) *:not([class*=bg]), footer, footer *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]), footer *:not([class*=bg]):not([class*=btn]):not([class*=color_]):not([class*=text-]) *:not([class*=bg]) {
-  color: #224319 !important;
+  color: #224319;
 }
 #footer *, #footer .uk-grid-divider > :not(.uk-first-column)::before, #footer.uk-grid-divider.uk-grid-stack > .uk-grid-margin::before, footer *, footer .uk-grid-divider > :not(.uk-first-column)::before, footer.uk-grid-divider.uk-grid-stack > .uk-grid-margin::before {
   border-color: #224319;
+}
+
+footer a.hover\:color_black\! * {
+  color: black !important;
+}
+footer a.hover\:color_black\!:hover * {
+  color: white !important;
+}
+
+footer > :nth-child(2) > :nth-child(2) > :last-child {
+  width: auto !important;
+}
+
+footer > :nth-child(2) > :nth-child(2) > :last-child > div {
+  margin-right: 10px !important;
+}
+
+a#AZ {
+  color: #224319 !important;
 }
 
 header > nav {
