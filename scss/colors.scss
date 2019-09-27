@@ -282,7 +282,7 @@ $border-color4-black:".border_color4-black" !default;
 
 #{$btn-primary} {
   @extend #{$bg-primary};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:$color-primary-hover;
     color:text-color($color-primary-hover) !important;
     text-decoration: none;
@@ -290,7 +290,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-primary-light} {
   @extend #{$bg-primary-light};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color-primary-light, 10%);
     color:text-color(darken($color-primary-light, 10%)) !important;
     text-decoration: none;
@@ -298,7 +298,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-primary-lighter} {
   @extend #{$bg-primary-lighter};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color-primary-lighter, 10%);
     color:text-color(darken($color-primary-lighter, 10%)) !important;
     text-decoration: none;
@@ -306,7 +306,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-primary-dark} {
   @extend #{$bg-primary-dark};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color-primary-dark, 10%);
     color:text-color(darken($color-primary-dark, 10%)) !important;
     text-decoration: none;
@@ -314,7 +314,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-primary-darker} {
   @extend #{$bg-primary-darker};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color-primary-darker, 10%);
     color:text-color(darken($color-primary-darker, 10%)) !important;
     text-decoration: none;
@@ -322,7 +322,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-primary-darkest} {
   @extend #{$bg-primary-darkest};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color-primary-darkest, 10%);
     color:text-color(darken($color-primary-darkest, 10%)) !important;
     text-decoration: none;
@@ -330,7 +330,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-secondary} {
   @extend #{$bg-secondary};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:$color-secondary-hover;
     color:text-color($color-secondary-hover) !important;
     text-decoration: none;
@@ -338,7 +338,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-secondary-light} {
   @extend #{$bg-secondary-light};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color-secondary-light, 10%);
     color:text-color(darken($color-secondary-light, 10%)) !important;
     text-decoration: none;
@@ -346,7 +346,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-secondary-lighter} {
   @extend #{$bg-secondary-lighter};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color-secondary-lighter, 10%);
     color:text-color(darken($color-secondary-lighter, 10%)) !important;
     text-decoration: none;
@@ -354,7 +354,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-secondary-dark} {
   @extend #{$bg-secondary-dark};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color-secondary-dark, 10%);
     color:text-color(darken($color-secondary-dark, 10%)) !important;
     text-decoration: none;
@@ -362,7 +362,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-secondary-darker} {
   @extend #{$bg-secondary-darker};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color-secondary-darker, 10%);
     color:text-color(darken($color-secondary-darker, 10%)) !important;
     text-decoration: none;
@@ -370,7 +370,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-secondary-darkest} {
   @extend #{$bg-secondary-darkest};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color-secondary-darkest, 10%);
     color:text-color(darken($color-secondary-darkest, 10%)) !important;
     text-decoration: none;
@@ -378,7 +378,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-color3} {
   @extend #{$bg-color3};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:$color3-hover;
     color:text-color($color3-hover) !important;
     text-decoration: none;
@@ -386,7 +386,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-color3-light} {
   @extend #{$bg-color3-light};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color3-light, 10%);
     color:text-color(darken($color3-light, 10%)) !important;
     text-decoration: none;
@@ -394,7 +394,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-color3-lighter} {
   @extend #{$bg-color3-lighter};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color3-lighter, 10%);
     color:text-color(darken($color3-lighter, 10%)) !important;
     text-decoration: none;
@@ -402,7 +402,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-color3-dark} {
   @extend #{$bg-color3-dark};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color3-dark, 10%);
     color:text-color(darken($color3-dark, 10%)) !important;
     text-decoration: none;
@@ -410,7 +410,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-color3-darker} {
   @extend #{$bg-color3-darker};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color3-darker, 10%);
     color:text-color(darken($color3-darker, 10%)) !important;
     text-decoration: none;
@@ -418,7 +418,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-color3-darkest} {
   @extend #{$bg-color3-darkest};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color3-darkest, 10%);
     color:text-color(darken($color3-darkest, 10%)) !important;
     text-decoration: none;
@@ -426,7 +426,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-color4} {
   @extend #{$bg-color4};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:$color4-hover;
     color:text-color($color4-hover) !important;
     text-decoration: none;
@@ -434,7 +434,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-color4-light} {
   @extend #{$bg-color4-light};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color4-light, 10%);
     color:text-color(darken($color4-light, 10%)) !important;
     text-decoration: none;
@@ -442,7 +442,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-color4-lighter} {
   @extend #{$bg-color4-lighter};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color4-lighter, 10%);
     color:text-color(darken($color4-lighter, 10%)) !important;
     text-decoration: none;
@@ -450,7 +450,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-color4-dark} {
   @extend #{$bg-color4-dark};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color4-dark, 10%);
     color:text-color(darken($color4-dark, 10%)) !important;
     text-decoration: none;
@@ -458,7 +458,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-color4-darker} {
   @extend #{$bg-color4-darker};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color4-darker, 10%);
     color:text-color(darken($color4-darker, 10%)) !important;
     text-decoration: none;
@@ -466,7 +466,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$btn-color4-darkest} {
   @extend #{$bg-color4-darkest};
-  &#{$active}, &:hover {
+  &#{$active}, &:hover, &:focus {
     background-color:darken($color4-darkest, 10%);
     color:text-color(darken($color4-darkest, 10%)) !important;
     text-decoration: none;
@@ -643,8 +643,8 @@ $border-color4-black:".border_color4-black" !default;
 
 #{$list-tabs}, #{$list-tabs-bullet} {
   >li {
-    &#{$active}, &#{$active}>a, & #{$active}>a, & #{$uk-active}>a {
-      background-color:$color-primary;
+    &#{$active}>a, &#{$active}>a:focus, &#{$active}>a:hover, & #{$active}>a, & #{$uk-active}>a {
+      background-color:$color-primary !important;
       border-color:$color-primary;
       color:text-color($color-primary);
     }
@@ -652,7 +652,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$list-tabs-secondary}, #{$list-tabs-bullet}#{$list-tabs-secondary} {
   >li {
-    &#{$active}, &#{$active}>a, & #{$active}>a, & #{$uk-active}>a {
+    &#{$active}>a, &#{$active}>a:focus, &#{$active}>a:hover, & #{$active}>a, & #{$uk-active}>a {
       background-color:$color-secondary;
       border-color:$color-secondary;
       color:text-color($color-secondary);
@@ -661,7 +661,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$list-tabs-color3}, #{$list-tabs-bullet}#{$list-tabs-color3} {
   >li {
-    &#{$active}, &#{$active}>a, & #{$active}>a, & #{$uk-active}>a {
+    &#{$active}>a, &#{$active}>a:focus, &#{$active}>a:hover, & #{$active}>a, & #{$uk-active}>a {
       background-color:$color3;
       border-color:$color3;
       color:text-color($color3);
@@ -670,7 +670,7 @@ $border-color4-black:".border_color4-black" !default;
 }
 #{$list-tabs-color4}, #{$list-tabs-bullet}#{$list-tabs-color4} {
   >li {
-    &#{$active}, &#{$active}>a, & #{$active}>a, & #{$uk-active}>a {
+    &#{$active}>a, &#{$active}>a:focus, &#{$active}>a:hover, & #{$active}>a, & #{$uk-active}>a {
       background-color:$color4;
       border-color:$color4;
       color:text-color($color4);

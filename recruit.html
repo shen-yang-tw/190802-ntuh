@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <!-- saved from url=(0014)about:internet -->
 <html class="text-m" lang="zh-Hant-TW" xml:lang="zh-Hant">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
   <!-- Fix phone number style for MS Edge -->
   <meta name="Designer&Developer" content="楊軒羽 Shen Yang | Graphic Web Designer & Front-end Developer | 前端設計工程師">
-	<title>Document</title>
+  <title>Document</title>
   <link rel="stylesheet" href="css/uikit.min.css">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <link rel="stylesheet" href="css/fontawesome-svg-with-js.min.css">
@@ -17,6 +18,7 @@
   <link rel="stylesheet" href="css/colors.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body id="top" class="uk-background-cover uk-background-top-center uk-position-relative" uk-height-viewport>
   <a id="gototop" class="color_white bg_black_opacity-50 hover:bg_black_opacity-70 opacity-0 no-underline p-2 rounded uk-text-center uk-position-fixed uk-position-small uk-position-bottom-right uk-position-z-index" href="#top" title="回到最上" uk-scroll uk-totop><span hidden>回到最上</span></a>
   <header class="shadow">
@@ -239,14 +241,14 @@
               <li class="inline-block"><a class="mx-2" href="#">Item</a></li>
             </ul>
           </li>
-    <li class="uk-parent">
+          <li class="uk-parent">
             <a href="#">為民服務</a>
             <ul class="uk-nav-sub">
               <li class="inline-block"><a class="mx-2" href="#">Item</a></li>
               <li class="inline-block"><a class="mx-2" href="#">Item</a></li>
             </ul>
           </li>
-    <li class="uk-parent">
+          <li class="uk-parent">
             <a href="#">教學研究</a>
             <ul class="uk-nav-sub">
               <li class="inline-block"><a class="mx-2" href="#">Item</a></li>
@@ -281,23 +283,23 @@
             <div class="max_height-200 max_height-700@m uk-overflow-auto">
               <ul class="list_tabs uk-nav-parent-icon" uk-nav="multiple: true; animation: false">
                 <li class="uk-nav-header">
-                  <a href="#content">Level1</a>
+                  <a href="#content">Level1<small class="pseudo:parentheses">123</small></a>
                 </li>
                 <li class="uk-nav-header uk-parent uk-open">
                   <a href="#content">Level2<small class="pseudo:parentheses">123</small></a>
                   <ul>
-                    <li class="active"><a href="#content">Level2-Item-Active</a></li>
-                    <li><a href="#content">Level2-Item</a></li>
+                    <li class="active"><a href="#content">Level2-Item-Active<small class="pseudo:parentheses">123</small></a></li>
+                    <li><a href="#content">Level2-Item<small class="pseudo:parentheses">123</small></a></li>
                   </ul>
                 </li>
                 <li class="uk-nav-header uk-parent">
-                  <a href="#">Level3</a>
+                  <a href="#">Level3<small class="pseudo:parentheses">123</small></a>
                   <ul>
                     <li>
-                      <a href="#content">Title</a>
+                      <a href="#content">Title<small class="pseudo:parentheses">123</small></a>
                       <ul>
-                        <li><a href="#content">Level3-Item</a></li>
-                        <li><a href="#content">Level3-Item</a></li>
+                        <li><a href="#content">Level3-Item<small class="pseudo:parentheses">123</small></a></li>
+                        <li><a href="#content">Level3-Item<small class="pseudo:parentheses">123</small></a></li>
                       </ul>
                     </li>
                   </ul>
@@ -308,139 +310,137 @@
           <div class="uk-width-expand@m">
             <h2 class="btm_line text-2xl">徵才資訊<small class="mt-2 uk-float-right"><a class="no-underline" href="#"><i class="mr-1 fas fa-angle-left"></i>回列表</a></small></h2>
             <p></p>
-            <form>
-              <div id="content">
-                <div class="uk-grid-small" uk-grid>
-                  <div class="uk-width-2-3@s uk-width-3-4@m">
-                    <input class="uk-input" type="text" placeholder="請輸入內容">
-                  </div>
-                  <div class="uk-width-expand"><button class="btn_primary w-full uk-button uk-button-primary">搜尋</button></div>
-                  <div class="uk-width-1-1">
-                    <div class="btm_line border-dashed">
-                      <div class="uk-grid-small uk-flex-bottom" uk-grid>
-                        <div class="uk-width-1-1 uk-width-expand@s">
-                          <span class="">檢索結果：共<span>123</span>人</span>
-                          <span class="">檢索詞：<strong class="color_secondary">癌症</strong></span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="pagination">
-                      <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-auto uk-flex-middle uk-flex-center">
-                        <div>
-                          <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="首頁"><i class="fas fa-angle-double-left fa-fw"></i></a>
-                          <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="上一頁"><i class="fas fa-angle-left fa-fw"></i></a>
-                          <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="首頁" hidden><i class="fas fa-angle-double-left fa-fw"></i></a>
-                          <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="上一頁" hidden><i class="fas fa-angle-left fa-fw"></i></a>
-                        </div>
-                        <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-middle uk-margin">
-                          <select class="w-auto uk-select uk-form-small">
-                            <option selected>1</option>
-                            <option>2</option>
-                          </select>
-                          <span class="mx-1">/<span class="pl-1">20</span></span>
-                        </div>
-                        <div>
-                          <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="下一頁"><i class="fas fa-angle-right fa-fw"></i></a>
-                          <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="末頁"><i class="fas fa-angle-double-right fa-fw"></i></a>
-                          <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="下一頁" hidden><i class="fas fa-chevron-right fa-fw"></i></a>
-                          <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="末頁" hidden><i class="fas fa-chevron-double-right fa-fw"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- pagination / select number -->
-                    <div class="uk-overflow-auto">
-                      <table class="uk-table uk-table-small uk-table-striped uk-table-responsive">
-                        <thead>
-                          <tr>
-                            <th class="uk-table-shrink uk-text-nowrap">公告日期</th>
-                            <th class="uk-table-shrink uk-text-nowrap">用人單位</th>
-                            <th class="uk-table-shrink uk-text-nowrap">職稱</th>
-                            <th class="uk-table-shrink uk-text-nowrap">截止日期</th>
-                            <th class="uk-table-shrink uk-text-nowrap">備註</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="uk-table-shrink uk-text-nowrap"><time>2018-10-1</time></td>
-                            <td class="uk-table-shrink"><span class="grey darken-1 text-white text-xs px-2 mr-1 uk-hidden@m">用人單位</span>癌醫中心醫院-護理部</td>
-                            <td class="uk-table-shrink uk-text-nowrap"><span class="grey darken-1 text-white text-xs px-2 mr-1 uk-hidden@m">職稱</span>院聘門診護理師</td>
-                            <td class="uk-table-shrink uk-text-nowrap"><span class="grey darken-1 text-white text-xs px-2 mr-1 uk-hidden@m">截止日期</span><time>2018-10-1</time></td>
-                            <td class="uk-table-expand">
-                              <ul class="mb-2">
-                                <li class="uk-grid-collapse uk-child-width-expand" uk-grid>
-                                  <div class="mr-2 uk-width-auto"><i class="fas fa-circle fa-xs" data-fa-transform="shrink-8"></i></div>
-                                  <div class="uk-width-expand">
-                                    <span class="color_secondary-text! pseudo:comma_ch inline"><a href="#">甄選簡則.PDF</a></span>
-                                  </div>
-                                </li>
-                                <li class="uk-grid-collapse uk-child-width-expand" uk-grid>
-                                  <div class="mr-2 uk-width-auto"><i class="fas fa-circle fa-xs" data-fa-transform="shrink-8"></i></div>
-                                  <div class="uk-width-expand">
-                                    <span class="color_secondary-text! pseudo:comma_ch inline"><a href="#">計畫聘任人員甄選登記表PDF</a></span>
-                                    <span class="color_secondary-text! pseudo:comma_ch inline"><a href="#">WORD</a></span>
-                                    <span class="color_secondary-text! pseudo:comma_ch inline"><a href="#">ODT</a></span>
-                                  </div>
-                                </li>
-                              </ul>
-                              <p class="mb-2">※本院現職人員如欲報名不同部門職缺需經現職單位主管於甄選登記表核章。</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="uk-table-shrink uk-text-nowrap"><time>2018-10-1</time></td>
-                            <td class="uk-table-shrink"><span class="grey darken-1 text-white text-xs px-2 mr-1 uk-hidden@m">用人單位</span>癌醫中心醫院-護理部</td>
-                            <td class="uk-table-shrink uk-text-nowrap"><span class="grey darken-1 text-white text-xs px-2 mr-1 uk-hidden@m">職稱</span>院聘門診護理師</td>
-                            <td class="uk-table-shrink uk-text-nowrap"><span class="grey darken-1 text-white text-xs px-2 mr-1 uk-hidden@m">截止日期</span><time>2018-10-1</time></td>
-                            <td class="uk-table-expand">
-                              <ul class="mb-2">
-                                <li class="uk-grid-collapse uk-child-width-expand" uk-grid>
-                                  <div class="mr-2 uk-width-auto"><i class="fas fa-circle fa-xs" data-fa-transform="shrink-8"></i></div>
-                                  <div class="uk-width-expand">
-                                    <span class="color_secondary-text! pseudo:comma_ch inline"><a href="#">甄選簡則.PDF</a></span>
-                                  </div>
-                                </li>
-                                <li class="uk-grid-collapse uk-child-width-expand" uk-grid>
-                                  <div class="mr-2 uk-width-auto"><i class="fas fa-circle fa-xs" data-fa-transform="shrink-8"></i></div>
-                                  <div class="uk-width-expand">
-                                    <span class="color_secondary-text! pseudo:comma_ch inline"><a href="#">相關資料請至癌醫中心醫院網站查閱下載</a></span>
-                                  </div>
-                                </li>
-                              </ul>
-                              <p class="mb-2">※本院現職人員如欲報名不同部門職缺需經現職單位主管於甄選登記表核章。</p>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="pagination">
-                      <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-auto uk-flex-middle uk-flex-center">
-                        <div>
-                          <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="首頁"><i class="fas fa-angle-double-left fa-fw"></i></a>
-                          <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="上一頁"><i class="fas fa-angle-left fa-fw"></i></a>
-                          <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="首頁" hidden><i class="fas fa-angle-double-left fa-fw"></i></a>
-                          <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="上一頁" hidden><i class="fas fa-angle-left fa-fw"></i></a>
-                        </div>
-                        <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-middle uk-margin">
-                          <select class="w-auto uk-select uk-form-small">
-                            <option selected>1</option>
-                            <option>2</option>
-                          </select>
-                          <span class="mx-1">/<span class="pl-1">20</span></span>
-                        </div>
-                        <div>
-                          <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="下一頁"><i class="fas fa-angle-right fa-fw"></i></a>
-                          <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="末頁"><i class="fas fa-angle-double-right fa-fw"></i></a>
-                          <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="下一頁" hidden><i class="fas fa-chevron-right fa-fw"></i></a>
-                          <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="末頁" hidden><i class="fas fa-chevron-double-right fa-fw"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- pagination / select number -->
-                  </div>
+            <div id="content">
+              <div class="uk-grid-small" uk-grid>
+                <div class="uk-width-2-3@s uk-width-3-4@m">
+                  <input class="uk-input" type="text" placeholder="請輸入內容">
                 </div>
-                <!-- Search bar & Table -->
+                <div class="uk-width-expand"><button class="btn_primary w-full uk-button uk-button-primary">搜尋</button></div>
+                <div class="uk-width-1-1">
+                  <div class="btm_line border-dashed">
+                    <div class="uk-grid-small uk-flex-bottom" uk-grid>
+                      <div class="uk-width-1-1 uk-width-expand@s">
+                        <span>檢索結果：共<span>123</span>人</span>
+                        <span>檢索詞：<strong class="color_secondary">癌症</strong></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pagination">
+                    <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-auto uk-flex-middle uk-flex-center">
+                      <div>
+                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="首頁"><i class="fas fa-angle-double-left fa-fw"></i></a>
+                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="上一頁"><i class="fas fa-angle-left fa-fw"></i></a>
+                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="首頁" hidden><i class="fas fa-angle-double-left fa-fw"></i></a>
+                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="上一頁" hidden><i class="fas fa-angle-left fa-fw"></i></a>
+                      </div>
+                      <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-middle uk-margin">
+                        <select class="w-auto uk-select uk-form-small">
+                          <option selected>1</option>
+                          <option>2</option>
+                        </select>
+                        <span class="mx-1">/<span class="pl-1">20</span></span>
+                      </div>
+                      <div>
+                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="下一頁"><i class="fas fa-angle-right fa-fw"></i></a>
+                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="末頁"><i class="fas fa-angle-double-right fa-fw"></i></a>
+                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="下一頁" hidden><i class="fas fa-chevron-right fa-fw"></i></a>
+                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="末頁" hidden><i class="fas fa-chevron-double-right fa-fw"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- pagination / select number -->
+                  <div class="uk-overflow-auto">
+                    <table class="uk-table uk-table-small uk-table-striped uk-table-responsive">
+                      <thead>
+                        <tr>
+                          <th class="min_width-1/5">公告日期</th>
+                          <th class="min_width-1/5">用人單位</th>
+                          <th class="min_width-1/10">職稱</th>
+                          <th class="min_width-2/5">截止日期</th>
+                          <th class="min_width-1/10">備註</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><time>2018-10-1</time></td>
+                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">用人單位</span>癌醫中心醫院-護理部</td>
+                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">職稱</span>院聘門診護理師</td>
+                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">截止日期</span><time>2018-10-1</time></td>
+                          <td>
+                            <ul class="mb-2">
+                              <li class="uk-grid-collapse uk-child-width-expand" uk-grid>
+                                <div class="mr-2 uk-width-auto"><i class="fas fa-circle fa-xs" data-fa-transform="shrink-8"></i></div>
+                                <div class="uk-width-expand">
+                                  <span class="color_secondary-text! pseudo:comma_ch inline"><a href="#">甄選簡則.PDF</a></span>
+                                </div>
+                              </li>
+                              <li class="uk-grid-collapse uk-child-width-expand" uk-grid>
+                                <div class="mr-2 uk-width-auto"><i class="fas fa-circle fa-xs" data-fa-transform="shrink-8"></i></div>
+                                <div class="uk-width-expand">
+                                  <span class="color_secondary-text! pseudo:comma_ch inline"><a href="#">計畫聘任人員甄選登記表PDF</a></span>
+                                  <span class="color_secondary-text! pseudo:comma_ch inline"><a href="#">WORD</a></span>
+                                  <span class="color_secondary-text! pseudo:comma_ch inline"><a href="#">ODT</a></span>
+                                </div>
+                              </li>
+                            </ul>
+                            <p class="mb-2">※本院現職人員如欲報名不同部門職缺需經現職單位主管於甄選登記表核章。</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><time>2018-10-1</time></td>
+                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">用人單位</span>癌醫中心醫院-護理部</td>
+                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">職稱</span>院聘門診護理師</td>
+                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">截止日期</span><time>2018-10-1</time></td>
+                          <td>
+                            <ul class="mb-2">
+                              <li class="uk-grid-collapse uk-child-width-expand" uk-grid>
+                                <div class="mr-2 uk-width-auto"><i class="fas fa-circle fa-xs" data-fa-transform="shrink-8"></i></div>
+                                <div class="uk-width-expand">
+                                  <span class="color_secondary-text! pseudo:comma_ch inline"><a href="#">甄選簡則.PDF</a></span>
+                                </div>
+                              </li>
+                              <li class="uk-grid-collapse uk-child-width-expand" uk-grid>
+                                <div class="mr-2 uk-width-auto"><i class="fas fa-circle fa-xs" data-fa-transform="shrink-8"></i></div>
+                                <div class="uk-width-expand">
+                                  <span class="color_secondary-text! pseudo:comma_ch inline"><a href="#">相關資料請至癌醫中心醫院網站查閱下載</a></span>
+                                </div>
+                              </li>
+                            </ul>
+                            <p class="mb-2">※本院現職人員如欲報名不同部門職缺需經現職單位主管於甄選登記表核章。</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="pagination">
+                    <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-auto uk-flex-middle uk-flex-center">
+                      <div>
+                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="首頁"><i class="fas fa-angle-double-left fa-fw"></i></a>
+                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="上一頁"><i class="fas fa-angle-left fa-fw"></i></a>
+                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="首頁" hidden><i class="fas fa-angle-double-left fa-fw"></i></a>
+                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="上一頁" hidden><i class="fas fa-angle-left fa-fw"></i></a>
+                      </div>
+                      <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-middle uk-margin">
+                        <select class="w-auto uk-select uk-form-small">
+                          <option selected>1</option>
+                          <option>2</option>
+                        </select>
+                        <span class="mx-1">/<span class="pl-1">20</span></span>
+                      </div>
+                      <div>
+                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="下一頁"><i class="fas fa-angle-right fa-fw"></i></a>
+                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="末頁"><i class="fas fa-angle-double-right fa-fw"></i></a>
+                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="下一頁" hidden><i class="fas fa-chevron-right fa-fw"></i></a>
+                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="末頁" hidden><i class="fas fa-chevron-double-right fa-fw"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- pagination / select number -->
+                </div>
               </div>
-              <!-- End #content -->
-            </form>
+              <!-- Search bar & Table -->
+            </div>
+            <!-- End #content -->
             <small>資料來源：<span>人事室 楊先生</span>　　更新時間：<time>即時更新</time></small>
           </div>
         </div>
@@ -460,17 +460,17 @@
       <div class="uk-modal-body">
         <form>
           <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
-            <div class="min_width1_2!@m">
+            <div class="min_width-1/2!@m">
               <input class="uk-input" type="email" placeholder="請輸入個人信箱">
             </div>
-            <div class="min_width1_2!@m">
+            <div class="min_width-1/2!@m">
               <input class="uk-input" type="password" placeholder="6-15碼英數混合密碼">
               <p class="mt-1 uk-text-small">英文字母需區分大小寫</p>
             </div>
-            <div class="min_width1_2!@m">
+            <div class="min_width-1/2!@m">
               <input class="uk-input" type="number" placeholder="請輸入圖形6碼數字">
             </div>
-            <div class="min_width1_2!@m">
+            <div class="min_width-1/2!@m">
               <!-- <img src="http://fakeimg.pl/150x40/"> -->
               <img src="http://fakeimg.pl/150x40/" width="150" height="40" alt="驗證碼" uk-img>
             </div>
@@ -480,13 +480,13 @@
       </div>
       <div class="uk-modal-footer">
         <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
-          <div class="min_width1_2!@m">
-            <a class="" href="#register" uk-toggle>會員註冊</a>
-            <a class="" href="#">忘記密碼</a>
+          <div class="min_width-1/2!@m">
+            <a href="#register" uk-toggle>會員註冊</a>
+            <a href="#">忘記密碼</a>
           </div>
-          <div class="min_width1_2!@m text-lg-right">
-            <a href="#" class="btn_primary uk-button uk-button-primary">登　　入</a>
-            <button class="uk-button uk-button-default uk-modal-close" type="button">取　　消</button>
+          <div class="margin_y_child-all min_width-1/2!@m s:text-right">
+            <a href="#" class="btn_primary min_width-120 uk-button uk-button-primary">登　　入</a>
+            <button class="min_width-120 uk-button uk-button-default uk-modal-close" type="button">取　　消</button>
           </div>
         </div>
       </div>
@@ -571,10 +571,10 @@
           </div>
         </form>
       </div>
-      <div class="text-lg-right uk-modal-footer" uk-margin>
-        <a href="#" class="btn_primary m-0 uk-button uk-button-primary">註　　冊</a>
-        <button class="uk-button uk-button-default uk-modal-close" type="button">取　　消</button>
-        <a href="#login" class="uk-button uk-button-default" uk-toggle>返回登入</a>
+      <div class="s:text-right uk-modal-footer" uk-margin>
+        <a href="#" class="btn_primary min_width-120 uk-button uk-button-primary">註　　冊</a>
+        <button class="min_width-120 uk-button uk-button-default uk-modal-close" type="button">取　　消</button>
+        <a href="#login" class="min_width-120 uk-button uk-button-default" uk-toggle>返回登入</a>
       </div>
     </div>
   </div>
@@ -669,7 +669,10 @@
                   <a class="hover:color_black! leading-none text-base text-center" href="#" title="instagram"><i class="fab fa-instagram fa-2x"></i></a>
                   <a class="hover:color_black! leading-none text-base text-center" href="#" title="line"><i class="fab fa-line fa-2x"></i></a>
                   <a class="hover:color_black! leading-none text-base text-center" href="#" title="twitter"><i class="fab fa-twitter fa-2x"></i></a>
-                  <a class="plurk hover:color_black!" href="#" title="plurk"><svg class="uk-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="33" height="33"><title></title><path d="M796.76,0H227.24C102.26,0,0,102.26,0,227.24V796.76C0,921.74,102.26,1024,227.24,1024H796.76c125,0,227.24-102.26,227.24-227.24V227.24C1024,102.26,921.74,0,796.76,0ZM216.57,438.07a36.36,36.36,0,0,1-11.84,14.12,36.92,36.92,0,1,1-22.63-67.07,36.87,36.87,0,1,1,60.25,9c2.9.62,5.15,3.36,9.36,4.57.31.09.59.14.89.21,8.58-22.28,20.7-40.42,34.21-51.93,12.38-10.54,25.91-15.56,38.94-12.95,33.41,6.69,50.81,60.51,38.86,120.22s-48.73,102.7-82.14,96c-23.46-4.7-39-32.65-42-69.52a168.27,168.27,0,0,1-.51-18A66.88,66.88,0,0,1,216.57,438.07Zm645.15-25.61c-6.48,14-23,30.42-32.07,38.75q2.39,13.28,3.59,26.92a301.88,301.88,0,0,1-36.66,173.19,8.91,8.91,0,0,0,1.6,10.84l7.89,7.49a27.29,27.29,0,0,1,1,38.47l-37.79,39.79-6.74-6.33A7.84,7.84,0,1,0,751.8,753l6.29,5.92.11.1c-.54.4-1.11.81-1.67,1.17a27.27,27.27,0,0,1-33.68-2.93l-4.91-4.67a9,9,0,0,0-11.38-.74,302.51,302.51,0,0,1-363-9.76,8.91,8.91,0,0,0-11.22,0l-7.73,6.28a27.29,27.29,0,0,1-38.28-4L251.05,701l1.1-.84,7.36-5.61A7.84,7.84,0,1,0,250,682.1l-6.87,5.23-1.52,1.16a28.76,28.76,0,0,1-1.78-4.27c-.05-.17-.11-.33-.17-.5a28.31,28.31,0,0,1-1-4.54,27.18,27.18,0,0,1,9.73-24.57l8.3-6.75A8.91,8.91,0,0,0,259,637a301.17,301.17,0,0,1-28.15-96.84c-.25-2.15-.49-4.3-.69-6.47-.19-2-.41-4-.56-6q-.49-6.61-.71-13.31c0-.59-.08-1.17-.09-1.77s0-1.46,0-2.2c-.07-4-.08-8,0-12,0-.52,0-1,0-1.56,0,.06,0,.11,0,.16,4,47.61,24.05,83.68,54.34,89.75,43.22,8.65,90.78-46.94,106.24-124.16s-7.05-146.83-50.27-155.48c-8.92-1.79-18-.74-27,2.61-.58.26-1.16.47-1.74.71a80.12,80.12,0,0,0-21.5,13.35l-.11.08c.21-.27.44-.53.64-.8,2.54-3.38,5.2-6.65,7.87-9.91,58.53-71.5,149.1-116,250.6-110.79,120.13,6.21,223,84.24,265.55,192,13.3,3,24.29-.39,38.58-5.71C870.41,381.85,868.67,397.38,861.72,412.46ZM277.05,510.79c21.77,4.35,45.73-23.65,53.51-62.54s-3.55-74-25.31-78.32c-8.49-1.7-17.3,1.57-25.37,8.44C273.71,383.63,268,391,263.18,400c9.51-.71,15.82-5.39,26.52-1.5,13.72,5,21.58,43.63,11.19,57.57-8.05,10.8-18.38,16.12-34.18,15.4a53,53,0,0,1-16.8-3.67C252.35,490.65,262.27,507.83,277.05,510.79Z" fill="#ff574d"/></svg></a>
+                  <a class="plurk hover:color_black!" href="#" title="plurk"><svg class="uk-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="33" height="33">
+                      <title></title>
+                      <path d="M796.76,0H227.24C102.26,0,0,102.26,0,227.24V796.76C0,921.74,102.26,1024,227.24,1024H796.76c125,0,227.24-102.26,227.24-227.24V227.24C1024,102.26,921.74,0,796.76,0ZM216.57,438.07a36.36,36.36,0,0,1-11.84,14.12,36.92,36.92,0,1,1-22.63-67.07,36.87,36.87,0,1,1,60.25,9c2.9.62,5.15,3.36,9.36,4.57.31.09.59.14.89.21,8.58-22.28,20.7-40.42,34.21-51.93,12.38-10.54,25.91-15.56,38.94-12.95,33.41,6.69,50.81,60.51,38.86,120.22s-48.73,102.7-82.14,96c-23.46-4.7-39-32.65-42-69.52a168.27,168.27,0,0,1-.51-18A66.88,66.88,0,0,1,216.57,438.07Zm645.15-25.61c-6.48,14-23,30.42-32.07,38.75q2.39,13.28,3.59,26.92a301.88,301.88,0,0,1-36.66,173.19,8.91,8.91,0,0,0,1.6,10.84l7.89,7.49a27.29,27.29,0,0,1,1,38.47l-37.79,39.79-6.74-6.33A7.84,7.84,0,1,0,751.8,753l6.29,5.92.11.1c-.54.4-1.11.81-1.67,1.17a27.27,27.27,0,0,1-33.68-2.93l-4.91-4.67a9,9,0,0,0-11.38-.74,302.51,302.51,0,0,1-363-9.76,8.91,8.91,0,0,0-11.22,0l-7.73,6.28a27.29,27.29,0,0,1-38.28-4L251.05,701l1.1-.84,7.36-5.61A7.84,7.84,0,1,0,250,682.1l-6.87,5.23-1.52,1.16a28.76,28.76,0,0,1-1.78-4.27c-.05-.17-.11-.33-.17-.5a28.31,28.31,0,0,1-1-4.54,27.18,27.18,0,0,1,9.73-24.57l8.3-6.75A8.91,8.91,0,0,0,259,637a301.17,301.17,0,0,1-28.15-96.84c-.25-2.15-.49-4.3-.69-6.47-.19-2-.41-4-.56-6q-.49-6.61-.71-13.31c0-.59-.08-1.17-.09-1.77s0-1.46,0-2.2c-.07-4-.08-8,0-12,0-.52,0-1,0-1.56,0,.06,0,.11,0,.16,4,47.61,24.05,83.68,54.34,89.75,43.22,8.65,90.78-46.94,106.24-124.16s-7.05-146.83-50.27-155.48c-8.92-1.79-18-.74-27,2.61-.58.26-1.16.47-1.74.71a80.12,80.12,0,0,0-21.5,13.35l-.11.08c.21-.27.44-.53.64-.8,2.54-3.38,5.2-6.65,7.87-9.91,58.53-71.5,149.1-116,250.6-110.79,120.13,6.21,223,84.24,265.55,192,13.3,3,24.29-.39,38.58-5.71C870.41,381.85,868.67,397.38,861.72,412.46ZM277.05,510.79c21.77,4.35,45.73-23.65,53.51-62.54s-3.55-74-25.31-78.32c-8.49-1.7-17.3,1.57-25.37,8.44C273.71,383.63,268,391,263.18,400c9.51-.71,15.82-5.39,26.52-1.5,13.72,5,21.58,43.63,11.19,57.57-8.05,10.8-18.38,16.12-34.18,15.4a53,53,0,0,1-16.8-3.67C252.35,490.65,262.27,507.83,277.05,510.79Z" fill="#ff574d" />
+                    </svg></a>
                 </div>
                 <div class="margin_x_child-m s:m-0 uk-flex uk-flex-middle">
                   <a class="bg_black min_width-80 text-center no-underline px-2 py-1" href="#" uk-toggle="target: #sitemap">網站地圖</a>
@@ -703,4 +706,5 @@
   <script>
   </script>
 </body>
+
 </html>

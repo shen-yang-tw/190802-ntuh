@@ -50,7 +50,7 @@ a#AZ {
 }
 
 header > nav {
-  background-color: #EDF2F7 !important;
+  background-color: #eeeeee !important;
 }
 
 header > :nth-child(2) > nav > :first-child {

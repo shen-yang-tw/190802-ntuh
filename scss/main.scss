@@ -122,6 +122,15 @@ button:focus {background-color: inherit;} //fix Materialize
 #{$text-grey-700} {color:$color-grey-700;}
 #{$text-grey-800} {color:$color-grey-800;}
 #{$text-grey-900} {color:$color-grey-900;}
+#{$text-bluegrey-100} {color:$color-bluegrey-100;}
+#{$text-bluegrey-200} {color:$color-bluegrey-200;}
+#{$text-bluegrey-300} {color:$color-bluegrey-300;}
+#{$text-bluegrey-400} {color:$color-bluegrey-400;}
+#{$text-bluegrey-500} {color:$color-bluegrey-500;}
+#{$text-bluegrey-600} {color:$color-bluegrey-600;}
+#{$text-bluegrey-700} {color:$color-bluegrey-700;}
+#{$text-bluegrey-800} {color:$color-bluegrey-800;}
+#{$text-bluegrey-900} {color:$color-bluegrey-900;}
 #{$text-red-100} {color:$color-red-100;}
 #{$text-red-200} {color:$color-red-200;}
 #{$text-red-300} {color:$color-red-300;}
@@ -217,6 +226,15 @@ button:focus {background-color: inherit;} //fix Materialize
 @include bg-color($selector:$bg-grey-700, $bg-color:$color-grey-700);
 @include bg-color($selector:$bg-grey-800, $bg-color:$color-grey-800);
 @include bg-color($selector:$bg-grey-900, $bg-color:$color-grey-900);
+@include bg-color($selector:$bg-bluegrey-100, $bg-color:$color-bluegrey-100);
+@include bg-color($selector:$bg-bluegrey-200, $bg-color:$color-bluegrey-200);
+@include bg-color($selector:$bg-bluegrey-300, $bg-color:$color-bluegrey-300);
+@include bg-color($selector:$bg-bluegrey-400, $bg-color:$color-bluegrey-400);
+@include bg-color($selector:$bg-bluegrey-500, $bg-color:$color-bluegrey-500);
+@include bg-color($selector:$bg-bluegrey-600, $bg-color:$color-bluegrey-600);
+@include bg-color($selector:$bg-bluegrey-700, $bg-color:$color-bluegrey-700);
+@include bg-color($selector:$bg-bluegrey-800, $bg-color:$color-bluegrey-800);
+@include bg-color($selector:$bg-bluegrey-900, $bg-color:$color-bluegrey-900);
 @include bg-color($selector:$bg-red-100, $bg-color:$color-red-100);
 @include bg-color($selector:$bg-red-200, $bg-color:$color-red-200);
 @include bg-color($selector:$bg-red-300, $bg-color:$color-red-300);
@@ -299,6 +317,1655 @@ button:focus {background-color: inherit;} //fix Materialize
 @include bg-color($selector:$bg-pink-800, $bg-color:$color-pink-800);
 @include bg-color($selector:$bg-pink-900, $bg-color:$color-pink-900);
 
+#{$btn-white} {
+  @extend #{$bg-white};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-white, 10%);
+    color:text-color(darken($color-white, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-black} {
+  @extend #{$bg-black};
+  &#{$active}, &:hover, &:focus {
+    background-color:lighten($color-black, 10%);
+    color:text-color(lighten($color-black, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-dark} {
+  @extend #{$bg-dark};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-dark, 10%);
+    color:text-color(darken($color-dark, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey} {
+  @extend #{$bg-grey};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey, 10%);
+    color:text-color(darken($color-grey, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-100} {
+  @extend #{$bg-grey-100};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-100, 10%);
+    color:text-color(darken($color-grey-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-200} {
+  @extend #{$bg-grey-200};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-200, 10%);
+    color:text-color(darken($color-grey-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-300} {
+  @extend #{$bg-grey-300};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-300, 10%);
+    color:text-color(darken($color-grey-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-400} {
+  @extend #{$bg-grey-400};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-400, 10%);
+    color:text-color(darken($color-grey-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-500} {
+  @extend #{$bg-grey-500};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-500, 10%);
+    color:text-color(darken($color-grey-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-600} {
+  @extend #{$bg-grey-600};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-600, 10%);
+    color:text-color(darken($color-grey-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-700} {
+  @extend #{$bg-grey-700};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-700, 10%);
+    color:text-color(darken($color-grey-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-800} {
+  @extend #{$bg-grey-800};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-800, 10%);
+    color:text-color(darken($color-grey-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-900} {
+  @extend #{$bg-grey-900};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-900, 10%);
+    color:text-color(darken($color-grey-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-100} {
+  @extend #{$bg-bluegrey-100};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-100, 10%);
+    color:text-color(darken($color-bluegrey-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-200} {
+  @extend #{$bg-bluegrey-200};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-200, 10%);
+    color:text-color(darken($color-bluegrey-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-300} {
+  @extend #{$bg-bluegrey-300};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-300, 10%);
+    color:text-color(darken($color-bluegrey-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-400} {
+  @extend #{$bg-bluegrey-400};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-400, 10%);
+    color:text-color(darken($color-bluegrey-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-500} {
+  @extend #{$bg-bluegrey-500};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-500, 10%);
+    color:text-color(darken($color-bluegrey-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-600} {
+  @extend #{$bg-bluegrey-600};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-600, 10%);
+    color:text-color(darken($color-bluegrey-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-700} {
+  @extend #{$bg-bluegrey-700};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-700, 10%);
+    color:text-color(darken($color-bluegrey-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-800} {
+  @extend #{$bg-bluegrey-800};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-800, 10%);
+    color:text-color(darken($color-bluegrey-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-900} {
+  @extend #{$bg-bluegrey-900};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-900, 10%);
+    color:text-color(darken($color-bluegrey-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-100} {
+  @extend #{$bg-red-100};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-100, 10%);
+    color:text-color(darken($color-red-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-200} {
+  @extend #{$bg-red-200};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-200, 10%);
+    color:text-color(darken($color-red-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-300} {
+  @extend #{$bg-red-300};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-300, 10%);
+    color:text-color(darken($color-red-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-400} {
+  @extend #{$bg-red-400};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-400, 10%);
+    color:text-color(darken($color-red-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-500} {
+  @extend #{$bg-red-500};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-500, 10%);
+    color:text-color(darken($color-red-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-600} {
+  @extend #{$bg-red-600};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-600, 10%);
+    color:text-color(darken($color-red-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-700} {
+  @extend #{$bg-red-700};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-700, 10%);
+    color:text-color(darken($color-red-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-800} {
+  @extend #{$bg-red-800};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-800, 10%);
+    color:text-color(darken($color-red-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-900} {
+  @extend #{$bg-red-900};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-900, 10%);
+    color:text-color(darken($color-red-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-100} {
+  @extend #{$bg-orange-100};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-100, 10%);
+    color:text-color(darken($color-orange-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-200} {
+  @extend #{$bg-orange-200};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-200, 10%);
+    color:text-color(darken($color-orange-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-300} {
+  @extend #{$bg-orange-300};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-300, 10%);
+    color:text-color(darken($color-orange-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-400} {
+  @extend #{$bg-orange-400};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-400, 10%);
+    color:text-color(darken($color-orange-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-500} {
+  @extend #{$bg-orange-500};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-500, 10%);
+    color:text-color(darken($color-orange-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-600} {
+  @extend #{$bg-orange-600};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-600, 10%);
+    color:text-color(darken($color-orange-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-700} {
+  @extend #{$bg-orange-700};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-700, 10%);
+    color:text-color(darken($color-orange-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-800} {
+  @extend #{$bg-orange-800};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-800, 10%);
+    color:text-color(darken($color-orange-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-900} {
+  @extend #{$bg-orange-900};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-900, 10%);
+    color:text-color(darken($color-orange-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-100} {
+  @extend #{$bg-yellow-100};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-100, 10%);
+    color:text-color(darken($color-yellow-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-200} {
+  @extend #{$bg-yellow-200};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-200, 10%);
+    color:text-color(darken($color-yellow-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-300} {
+  @extend #{$bg-yellow-300};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-300, 10%);
+    color:text-color(darken($color-yellow-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-400} {
+  @extend #{$bg-yellow-400};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-400, 10%);
+    color:text-color(darken($color-yellow-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-500} {
+  @extend #{$bg-yellow-500};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-500, 10%);
+    color:text-color(darken($color-yellow-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-600} {
+  @extend #{$bg-yellow-600};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-600, 10%);
+    color:text-color(darken($color-yellow-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-700} {
+  @extend #{$bg-yellow-700};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-700, 10%);
+    color:text-color(darken($color-yellow-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-800} {
+  @extend #{$bg-yellow-800};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-800, 10%);
+    color:text-color(darken($color-yellow-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-900} {
+  @extend #{$bg-yellow-900};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-900, 10%);
+    color:text-color(darken($color-yellow-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-100} {
+  @extend #{$bg-green-100};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-100, 10%);
+    color:text-color(darken($color-green-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-200} {
+  @extend #{$bg-green-200};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-200, 10%);
+    color:text-color(darken($color-green-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-300} {
+  @extend #{$bg-green-300};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-300, 10%);
+    color:text-color(darken($color-green-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-400} {
+  @extend #{$bg-green-400};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-400, 10%);
+    color:text-color(darken($color-green-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-500} {
+  @extend #{$bg-green-500};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-500, 10%);
+    color:text-color(darken($color-green-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-600} {
+  @extend #{$bg-green-600};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-600, 10%);
+    color:text-color(darken($color-green-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-700} {
+  @extend #{$bg-green-700};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-700, 10%);
+    color:text-color(darken($color-green-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-800} {
+  @extend #{$bg-green-800};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-800, 10%);
+    color:text-color(darken($color-green-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-900} {
+  @extend #{$bg-green-900};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-900, 10%);
+    color:text-color(darken($color-green-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-100} {
+  @extend #{$bg-teal-100};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-100, 10%);
+    color:text-color(darken($color-teal-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-200} {
+  @extend #{$bg-teal-200};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-200, 10%);
+    color:text-color(darken($color-teal-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-300} {
+  @extend #{$bg-teal-300};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-300, 10%);
+    color:text-color(darken($color-teal-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-400} {
+  @extend #{$bg-teal-400};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-400, 10%);
+    color:text-color(darken($color-teal-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-500} {
+  @extend #{$bg-teal-500};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-500, 10%);
+    color:text-color(darken($color-teal-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-600} {
+  @extend #{$bg-teal-600};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-600, 10%);
+    color:text-color(darken($color-teal-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-700} {
+  @extend #{$bg-teal-700};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-700, 10%);
+    color:text-color(darken($color-teal-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-800} {
+  @extend #{$bg-teal-800};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-800, 10%);
+    color:text-color(darken($color-teal-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-900} {
+  @extend #{$bg-teal-900};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-900, 10%);
+    color:text-color(darken($color-teal-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-100} {
+  @extend #{$bg-blue-100};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-100, 10%);
+    color:text-color(darken($color-blue-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-200} {
+  @extend #{$bg-blue-200};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-200, 10%);
+    color:text-color(darken($color-blue-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-300} {
+  @extend #{$bg-blue-300};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-300, 10%);
+    color:text-color(darken($color-blue-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-400} {
+  @extend #{$bg-blue-400};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-400, 10%);
+    color:text-color(darken($color-blue-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-500} {
+  @extend #{$bg-blue-500};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-500, 10%);
+    color:text-color(darken($color-blue-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-600} {
+  @extend #{$bg-blue-600};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-600, 10%);
+    color:text-color(darken($color-blue-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-700} {
+  @extend #{$bg-blue-700};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-700, 10%);
+    color:text-color(darken($color-blue-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-800} {
+  @extend #{$bg-blue-800};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-800, 10%);
+    color:text-color(darken($color-blue-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-900} {
+  @extend #{$bg-blue-900};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-900, 10%);
+    color:text-color(darken($color-blue-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-100} {
+  @extend #{$bg-indigo-100};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-100, 10%);
+    color:text-color(darken($color-indigo-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-200} {
+  @extend #{$bg-indigo-200};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-200, 10%);
+    color:text-color(darken($color-indigo-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-300} {
+  @extend #{$bg-indigo-300};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-300, 10%);
+    color:text-color(darken($color-indigo-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-400} {
+  @extend #{$bg-indigo-400};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-400, 10%);
+    color:text-color(darken($color-indigo-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-500} {
+  @extend #{$bg-indigo-500};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-500, 10%);
+    color:text-color(darken($color-indigo-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-600} {
+  @extend #{$bg-indigo-600};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-600, 10%);
+    color:text-color(darken($color-indigo-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-700} {
+  @extend #{$bg-indigo-700};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-700, 10%);
+    color:text-color(darken($color-indigo-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-800} {
+  @extend #{$bg-indigo-800};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-800, 10%);
+    color:text-color(darken($color-indigo-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-900} {
+  @extend #{$bg-indigo-900};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-900, 10%);
+    color:text-color(darken($color-indigo-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-100} {
+  @extend #{$bg-purple-100};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-100, 10%);
+    color:text-color(darken($color-purple-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-200} {
+  @extend #{$bg-purple-200};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-200, 10%);
+    color:text-color(darken($color-purple-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-300} {
+  @extend #{$bg-purple-300};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-300, 10%);
+    color:text-color(darken($color-purple-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-400} {
+  @extend #{$bg-purple-400};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-400, 10%);
+    color:text-color(darken($color-purple-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-500} {
+  @extend #{$bg-purple-500};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-500, 10%);
+    color:text-color(darken($color-purple-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-600} {
+  @extend #{$bg-purple-600};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-600, 10%);
+    color:text-color(darken($color-purple-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-700} {
+  @extend #{$bg-purple-700};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-700, 10%);
+    color:text-color(darken($color-purple-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-800} {
+  @extend #{$bg-purple-800};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-800, 10%);
+    color:text-color(darken($color-purple-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-900} {
+  @extend #{$bg-purple-900};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-900, 10%);
+    color:text-color(darken($color-purple-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-100} {
+  @extend #{$bg-pink-100};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-100, 10%);
+    color:text-color(darken($color-pink-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-200} {
+  @extend #{$bg-pink-200};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-200, 10%);
+    color:text-color(darken($color-pink-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-300} {
+  @extend #{$bg-pink-300};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-300, 10%);
+    color:text-color(darken($color-pink-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-400} {
+  @extend #{$bg-pink-400};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-400, 10%);
+    color:text-color(darken($color-pink-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-500} {
+  @extend #{$bg-pink-500};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-500, 10%);
+    color:text-color(darken($color-pink-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-600} {
+  @extend #{$bg-pink-600};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-600, 10%);
+    color:text-color(darken($color-pink-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-700} {
+  @extend #{$bg-pink-700};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-700, 10%);
+    color:text-color(darken($color-pink-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-800} {
+  @extend #{$bg-pink-800};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-800, 10%);
+    color:text-color(darken($color-pink-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-900} {
+  @extend #{$bg-pink-900};
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-900, 10%);
+    color:text-color(darken($color-pink-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-white}\! {
+  @extend #{$bg-white}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-white, 10%) !important;
+    color:text-color(darken($color-white, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-black}\! {
+  @extend #{$bg-black}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:lighten($color-black, 10%) !important;
+    color:text-color(lighten($color-black, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-dark}\! {
+  @extend #{$bg-dark}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-dark, 10%) !important;
+    color:text-color(darken($color-dark, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey}\! {
+  @extend #{$bg-grey}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey, 10%) !important;
+    color:text-color(darken($color-grey, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-100}\! {
+  @extend #{$bg-grey-100}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-100, 10%) !important;
+    color:text-color(darken($color-grey-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-200}\! {
+  @extend #{$bg-grey-200}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-200, 10%) !important;
+    color:text-color(darken($color-grey-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-300}\! {
+  @extend #{$bg-grey-300}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-300, 10%) !important;
+    color:text-color(darken($color-grey-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-400}\! {
+  @extend #{$bg-grey-400}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-400, 10%) !important;
+    color:text-color(darken($color-grey-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-500}\! {
+  @extend #{$bg-grey-500}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-500, 10%) !important;
+    color:text-color(darken($color-grey-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-600}\! {
+  @extend #{$bg-grey-600}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-600, 10%) !important;
+    color:text-color(darken($color-grey-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-700}\! {
+  @extend #{$bg-grey-700}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-700, 10%) !important;
+    color:text-color(darken($color-grey-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-800}\! {
+  @extend #{$bg-grey-800}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-800, 10%) !important;
+    color:text-color(darken($color-grey-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-grey-900}\! {
+  @extend #{$bg-grey-900}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-grey-900, 10%) !important;
+    color:text-color(darken($color-grey-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-100}\! {
+  @extend #{$bg-bluegrey-100}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-100, 10%) !important;
+    color:text-color(darken($color-bluegrey-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-200}\! {
+  @extend #{$bg-bluegrey-200}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-200, 10%) !important;
+    color:text-color(darken($color-bluegrey-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-300}\! {
+  @extend #{$bg-bluegrey-300}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-300, 10%) !important;
+    color:text-color(darken($color-bluegrey-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-400}\! {
+  @extend #{$bg-bluegrey-400}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-400, 10%) !important;
+    color:text-color(darken($color-bluegrey-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-500}\! {
+  @extend #{$bg-bluegrey-500}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-500, 10%) !important;
+    color:text-color(darken($color-bluegrey-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-600}\! {
+  @extend #{$bg-bluegrey-600}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-600, 10%) !important;
+    color:text-color(darken($color-bluegrey-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-700}\! {
+  @extend #{$bg-bluegrey-700}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-700, 10%) !important;
+    color:text-color(darken($color-bluegrey-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-800}\! {
+  @extend #{$bg-bluegrey-800}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-800, 10%) !important;
+    color:text-color(darken($color-bluegrey-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-bluegrey-900}\! {
+  @extend #{$bg-bluegrey-900}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-bluegrey-900, 10%) !important;
+    color:text-color(darken($color-bluegrey-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-100}\! {
+  @extend #{$bg-red-100}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-100, 10%) !important;
+    color:text-color(darken($color-red-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-200}\! {
+  @extend #{$bg-red-200}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-200, 10%) !important;
+    color:text-color(darken($color-red-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-300}\! {
+  @extend #{$bg-red-300}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-300, 10%) !important;
+    color:text-color(darken($color-red-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-400}\! {
+  @extend #{$bg-red-400}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-400, 10%) !important;
+    color:text-color(darken($color-red-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-500}\! {
+  @extend #{$bg-red-500}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-500, 10%) !important;
+    color:text-color(darken($color-red-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-600}\! {
+  @extend #{$bg-red-600}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-600, 10%) !important;
+    color:text-color(darken($color-red-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-700}\! {
+  @extend #{$bg-red-700}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-700, 10%) !important;
+    color:text-color(darken($color-red-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-800}\! {
+  @extend #{$bg-red-800}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-800, 10%) !important;
+    color:text-color(darken($color-red-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-red-900}\! {
+  @extend #{$bg-red-900}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-red-900, 10%) !important;
+    color:text-color(darken($color-red-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-100}\! {
+  @extend #{$bg-orange-100}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-100, 10%) !important;
+    color:text-color(darken($color-orange-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-200}\! {
+  @extend #{$bg-orange-200}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-200, 10%) !important;
+    color:text-color(darken($color-orange-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-300}\! {
+  @extend #{$bg-orange-300}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-300, 10%) !important;
+    color:text-color(darken($color-orange-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-400}\! {
+  @extend #{$bg-orange-400}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-400, 10%) !important;
+    color:text-color(darken($color-orange-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-500}\! {
+  @extend #{$bg-orange-500}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-500, 10%) !important;
+    color:text-color(darken($color-orange-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-600}\! {
+  @extend #{$bg-orange-600}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-600, 10%) !important;
+    color:text-color(darken($color-orange-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-700}\! {
+  @extend #{$bg-orange-700}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-700, 10%) !important;
+    color:text-color(darken($color-orange-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-800}\! {
+  @extend #{$bg-orange-800}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-800, 10%) !important;
+    color:text-color(darken($color-orange-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-orange-900}\! {
+  @extend #{$bg-orange-900}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-orange-900, 10%) !important;
+    color:text-color(darken($color-orange-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-100}\! {
+  @extend #{$bg-yellow-100}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-100, 10%) !important;
+    color:text-color(darken($color-yellow-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-200}\! {
+  @extend #{$bg-yellow-200}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-200, 10%) !important;
+    color:text-color(darken($color-yellow-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-300}\! {
+  @extend #{$bg-yellow-300}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-300, 10%) !important;
+    color:text-color(darken($color-yellow-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-400}\! {
+  @extend #{$bg-yellow-400}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-400, 10%) !important;
+    color:text-color(darken($color-yellow-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-500}\! {
+  @extend #{$bg-yellow-500}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-500, 10%) !important;
+    color:text-color(darken($color-yellow-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-600}\! {
+  @extend #{$bg-yellow-600}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-600, 10%) !important;
+    color:text-color(darken($color-yellow-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-700}\! {
+  @extend #{$bg-yellow-700}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-700, 10%) !important;
+    color:text-color(darken($color-yellow-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-800}\! {
+  @extend #{$bg-yellow-800}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-800, 10%) !important;
+    color:text-color(darken($color-yellow-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-yellow-900}\! {
+  @extend #{$bg-yellow-900}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-yellow-900, 10%) !important;
+    color:text-color(darken($color-yellow-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-100}\! {
+  @extend #{$bg-green-100}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-100, 10%) !important;
+    color:text-color(darken($color-green-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-200}\! {
+  @extend #{$bg-green-200}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-200, 10%) !important;
+    color:text-color(darken($color-green-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-300}\! {
+  @extend #{$bg-green-300}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-300, 10%) !important;
+    color:text-color(darken($color-green-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-400}\! {
+  @extend #{$bg-green-400}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-400, 10%) !important;
+    color:text-color(darken($color-green-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-500}\! {
+  @extend #{$bg-green-500}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-500, 10%) !important;
+    color:text-color(darken($color-green-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-600}\! {
+  @extend #{$bg-green-600}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-600, 10%) !important;
+    color:text-color(darken($color-green-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-700}\! {
+  @extend #{$bg-green-700}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-700, 10%) !important;
+    color:text-color(darken($color-green-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-800}\! {
+  @extend #{$bg-green-800}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-800, 10%) !important;
+    color:text-color(darken($color-green-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-green-900}\! {
+  @extend #{$bg-green-900}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-green-900, 10%) !important;
+    color:text-color(darken($color-green-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-100}\! {
+  @extend #{$bg-teal-100}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-100, 10%) !important;
+    color:text-color(darken($color-teal-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-200}\! {
+  @extend #{$bg-teal-200}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-200, 10%) !important;
+    color:text-color(darken($color-teal-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-300}\! {
+  @extend #{$bg-teal-300}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-300, 10%) !important;
+    color:text-color(darken($color-teal-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-400}\! {
+  @extend #{$bg-teal-400}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-400, 10%) !important;
+    color:text-color(darken($color-teal-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-500}\! {
+  @extend #{$bg-teal-500}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-500, 10%) !important;
+    color:text-color(darken($color-teal-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-600}\! {
+  @extend #{$bg-teal-600}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-600, 10%) !important;
+    color:text-color(darken($color-teal-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-700}\! {
+  @extend #{$bg-teal-700}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-700, 10%) !important;
+    color:text-color(darken($color-teal-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-800}\! {
+  @extend #{$bg-teal-800}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-800, 10%) !important;
+    color:text-color(darken($color-teal-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-teal-900}\! {
+  @extend #{$bg-teal-900}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-teal-900, 10%) !important;
+    color:text-color(darken($color-teal-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-100}\! {
+  @extend #{$bg-blue-100}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-100, 10%) !important;
+    color:text-color(darken($color-blue-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-200}\! {
+  @extend #{$bg-blue-200}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-200, 10%) !important;
+    color:text-color(darken($color-blue-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-300}\! {
+  @extend #{$bg-blue-300}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-300, 10%) !important;
+    color:text-color(darken($color-blue-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-400}\! {
+  @extend #{$bg-blue-400}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-400, 10%) !important;
+    color:text-color(darken($color-blue-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-500}\! {
+  @extend #{$bg-blue-500}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-500, 10%) !important;
+    color:text-color(darken($color-blue-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-600}\! {
+  @extend #{$bg-blue-600}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-600, 10%) !important;
+    color:text-color(darken($color-blue-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-700}\! {
+  @extend #{$bg-blue-700}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-700, 10%) !important;
+    color:text-color(darken($color-blue-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-800}\! {
+  @extend #{$bg-blue-800}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-800, 10%) !important;
+    color:text-color(darken($color-blue-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-blue-900}\! {
+  @extend #{$bg-blue-900}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-blue-900, 10%) !important;
+    color:text-color(darken($color-blue-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-100}\! {
+  @extend #{$bg-indigo-100}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-100, 10%) !important;
+    color:text-color(darken($color-indigo-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-200}\! {
+  @extend #{$bg-indigo-200}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-200, 10%) !important;
+    color:text-color(darken($color-indigo-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-300}\! {
+  @extend #{$bg-indigo-300}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-300, 10%) !important;
+    color:text-color(darken($color-indigo-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-400}\! {
+  @extend #{$bg-indigo-400}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-400, 10%) !important;
+    color:text-color(darken($color-indigo-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-500}\! {
+  @extend #{$bg-indigo-500}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-500, 10%) !important;
+    color:text-color(darken($color-indigo-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-600}\! {
+  @extend #{$bg-indigo-600}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-600, 10%) !important;
+    color:text-color(darken($color-indigo-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-700}\! {
+  @extend #{$bg-indigo-700}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-700, 10%) !important;
+    color:text-color(darken($color-indigo-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-800}\! {
+  @extend #{$bg-indigo-800}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-800, 10%) !important;
+    color:text-color(darken($color-indigo-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-indigo-900}\! {
+  @extend #{$bg-indigo-900}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-indigo-900, 10%) !important;
+    color:text-color(darken($color-indigo-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-100}\! {
+  @extend #{$bg-purple-100}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-100, 10%) !important;
+    color:text-color(darken($color-purple-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-200}\! {
+  @extend #{$bg-purple-200}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-200, 10%) !important;
+    color:text-color(darken($color-purple-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-300}\! {
+  @extend #{$bg-purple-300}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-300, 10%) !important;
+    color:text-color(darken($color-purple-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-400}\! {
+  @extend #{$bg-purple-400}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-400, 10%) !important;
+    color:text-color(darken($color-purple-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-500}\! {
+  @extend #{$bg-purple-500}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-500, 10%) !important;
+    color:text-color(darken($color-purple-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-600}\! {
+  @extend #{$bg-purple-600}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-600, 10%) !important;
+    color:text-color(darken($color-purple-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-700}\! {
+  @extend #{$bg-purple-700}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-700, 10%) !important;
+    color:text-color(darken($color-purple-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-800}\! {
+  @extend #{$bg-purple-800}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-800, 10%) !important;
+    color:text-color(darken($color-purple-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-purple-900}\! {
+  @extend #{$bg-purple-900}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-purple-900, 10%) !important;
+    color:text-color(darken($color-purple-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-100}\! {
+  @extend #{$bg-pink-100}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-100, 10%) !important;
+    color:text-color(darken($color-pink-100, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-200}\! {
+  @extend #{$bg-pink-200}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-200, 10%) !important;
+    color:text-color(darken($color-pink-200, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-300}\! {
+  @extend #{$bg-pink-300}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-300, 10%) !important;
+    color:text-color(darken($color-pink-300, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-400}\! {
+  @extend #{$bg-pink-400}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-400, 10%) !important;
+    color:text-color(darken($color-pink-400, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-500}\! {
+  @extend #{$bg-pink-500}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-500, 10%) !important;
+    color:text-color(darken($color-pink-500, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-600}\! {
+  @extend #{$bg-pink-600}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-600, 10%) !important;
+    color:text-color(darken($color-pink-600, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-700}\! {
+  @extend #{$bg-pink-700}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-700, 10%) !important;
+    color:text-color(darken($color-pink-700, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-800}\! {
+  @extend #{$bg-pink-800}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-800, 10%) !important;
+    color:text-color(darken($color-pink-800, 10%)) !important;
+    text-decoration: none;
+  }
+}
+#{$btn-pink-900}\! {
+  @extend #{$bg-pink-900}\!;
+  &#{$active}, &:hover, &:focus {
+    background-color:darken($color-pink-900, 10%) !important;
+    color:text-color(darken($color-pink-900, 10%)) !important;
+    text-decoration: none;
+  }
+}
+
 #{$text-grey-100}\! {color:$color-grey-100 !important;}
 #{$text-grey-200}\! {color:$color-grey-200 !important;}
 #{$text-grey-300}\! {color:$color-grey-300 !important;}
@@ -308,6 +1975,15 @@ button:focus {background-color: inherit;} //fix Materialize
 #{$text-grey-700}\! {color:$color-grey-700 !important;}
 #{$text-grey-800}\! {color:$color-grey-800 !important;}
 #{$text-grey-900}\! {color:$color-grey-900 !important;}
+#{$text-bluegrey-100}\! {color:$color-bluegrey-100 !important;}
+#{$text-bluegrey-200}\! {color:$color-bluegrey-200 !important;}
+#{$text-bluegrey-300}\! {color:$color-bluegrey-300 !important;}
+#{$text-bluegrey-400}\! {color:$color-bluegrey-400 !important;}
+#{$text-bluegrey-500}\! {color:$color-bluegrey-500 !important;}
+#{$text-bluegrey-600}\! {color:$color-bluegrey-600 !important;}
+#{$text-bluegrey-700}\! {color:$color-bluegrey-700 !important;}
+#{$text-bluegrey-800}\! {color:$color-bluegrey-800 !important;}
+#{$text-bluegrey-900}\! {color:$color-bluegrey-900 !important;}
 #{$text-red-100}\! {color:$color-red-100 !important;}
 #{$text-red-200}\! {color:$color-red-200 !important;}
 #{$text-red-300}\! {color:$color-red-300 !important;}
@@ -403,6 +2079,15 @@ button:focus {background-color: inherit;} //fix Materialize
 @include bg-color($selector:$bg-grey-700, $bg-color:$color-grey-700, $important:true);
 @include bg-color($selector:$bg-grey-800, $bg-color:$color-grey-800, $important:true);
 @include bg-color($selector:$bg-grey-900, $bg-color:$color-grey-900, $important:true);
+@include bg-color($selector:$bg-bluegrey-100, $bg-color:$color-bluegrey-100, $important:true);
+@include bg-color($selector:$bg-bluegrey-200, $bg-color:$color-bluegrey-200, $important:true);
+@include bg-color($selector:$bg-bluegrey-300, $bg-color:$color-bluegrey-300, $important:true);
+@include bg-color($selector:$bg-bluegrey-400, $bg-color:$color-bluegrey-400, $important:true);
+@include bg-color($selector:$bg-bluegrey-500, $bg-color:$color-bluegrey-500, $important:true);
+@include bg-color($selector:$bg-bluegrey-600, $bg-color:$color-bluegrey-600, $important:true);
+@include bg-color($selector:$bg-bluegrey-700, $bg-color:$color-bluegrey-700, $important:true);
+@include bg-color($selector:$bg-bluegrey-800, $bg-color:$color-bluegrey-800, $important:true);
+@include bg-color($selector:$bg-bluegrey-900, $bg-color:$color-bluegrey-900, $important:true);
 @include bg-color($selector:$bg-red-100, $bg-color:$color-red-100, $important:true);
 @include bg-color($selector:$bg-red-200, $bg-color:$color-red-200, $important:true);
 @include bg-color($selector:$bg-red-300, $bg-color:$color-red-300, $important:true);
@@ -703,9 +2388,10 @@ $hover-brand-bg:"bg_facebook" $facebook, "bg_twitter" $twitter, "bg_googleplus" 
   }
 }
 #{$list-dot} {
+  // $content-val:unquote("\"\\f111\"");
   list-style:none;
-  &>li:before {@include pseudo-content($pos:absolute, $content:true, $content-val:\f111, $icon:fa, $l:0, $padding:0, $line:2.5);}
-  &>li {position:relative; @include space($property:padding-left, $size:calc(3rem/16));}
+  &>li:before {@include pseudo-content($pos:absolute, $content:true, $content-val:"•", $icon:fa, $l:0, $padding:0);}
+  &>li {position:relative; @include space($property:padding-left, $size:$space-xl);}
 }
 #{$list-vline} {
   &>li:not(:last-child):after {@include pseudo-content($pos:absolute, $content:true, $content-val:│, $padding:0 $space-s);}
@@ -743,7 +2429,7 @@ $hover-brand-bg:"bg_facebook" $facebook, "bg_twitter" $twitter, "bg_googleplus" 
     &>*:not(ul), a {padding:$space-m}
     & li a {padding:$space-m $space-m+10}
     & li li a {padding:$space-m $space-m+20}
-    &#{$active}, & #{$active}>a, & a:hover, &#{$uk-parent}#{$uk-open}>a {
+    &#{$active}>a, & a:hover, &#{$uk-parent}#{$uk-open}>a {
       color: text-color($color-light);
       background-color: $color-light;
     }
@@ -793,10 +2479,10 @@ $hover-brand-bg:"bg_facebook" $facebook, "bg_twitter" $twitter, "bg_googleplus" 
 #{$min-width} {@include min-width($important:true)}
 #{$max-width} {@include max-width}
 #{$max-width} {@include max-width($important:true)}
-#{$min-width} {@include grid-width($property:min-width)}
-#{$min-width} {@include grid-width($property:min-width, $important:true)}
-#{$max-width} {@include grid-width($property:max-width)}
-#{$max-width} {@include grid-width($property:max-width, $important:true)}
+#{$min-width} {@include grid-width($max:30, $property:min-width)}
+#{$min-width} {@include grid-width($max:30, $property:min-width, $important:true)}
+#{$max-width} {@include grid-width($max:30, $property:max-width)}
+#{$max-width} {@include grid-width($max:30, $property:max-width, $important:true)}
 @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px);
 @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px);
 @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $important:true);
@@ -808,10 +2494,10 @@ $hover-brand-bg:"bg_facebook" $facebook, "bg_twitter" $twitter, "bg_googleplus" 
   #{$width} {@include grid-width($important:true, $media:\@s)}
   #{$min-width} {@include min-width($media:\@s)}
   #{$min-width} {@include min-width($important:true, $media:\@s)}
-  #{$min-width} {@include grid-width($property:min-width, $media:\@s)}
-  #{$min-width} {@include grid-width($property:min-width, $important:true, $media:\@s)}
-  #{$max-width} {@include grid-width($property:max-width, $media:\@s)}
-  #{$max-width} {@include grid-width($property:max-width, $important:true, $media:\@s)}
+  #{$min-width} {@include grid-width($max:30, $property:min-width, $media:\@s)}
+  #{$min-width} {@include grid-width($max:30, $property:min-width, $important:true, $media:\@s)}
+  #{$max-width} {@include grid-width($max:30, $property:max-width, $media:\@s)}
+  #{$max-width} {@include grid-width($max:30, $property:max-width, $important:true, $media:\@s)}
   @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@s);
   @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px, $media:\@s);
   @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@s, $important:true);
@@ -824,10 +2510,10 @@ $hover-brand-bg:"bg_facebook" $facebook, "bg_twitter" $twitter, "bg_googleplus" 
   #{$width} {@include grid-width($important:true, $media:\@m)}
   #{$min-width} {@include min-width($media:\@m)}
   #{$min-width} {@include min-width($important:true, $media:\@m)}
-  #{$min-width} {@include grid-width($property:min-width, $media:\@m)}
-  #{$min-width} {@include grid-width($property:min-width, $important:true, $media:\@m)}
-  #{$max-width} {@include grid-width($property:max-width, $media:\@m)}
-  #{$max-width} {@include grid-width($property:max-width, $important:true, $media:\@m)}
+  #{$min-width} {@include grid-width($max:30, $property:min-width, $media:\@m)}
+  #{$min-width} {@include grid-width($max:30, $property:min-width, $important:true, $media:\@m)}
+  #{$max-width} {@include grid-width($max:30, $property:max-width, $media:\@m)}
+  #{$max-width} {@include grid-width($max:30, $property:max-width, $important:true, $media:\@m)}
   @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@m);
   @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px, $media:\@m);
   @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@m, $important:true);
@@ -840,10 +2526,10 @@ $hover-brand-bg:"bg_facebook" $facebook, "bg_twitter" $twitter, "bg_googleplus" 
   #{$width} {@include grid-width($important:true, $media:\@l)}
   #{$min-width} {@include min-width($media:\@l)}
   #{$min-width} {@include min-width($important:true, $media:\@l)}
-  #{$min-width} {@include grid-width($property:min-width, $media:\@l)}
-  #{$min-width} {@include grid-width($property:min-width, $important:true, $media:\@l)}
-  #{$max-width} {@include grid-width($property:max-width, $media:\@l)}
-  #{$max-width} {@include grid-width($property:max-width, $important:true, $media:\@l)}
+  #{$min-width} {@include grid-width($max:30, $property:min-width, $media:\@l)}
+  #{$min-width} {@include grid-width($max:30, $property:min-width, $important:true, $media:\@l)}
+  #{$max-width} {@include grid-width($max:30, $property:max-width, $media:\@l)}
+  #{$max-width} {@include grid-width($max:30, $property:max-width, $important:true, $media:\@l)}
   @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@l);
   @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px, $media:\@l);
   @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@l, $important:true);
@@ -856,10 +2542,10 @@ $hover-brand-bg:"bg_facebook" $facebook, "bg_twitter" $twitter, "bg_googleplus" 
   #{$width} {@include grid-width($important:true, $media:\@xl)}
   #{$min-width} {@include min-width($media:\@xl)}
   #{$min-width} {@include min-width($important:true, $media:\@xl)}
-  #{$min-width} {@include grid-width($property:min-width, $media:\@xl)}
-  #{$min-width} {@include grid-width($property:min-width, $important:true, $media:\@xl)}
-  #{$max-width} {@include grid-width($property:max-width, $media:\@xl)}
-  #{$max-width} {@include grid-width($property:max-width, $important:true, $media:\@xl)}
+  #{$min-width} {@include grid-width($max:30, $property:min-width, $media:\@xl)}
+  #{$min-width} {@include grid-width($max:30, $property:min-width, $important:true, $media:\@xl)}
+  #{$max-width} {@include grid-width($max:30, $property:max-width, $media:\@xl)}
+  #{$max-width} {@include grid-width($max:30, $property:max-width, $important:true, $media:\@xl)}
   @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@xl);
   @include min-max($selector:$max-height, $min:10, $max:1000, $step:5, $property:true, $property-name:max-height, $unit:true, $unit-val:px, $media:\@xl);
   @include min-max($selector:$min-height, $min:10, $max:1000, $step:1, $property:true, $property-name:min-height, $unit:true, $unit-val:px, $media:\@xl, $important:true);
@@ -945,7 +2631,8 @@ section {
 }
 
 #{$container-responsive}, #{$container-responsive}\@s, #{$container-responsive}\@m {
-  padding: 0 $space-m;
+  // padding: 0 $space-m;
+  padding: 0;
   &>#{$uk-card} {padding: $space-l;}
   &>#{$uk-card}, &#{$mc-card}> {border: none; border-radius: 0; box-shadow: none;}
 }
@@ -1179,12 +2866,14 @@ address, dl, fieldset, figure, ol, p, pre, ul {
   #{$uk-light} #{$uk-slidenav}:not([class*=-out]) * {
     color: rgba(255, 255, 255, 0) !important;
   }
+  #{$uk-hidden-hover} {visibility: hidden;}
   &:hover {
     #{$uk-light} #{$uk-slidenav} {
       * {color: rgba(255, 255, 255, 0.5) !important; text-shadow: 0 0 5px rgba(0, 0, 0, 0.7) !important;}
       &-previous:not([class*=-out]) {background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);}
       &-next:not([class*=-out]) {background: linear-gradient(to left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);}
     }
+    #{$uk-hidden-hover} {visibility: visible;}
   }
 }
 #{$uk-slideshow} #{$uk-light} #{$uk-slidenav}:hover *, #{$uk-slider} #{$uk-light} #{$uk-slidenav}:not([class*=-out]):hover *, #{$uk-modal-dialog-lightbox} #{$uk-lightbox-content} {color: rgba(255, 255, 255, 1) !important; text-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;}
@@ -1329,6 +3018,62 @@ address, dl, fieldset, figure, ol, p, pre, ul {
 .fc-button {padding: .4rem .49rem; font-size: .84rem !important;}
 }
 /*---------- End Fullcalendar Style
+---------------------------------------------------------------------------------- */
+
+/*---------- Select2
+---------------------------------------------------------------------------------- */
+.select2 {
+  height: 40px !important;
+  flex: 1 1 auto;
+  .selection, .select2-selection--single {
+    width: 100%;
+    height: 40px;
+    border: 0 none;
+    padding: 0 10px;
+    background: #fff;
+    color: #666;
+    border: 1px solid #e5e5e5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    // padding-right: 20px;
+    // background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    .select2-selection {
+      background: transparent !important;
+      border: none !important;
+    }
+    .select2-selection--single .select2-selection__rendered {
+      line-height: 40px;
+    }
+  }
+  .select2-selection--single {
+    height: 38px !important;
+    padding: 0 !important;
+    // padding-right: 10px !important;
+    background-image: none;
+    .select2-selection__arrow {
+      display: none;
+    }
+  }
+}
+.select2-container--open .selection, .select2-dropdown {
+    outline: none;
+    background-color: #fff;
+    color: #666;
+    border-color: #1e87f0;
+}
+.select2-search__field {
+  width: calc(100% - 10px) !important;
+  margin: auto;
+  display: block;
+  border: 1px solid #e5e5e5;
+}
+.select2-results__option:first-child:empty {
+    display: none;
+}
+
+/*---------- End Select2
 ---------------------------------------------------------------------------------- */
 
 /*---------- IE10+ ------------------------------*/

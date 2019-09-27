@@ -282,134 +282,208 @@
           <div class="uk-width-1-4@m uk-width-1-5@l">
             <div class="max_height-200 max_height-700@m uk-overflow-auto">
               <ul class="list_tabs uk-nav-parent-icon" uk-nav="multiple: true; animation: false">
+                <li class="uk-nav-header active">
+                  <a href="ResChronicPrescription-1.html">預約</a>
+                </li>
                 <li class="uk-nav-header">
-                  <a href="#content">Level1<small class="pseudo:parentheses">123</small></a>
-                </li>
-                <li class="uk-nav-header uk-parent uk-open">
-                  <a href="#content">Level2<small class="pseudo:parentheses">123</small></a>
-                  <ul>
-                    <li class="active"><a href="#content">Level2-Item-Active<small class="pseudo:parentheses">123</small></a></li>
-                    <li><a href="#content">Level2-Item<small class="pseudo:parentheses">123</small></a></li>
-                  </ul>
-                </li>
-                <li class="uk-nav-header uk-parent">
-                  <a href="#">Level3<small class="pseudo:parentheses">123</small></a>
-                  <ul>
-                    <li>
-                      <a href="#content">Title<small class="pseudo:parentheses">123</small></a>
-                      <ul>
-                        <li><a href="#content">Level3-Item<small class="pseudo:parentheses">123</small></a></li>
-                        <li><a href="#content">Level3-Item<small class="pseudo:parentheses">123</small></a></li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <a href="ResChronicPrescription-2.html">查詢、取消</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="uk-width-expand@m">
-            <h2 class="btm_line text-2xl">常見問題<small class="mt-2 uk-float-right"><a class="no-underline" href="#"><i class="mr-1 fas fa-angle-left"></i>回列表</a></small></h2>
+            <h2 class="btm_line text-2xl">連續處方箋預約領藥(總院)</h2>
             <div id="content">
-              <div class="uk-grid-small" uk-grid>
-                <div class="uk-width-2-3@s uk-width-3-4@m">
-                  <input class="uk-input" type="text" placeholder="請輸入內容">
-                </div>
-                <div class="uk-width-expand"><button class="btn_primary w-full uk-button uk-button-primary">搜尋</button></div>
-                <div class="uk-width-1-1" uk-filter="target: .list">
-                  <div class="btm_line border-dashed">
-                    <div class="uk-grid-small uk-flex-bottom" uk-grid>
-                      <div class="uk-width-1-1 uk-width-expand@s">
-                        <span class="">檢索結果：共<span>123</span>人</span>
-                        <span class="">檢索詞：<strong class="color_secondary">癌症</strong></span>
+              <p>病友您好，預約領藥需於<br><time class="color_secondary text-2xl">2019 年 9 月 26 日 10:00~19:00</time><br>來院領藥！<br>領藥前請先過健保卡<br>開放預約領藥時間為隔日或下一個工作日<br>藥局預約領藥服務時間 上午10點開始 (不可提前)<br>僅提供總院西址門診藥局連續處方箋預約領藥服務，本院其他藥局暫不提供預約服務</p>
+              <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
+                <div><button class="btn_primary w-full uk-button uk-button-primary" uk-toggle="target: #reservation">同意領藥時限，確定預約</button></div>
+                <div><a class="btn_secondary w-full uk-button uk-button-primary" href="https://www.ntuh.gov.tw/default_SP.aspx">不同意 (放棄預約)</a></div>
+                <form id="reservation" class="uk-width-1-1" hidden>
+                  <div class="bg-gray-100 p-3 text-center uk-fieldset" uk-margin>
+                    <!-- <h3>預約第2、3次領藥服務<br>目前預約領藥日：<time class="color_secondary">2019 年 9 月 26 日</time></h3> -->
+                    <legend class="text-xl font-medium uk-legend">預約第2、3次領藥服務<br>目前預約領藥日：<time class="color_secondary">2019 年 9 月 26 日</time></legend>
+                    <h3 class="bg-gray-300">病友身分驗證</h3>
+                    <div class="text-left uk-grid-small uk-child-width-expand@m" uk-grid uk-margin>
+                      <div class="uk-width-1-1">
+                        <label class="font-medium">請輸入您的 (請點選其一)</label>
+                        <div class="uk-grid-small uk-child-width-auto" uk-grid uk-margin>
+                          <label><input class="mr-1" type="radio" name="group1" checked>病歷號碼<small class="ml-1">(七位文數字)</small></label>
+                          <label><input class="mr-1" type="radio" name="group1">身分證號碼<small class="ml-1">(十位文數字)</small></label>
+                          <label><input class="mr-1" type="radio" name="group1">其它<small class="ml-1">(居留證號等)</small></label>
+                        </div>
+                        <input class="uk-input" type="text" placeholder="">
                       </div>
-                      <div class="uk-width-auto">
-                        <button class="w-100 uk-button uk-button-default" type="button">排　　序 <i class="uk-icon-caret-down"></i></button>
-                        <div class="uk-dropdown-small" uk-dropdown>
-                          <ul class="uk-nav uk-dropdown-nav">
-                            <li uk-filter-control="sort: data-date; order: desc"><a href="#">最新日期 ↓</a></li>
-                            <li uk-filter-control="sort: data-date"><a href="#">最舊日期 ↑</a></li>
-                            <li uk-filter-control="sort: data-name"><a href="#">姓氏筆劃少 ↓</a></li>
-                            <li uk-filter-control="sort: data-name; order: desc"><a href="#">姓氏筆劃多 ↑</a></li>
-                          </ul>
+                      <div class="min_width-1/2!@m">
+                        <label class="font-medium">請輸入您的出生日期</label>
+                        <!-- <p class="m-0">民國</p> -->
+                        <div class="margin_x_child uk-grid-collapse uk-child-width-auto" uk-grid uk-margin>
+                          <div class="uk-flex uk-flex-middle">
+                            <label class="uk-form-label">民國</label>
+                          </div>
+                          <div>
+                            <select class="uk-select">
+                              <option>108</option>
+                            </select>
+                          </div>
+                          <div class="uk-flex uk-flex-middle">
+                            <label class="uk-form-label">年</label>
+                          </div>
+                          <div>
+                            <select class="uk-select">
+                              <option>1</option>
+                            </select>
+                          </div>
+                          <div class="uk-flex uk-flex-middle">
+                            <label class="uk-form-label">月</label>
+                          </div>
+                          <div>
+                            <select class="uk-select">
+                              <option>1</option>
+                            </select>
+                          </div>
+                          <div class="uk-flex uk-flex-middle">
+                            <label class="uk-form-label">日</label>
+                          </div>
                         </div>
                       </div>
+                      <div class="min_width-1/2!@m">
+                        <label class="font-medium">請輸入第一次處方日期</label>
+                        <!-- <p class="m-0">西元</p> -->
+                        <div class="margin_x_child uk-grid-collapse uk-child-width-auto" uk-grid uk-margin>
+                          <div class="uk-flex uk-flex-middle">
+                            <label class="uk-form-label">西元</label>
+                          </div>
+                          <div>
+                            <select class="uk-select">
+                              <option>2019</option>
+                            </select>
+                          </div>
+                          <div class="uk-flex uk-flex-middle">
+                            <label class="uk-form-label">年</label>
+                          </div>
+                          <div>
+                            <select class="uk-select">
+                              <option>1</option>
+                            </select>
+                          </div>
+                          <div class="uk-flex uk-flex-middle">
+                            <label class="uk-form-label">月</label>
+                          </div>
+                          <div>
+                            <select class="uk-select">
+                              <option>1</option>
+                            </select>
+                          </div>
+                          <div class="uk-flex uk-flex-middle">
+                            <label class="uk-form-label">日</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="min_width-1/2!@m">
+                        <label class="font-medium">請輸入第一次領藥號</label>
+                        <div class="uk-grid-small uk-child-width-auto" uk-grid uk-margin>
+                          <div>
+                            <select class="uk-select">
+                              <option>-請選擇-</option>
+                              <option value="A">A窗口</option>
+                              <option value="B">B窗口</option>
+                              <option value="C">C窗口</option>
+                              <option value="D">D窗口</option>
+                              <option value="E">E窗口</option>
+                              <option value="F">F窗口</option>
+                              <option value="G">G窗口</option>
+                              <option value="H">H窗口</option>
+                              <option value="Q">Q窗口</option>
+                              <option value="R">R窗口</option>
+                              <option value="S">S窗口</option>
+                            </select>
+                          </div>
+                          <div><input class="uk-input" type="text" placeholder=""></div>
+                        </div>
+                      </div>
+                      <div class="min_width-1/2!@m">
+                        <label class="font-medium">請按照圖形所顯示的文數字輸入驗證碼<small class="ml-1">(英文字母不用區分大小寫)</small></label>
+                        <div class="uk-grid-small uk-child-width-auto" uk-grid uk-margin>
+                          <div><input class="uk-input" type="text" placeholder=""></div>
+                          <div class="uk-flex uk-flex-middle"><img src="https://fakeimg.pl/100x40" width="100" height="40"></div>
+                          <div class="uk-flex uk-flex-middle"><a class="bg-white uk-button uk-button-default" href="#" title="重新產生驗證碼"><i class="fas fa-redo-alt"></i></a></div>
+                        </div>
+                      </div>
+                      <div class="m:mt-5 uk-width-1-1">
+                        <div class="uk-grid-small uk-child-width-expand@s" uk-grid uk-margin>
+                          <div><a href="#captcha" class="btn_primary w-full uk-button uk-button-primary" uk-toggle>已詳閱以下說明，確定預約</a></div>
+                          <div><a href="#second" class="btn_primary w-full uk-button uk-button-primary" uk-toggle>已詳閱以下說明，確定預約</a></div>
+                          <div><button class="bg-white w-full uk-button uk-button-default" type="reset">清除重填</button></div>
+                        </div>
+                        <ol class="list-decimal pl-6 mt-3">
+                          <li>目前開放預約領藥時間為西元 2019 年 9 月 26 日 10:00~19:00(日期為隔日或下一個工作日)。</li>
+                          <li>請確認兩次領藥日期間隔符合健保署規範，若因重複用藥導致人工櫃台過卡失敗，則該處方預約當日不可領藥者記爽約一次。</li>
+                          <li>若欲預約其他時間請待預約開放後再進行預約。</li>
+                          <li>預約領藥後逾期未領，記爽約一次。</li>
+                          <li>如半年內有兩次預約連處未於規定時間內領取，自爽約日算起三個月內不可使用預約服務。</li>
+                          <li>僅提供總院門診藥局連續處方箋預約領藥服務，其他藥局暫不提供預約服務。</li>
+                        </ol>
+                      </div>
                     </div>
+                    <!-- /.uk-grid -->
                   </div>
-                  <div class="pagination">
-                    <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-auto uk-flex-middle uk-flex-center">
-                      <div>
-                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="首頁"><i class="fas fa-angle-double-left fa-fw"></i></a>
-                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="上一頁"><i class="fas fa-angle-left fa-fw"></i></a>
-                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="首頁" hidden><i class="fas fa-angle-double-left fa-fw"></i></a>
-                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="上一頁" hidden><i class="fas fa-angle-left fa-fw"></i></a>
-                      </div>
-                      <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-middle uk-margin">
-                        <select class="w-auto uk-select uk-form-small">
-                          <option selected>1</option>
-                          <option>2</option>
-                        </select>
-                        <span class="mx-1">/<span class="pl-1">20</span></span>
-                      </div>
-                      <div>
-                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="下一頁"><i class="fas fa-angle-right fa-fw"></i></a>
-                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="末頁"><i class="fas fa-angle-double-right fa-fw"></i></a>
-                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="下一頁" hidden><i class="fas fa-chevron-right fa-fw"></i></a>
-                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="末頁" hidden><i class="fas fa-chevron-double-right fa-fw"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- pagination / select number -->
-                  <ul class="list_dot browser-default" uk-accordion="multiple: true">
-                    <li class="uk-open">
-                      <a class="font-medium text-base pb-1 uk-accordion-title" href="#">的山有位轉有最片當我市檢，的樣地，保西步起不能府定同在開便直陽到心望心元基推他沒一界來市起是位取之土兒助認有要人人起母。人正候鄉去候員來</a>
-                      <div class="m-0 pt-1 uk-accordion-content">
-                        <p>成機期沒增、大濟冷好生，<strong class="color_secondary">癌症</strong>山做府你說一如人可樣隊。交以要上做活哥是收這進難告水此而了路子這立室北什之：企長人：部的的臺研愛個意球在關在小卻，老陽重方自的送書眾不親論量，我油生，點的子聯</p>
-                      </div>
-                    </li>
-                    <li>
-                      <a class="font-medium text-base pb-1 uk-accordion-title" href="#">的山有位轉有最片當我市檢，的樣地，保西步起不能府</a>
-                      <div class="m-0 pt-1 uk-accordion-content">
-                        <p>成機期沒增、大濟冷好生，<strong class="color_secondary">癌症</strong>山做府你說一如人可樣隊。交以要上做活哥是收這進難告水此而了路子這立室北什之：企長人：部的的臺研愛個意球在關在小卻，老陽重方自的送書眾不親論量，我油生，點的子聯</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <!-- /accordion -->
-                  <div class="pagination">
-                    <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-auto uk-flex-middle uk-flex-center">
-                      <div>
-                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="首頁"><i class="fas fa-angle-double-left fa-fw"></i></a>
-                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="上一頁"><i class="fas fa-angle-left fa-fw"></i></a>
-                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="首頁" hidden><i class="fas fa-angle-double-left fa-fw"></i></a>
-                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="上一頁" hidden><i class="fas fa-angle-left fa-fw"></i></a>
-                      </div>
-                      <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-middle uk-margin">
-                        <select class="w-auto uk-select uk-form-small">
-                          <option selected>1</option>
-                          <option>2</option>
-                        </select>
-                        <span class="mx-1">/<span class="pl-1">20</span></span>
-                      </div>
-                      <div>
-                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="下一頁"><i class="fas fa-angle-right fa-fw"></i></a>
-                        <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="末頁"><i class="fas fa-angle-double-right fa-fw"></i></a>
-                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="下一頁" hidden><i class="fas fa-chevron-right fa-fw"></i></a>
-                        <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="末頁" hidden><i class="fas fa-chevron-double-right fa-fw"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- pagination / select number -->
-                </div>
+                  <!-- /.uk-fieldset -->
+                </form>
               </div>
-              <!-- Search bar & Table -->
             </div>
             <!-- End #content -->
           </div>
         </div>
+        <!-- End uk-grid -->
       </div>
       <!-- End uk-card -->
     </div>
   </section>
   <!-- page main content -->
+
+  <div id="second" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <form>
+        <button class="uk-modal-close-default" type="button" title="刪除" uk-close></button>
+        <div class="uk-modal-header">
+          <h2 class="uk-modal-title">訊息</h2>
+        </div>
+        <div class="uk-modal-body">
+          <label class="" for="input_txt">已於健保特約藥局領取第二次處方者，請輸入第二次領藥日期</label>
+          <input id="input_txt" class="uk-input" type="text" placeholder="請點選輸入">
+        </div>
+        <div class="uk-modal-footer">
+          <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+            <div class="margin_y_child-all min_width-1/2!@m s:text-right">
+              <button class="btn_primary min_width-120 uk-button uk-button-primary uk-modal-close" type="button">確定</button>
+              <button class="btn_secondary min_width-120 uk-button uk-button-primary uk-modal-close" type="button">尚未領取第二次處方者請按此</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- uk-modal-second -->
+
+  <div id="captcha" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" title="刪除" uk-close></button>
+      <div class="uk-modal-header">
+        <h2 class="uk-modal-title">訊息</h2>
+      </div>
+      <div class="uk-modal-body">
+        請輸入驗證碼
+      </div>
+      <div class="uk-modal-footer">
+        <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+          <div class="margin_y_child-all min_width-1/2!@m s:text-right">
+            <button class="btn_primary min_width-120 uk-button uk-button-primary uk-modal-close" type="button">確定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- uk-modal-captcha -->
 
   <div id="login" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-margin-auto-vertical">
