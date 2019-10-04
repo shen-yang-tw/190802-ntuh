@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/colors.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-dept.css">
 </head>
 
 <body id="top" class="uk-background-cover uk-background-top-center uk-position-relative" uk-height-viewport>
@@ -282,46 +283,43 @@
           <div class="uk-width-1-4@m uk-width-1-5@l">
             <div class="max_height-200 max_height-700@m uk-overflow-auto">
               <ul class="list_tabs uk-nav-parent-icon" uk-nav="multiple: true; animation: false">
-                <li class="uk-nav-header">
-                  <a href="#content">Level1<small class="pseudo:parentheses">123</small></a>
+                <li class="active">
+                  <a href="#content">全部<small class="pseudo:parentheses">123</small></a>
                 </li>
-                <li class="uk-nav-header uk-parent uk-open">
-                  <a href="#content">Level2<small class="pseudo:parentheses">123</small></a>
-                  <ul>
-                    <li class="active"><a href="#content">Level2-Item-Active<small class="pseudo:parentheses">123</small></a></li>
-                    <li><a href="#content">Level2-Item<small class="pseudo:parentheses">123</small></a></li>
-                  </ul>
+                <li>
+                  <a href="#content">Item<small class="pseudo:parentheses">123</small></a>
                 </li>
-                <li class="uk-nav-header uk-parent">
-                  <a href="#">Level3<small class="pseudo:parentheses">123</small></a>
-                  <ul>
-                    <li>
-                      <a href="#content">Title<small class="pseudo:parentheses">123</small></a>
-                      <ul>
-                        <li><a href="#content">Level3-Item<small class="pseudo:parentheses">123</small></a></li>
-                        <li><a href="#content">Level3-Item<small class="pseudo:parentheses">123</small></a></li>
-                      </ul>
-                    </li>
-                  </ul>
+                <li>
+                  <a href="#content">Item<small class="pseudo:parentheses">123</small></a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="uk-width-expand@m">
-            <h2 class="btm_line text-2xl">徵才資訊<small class="mt-2 uk-float-right"><a class="no-underline" href="#"><i class="mr-1 fas fa-angle-left"></i>回列表</a></small></h2>
-            <p></p>
+            <h2 class="btm_line text-2xl">尋找醫師<small class="mt-2 uk-float-right"><a class="no-underline" href="#"><i class="mr-1 fas fa-angle-left"></i>回列表</a></small></h2>
             <div id="content">
               <div class="uk-grid-small" uk-grid>
                 <div class="uk-width-2-3@s uk-width-3-4@m">
                   <input class="uk-input" type="text" placeholder="請輸入內容">
                 </div>
                 <div class="uk-width-expand"><button class="btn_primary w-full uk-button uk-button-primary">搜尋</button></div>
-                <div class="uk-width-1-1">
+                <div class="uk-width-1-1" uk-filter="target: .list">
                   <div class="btm_line border-dashed">
                     <div class="uk-grid-small uk-flex-bottom" uk-grid>
                       <div class="uk-width-1-1 uk-width-expand@s">
-                        <span>檢索結果：共<span>123</span>人</span>
-                        <span>檢索詞：<strong class="color_secondary">癌症</strong></span>
+                        <span class="">檢索結果：共<span>123</span>人</span>
+                        <span class="">檢索詞：<strong class="color_secondary">癌症</strong></span>
+                      </div>
+                      <div class="uk-width-auto">
+                        <button class="w-100 uk-button uk-button-default" type="button">排　　序 <i class="uk-icon-caret-down"></i></button>
+                        <div class="uk-dropdown-small" uk-dropdown>
+                          <ul class="uk-nav uk-dropdown-nav">
+                            <li uk-filter-control="sort: data-date; order: desc"><a href="#">最新日期 ↓</a></li>
+                            <li uk-filter-control="sort: data-date"><a href="#">最舊日期 ↑</a></li>
+                            <li uk-filter-control="sort: data-name"><a href="#">姓氏筆劃少 ↓</a></li>
+                            <li uk-filter-control="sort: data-name; order: desc"><a href="#">姓氏筆劃多 ↑</a></li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -349,51 +347,104 @@
                     </div>
                   </div>
                   <!-- pagination / select number -->
-                  <div class="uk-overflow-auto">
-                    <table class="uk-table uk-table-small uk-table-striped uk-table-responsive">
-                      <thead>
-                        <tr>
-                          <th class="min_width-120">公告日期</th>
-                          <th class="min_width-200">用人單位</th>
-                          <th class="min_width-150">職稱</th>
-                          <th class="min_width-120">截止日期</th>
-                          <th class="min_width-150">備註</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><time>2018-10-1</time></td>
-                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">用人單位</span>癌醫中心醫院-護理部</td>
-                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">職稱</span>院聘門診護理師</td>
-                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">截止日期</span><time>2018-10-1</time></td>
-                          <td>
-                            <ul class="pl-5 list-disc">
-                              <li><a class="color_secondary-text inline" href="#">甄選簡則.PDF</a></li>
-                              <li><a class="color_secondary-text inline" href="#">計畫聘任人員甄選登記表PDF</a></li>
-                              <li><a class="color_secondary-text inline" href="#">WORD</a></li>
-                              <li><a class="color_secondary-text inline" href="#">ODT</a></li>
-                            </ul>
-                            <p class="mb-2">※本院現職人員如欲報名不同部門職缺需經現職單位主管於甄選登記表核章。</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><time>2018-10-1</time></td>
-                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">用人單位</span>癌醫中心醫院-護理部</td>
-                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">職稱</span>院聘門診護理師</td>
-                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">截止日期</span><time>2018-10-1</time></td>
-                          <td>
-                            <ul class="pl-5 list-disc">
-                              <li><a class="color_secondary-text inline" href="#">甄選簡則.PDF</a></li>
-                              <li><a class="color_secondary-text inline" href="#">計畫聘任人員甄選登記表PDF</a></li>
-                              <li><a class="color_secondary-text inline" href="#">WORD</a></li>
-                              <li><a class="color_secondary-text inline" href="#">ODT</a></li>
-                            </ul>
-                            <p class="mb-2">※本院現職人員如欲報名不同部門職缺需經現職單位主管於甄選登記表核章。</p>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                  <ul class="list uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@xl" uk-grid uk-height-match="target: > li > div >.uk-card-body">
+                    <li data-tags="單位 綜合內科部 癌症 肺癌" data-date="2018-01-03" data-name="4">
+                      <div class="bg-gray-200 p-2 uk-card uk-card-hover">
+                        <div onmouseover="toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'm:flex-no-wrap', 'm:truncate')" onmouseout="toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'm:flex-no-wrap', 'm:truncate')">
+                          <a class="btn_secondary mt-2 mr-2 uk-button uk-button-primary uk-button-small uk-position-top-right" href="#">掛號</a>
+                          <div class="aspect uk-card-media-top uk-background-cover uk-background-top-center" data-src="https://picsum.photos/700" uk-img>
+                          </div>
+                        </div>
+                        <div class="p-0 pt-1 uk-card-body">
+                          <h3 class="margin_x_child margin_y_child text-base font-medium mb-2 flex flex-wrap items-center line-20 uk-card-title"><span class="cht">王小明</span><span class="eng">Shih-Pu Wang</span><span class="bg-black font-light ml-auto uk-label" hidden>專任</span></h3>
+                          <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
+                          <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">肺癌</span><span class="mr-3">綜合內科部</span><span class="mr-3">綜合內科部</span><span class="mr-3">綜合內科部</span><span class="mr-3">綜合內科部</span><span class="mr-3">綜合內科部</span><span class="mr-3">綜合內科部</span></p>
+                          <p class="ifEmpty margin_x_child border-solid border-white border-t m-0" hidden><small class="ifEmpty"></small><span class="ifEmpty bg-black uk-label">未開放</span><span class="ifEmpty bg-black uk-label">回院支援</span></p>
+                          <a class="block bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" href="#">more</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-tags="單位 血液腫瘤部 癌症 乳癌" data-date="2017-05-04" data-name="10">
+                      <div class="bg-gray-200 p-2 uk-card uk-card-hover">
+                        <div onmouseover="toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'm:flex-no-wrap', 'm:truncate')" onmouseout="toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'm:flex-no-wrap', 'm:truncate')">
+                          <a class="btn_secondary mt-2 mr-2 uk-button uk-button-primary uk-button-small uk-position-top-right" href="#">掛號</a>
+                          <div class="aspect uk-card-media-top uk-background-cover uk-background-top-center" data-src="img/man-user.svg" uk-img>
+                          </div>
+                        </div>
+                        <div class="p-0 pt-1 uk-card-body">
+                          <h3 class="margin_x_child margin_y_child text-base font-medium mb-2 flex flex-wrap items-center line-20 uk-card-title"><span class="cht">陳大明</span><span class="eng">Shih-Pu Wang</span><span class="bg-black font-light ml-auto uk-label" hidden>專任</span></h3>
+                          <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
+                          <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">乳癌</span><span class="mr-3">血液腫瘤部</span><span class="mr-3">乳癌</span><span class="mr-3">血液腫瘤部</span><span class="mr-3">乳癌</span><span class="mr-3">血液腫瘤部</span></p>
+                          <p class="ifEmpty margin_x_child border-solid border-white border-t m-0" hidden><small class="ifEmpty"></small><span class="ifEmpty bg-black uk-label">未開放</span><span class="ifEmpty bg-black uk-label">回院支援</span></p>
+                          <a class="block bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" href="#">more</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-tags="單位 腫瘤內科部 癌症 一般腫瘤" data-date="2018-10-4" data-name="7">
+                      <div class="bg-gray-200 p-2 uk-card uk-card-hover">
+                        <div onmouseover="toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'm:flex-no-wrap', 'm:truncate')" onmouseout="toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'm:flex-no-wrap', 'm:truncate')">
+                          <a class="btn_secondary mt-2 mr-2 uk-button uk-button-primary uk-button-small uk-position-top-right" href="#">掛號</a>
+                          <div class="aspect uk-card-media-top uk-background-cover uk-background-top-center" data-src="https://picsum.photos/300/" uk-img>
+                          </div>
+                        </div>
+                        <div class="p-0 pt-1 uk-card-body">
+                          <h3 class="margin_x_child margin_y_child text-base font-medium mb-2 flex flex-wrap items-center line-20 uk-card-title"><span class="cht">李小朋</span><span class="eng">Shih-Pu Wang</span><span class="bg-black font-light ml-auto uk-label" hidden>專任</span></h3>
+                          <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
+                          <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">一般腫瘤</span><span class="mr-3">腫瘤內科部</span></p>
+                          <p class="ifEmpty margin_x_child border-solid border-white border-t m-0" hidden><small class="ifEmpty"></small><span class="ifEmpty bg-black uk-label">未開放</span><span class="ifEmpty bg-black uk-label">回院支援</span></p>
+                          <a class="block bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" href="#">more</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-tags="單位 血液腫瘤部 癌症 肝癌" data-date="2017-7-1" data-name="15">
+                      <div class="bg-gray-200 p-2 uk-card uk-card-hover">
+                        <div onmouseover="toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'm:flex-no-wrap', 'm:truncate')" onmouseout="toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'm:flex-no-wrap', 'm:truncate')">
+                          <a class="btn_secondary mt-2 mr-2 uk-button uk-button-primary uk-button-small uk-position-top-right" href="#">掛號</a>
+                          <div class="aspect uk-card-media-top uk-background-cover uk-background-top-center" data-src="https://picsum.photos/400/" uk-img>
+                          </div>
+                        </div>
+                        <div class="p-0 pt-1 uk-card-body">
+                          <h3 class="margin_x_child margin_y_child text-base font-medium mb-2 flex flex-wrap items-center line-20 uk-card-title"><span class="cht">歐大大</span><span class="eng">Shih-Pu Wang</span><span class="bg-black font-light ml-auto uk-label" hidden>專任</span></h3>
+                          <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
+                          <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">肝癌</span><span class="mr-3">血液腫瘤部</span></p>
+                          <p class="ifEmpty margin_x_child border-solid border-white border-t m-0" hidden><small class="ifEmpty"></small><span class="ifEmpty bg-black uk-label">未開放</span><span class="ifEmpty bg-black uk-label">回院支援</span></p>
+                          <a class="block bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" href="#">more</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-tags="單位 腫瘤內科部 癌症 一般腫瘤" data-date="2014-1-4" data-name="15">
+                      <div class="bg-gray-200 p-2 uk-card uk-card-hover">
+                        <div onmouseover="toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'm:flex-no-wrap', 'm:truncate')" onmouseout="toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'm:flex-no-wrap', 'm:truncate')">
+                          <a class="btn_secondary mt-2 mr-2 uk-button uk-button-primary uk-button-small uk-position-top-right" href="#">掛號</a>
+                          <div class="aspect uk-card-media-top uk-background-cover uk-background-top-center" data-src="https://picsum.photos/600/" uk-img>
+                          </div>
+                        </div>
+                        <div class="p-0 pt-1 uk-card-body">
+                          <h3 class="margin_x_child margin_y_child text-base font-medium mb-2 flex flex-wrap items-center line-20 uk-card-title"><span class="cht">劉小朋</span><span class="eng">Shih-Pu Wang</span><span class="bg-black font-light ml-auto uk-label" hidden>專任</span></h3>
+                          <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
+                          <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">一般腫瘤</span><span class="mr-3">腫瘤內科部</span></p>
+                          <p class="ifEmpty margin_x_child border-solid border-white border-t m-0" hidden><small class="ifEmpty"></small><span class="ifEmpty bg-black uk-label">未開放</span><span class="ifEmpty bg-black uk-label">回院支援</span></p>
+                          <a class="block bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" href="#">more</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li data-tags="單位 腫瘤內科部 癌症 一般腫瘤" data-date="2016-11-4" data-name="10">
+                      <div class="bg-gray-200 p-2 uk-card uk-card-hover">
+                        <div onmouseover="toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'm:flex-no-wrap', 'm:truncate')" onmouseout="toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'm:flex-no-wrap', 'm:truncate')">
+                          <a class="btn_secondary mt-2 mr-2 uk-button uk-button-primary uk-button-small uk-position-top-right" href="#">掛號</a>
+                          <div class="aspect uk-card-media-top uk-background-cover uk-background-top-center" data-src="https://picsum.photos/900/" uk-img>
+                          </div>
+                        </div>
+                        <div class="p-0 pt-1 uk-card-body">
+                          <h3 class="margin_x_child margin_y_child text-base font-medium mb-2 flex flex-wrap items-center line-20 uk-card-title"><span class="cht">陶小朋</span><span class="eng">Shih-Pu Wang</span><span class="bg-black font-light ml-auto uk-label" hidden>專任</span></h3>
+                          <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
+                          <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">一般腫瘤</span><span class="mr-3">腫瘤內科部</span></p>
+                          <p class="ifEmpty margin_x_child border-solid border-white border-t m-0" hidden><small class="ifEmpty"></small><span class="ifEmpty bg-black uk-label">未開放</span><span class="ifEmpty bg-black uk-label">回院支援</span></p>
+                          <a class="block bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" href="#">more</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                   <div class="pagination">
                     <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-auto uk-flex-middle uk-flex-center">
                       <div>
@@ -423,15 +474,63 @@
               <!-- Search bar & Table -->
             </div>
             <!-- End #content -->
-            <small>資料來源：<span>人事室 楊先生</span>　　更新時間：<time>即時更新</time></small>
           </div>
         </div>
-        <!-- End uk-grid -->
       </div>
       <!-- End uk-card -->
     </div>
   </section>
   <!-- page main content -->
+
+  <div id="search" class="uk-flex-top uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" title="刪除" uk-close></button>
+      <div class="uk-modal-header">
+        <h2 class="uk-modal-title">病症瀏覽</h2>
+      </div>
+      <div class="uk-modal-body">
+        <ul class="uk-list uk-list-divider" uk-accordion="multiple: true">
+          <li class="uk-open">
+            <a class="font-medium text-base uk-accordion-title" href="#">內科部</a>
+            <div class="m-0 uk-accordion-content">
+              <p class="flex flex-wrap items-center m-0">
+                <a class="link_line" href="#">關節炎風濕症</a>
+                <span class="pseudo:parentheses ml-1 inline">
+                  <a class="pseudo:comma_ch hover:no-underline" href="#"><span class="link_line">類風濕性關節炎</span></a>
+                  <a class="pseudo:comma_ch hover:no-underline" href="#"><span class="link_line">肌肉壓痛</span></a>
+                  <a class="pseudo:comma_ch hover:no-underline" href="#"><span class="link_line">紅斑性狼瘡</span></a>
+                  <a class="pseudo:comma_ch hover:no-underline" href="#"><span class="link_line">免疫疾病</span></a>
+                </span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <a class="font-medium text-base uk-accordion-title" href="#">外科部</a>
+            <div class="m-0 uk-accordion-content">
+              <p class="flex flex-wrap items-center m-0">
+                <a class="link_line" href="#">乳房外科</a>
+                <span class="pseudo:parentheses ml-1 inline">
+                  <a class="pseudo:comma_ch hover:no-underline" href="#"><span class="link_line">類風濕性關節炎</span></a>
+                  <a class="pseudo:comma_ch hover:no-underline" href="#"><span class="link_line">肌肉壓痛</span></a>
+                  <a class="pseudo:comma_ch hover:no-underline" href="#"><span class="link_line">紅斑性狼瘡</span></a>
+                  <a class="pseudo:comma_ch hover:no-underline" href="#"><span class="link_line">免疫疾病</span></a>
+                </span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="uk-modal-footer">
+        <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+          <div class="margin_y_child-all min_width-1/2!@m s:text-right">
+            <a href="#" class="btn_primary uk-button uk-button-primary">確　　定</a>
+            <button class="min_width-120 uk-button uk-button-default uk-modal-close" type="button">取　　消</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- uk-modal-search -->
 
   <div id="login" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-margin-auto-vertical">
@@ -463,8 +562,8 @@
       <div class="uk-modal-footer">
         <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
           <div class="min_width-1/2!@m">
-            <a href="#register" uk-toggle>會員註冊</a>
-            <a href="#">忘記密碼</a>
+            <a class="" href="#register" uk-toggle>會員註冊</a>
+            <a class="" href="#">忘記密碼</a>
           </div>
           <div class="margin_y_child-all min_width-1/2!@m s:text-right">
             <a href="#" class="btn_primary min_width-120 uk-button uk-button-primary">登　　入</a>
@@ -625,50 +724,32 @@
         </div>
         <!-- End #sitemap -->
         <footer class="uk-grid-small uk-child-width-expand" uk-grid>
-          <div class="uk-width-1-4@m uk-width-1-5@l uk-width-1-6@xl uk-visible@m">
-            <div class="logo_position">
-              <a class="w-full bg_white text-center p-2" href="#" title="臺大醫院行動服務"><img class="w-full" src="img/qrcod-ntuh.svg" width="100" alt="臺大醫院QRcode"><span class="color_grey-800!">臺大醫院行動服務</span></a>
-            </div>
-          </div>
           <div class="relative" uk-margin>
-            <div class="uk-grid-small uk-grid-divider" uk-grid uk-margin>
-              <a class="link_line" href="https://www.ntuh.gov.tw/About_Us/aboutNTUH/staff.aspx">本院同仁專區</a>
-              <a class="link_line" href="https://www.ntuh.gov.tw/patientService/serviceItem/%E6%9C%8D%E5%8B%99%E4%BF%A1%E7%AE%B1.aspx">服務信箱</a>
-              <a class="link_line" href="https://www.ntuh.gov.tw/QA/default.aspx">常見問題</a>
-              <a class="link_line" href="https://www.ntuh.gov.tw/patientService/patientGroup/%E9%A6%96%E9%A0%81.aspx">病友團體</a>
-              <a class="link_line" href="https://www.ntuh.gov.tw/About_Us/aboutNTUH/%E5%A5%BD%E7%AB%99%E9%80%A3%E7%B5%90.aspx">網網相連</a>
-              <a class="link_line" href="https://www.ntuh.gov.tw/patientService/Shared_Documents/%E9%9B%99%E8%AA%9E%E8%BE%AD%E5%BD%99_%E9%83%A8%E9%96%80.aspx">雙語詞彙</a>
-              <a class="link_line" href="https://www.ntuh.gov.tw/information/%E9%9A%B1%E7%A7%81%E6%AC%8A%E4%BF%9D%E8%AD%B7%E5%8F%8A%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E6%94%BF%E7%AD%96.aspx">隱私權保護及資訊安全政策</a>
-            </div>
             <div class="uk-flex uk-flex-between uk-flex-right uk-flex-middle" uk-grid uk-margin>
               <div><i class="mr-1 fas fa-eye fa-fw"></i>當日瀏覽 <span class="bg_black px-2 mr-3">2,806</span></div>
               <div><i class="mr-1 fas fa-users fa-fw"></i>在線人數 <span class="bg_black px-2 mr-3">49</span></div>
               <div><i class="mr-1 fas fa-chart-bar fa-fw"></i>瀏覽總計 <span class="bg_black px-2 mr-3">6,215,595</span></div>
-              <div class="margin_y_all_child-m w-full uk-flex uk-flex-between uk-flex-wrap uk-flex-middle">
-                <div class="margin_x_child-m s:m-0 uk-flex uk-flex-middle">
+              <div class="margin_x_child-m margin_y_all_child-m uk-flex uk-flex-wrap uk-flex-middle">
+                <div class="margin_x_child-m uk-flex uk-flex-middle">
                   <a class="hover:color_black! leading-none text-base text-center" href="#" title="facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
                   <a class="hover:color_black! leading-none text-base text-center" href="#" title="instagram"><i class="fab fa-instagram fa-2x"></i></a>
                   <a class="hover:color_black! leading-none text-base text-center" href="#" title="line"><i class="fab fa-line fa-2x"></i></a>
                   <a class="hover:color_black! leading-none text-base text-center" href="#" title="twitter"><i class="fab fa-twitter fa-2x"></i></a>
-                  <a class="plurk hover:color_black!" href="#" title="plurk"><svg class="uk-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="33" height="33">
-                      <title></title>
-                      <path d="M796.76,0H227.24C102.26,0,0,102.26,0,227.24V796.76C0,921.74,102.26,1024,227.24,1024H796.76c125,0,227.24-102.26,227.24-227.24V227.24C1024,102.26,921.74,0,796.76,0ZM216.57,438.07a36.36,36.36,0,0,1-11.84,14.12,36.92,36.92,0,1,1-22.63-67.07,36.87,36.87,0,1,1,60.25,9c2.9.62,5.15,3.36,9.36,4.57.31.09.59.14.89.21,8.58-22.28,20.7-40.42,34.21-51.93,12.38-10.54,25.91-15.56,38.94-12.95,33.41,6.69,50.81,60.51,38.86,120.22s-48.73,102.7-82.14,96c-23.46-4.7-39-32.65-42-69.52a168.27,168.27,0,0,1-.51-18A66.88,66.88,0,0,1,216.57,438.07Zm645.15-25.61c-6.48,14-23,30.42-32.07,38.75q2.39,13.28,3.59,26.92a301.88,301.88,0,0,1-36.66,173.19,8.91,8.91,0,0,0,1.6,10.84l7.89,7.49a27.29,27.29,0,0,1,1,38.47l-37.79,39.79-6.74-6.33A7.84,7.84,0,1,0,751.8,753l6.29,5.92.11.1c-.54.4-1.11.81-1.67,1.17a27.27,27.27,0,0,1-33.68-2.93l-4.91-4.67a9,9,0,0,0-11.38-.74,302.51,302.51,0,0,1-363-9.76,8.91,8.91,0,0,0-11.22,0l-7.73,6.28a27.29,27.29,0,0,1-38.28-4L251.05,701l1.1-.84,7.36-5.61A7.84,7.84,0,1,0,250,682.1l-6.87,5.23-1.52,1.16a28.76,28.76,0,0,1-1.78-4.27c-.05-.17-.11-.33-.17-.5a28.31,28.31,0,0,1-1-4.54,27.18,27.18,0,0,1,9.73-24.57l8.3-6.75A8.91,8.91,0,0,0,259,637a301.17,301.17,0,0,1-28.15-96.84c-.25-2.15-.49-4.3-.69-6.47-.19-2-.41-4-.56-6q-.49-6.61-.71-13.31c0-.59-.08-1.17-.09-1.77s0-1.46,0-2.2c-.07-4-.08-8,0-12,0-.52,0-1,0-1.56,0,.06,0,.11,0,.16,4,47.61,24.05,83.68,54.34,89.75,43.22,8.65,90.78-46.94,106.24-124.16s-7.05-146.83-50.27-155.48c-8.92-1.79-18-.74-27,2.61-.58.26-1.16.47-1.74.71a80.12,80.12,0,0,0-21.5,13.35l-.11.08c.21-.27.44-.53.64-.8,2.54-3.38,5.2-6.65,7.87-9.91,58.53-71.5,149.1-116,250.6-110.79,120.13,6.21,223,84.24,265.55,192,13.3,3,24.29-.39,38.58-5.71C870.41,381.85,868.67,397.38,861.72,412.46ZM277.05,510.79c21.77,4.35,45.73-23.65,53.51-62.54s-3.55-74-25.31-78.32c-8.49-1.7-17.3,1.57-25.37,8.44C273.71,383.63,268,391,263.18,400c9.51-.71,15.82-5.39,26.52-1.5,13.72,5,21.58,43.63,11.19,57.57-8.05,10.8-18.38,16.12-34.18,15.4a53,53,0,0,1-16.8-3.67C252.35,490.65,262.27,507.83,277.05,510.79Z" fill="#ff574d" />
-                    </svg></a>
+                  <a class="plurk hover:color_black!" href="#" title="plurk"><svg class="uk-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="33" height="33"><title></title><path d="M796.76,0H227.24C102.26,0,0,102.26,0,227.24V796.76C0,921.74,102.26,1024,227.24,1024H796.76c125,0,227.24-102.26,227.24-227.24V227.24C1024,102.26,921.74,0,796.76,0ZM216.57,438.07a36.36,36.36,0,0,1-11.84,14.12,36.92,36.92,0,1,1-22.63-67.07,36.87,36.87,0,1,1,60.25,9c2.9.62,5.15,3.36,9.36,4.57.31.09.59.14.89.21,8.58-22.28,20.7-40.42,34.21-51.93,12.38-10.54,25.91-15.56,38.94-12.95,33.41,6.69,50.81,60.51,38.86,120.22s-48.73,102.7-82.14,96c-23.46-4.7-39-32.65-42-69.52a168.27,168.27,0,0,1-.51-18A66.88,66.88,0,0,1,216.57,438.07Zm645.15-25.61c-6.48,14-23,30.42-32.07,38.75q2.39,13.28,3.59,26.92a301.88,301.88,0,0,1-36.66,173.19,8.91,8.91,0,0,0,1.6,10.84l7.89,7.49a27.29,27.29,0,0,1,1,38.47l-37.79,39.79-6.74-6.33A7.84,7.84,0,1,0,751.8,753l6.29,5.92.11.1c-.54.4-1.11.81-1.67,1.17a27.27,27.27,0,0,1-33.68-2.93l-4.91-4.67a9,9,0,0,0-11.38-.74,302.51,302.51,0,0,1-363-9.76,8.91,8.91,0,0,0-11.22,0l-7.73,6.28a27.29,27.29,0,0,1-38.28-4L251.05,701l1.1-.84,7.36-5.61A7.84,7.84,0,1,0,250,682.1l-6.87,5.23-1.52,1.16a28.76,28.76,0,0,1-1.78-4.27c-.05-.17-.11-.33-.17-.5a28.31,28.31,0,0,1-1-4.54,27.18,27.18,0,0,1,9.73-24.57l8.3-6.75A8.91,8.91,0,0,0,259,637a301.17,301.17,0,0,1-28.15-96.84c-.25-2.15-.49-4.3-.69-6.47-.19-2-.41-4-.56-6q-.49-6.61-.71-13.31c0-.59-.08-1.17-.09-1.77s0-1.46,0-2.2c-.07-4-.08-8,0-12,0-.52,0-1,0-1.56,0,.06,0,.11,0,.16,4,47.61,24.05,83.68,54.34,89.75,43.22,8.65,90.78-46.94,106.24-124.16s-7.05-146.83-50.27-155.48c-8.92-1.79-18-.74-27,2.61-.58.26-1.16.47-1.74.71a80.12,80.12,0,0,0-21.5,13.35l-.11.08c.21-.27.44-.53.64-.8,2.54-3.38,5.2-6.65,7.87-9.91,58.53-71.5,149.1-116,250.6-110.79,120.13,6.21,223,84.24,265.55,192,13.3,3,24.29-.39,38.58-5.71C870.41,381.85,868.67,397.38,861.72,412.46ZM277.05,510.79c21.77,4.35,45.73-23.65,53.51-62.54s-3.55-74-25.31-78.32c-8.49-1.7-17.3,1.57-25.37,8.44C273.71,383.63,268,391,263.18,400c9.51-.71,15.82-5.39,26.52-1.5,13.72,5,21.58,43.63,11.19,57.57-8.05,10.8-18.38,16.12-34.18,15.4a53,53,0,0,1-16.8-3.67C252.35,490.65,262.27,507.83,277.05,510.79Z" fill="#ff574d"/></svg></a>
                 </div>
-                <div class="margin_x_child-m s:m-0 uk-flex uk-flex-middle">
+                <div class="margin_x_child-m uk-flex uk-flex-middle">
                   <a class="bg_black min_width-90 text-center no-underline px-2 py-1" href="#" uk-toggle="target: #sitemap">網站地圖</a>
                   <a class="wcag opacity-75 hover:opacity-100" href="#" title="無障礙AA標章" target="_blank"><img src="img/wcagAA.jpg" alt="無障礙AA標章"></a>
-                  <a class="ahhrpp opacity-75 hover:opacity-100" href="#" title="AHHRPP認證標章" target="_blank"><img src="img/AAHRPP.gif" width="50" alt="AHHRPP認證標章"></a>
-                  <a class="snq opacity-75 hover:opacity-100" href="#" title="SNQ" target="_blank"><img src="img/snq.png" width="70" alt="SNQ"></a>
                 </div>
               </div>
             </div>
             <div uk-grid uk-margin>
               <div>10002 台北市中山南路7號(東址大樓住院急診服務)</div>
-              <div>10048 台北市常德街1號(西址大樓門診住院服務)</div>
-              <div>10041 台北市中山南路8號(兒醫大樓門診住院服務)</div>
-              <div>臺大醫院總機電話專線: 02-2312-3456; 臺大醫院電話語音預約掛號專線: 02-2356-7890</div>
-              <div>醫療機構網際網路資訊管理辦法聲明：禁止任何網際網路服務業者轉錄本網路資訊之內容供人點閱。 但以網路搜尋或超連結方式，進入本醫療機構之網址（域）直接點閱者，不在此限。</div>
+              <div>電話：<span>02-2312-3456</span></div>
+              <div>Email：<a class="link_line" href="#">xxx@gmail.com</a></div>
+              <div>網頁負責人：<span>陳大大</span></div>
+              <div>更新日期：<time>2019/11/1</time></div>
+              <div><span class="pseudo:line_v inline">醫療機構網際網路資訊管理辦法聲明：禁止任何網際網路服務業者轉錄本網路資訊之內容供人點閱。 但以網路搜尋或超連結方式，進入本醫療機構之網址（域）直接點閱者，不在此限。</span><a class="link_line" href="https://www.ntuh.gov.tw/information/%E9%9A%B1%E7%A7%81%E6%AC%8A%E4%BF%9D%E8%AD%B7%E5%8F%8A%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E6%94%BF%E7%AD%96.aspx">隱私權保護及資訊安全政策</a></div>
             </div>
           </div>
         </footer>

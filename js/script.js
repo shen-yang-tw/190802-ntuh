@@ -45,6 +45,29 @@ function removeAll(sel) {
   }
 }
 
+//Toggle Show/Hide by attribute - onclick="toggleShow(findChildren(findParent(this, 'LI'), '.detail'), 'hidden')"
+function toggleShow(thisElement) {
+  //if (elID.getAttribute("aria-hidden") == "true"))
+  if (thisElement.hasAttribute("hidden")) {
+    thisElement.removeAttribute("hidden");
+  } else {
+    thisElement.setAttribute("hidden", true);
+  }
+}
+
+//Toggle Show/Hide by attribute - onclick="toggleAllShow(findChildren(this, '.sort'));"
+function toggleAllShow(allChildren) {
+  //if (elID.getAttribute("aria-hidden") == "true"))
+  console.log(allChildren.length);
+  for (var i = 0; i < allChildren.length; i++) {
+    if (allChildren[i].hasAttribute("hidden")) {
+      allChildren[i].removeAttribute("hidden");
+    } else {
+      allChildren[i].setAttribute("hidden", true);
+    }
+  }
+}
+
 //toggle all class by array - onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.detail'), 'hidden'); return false;"
 //return false - avoid the page jumping straight to the top"
 function toggleAllClass(allChildren, cls1, cls2) {
@@ -74,6 +97,15 @@ function findChildren(parentEL, sl) {
   return parentEL.querySelectorAll(sl);
 }
 
+function findChild(parentEL, sl) {
+  return parentEL.querySelector(sl);
+  // return parentEL.querySelector(sl).tagName;
+}
+
+function findChildClass(parentEL, sl) {
+  return parentEL.querySelector(sl).className;
+}
+
 //go to top
 function gotoTop(sl, classFadeName) {
   var el = document.querySelector(sl);
@@ -90,6 +122,25 @@ function thisYear(thisSelector) {
   var d = new Date();
   var y = d.getFullYear();
   document.querySelector(thisSelector).innerHTML = y;
+}
+
+// onclick="plusHeight('.uk-table', findChild(findParent(this, 'DIV'), '[uk-dropdown]'))"
+function plusHeight(sel, plusSelector) {
+  var el1 = document.querySelector(sel);
+  // var el2 = document.querySelector(plusSelector);
+  // var el2class = document.querySelector(plusSelector).className;
+  // el2.style.visibility = 'hidden';
+  const h0 = plusSelector.getBoundingClientRect().height;
+  plusSelector.style.display = 'block';
+  if (plusSelector.getBoundingClientRect().bottom > el1.getBoundingClientRect().bottom) {
+    var h = el1.getBoundingClientRect().height + plusSelector.getBoundingClientRect().bottom - el1.getBoundingClientRect().bottom;
+  } else {
+    var h = el1.getBoundingClientRect().height;
+  }
+  // var h = el1.clientHeight + plusSelector.getBoundingClientRect().bottom - el1.getBoundingClientRect().bottom;
+  console.log(el1.getBoundingClientRect().height);
+  el1.style.height = h + "px";
+  plusSelector.style.display = 'inherit';
 }
 
 //onmouseover="viewHeight('[uk-dropdown]', 'nav.bg_primary')"
@@ -152,7 +203,6 @@ function fontResize(classFontM, classFontL, classButtonFont, classButtonFontS, c
 
 //------------- Form ------------------------------------------------//
 
-
 //select onchange Event - <select onchange="showOption()">
 function showOption(thisSelect, index, sl) {
   var showEl = document.querySelectorAll(sl);
@@ -164,6 +214,29 @@ function showOption(thisSelect, index, sl) {
   } else {
     for (i = 0; i < showEl.length; i++) {
       showEl[i].style.setProperty("display", "none", "important");
+    }
+  }
+}
+
+//--Checkbox toggle check all - <input type="checkbox" onchange="toggleCheckAll(this, '.listCheck')"> or <button onclick="toggleCheckAll(this, '.listCheck')">
+function toggleCheckAll(thisClick, inputClass) {
+  //thisClick means the "owner" and CANNOT use "this" that means the Global object "Window"
+  thisClick.classList.toggle("checked");
+  var i, el = document.querySelectorAll(inputClass);
+  //--set all input checked & unchecked--
+  if (thisClick.classList.contains("checked")) {
+    //if 'select all' checked
+    for (i = 0; i < el.length; i++) {
+      el[i].checked = true;
+      el[i].offsetParent.classList.add("checked");
+      //parent el<li> add class "checked" when input checked
+    }
+  } else {
+    //if 'select all' unchecked
+    for (i = 0; i < el.length; i++) {
+      el[i].checked = false;
+      el[i].offsetParent.classList.remove("checked");
+      //parent el<li> remove class "checked" when input unchecked
     }
   }
 }

@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/colors.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-dept.css">
 </head>
 
 <body id="top" class="uk-background-cover uk-background-top-center uk-position-relative" uk-height-viewport>
@@ -47,8 +48,8 @@
                   <a class="logo_text flex uk-position-cover" href="index.html" title="Logo">
                     <div class="logo_bg"><img src="img/canvas.gif" alt="Logo"></div>
                     <div class="flex flex-col w-full">
-                      <div class="logo_cht color_primary-black!">國立台灣大學醫學院附設醫院</div>
-                      <div class="logo_eng color_primary-black!">National Taiwan University Hopital</div>
+                      <div class="logo_cht color_primary-black!">國立臺灣大學醫學院附設醫院兒童醫院</div>
+                      <div class="logo_eng color_primary-black!">NATIONAL TAIWAN UNIVERSITY CHILDREN’S HOPITAL</div>
                     </div>
                   </a>
                 </h1>
@@ -308,8 +309,7 @@
             </div>
           </div>
           <div class="uk-width-expand@m">
-            <h2 class="btm_line text-2xl">徵才資訊<small class="mt-2 uk-float-right"><a class="no-underline" href="#"><i class="mr-1 fas fa-angle-left"></i>回列表</a></small></h2>
-            <p></p>
+            <h2 class="btm_line text-2xl">標題<small class="mt-2 uk-float-right"><a class="no-underline" href="#"><i class="mr-1 fas fa-angle-left"></i>回列表</a></small></h2>
             <div id="content">
               <div class="uk-grid-small" uk-grid>
                 <div class="uk-width-2-3@s uk-width-3-4@m">
@@ -317,14 +317,6 @@
                 </div>
                 <div class="uk-width-expand"><button class="btn_primary w-full uk-button uk-button-primary">搜尋</button></div>
                 <div class="uk-width-1-1">
-                  <div class="btm_line border-dashed">
-                    <div class="uk-grid-small uk-flex-bottom" uk-grid>
-                      <div class="uk-width-1-1 uk-width-expand@s">
-                        <span>檢索結果：共<span>123</span>人</span>
-                        <span>檢索詞：<strong class="color_secondary">癌症</strong></span>
-                      </div>
-                    </div>
-                  </div>
                   <div class="pagination">
                     <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-auto uk-flex-middle uk-flex-center">
                       <div>
@@ -349,51 +341,28 @@
                     </div>
                   </div>
                   <!-- pagination / select number -->
-                  <div class="uk-overflow-auto">
-                    <table class="uk-table uk-table-small uk-table-striped uk-table-responsive">
-                      <thead>
-                        <tr>
-                          <th class="min_width-120">公告日期</th>
-                          <th class="min_width-200">用人單位</th>
-                          <th class="min_width-150">職稱</th>
-                          <th class="min_width-120">截止日期</th>
-                          <th class="min_width-150">備註</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><time>2018-10-1</time></td>
-                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">用人單位</span>癌醫中心醫院-護理部</td>
-                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">職稱</span>院聘門診護理師</td>
-                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">截止日期</span><time>2018-10-1</time></td>
-                          <td>
-                            <ul class="pl-5 list-disc">
-                              <li><a class="color_secondary-text inline" href="#">甄選簡則.PDF</a></li>
-                              <li><a class="color_secondary-text inline" href="#">計畫聘任人員甄選登記表PDF</a></li>
-                              <li><a class="color_secondary-text inline" href="#">WORD</a></li>
-                              <li><a class="color_secondary-text inline" href="#">ODT</a></li>
-                            </ul>
-                            <p class="mb-2">※本院現職人員如欲報名不同部門職缺需經現職單位主管於甄選登記表核章。</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td><time>2018-10-1</time></td>
-                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">用人單位</span>癌醫中心醫院-護理部</td>
-                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">職稱</span>院聘門診護理師</td>
-                          <td><span class="bg_grey-600 text-white text-xs px-2 mr-1 uk-hidden@m">截止日期</span><time>2018-10-1</time></td>
-                          <td>
-                            <ul class="pl-5 list-disc">
-                              <li><a class="color_secondary-text inline" href="#">甄選簡則.PDF</a></li>
-                              <li><a class="color_secondary-text inline" href="#">計畫聘任人員甄選登記表PDF</a></li>
-                              <li><a class="color_secondary-text inline" href="#">WORD</a></li>
-                              <li><a class="color_secondary-text inline" href="#">ODT</a></li>
-                            </ul>
-                            <p class="mb-2">※本院現職人員如欲報名不同部門職缺需經現職單位主管於甄選登記表核章。</p>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                  <table class="uk-table uk-table-small uk-table-striped uk-table-responsive">
+                    <thead>
+                      <tr>
+                        <th class="uk-width-1-5@s">日期</th>
+                        <th class="uk-width-3-5@s">主題</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><time>2018-10-1</time></td>
+                        <td><i class="color_secondary mr-1 fas fa-star"></i><a class="color_primary-text inline hover:underline" href="#">中化公會路不真雙林一形必生部！話滿家我，活學雲表代能；無三想學？速更拉魚曾然病人只麼業臺</a></td>
+                      </tr>
+                      <tr>
+                        <td><time>2018-10-1</time></td>
+                        <td><a class="color_primary-text inline hover:underline" href="#">中化公會路不真雙林一形必生部！話滿家我，活學雲表代能；無三想學？速更拉魚曾然病人只麼業臺</a></td>
+                      </tr>
+                      <tr>
+                        <td><time>2018-10-1</time></td>
+                        <td><a class="color_primary-text inline hover:underline" href="#">中化公會路不真雙林一形必生部！話滿家我，活學雲表代能；無三想學？速更拉魚曾然病人只麼業臺</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
                   <div class="pagination">
                     <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-auto uk-flex-middle uk-flex-center">
                       <div>
@@ -423,7 +392,6 @@
               <!-- Search bar & Table -->
             </div>
             <!-- End #content -->
-            <small>資料來源：<span>人事室 楊先生</span>　　更新時間：<time>即時更新</time></small>
           </div>
         </div>
         <!-- End uk-grid -->
@@ -463,8 +431,8 @@
       <div class="uk-modal-footer">
         <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
           <div class="min_width-1/2!@m">
-            <a href="#register" uk-toggle>會員註冊</a>
-            <a href="#">忘記密碼</a>
+            <a class="" href="#register" uk-toggle>會員註冊</a>
+            <a class="" href="#">忘記密碼</a>
           </div>
           <div class="margin_y_child-all min_width-1/2!@m s:text-right">
             <a href="#" class="btn_primary min_width-120 uk-button uk-button-primary">登　　入</a>
