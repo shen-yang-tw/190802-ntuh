@@ -1,8 +1,8 @@
 .logo_bg {
-  background: url('../img/logo-ntuh.svg#svgView(preserveAspectRatio(xMinYMid))') no-repeat left center;
+  background: url('../img/logo-ntuh.svg#svgView(preserveAspectRatio(xMinYMid meet))') no-repeat left center;
 }
 footer .logo_bg {
-  background: url('../img/logo-ntuh.svg#svgView(preserveAspectRatio(xMinYMin))') no-repeat left center;
+  background: url('../img/logo-ntuh.svg#svgView(preserveAspectRatio(xMinYMin meet))') no-repeat left center;
 }
 
 #offcanvas * {color: white !important;}
