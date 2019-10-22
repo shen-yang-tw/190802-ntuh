@@ -76531,8 +76531,11 @@ nav.nav_reset {
   width: 100%;
 }
 .logo_control .logo_text_control .logo_position .logo_bg, .logo_control .logo_text_control .logo_position-up .logo_bg {
-  background-size: 100%;
+  background-size: contain;
   max-width: calc(40px*1.96);
+  max-height: 40px;
+}
+.logo_control .logo_text_control .logo_position .logo_bg > img, .logo_control .logo_text_control .logo_position-up .logo_bg > img {
   max-height: 40px;
 }
 @media (min-width: 1200px) {

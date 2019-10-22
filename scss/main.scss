@@ -2767,7 +2767,7 @@ $logo-ratio:floor(128/65*100)/100;
         #{$logo-eng} {font-size: 0.8rem}
         #{$logo-cht},#{$logo-eng} {width: 100%;}
       }
-      #{$logo-bg} {background-size: 100%; max-width: calc(#{$logo-min-height}*#{$logo-ratio}); max-height: $logo-min-height; @media (min-width:1200px) {max-width: calc(#{$logo-height}*#{$logo-ratio}); max-height: $logo-height;}}
+      #{$logo-bg} {background-size: contain; max-width: calc(#{$logo-min-height}*#{$logo-ratio}); max-height: $logo-min-height; >img {max-height: $logo-min-height;} @media (min-width:1200px) {max-width: calc(#{$logo-height}*#{$logo-ratio}); max-height: $logo-height;}}
       &, #{$logo-bg} {min-height: $logo-min-height; @media (min-width:1200px) {min-height: $logo-height;}}
     }
     &-up #{$logo-text} {
