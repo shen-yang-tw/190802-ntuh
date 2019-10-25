@@ -12,6 +12,16 @@ footer .logo_bg {
 
 .gradient {background: linear-gradient(to bottom, #007ebd 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 80%, rgba(0,0,0,20) 100%);}
 
+.editor ul {
+    list-style: disc;
+}
+.editor ol {
+    list-style: decimal;
+}
+.editor ul, .editor ol {
+    padding-left: 30px;
+}
+
 .clouds{
 	width:500%;
 	height: 40%;
