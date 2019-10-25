@@ -12,6 +12,10 @@ footer .logo_bg {
 
 .gradient {background: linear-gradient(to bottom, #007ebd 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 80%, rgba(0,0,0,20) 100%);}
 
+.editor table {
+    border-width: 1px;
+    border-color: black;
+}
 .editor ul {
     list-style: disc;
 }
