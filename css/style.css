@@ -12,19 +12,27 @@ footer .logo_bg {
 
 .gradient {background: linear-gradient(to bottom, #007ebd 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 80%, rgba(0,0,0,20) 100%);}
 
+.editor {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.editor table {
+  width: 100%;
+  min-width: 1000px;
+}
 .editor table, .editor th, .editor td {
-    border-width: 1px;
-    border-color: black;
-    padding: 2px 5px;
+  border-width: 1px;
+  border-color: black;
+  padding: 2px 5px;
 }
 .editor ul {
-    list-style: disc;
+  list-style: disc;
 }
 .editor ol {
-    list-style: decimal;
+  list-style: decimal;
 }
 .editor ul, .editor ol {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 .clouds{
