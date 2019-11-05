@@ -5,6 +5,8 @@ footer .logo_bg {
   background: url('../img/logo-ntuh.svg#svgView(preserveAspectRatio(xMinYMin meet))') no-repeat left center;
 }
 
+.sub_nav iframe {min-width: 150px;}
+
 #offcanvas * {color: white !important;}
 #offcanvas .uk-offcanvas-bar {background: #506873 !important;}
 
