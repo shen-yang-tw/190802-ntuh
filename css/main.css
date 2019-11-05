@@ -2821,47 +2821,47 @@ p > *:not(table), .urlFix > *:not(table) {
   text-shadow: 0px 1px 2px #000000;
 }
 
-.color_white, .color_white *, .hover\:color_white:hover, .hover\:color_white:hover * {
+.color_white, .color_white > *, .hover\:color_white:hover, .hover\:color_white:hover * {
   color: white;
 }
 
-.color_black, .color_black *, .hover\:color_black:hover, .hover\:color_black:hover * {
+.color_black, .color_black > *, .hover\:color_black:hover, .hover\:color_black:hover * {
   color: black;
 }
 
-.color_default, .color_default * {
+.color_default, .color_default > * {
   color: #616161;
 }
 
-.color_dark, .color_dark * {
+.color_dark, .color_dark > * {
   color: #2e2e2e;
 }
 
-.color_grey, .color_grey * {
+.color_grey, .color_grey > * {
   color: #6b6b6b;
 }
 
-.color_grey.disabled, .color_grey.disabled * {
+.color_grey.disabled, .color_grey.disabled > * {
   color: #9e9e9e;
 }
 
-.color_white\!, .color_white\! *, .hover\:color_white\!:hover, .hover\:color_white\!:hover * {
+.color_white\!, .color_white\! > *, .hover\:color_white\!:hover, .hover\:color_white\!:hover * {
   color: white !important;
 }
 
-.color_black\!, .color_black\! *, .hover\:color_black\!:hover, .hover\:color_black\!:hover * {
+.color_black\!, .color_black\! > *, .hover\:color_black\!:hover, .hover\:color_black\!:hover * {
   color: black !important;
 }
 
-.color_default\!, .color_default\! * {
+.color_default\!, .color_default\! > * {
   color: #616161 !important;
 }
 
-.color_dark\!, .color_dark\! * {
+.color_dark\!, .color_dark\! > * {
   color: #2e2e2e !important;
 }
 
-.color_grey\!, .color_grey\! * {
+.color_grey\!, .color_grey\! > * {
   color: #6b6b6b !important;
 }
 
