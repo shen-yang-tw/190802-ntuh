@@ -10144,6 +10144,7 @@ a, span, label, strong, small {
 
 .list_decimal_ch {
   list-style-type: cjk-ideographic;
+  padding-left: 30px;
 }
 
 .list_decimal_row {

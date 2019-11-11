@@ -16,9 +16,9 @@ header > :nth-child(2) > nav > :nth-child(2) .logo_text {
   width: auto !important;
 }
 
-section:last-of-type {
+/* section:last-of-type {
   min-height: 100vh !important;
-}
+} */
 
 section:last-of-type > div > div:first-child {
   margin: 0 !important;

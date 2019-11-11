@@ -269,7 +269,7 @@
 
   <section class="relative" uk-height-viewport="expand: true">
     <!-- <div class="bg_primary opacity10 uk-position-cover"></div> -->
-    <div class="container_responsive@s uk-container uk-container-large">
+    <div class="container_responsive@s uk-container">
       <ul class="uk-breadcrumb uk-visible@m">
         <li><a href="#">首頁</a></li>
         <li><a href="#">Link</a></li>
@@ -278,48 +278,93 @@
       <!-- End uk-breadcrumb -->
       <div class="h-0 relative uk-visible@m"><a class="no-underline px-1 uk-position-absolute" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px; top:15px;">:::</a></div>
       <div class="s:mb-2 uk-card uk-card-small uk-card-default uk-card-body" uk-height-viewport="min-height: 200">
-        <div class="uk-grid-medium" uk-grid>
-          <div class="uk-width-1-4@m uk-width-1-5@l">
-            <div class="max_height-200 max_height-700@m uk-overflow-auto">
-              <ul class="list_tabs uk-nav-parent-icon" uk-nav="multiple: true; animation: false">
-                <li class="uk-nav-header">
-                  <a href="#content">Level1<small class="pseudo:parentheses">123</small></a>
-                </li>
-                <li class="uk-nav-header uk-parent uk-open">
-                  <a href="#content">Level2<small class="pseudo:parentheses">123</small></a>
-                  <ul>
-                    <li class="active"><a href="#content">Level2-Item-Active<small class="pseudo:parentheses">123</small></a></li>
-                    <li><a href="#content">Level2-Item<small class="pseudo:parentheses">123</small></a></li>
-                  </ul>
-                </li>
-                <li class="uk-nav-header uk-parent">
-                  <a href="#">Level3<small class="pseudo:parentheses">123</small></a>
-                  <ul>
-                    <li>
-                      <a href="#content">Title<small class="pseudo:parentheses">123</small></a>
-                      <ul>
-                        <li><a href="#content">Level3-Item<small class="pseudo:parentheses">123</small></a></li>
-                        <li><a href="#content">Level3-Item<small class="pseudo:parentheses">123</small></a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+        <h2 class="btm_line text-2xl">標題</h2>
+        <div id="content">
+          <div class="uk-grid-small" uk-grid>
+            <div class="uk-width-2-3@s uk-width-3-4@m">
+              <input class="uk-input" type="text" placeholder="請輸入內容">
             </div>
-          </div>
-          <div class="uk-width-expand@m">
-            <h2 class="btm_line text-2xl">常用連結<small class="mt-2 uk-float-right"><a class="no-underline" href="#"><i class="mr-1 fas fa-angle-left"></i>回列表</a></small></h2>
-            <div id="content">
-              <div class="margin_x_child-l margin_y_child-l uk-flex uk-flex-column uk-flex-wrap">
-                <div><a class="leading-normal text-left uk-button uk-button-default" href="#">的山有位轉有最片當我市檢</a></div>
-                <div><a class="leading-normal text-left uk-button uk-button-default" href="#">Link</a></div>
-                <div><a class="leading-normal text-left uk-button uk-button-default" href="#">Link</a></div>
+            <div class="uk-width-expand"><button class="btn_primary w-full uk-button uk-button-primary">搜尋</button></div>
+            <div class="uk-width-1-1">
+              <div class="pagination">
+                <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-auto uk-flex-middle uk-flex-center">
+                  <div>
+                    <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="首頁"><i class="fas fa-angle-double-left fa-fw"></i></a>
+                    <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="上一頁"><i class="fas fa-angle-left fa-fw"></i></a>
+                    <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="首頁" hidden><i class="fas fa-angle-double-left fa-fw"></i></a>
+                    <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="上一頁" hidden><i class="fas fa-angle-left fa-fw"></i></a>
+                  </div>
+                  <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-middle uk-margin">
+                    <select class="w-auto uk-select uk-form-small">
+                      <option selected>1</option>
+                      <option>2</option>
+                    </select>
+                    <span class="mx-1">/<span class="pl-1">20</span></span>
+                  </div>
+                  <div>
+                    <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="下一頁"><i class="fas fa-angle-right fa-fw"></i></a>
+                    <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="末頁"><i class="fas fa-angle-double-right fa-fw"></i></a>
+                    <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="下一頁" hidden><i class="fas fa-chevron-right fa-fw"></i></a>
+                    <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="末頁" hidden><i class="fas fa-chevron-double-right fa-fw"></i></a>
+                  </div>
+                </div>
               </div>
+              <!-- pagination / select number -->
+              <table class="uk-table uk-table-small uk-table-striped uk-table-responsive">
+                <thead>
+                  <tr>
+                    <th class="uk-width-1-5@s">日期</th>
+                    <th class="uk-width-3-5@s">主題</th>
+                    <th class="uk-width-1-5@s">點閱數</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><time>2018-10-1</time></td>
+                    <td><i class="color_secondary mr-1 fas fa-star"></i><a class="color_primary-text inline hover:underline" href="#">中化公會路不真雙林一形必生部！話滿家我，活學雲表代能；無三想學？速更拉魚曾然病人只麼業臺</a></td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td><time>2018-10-1</time></td>
+                    <td><a class="color_primary-text inline hover:underline" href="#">中化公會路不真雙林一形必生部！話滿家我，活學雲表代能；無三想學？速更拉魚曾然病人只麼業臺</a></td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td><time>2018-10-1</time></td>
+                    <td><a class="color_primary-text inline hover:underline" href="#">中化公會路不真雙林一形必生部！話滿家我，活學雲表代能；無三想學？速更拉魚曾然病人只麼業臺</a></td>
+                    <td>2</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="pagination">
+                <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-auto uk-flex-middle uk-flex-center">
+                  <div>
+                    <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="首頁"><i class="fas fa-angle-double-left fa-fw"></i></a>
+                    <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="上一頁"><i class="fas fa-angle-left fa-fw"></i></a>
+                    <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="首頁" hidden><i class="fas fa-angle-double-left fa-fw"></i></a>
+                    <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="上一頁" hidden><i class="fas fa-angle-left fa-fw"></i></a>
+                  </div>
+                  <div class="uk-grid uk-grid-collapse uk-child-width-auto uk-flex-middle uk-margin">
+                    <select class="w-auto uk-select uk-form-small">
+                      <option selected>1</option>
+                      <option>2</option>
+                    </select>
+                    <span class="mx-1">/<span class="pl-1">20</span></span>
+                  </div>
+                  <div>
+                    <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="下一頁"><i class="fas fa-angle-right fa-fw"></i></a>
+                    <a class="color_grey hover:bg-transparent btn btn-flat" href="#" title="末頁"><i class="fas fa-angle-double-right fa-fw"></i></a>
+                    <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="下一頁" hidden><i class="fas fa-chevron-right fa-fw"></i></a>
+                    <a class="color_grey hover:bg-transparent btn btn-flat disabled" href="#" title="末頁" hidden><i class="fas fa-chevron-double-right fa-fw"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- pagination / select number -->
             </div>
-            <!-- End #content -->
           </div>
+          <!-- Search bar & Table -->
         </div>
-        <!-- End uk-grid -->
+        <!-- End #content -->
       </div>
       <!-- End uk-card -->
     </div>

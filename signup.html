@@ -282,39 +282,95 @@
           <div class="uk-width-1-4@m uk-width-1-5@l">
             <div class="max_height-200 max_height-700@m uk-overflow-auto">
               <ul class="list_tabs uk-nav-parent-icon" uk-nav="multiple: true; animation: false">
-                <li class="uk-nav-header">
+                <li class="active uk-nav-header">
                   <a href="#content">Level1<small class="pseudo:parentheses">123</small></a>
                 </li>
-                <li class="uk-nav-header uk-parent uk-open">
-                  <a href="#content">Level2<small class="pseudo:parentheses">123</small></a>
-                  <ul>
-                    <li class="active"><a href="#content">Level2-Item-Active<small class="pseudo:parentheses">123</small></a></li>
-                    <li><a href="#content">Level2-Item<small class="pseudo:parentheses">123</small></a></li>
-                  </ul>
-                </li>
-                <li class="uk-nav-header uk-parent">
-                  <a href="#">Level3<small class="pseudo:parentheses">123</small></a>
-                  <ul>
-                    <li>
-                      <a href="#content">Title<small class="pseudo:parentheses">123</small></a>
-                      <ul>
-                        <li><a href="#content">Level3-Item<small class="pseudo:parentheses">123</small></a></li>
-                        <li><a href="#content">Level3-Item<small class="pseudo:parentheses">123</small></a></li>
-                      </ul>
-                    </li>
-                  </ul>
+                <li class="uk-nav-header">
+                  <a href="#content">Level1<small class="pseudo:parentheses">123</small></a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="uk-width-expand@m">
-            <h2 class="btm_line text-2xl">常用連結<small class="mt-2 uk-float-right"><a class="no-underline" href="#"><i class="mr-1 fas fa-angle-left"></i>回列表</a></small></h2>
-            <div id="content">
-              <div class="margin_x_child-l margin_y_child-l uk-flex uk-flex-column uk-flex-wrap">
-                <div><a class="leading-normal text-left uk-button uk-button-default" href="#">的山有位轉有最片當我市檢</a></div>
-                <div><a class="leading-normal text-left uk-button uk-button-default" href="#">Link</a></div>
-                <div><a class="leading-normal text-left uk-button uk-button-default" href="#">Link</a></div>
-              </div>
+            <h2 class="btm_line text-2xl">全部</h2>
+            <div id="content" uk-margin>
+              <ul class="uk-list">
+                <li class="p-0">
+                  <div class="bg-gray-200 p-3 uk-card uk-card-hover">
+                    <div class="uk-grid-small uk-grid-match" uk-grid uk-height-match="target: .matchHeight">
+                      <div class="uk-width-1-3@s uk-width-1-4@xl" hidden>
+                        <div class="matchHeight uk-background-cover uk-flex uk-flex-middle" style="background-image: url(https://picsum.photos/1600/900);">
+                          <img class="uk-invisible" src="https://picsum.photos/1600/900" alt="">
+                        </div>
+                      </div>
+                      <div class="matchHeight uk-width-expand@s">
+                        <h3 class="color_primary-text text-bold m-0">活動名稱</h3>
+                        <div class="margin_x_child my-3 uk-flex uk-flex-middle" uk-grid uk-margin>
+                          <span class="margin_x_child"><i class="mr-1 far fa-calendar fa-fw"></i>活動日期：<time class="color_secondary">2017-10-24</time></span>
+                          <span class="margin_x_child"><i class="mr-1 fas fa-user fa-fw"></i>講師：<em class="not-italic">秦博士</em></span>
+                          <span class="margin_x_child"><i class="mr-1 fas fa-map-marker-alt fa-fw"></i>活動地點：<em class="not-italic">醫學人文館</em></span>
+                          <span class="m-auto"></span>
+                          <span class="margin_x_child margin_y_all_child"><i class="mr-1 fas fa-download fa-fw"></i>檔案下載：<a class="btn_secondary uk-button uk-button-primary uk-button-small" href="#"><i class="mr-1 fas fa-cloud-download-alt"></i>Download</a><a class="btn_secondary uk-button uk-button-primary uk-button-small" href="#"><i class="mr-1 fas fa-cloud-download-alt"></i>制實數人用路起百教高民味我各一院</a></span>
+                        </div>
+                        <p class="text-justify">本次活動將由秦博士向參與對象說明醫師執照取得相關疑問，感謝您的參與！</p>
+                        <div class="text-right mt-4">
+                          <a class="btn_primary w-full s:w-auto min_width-200@s text-lg uk-button uk-button-primary" href="#" uk-toggle="target:#modal">我要報名<i class="ml-2 fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="p-0">
+                  <div class="bg-gray-200 p-3 uk-card uk-card-hover">
+                    <div class="uk-grid-small uk-grid-match" uk-grid uk-height-match="target: .matchHeight">
+                      <div class="uk-width-1-3@s uk-width-1-4@xl">
+                        <div class="matchHeight uk-background-cover uk-flex uk-flex-middle" style="background-image: url(https://picsum.photos/1600/900);">
+                          <img class="uk-invisible" src="https://picsum.photos/1600/900" alt="">
+                        </div>
+                      </div>
+                      <div class="matchHeight uk-width-expand@s">
+                        <h3 class="color_primary-text text-bold m-0">活動名稱</h3>
+                        <div class="margin_x_child my-3 uk-flex uk-flex-middle" uk-grid uk-margin>
+                          <span class="margin_x_child"><i class="mr-1 far fa-calendar fa-fw"></i>活動日期：<time class="color_secondary">2017-10-24</time></span>
+                          <span class="margin_x_child"><i class="mr-1 fas fa-user fa-fw"></i>講師：<em class="not-italic">秦博士</em></span>
+                          <span class="margin_x_child"><i class="mr-1 fas fa-map-marker-alt fa-fw"></i>活動地點：<em class="not-italic">醫學人文館</em></span>
+                          <span class="m-auto"></span>
+                          <span class="margin_x_child margin_y_all_child"><i class="mr-1 fas fa-download fa-fw"></i>檔案下載：<a class="btn_secondary uk-button uk-button-primary uk-button-small" href="#"><i class="mr-1 fas fa-cloud-download-alt"></i>Download</a><a class="btn_secondary uk-button uk-button-primary uk-button-small" href="#"><i class="mr-1 fas fa-cloud-download-alt"></i>制實數人用路起百教高民味我各一院</a></span>
+                        </div>
+                        <p class="text-justify">本次活動將由秦博士向參與對象說明醫師執照取得相關疑問，感謝您的參與！</p>
+                        <div class="text-right mt-4">
+                          <a class="btn_primary w-full s:w-auto min_width-200@s text-lg uk-button uk-button-primary" href="#" uk-toggle="target:#modal">我要報名<i class="ml-2 fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="p-0">
+                  <div class="bg-gray-200 p-3 uk-card uk-card-hover">
+                    <div class="uk-grid-small uk-grid-match" uk-grid uk-height-match="target: .matchHeight">
+                      <div class="uk-width-1-3@s uk-width-1-4@xl">
+                        <div class="matchHeight uk-background-cover uk-flex uk-flex-middle" style="background-image: url(https://picsum.photos/1600/900);">
+                          <img class="uk-invisible" src="https://picsum.photos/1600/900" alt="">
+                        </div>
+                      </div>
+                      <div class="matchHeight uk-width-expand@s">
+                        <h3 class="color_primary-text text-bold m-0">活動名稱</h3>
+                        <div class="margin_x_child my-3 uk-flex uk-flex-middle" uk-grid uk-margin>
+                          <span class="margin_x_child"><i class="mr-1 far fa-calendar fa-fw"></i>活動日期：<time class="color_secondary">2017-10-24</time></span>
+                          <span class="margin_x_child"><i class="mr-1 fas fa-user fa-fw"></i>講師：<em class="not-italic">秦博士</em></span>
+                          <span class="margin_x_child"><i class="mr-1 fas fa-map-marker-alt fa-fw"></i>活動地點：<em class="not-italic">醫學人文館</em></span>
+                          <span class="m-auto"></span>
+                          <span class="margin_x_child margin_y_all_child"><i class="mr-1 fas fa-download fa-fw"></i>檔案下載：<a class="btn_secondary uk-button uk-button-primary uk-button-small" href="#"><i class="mr-1 fas fa-cloud-download-alt"></i>Download</a><a class="btn_secondary uk-button uk-button-primary uk-button-small" href="#"><i class="mr-1 fas fa-cloud-download-alt"></i>制實數人用路起百教高民味我各一院</a></span>
+                        </div>
+                        <p class="text-justify">本次活動將由秦博士向參與對象說明醫師執照取得相關疑問，感謝您的參與！</p>
+                        <div class="text-right mt-4">
+                          <a class="btn_primary w-full s:w-auto min_width-200@s text-lg uk-button uk-button-primary" href="#" uk-toggle="target:#modal">我要報名<i class="ml-2 fas fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
             <!-- End #content -->
           </div>
@@ -326,11 +382,87 @@
   </section>
   <!-- page main content -->
 
+  <div id="modal" class="uk-modal-container uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" title="刪除" uk-close></button>
+      <div class="uk-modal-header">
+        <h3 class="text-2xl uk-modal-title">報名活動：活動名稱</h2>
+      </div>
+      <div class="uk-modal-body">
+        <form>
+          <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+            <div class="min_width-1/2!@m">
+              <label class="font-bold block"><span class="color_secondary mr-1">*</span>姓名</label>
+              <input class="uk-input" type="text" placeholder="">
+              <p class="mt-1 uk-text-small" hidden>驗證輸入提示文字</p>
+            </div>
+            <div class="min_width-1/2!@m">
+              <label class="font-bold block"><span class="color_secondary mr-1">*</span>單位</label>
+              <input class="uk-input" type="text" placeholder="">
+              <p class="mt-1 uk-text-small" hidden>驗證輸入提示文字</p>
+            </div>
+            <div class="min_width-1/2!@m">
+              <label class="font-bold" for="select"><span class="color_secondary mr-1">*</span>身份別</label>
+              <select id="select" class="uk-select">
+                <option>Option 01</option>
+                <option>Option 02</option>
+              </select>
+              <p class="mt-1 uk-text-small" hidden>驗證輸入提示文字</p>
+            </div>
+            <div class="min_width-1/2!@m">
+              <label class="font-bold block">參加場次</label>
+              <div class="uk-form-controls margin_x_child-l margin_y_child">
+                <label><input class="mr-1 uk-radio" type="radio" name="radio1">上午場</label>
+                <label><input class="mr-1 uk-radio" type="radio" name="radio1">下午場</label>
+                <label><input class="mr-1 uk-radio" type="radio" name="radio1">其它</label>
+                <input class="inline-block w-auto uk-input" type="text" placeholder="">
+              </div>
+              <p class="mt-1 uk-text-small" hidden>驗證輸入提示文字</p>
+            </div>
+            <div class="min_width-1/2!@m">
+              <label class="font-bold block"><span class="color_secondary mr-1">*</span>聯絡電話</label>
+              <input class="uk-input" type="text" placeholder="">
+              <p class="mt-1 uk-text-small" hidden>驗證輸入提示文字</p>
+            </div>
+            <div class="min_width-1/2!@m">
+              <label class="font-bold block"><span class="color_secondary mr-1">*</span>E-mail</label>
+              <input class="uk-input" type="text" placeholder="">
+              <p class="mt-1 uk-text-small" hidden>驗證輸入提示文字</p>
+            </div>
+            <div class="min_width-1/2!@m">
+              <label class="font-bold block"><span class="color_secondary mr-1">*</span>備註</label>
+              <input class="uk-input" type="text" placeholder="">
+              <p class="mt-1 uk-text-small" hidden>驗證輸入提示文字</p>
+            </div>
+            <div class="min_width-1/2!@m">
+              <label class="font-bold block"><span class="color_secondary mr-1">*</span>驗證碼</label>
+              <img class="inline-block mb-2 mr-2 m:mb-0" data-src="http://fakeimg.pl/150x40/" width="150" height="40" alt="驗證碼" uk-img>
+              <i class="mr-2 fas fa-redo-alt"></i>
+              <input class="inline-block w-auto uk-input" type="text" placeholder="">
+              <p class="mt-1 uk-text-small" hidden>驗證輸入提示文字</p>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="uk-modal-footer">
+        <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+          <div class="min_width-1/2!@m">
+            <a href="#" class="btn_primary w-full uk-button uk-button-primary">確　　定</a>
+          </div>
+          <div class="min_width-1/2!@m">
+            <button class="btn_secondary w-full uk-button uk-button-primary uk-modal-close" type="button">取　　消</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- uk-modal -->
+
   <div id="login" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-margin-auto-vertical">
       <button class="uk-modal-close-default" type="button" title="刪除" uk-close></button>
       <div class="uk-modal-header">
-        <h2 class="uk-modal-title">會員登入</h2>
+        <h3 class="text-2xl uk-modal-title">會員登入</h2>
       </div>
       <div class="uk-modal-body">
         <form>
@@ -372,7 +504,7 @@
     <div class="uk-modal-dialog uk-margin-auto-vertical">
       <button class="uk-modal-close-default" type="button" title="刪除" uk-close></button>
       <div class="uk-modal-header">
-        <h2 class="uk-modal-title">會員註冊</h2>
+        <h3 class="text-2xl uk-modal-title">會員註冊</h2>
       </div>
       <div class="uk-modal-body">
         <form class="uk-form-horizontal" uk-margin>
