@@ -5,7 +5,7 @@ header {
 }
 
 header > nav {
-  background-color: #f6efac !important;
+  background-color: #ffe187 !important;
 }
 
 header > :nth-child(2) > nav > :nth-child(2) .logo_text {

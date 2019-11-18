@@ -22,7 +22,7 @@
 <body id="top" class="uk-background-cover uk-background-top-center uk-position-relative" uk-height-viewport>
   <a id="gototop" class="color_white bg_black_opacity-50 hover:bg_black_opacity-70 opacity-0 no-underline p-2 rounded uk-text-center uk-position-fixed uk-position-small uk-position-bottom-right uk-position-z-index" href="#top" title="回到最上" uk-scroll uk-totop><span hidden>回到最上</span></a>
   <header class="shadow">
-    <nav class="nav_reset shadow-none py-1 text-center uk-visible@m" uk-margin>
+    <nav class="nav_reset shadow-none py-1 text-center relative uk-visible@m" uk-margin>
       <div class="sub_nav margin_x_child text-sm h-full uk-flex uk-flex-center uk-flex-middle" uk-margin>
         <span class="uk-visible@m"><a class="px-2" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="padding-bottom: 3px;">:::</a></span>
         <span><a class="px-2" href="#">回醫療體系首頁</a></span>
@@ -37,9 +37,8 @@
       </div>
     </nav>
     <div class="shadow" uk-sticky="media: (max-width: 959px); animation: uk-animation-slide-top; top: 200">
-      <nav class="nav_bar-primary shadow-none uk-navbar-container uk-position-relative">
-        <div class="bg_primary-light uk-position-cover"></div>
-        <div class="bg_primary-lighter relative">
+      <nav class="nav_bar-secondary bg_secondary shadow-none">
+        <div class="bg_primary">
           <div class="logo_control px-2 m:px-4 uk-container" uk-navbar>
             <div class="logo_text_control flex-grow uk-navbar-left">
               <div class="logo_position-up">
@@ -71,7 +70,7 @@
             <ul class="nav_bar uk-tab uk-light">
               <li hidden></li>
               <li>
-                <a class="text-base color_primary-black!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">訊息專區</a>
+                <a class="text-base color_white!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">訊息專區</a>
                 <div class="bg_white_opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 0">
                   <ul class="nav_header-dotted uk-nav uk-dropdown-nav">
                     <li class="mt-0 uk-nav-header"><a class="hover:underline text-base" href="#">Itim</a></li>
@@ -80,7 +79,7 @@
                 </div>
               </li>
               <li>
-                <a class="text-base color_primary-black!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">認識台大</a>
+                <a class="text-base color_white!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">認識台大</a>
                 <div class="bg_white_opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 0">
                   <ul class="nav_header-dotted uk-nav uk-dropdown-nav">
                     <li class="mt-0 uk-nav-header">
@@ -101,7 +100,7 @@
                 </div>
               </li>
               <li>
-                <a class="text-base color_primary-black!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">就醫指南</a>
+                <a class="text-base color_white!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">就醫指南</a>
                 <div class="bg_white_opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 0">
                   <ul class="nav_header-dotted uk-nav uk-dropdown-nav">
                     <li class="mt-0 uk-nav-header">
@@ -145,10 +144,10 @@
                   </ul>
                 </div>
               </li>
-              <li><a class="text-base color_primary-black!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">醫療團隊</a></li>
-              <li><a class="text-base color_primary-black!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">特色醫療</a></li>
-              <li><a class="text-base color_primary-black!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">為民服務</a></li>
-              <li><a class="text-base color_primary-black!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">教學研究</a></li>
+              <li><a class="text-base color_white!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">醫療團隊</a></li>
+              <li><a class="text-base color_white!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">特色醫療</a></li>
+              <li><a class="text-base color_white!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">為民服務</a></li>
+              <li><a class="text-base color_white!" href="#" onmouseover="viewHeight('.nav_bar [uk-dropdown]', 'header')">教學研究</a></li>
             </ul>
           </div>
         </div>
@@ -305,7 +304,7 @@
   </div>
   <!-- End slideshow - js control auto height -->
 
-  <section class="bg_bar bg_primary-lighter relative">
+  <section class="bg_bar bg_primary-light relative">
     <div class="relative container_responsive@s uk-padding-remove uk-container">
       <form class="flex items-center mb-2 px-2 m:px-0 l:py-3 w-full">
         <div class="uk-inline w-full">
@@ -313,15 +312,15 @@
           <input class="uk-input" type="text" placeholder="請輸入內容">
         </div>
       </form>
-      <div class="border_primary-black! uk-grid-small uk-grid-divider uk-grid-match uk-child-width-expand uk-text-center" uk-grid>
+      <div class="border_primary-dark! uk-grid-small uk-grid-divider uk-grid-match uk-child-width-expand uk-text-center" uk-grid>
         <div>
-          <h3><a class="bg_primary-lighter text-base s:text-lg m:text-xl l:text-2xl p-1 m:p-2 w-full h-full uk-card-hover" href="#"><i class="block s:inline-block m-auto s:mr-1 fas fa-id-card-alt fa-fw fa-lg"></i>預約掛號</a></h3>
+          <h3><a class="bg_primary-light text-base s:text-lg m:text-xl l:text-2xl p-1 m:p-2 w-full h-full uk-card-hover" href="#"><i class="block s:inline-block m-auto s:mr-1 fas fa-id-card-alt fa-fw fa-lg"></i>預約掛號</a></h3>
         </div>
         <div>
-          <h3><a class="bg_primary-lighter text-base s:text-lg m:text-xl l:text-2xl p-1 m:p-2 w-full h-full uk-card-hover" href="#"><i class="block s:inline-block m-auto s:mr-1 fas fa-calendar-alt fa-fw fa-lg"></i>門診時間</a></h3>
+          <h3><a class="bg_primary-light text-base s:text-lg m:text-xl l:text-2xl p-1 m:p-2 w-full h-full uk-card-hover" href="#"><i class="block s:inline-block m-auto s:mr-1 fas fa-calendar-alt fa-fw fa-lg"></i>門診時間</a></h3>
         </div>
         <div>
-          <h3><a class="bg_primary-lighter text-base s:text-lg m:text-xl l:text-2xl p-1 m:p-2 w-full h-full uk-card-hover" href="#"><i class="block s:inline-block m-auto s:mr-1 fas fa-user-md fa-fw fa-lg"></i>尋找醫師</a></h3>
+          <h3><a class="bg_primary-light text-base s:text-lg m:text-xl l:text-2xl p-1 m:p-2 w-full h-full uk-card-hover" href="#"><i class="block s:inline-block m-auto s:mr-1 fas fa-user-md fa-fw fa-lg"></i>尋找醫師</a></h3>
         </div>
       </div>
     </div>
