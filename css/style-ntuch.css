@@ -54,17 +54,17 @@ header > nav {
 }
 
 header > :nth-child(2) > nav > :first-child {
-  background-color: #FF9800;
-  color: #613a00;
+  background-color: #f38020;
+  color: #572a05;
 }
 
 #slideshow ~ section > div > .uk-grid div > h4 {
-  background-color: #ffc107;
-  color: #6b5000;
+  background-color: #e9d839;
+  color: #655c0b;
 }
 
 #slideshow ~ section > div > .uk-grid div > h4 * {
-  color: #6b5000 !important;
+  color: #655c0b !important;
 }
 
 #slideshow ~ section > div > form:last-child,
