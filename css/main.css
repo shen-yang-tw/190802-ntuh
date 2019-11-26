@@ -2766,10 +2766,10 @@ footer, small {
 }
 
 /*---------- Link ------------------------------*/
-a:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]), a:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):visited, a:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):focus, nav a:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]), button:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]), button:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):visited, button:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):focus, nav button:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]) {
+a:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):not([class^=uk-button]), a:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):not([class^=uk-button]):visited, a:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):not([class^=uk-button]):focus, nav a:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):not([class^=uk-button]), button:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):not([class^=uk-button]), button:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):not([class^=uk-button]):visited, button:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):not([class^=uk-button]):focus, nav button:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):not([class^=uk-button]) {
   color: #2e2e2e;
 }
-a:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):hover, a:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):hover *, button:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):hover, button:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):hover * {
+a:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):not([class^=uk-button]):hover, a:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):not([class^=uk-button]):hover *, button:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):not([class^=uk-button]):hover, button:not([class^=bg_]):not([class^=btn_]):not([class^=color_]):not([class^=text-]):not([class^=uk-button]):hover * {
   color: black;
 }
 
@@ -10218,9 +10218,14 @@ a, span, label, strong, small {
   background: #fafafa;
 }
 
-.list_dot {
+.list_dot, .list_arrow {
   list-style: none;
 }
+.list_dot > li, .list_arrow > li {
+  position: relative;
+  padding-left: 20px;
+}
+
 .list_dot > li:before {
   position: absolute;
   content: "•";
@@ -10234,9 +10239,19 @@ a, span, label, strong, small {
   left: 0;
   padding: 0;
 }
-.list_dot > li {
-  position: relative;
-  padding-left: 20px;
+
+.list_arrow > li:before {
+  position: absolute;
+  content: "▸";
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  left: 0;
+  padding: 0;
 }
 
 .list_vline > li:not(:last-child):after {

@@ -83,12 +83,10 @@ a.bg_facebook * {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
-
 .editor table {
   width: 100%;
-  min-width: 1000px;
+  min-width: 700px;
 }
-
 .editor table,
 .editor th,
 .editor td {
@@ -96,18 +94,18 @@ a.bg_facebook * {
   border-color: black;
   padding: 2px 5px;
 }
-
-.editor ul {
+.editor ul:not(.list_arrow) {
   list-style: disc;
 }
-
 .editor ol {
   list-style: decimal;
 }
-
 .editor ul,
 .editor ol {
-  padding-left: 30px;
+  padding-left: 25px;
+}
+.editor ul.list_arrow {
+  padding-left: 0;
 }
 
 .clouds {

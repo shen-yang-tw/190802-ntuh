@@ -38,10 +38,10 @@
       <!-- <h2 class="text-black py-3 text-base m:text-2xl font-medium text-center">總院</h2>
       <hr class="border-black mt-0"> -->
       <div class="uk-flex uk-flex-center uk-grid-small" uk-grid>
-        <div><a class="btn_primary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#">中文版</a></div>
-        <div><a class="btn_primary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#">English</a></div>
-        <div><a class="btn_primary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#" target="_blank" title="另開視窗">兒童醫院</a></div>
-        <div><a class="btn_primary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#" target="_blank" title="另開視窗">兒童版</a></div>
+        <div><a class="btn_primary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="http://59.120.40.123:81/ntuh/Index.action">中文版</a></div>
+        <div><a class="btn_primary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="http://59.120.40.123:81/ntuh/Welcome.action?I=en_US">English</a></div>
+        <div><a class="btn_primary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="http://59.120.40.123:81/ntuch/Index.action" target="_blank" title="另開視窗">兒童醫院</a></div>
+        <div><a class="btn_primary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="https://ntuch.ntuh.gov.tw/" target="_blank" title="另開視窗">兒童版</a></div>
       </div>
       <div class="h-2"></div>
       <h2 class="text_shadow-black py-3 text-base m:text-2xl text-white font-medium text-center">醫療體系</h2>
@@ -49,12 +49,78 @@
       <!-- <h2 class="text-black py-3 text-base m:text-2xl font-medium text-center">醫療體系</h2>
       <hr class="border-black mt-0"> -->
       <div class="uk-flex uk-flex-center uk-grid-small" uk-grid>
-        <div><a class="btn_secondary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#" target="_blank" title="另開視窗">金山分院</a></div>
-        <div><a class="btn_secondary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#" target="_blank" title="另開視窗">北護分院</a></div>
-        <div><a class="btn_secondary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#" target="_blank" title="另開視窗">新竹分院</a></div>
-        <div><a class="btn_secondary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#" target="_blank" title="另開視窗">竹東分院</a></div>
-        <div><a class="btn_secondary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#" target="_blank" title="另開視窗">東健康中心</a></div>
-        <div><a class="btn_secondary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#" target="_blank" title="另開視窗">雲林分院</a></div>
+        <div><a class="btn_secondary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#js" uk-toggle>金山分院</a></div>
+        <div id="js" class="uk-flex-top" uk-modal>
+          <div class="uk-modal-dialog uk-margin-auto-vertical">
+            <div class="uk-modal-body">提醒：將另開新視窗，連結至臺大醫院金山分院網站!</div>
+            <div class="uk-modal-footer uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">取消</button>
+              <button class="uk-button uk-button-primary" onclick="window.open('https&colon;&#47;&#47;www.js.ntuh.gov.tw')">確定</button>
+            </div>
+          </div>
+        </div>
+        <!-- uk-modal-confirm -->
+        <div><a class="btn_secondary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#bh" uk-toggle>北護分院</a></div>
+        <div id="bh" class="uk-flex-top" uk-modal>
+          <div class="uk-modal-dialog uk-margin-auto-vertical">
+            <div class="uk-modal-body">提醒：將另開新視窗，連結至臺大醫院北護分院網站!</div>
+            <div class="uk-modal-footer uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">取消</button>
+              <button class="uk-button uk-button-primary" onclick="window.open('https&colon;&#47;&#47;www.bh.ntuh.gov.tw')">確定</button>
+            </div>
+          </div>
+        </div>
+        <!-- uk-modal-confirm -->
+        <div><a class="btn_secondary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#hch" uk-toggle>新竹分院</a></div>
+        <div id="hch" class="uk-flex-top" uk-modal>
+          <div class="uk-modal-dialog uk-margin-auto-vertical">
+            <div class="uk-modal-body">提醒：將另開新視窗，連結至臺大醫院新竹分院網站!</div>
+            <div class="uk-modal-footer uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">取消</button>
+              <button class="uk-button uk-button-primary" onclick="window.open('https&colon;&#47;&#47;www.hch.ntuh.gov.tw')">確定</button>
+            </div>
+          </div>
+        </div>
+        <!-- uk-modal-confirm -->
+        <!-- <div><a class="btn_secondary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#" uk-toggle>竹東分院</a></div> -->
+        <div class="uk-inline">
+          <button class="btn_secondary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" type="button">竹東分院</button>
+          <div class="p-0 bg-transparent uk-position-z-index" uk-margin uk-dropdown="delay-hide:100">
+            <a class="btn_secondary-light m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#chut" uk-toggle>竹東分院</a>
+            <a class="btn_secondary-light m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#dongkenkon" uk-toggle>東健康中心</a>
+          </div>
+        </div>
+        <div id="chut" class="uk-flex-top" uk-modal>
+          <div class="uk-modal-dialog uk-margin-auto-vertical">
+            <div class="uk-modal-body">提醒：將另開新視窗，連結至臺大醫院竹東分院網站!</div>
+            <div class="uk-modal-footer uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">取消</button>
+              <button class="uk-button uk-button-primary" onclick="window.open('https&colon;&#47;&#47;www.chut.ntuh.gov.tw/CHUT')">確定</button>
+            </div>
+          </div>
+        </div>
+        <!-- uk-modal-confirm -->
+        <div id="dongkenkon" class="uk-flex-top" uk-modal>
+          <div class="uk-modal-dialog uk-margin-auto-vertical">
+            <div class="uk-modal-body">提醒：將另開新視窗，連結至臺大醫院東健康中心網站!</div>
+            <div class="uk-modal-footer uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">取消</button>
+              <button class="uk-button uk-button-primary" onclick="window.open('https&colon;&#47;&#47;dongkenkon.chut.ntuh.gov.tw')">確定</button>
+            </div>
+          </div>
+        </div>
+        <!-- uk-modal-confirm -->
+        <div><a class="btn_secondary m:px-5 l:px-6 m:text-lg l:text-xl font-medium uk-button uk-button-primary" href="#ylh" uk-toggle>雲林分院</a></div>
+        <div id="ylh" class="uk-flex-top" uk-modal>
+          <div class="uk-modal-dialog uk-margin-auto-vertical">
+            <div class="uk-modal-body">提醒：將另開新視窗，連結至臺大醫院雲林分院網站!</div>
+            <div class="uk-modal-footer uk-text-right">
+              <button class="uk-button uk-button-default uk-modal-close" type="button">取消</button>
+              <button class="uk-button uk-button-primary" onclick="window.open('https&colon;&#47;&#47;www.ylh.ntuh.gov.tw')">確定</button>
+            </div>
+          </div>
+        </div>
+        <!-- uk-modal-confirm -->
       </div>
     </div>
     <div class="p-3 relative uk-container">
