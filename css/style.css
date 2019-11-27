@@ -107,6 +107,31 @@ a.bg_facebook * {
 .editor ul.list_arrow {
   padding-left: 0;
 }
+.editor h1, .editor h2, .editor h3, .editor h4, .editor h5, .editor h6, .editor a {
+  color: #f38020 !important;
+}
+.editor a {
+  text-decoration: underline;
+}
+.editor a:hover {
+  color: #d5670b !important;
+  /* text-decoration: underline; */
+}
+.editor .uk-card h1, .editor .uk-card h2, .editor .uk-card h3, .editor .uk-card h4, .editor .uk-card h5, .editor .uk-card h6 {
+  color: #333 !important;
+}
+.editor h3::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0da";
+  padding-right: 10px;
+}
+.editor .uk-card h3::before {
+  display: none;
+}
 
 .clouds {
   width: 500%;
