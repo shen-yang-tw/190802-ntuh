@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 .logo_bg {
   background: url('../img/logo-ntuh.svg#svgView(preserveAspectRatio(xMinYMid meet))') no-repeat left center;
 }
@@ -28,9 +32,29 @@ header nav>.uk-position-cover {
   background: url(../img/bg_menu.jpg) no-repeat center center;
   background-size: 100%;
 } */
+
+header :nth-child(2)>nav {
+  position: inherit !important;
+  background-color: #e9d839 !important;
+}
+header :nth-child(2)>nav>:nth-child(1) {
+  display: none;
+}
+header :nth-child(2)>nav>:nth-child(2) {
+  position: inherit !important;
+  background-color: #f1e67e;
+}
+#slideshow~section:nth-of-type(1) h3>a, #slideshow~section:nth-of-type(2) h4>a {
+  background-color: transparent;
+}
+#slideshow~section:nth-of-type(1) h3>a:hover, #slideshow~section:nth-of-type(2) h4>a:hover {
+  background-color: white;
+}
+
 #slideshow~section:nth-of-type(1), #slideshow~section:nth-of-type(2) {
   background-color: #ece279;
 }
+
 .bg_menu {
   width: 100%;
   height: 180px;
@@ -40,6 +64,7 @@ header nav>.uk-position-cover {
   background-size: 100% 100%;
   opacity: .5;
 }
+
 #footer::before {
   background: url(../img/bg_menu.jpg) no-repeat center center;
   background-size: cover;
@@ -109,6 +134,8 @@ a.bg_facebook * {
 }
 .editor h1, .editor h2, .editor h3, .editor h4, .editor h5, .editor h6, .editor a {
   color: #f38020 !important;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 .editor a {
   text-decoration: underline;

@@ -12,6 +12,19 @@ header > :nth-child(2) > nav > :nth-child(2) .logo_text {
   justify-content: center;
 }
 
+header > :nth-child(2) > nav, header > :nth-child(2) > nav > :nth-child(2) {
+  position: relative !important;
+  background-color: transparent;
+}
+
+.bg_menu {
+  display: none;
+}
+
+.bg_bar {
+  background-color: #f6efac;
+}
+
 .logo_bg {
   width: 100px !important;
 }
