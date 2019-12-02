@@ -71,10 +71,6 @@ header .border_black_opacity-20 {
   background-color: #ece279;
 }
 
-#slideshow~section:nth-of-type(3) .min_height-100\@m .min_height-440\@l {
-  min-height: 435px;
-}
-
 .bg_menu {
   width: 100%;
   height: 180px;
@@ -352,6 +348,9 @@ a.bg_facebook * {
 @media (min-width: 1200px) {
   .bg_menu {
     height: 300px;
+  }
+  #slideshow~section:nth-of-type(3) .min_height-100\@m .min_height-440\@l {
+    min-height: 433px;
   }
 }
 
