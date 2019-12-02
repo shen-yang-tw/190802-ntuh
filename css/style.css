@@ -56,6 +56,9 @@ header :nth-child(2)>nav>:nth-child(2) {
 header .nav_bar>li>a {
     font-weight: 500;
 }
+header .border_black_opacity-20 {
+    border-color: rgba(0, 0, 0, 0.8);
+}
 
 #slideshow~section:nth-of-type(1) h3>a, #slideshow~section:nth-of-type(2) h4>a {
   background-color: transparent;
