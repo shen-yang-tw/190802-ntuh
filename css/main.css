@@ -76766,27 +76766,24 @@ address, dl, fieldset, figure, ol, p, pre, ul {
   top: 10px;
 }
 
-.uk-slideshow .uk-light .uk-slidenav:not([class*=-out]) *, .uk-slider .uk-light .uk-slidenav:not([class*=-out]) * {
-  color: rgba(255, 255, 255, 0) !important;
-}
 .uk-slideshow .uk-hidden-hover, .uk-slider .uk-hidden-hover {
   visibility: hidden;
 }
-.uk-slideshow:hover .uk-light .uk-slidenav *, .uk-slider:hover .uk-light .uk-slidenav * {
+.uk-slideshow:hover.uk-light .uk-slidenav *, .uk-slideshow:hover .uk-light .uk-slidenav *, .uk-slider:hover.uk-light .uk-slidenav *, .uk-slider:hover .uk-light .uk-slidenav * {
   color: rgba(255, 255, 255, 0.5) !important;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.7) !important;
 }
-.uk-slideshow:hover .uk-light .uk-slidenav-previous:not([class*=-out]), .uk-slider:hover .uk-light .uk-slidenav-previous:not([class*=-out]) {
+.uk-slideshow:hover.uk-light .uk-slidenav-previous:not([class*=-out]), .uk-slideshow:hover .uk-light .uk-slidenav-previous:not([class*=-out]), .uk-slider:hover.uk-light .uk-slidenav-previous:not([class*=-out]), .uk-slider:hover .uk-light .uk-slidenav-previous:not([class*=-out]) {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
 }
-.uk-slideshow:hover .uk-light .uk-slidenav-next:not([class*=-out]), .uk-slider:hover .uk-light .uk-slidenav-next:not([class*=-out]) {
+.uk-slideshow:hover.uk-light .uk-slidenav-next:not([class*=-out]), .uk-slideshow:hover .uk-light .uk-slidenav-next:not([class*=-out]), .uk-slider:hover.uk-light .uk-slidenav-next:not([class*=-out]), .uk-slider:hover .uk-light .uk-slidenav-next:not([class*=-out]) {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
 }
 .uk-slideshow:hover .uk-hidden-hover, .uk-slider:hover .uk-hidden-hover {
   visibility: visible;
 }
 
-.uk-slideshow .uk-light .uk-slidenav:hover *, .uk-slider .uk-light .uk-slidenav:not([class*=-out]):hover *, .uk-modal-dialog-lightbox .uk-lightbox-content {
+.uk-slideshow .uk-light .uk-slidenav:hover *, .uk-slider.uk-light .uk-slidenav:not([class*=-out]):hover *, .uk-slider .uk-light .uk-slidenav:not([class*=-out]):hover *, .uk-modal-dialog-lightbox .uk-lightbox-content {
   color: white !important;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;
 }

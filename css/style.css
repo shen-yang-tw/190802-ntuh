@@ -23,7 +23,7 @@ header::before, .bg_menu::before, #footer::before {
   left: 0;
   right: 0;
   position: absolute;
-  opacity: .2;
+  opacity: .5;
 }
 header nav>.uk-position-cover {
   opacity: .9;
@@ -35,17 +35,28 @@ header nav>.uk-position-cover {
 
 header :nth-child(2)>nav {
   position: inherit !important;
-  background-color: #e9d839 !important;
+  /* background-color: #e9d839 !important; */
+  background-color: #ffe600 !important;
+  width: 100%;
 }
-header :nth-child(2)>nav>:nth-child(1) {
+/* header :nth-child(2)>nav>:nth-child(1) {
   display: none;
+} */
+header :nth-child(2)>nav>:nth-child(1) {
+  /* box-shadow: 0 5px 15px rgba(0,0,0,0.08); */
+  box-shadow: 0 3px 10px 10px rgba(0,0,0,0.08);
+  background-color: #fff05f;
 }
 header :nth-child(2)>nav>:nth-child(2) {
   position: inherit !important;
-  background-color: #f1e67e;
+  /* background-color: #f1e67e; */
   width: 100%;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  /* box-shadow: 0 5px 15px rgba(0,0,0,0.08); */
 }
+header .nav_bar>li>a {
+    font-weight: 500;
+}
+
 #slideshow~section:nth-of-type(1) h3>a, #slideshow~section:nth-of-type(2) h4>a {
   background-color: transparent;
 }
@@ -55,6 +66,10 @@ header :nth-child(2)>nav>:nth-child(2) {
 
 #slideshow~section:nth-of-type(1), #slideshow~section:nth-of-type(2) {
   background-color: #ece279;
+}
+
+#slideshow~section:nth-of-type(3) .min_height-100\@m .min_height-440\@l {
+  min-height: 435px;
 }
 
 .bg_menu {
@@ -111,15 +126,26 @@ a.bg_facebook * {
   -webkit-overflow-scrolling: touch;
 }
 .editor table {
+  margin: 20px 0;
   width: 100%;
-  min-width: 700px;
+}
+.editor table {
+  border-collapse: inherit;
+}
+.editor table[border] {
+  border-collapse: collapse;
+}
+.editor table[border]:not([border="0"]) th, .editor table[border]:not([border="0"]) td {
+  padding: 0 5px;
+}
+.editor table[border="0"] {
+  border-collapse: inherit;
 }
 .editor table,
 .editor th,
 .editor td {
   border-width: 1px;
   border-color: black;
-  padding: 2px 5px;
 }
 .editor ul:not(.list_arrow) {
   list-style: disc;
@@ -142,8 +168,9 @@ a.bg_facebook * {
 .editor a {
   text-decoration: underline;
 }
-.editor a:hover {
-  color: #d5670b !important;
+.editor a:hover, .editor a:hover>* {
+  /* color: #d5670b !important; */
+  color: #000 !important;
   /* text-decoration: underline; */
 }
 .editor .uk-card h1, .editor .uk-card h2, .editor .uk-card h3, .editor .uk-card h4, .editor .uk-card h5, .editor .uk-card h6 {
@@ -160,6 +187,15 @@ a.bg_facebook * {
 }
 .editor .uk-card h3::before {
   display: none;
+}
+.editor p {
+  margin: 5px 0;
+}
+.logo_cht {
+    font-size: 0.7rem !important;
+}
+.logo_eng {
+    font-size: 0.5rem !important;
 }
 
 .clouds {
@@ -281,6 +317,14 @@ a.bg_facebook * {
   }
 }
 
+@media (min-width: 480px) {
+  .logo_cht {
+      font-size: 1.2rem !important;
+  }
+  .logo_eng {
+      font-size: 0.8rem !important;
+  }
+}
 @media (min-width: 640px) {
   #slideshow~section:nth-of-type(1), #slideshow~section:nth-of-type(2) {
     background-color: rgba(255, 236, 54, 0.6);
@@ -295,6 +339,9 @@ a.bg_facebook * {
   .bg_menu {
     height: 246px;
   }
+  .editor table {
+    width: auto;
+  }
 }
 
 /**** Just replace the right logo ratio '1.96' or the background-position and the background-size ****/
@@ -304,7 +351,17 @@ a.bg_facebook * {
   }
 }
 
-@media (min-width: 1600px) {}
+@media (min-width: 1600px) {
+  .bg_menu {
+    height: 320px;
+  }
+  .bg_bar h3>a {
+    font-size: 2.2rem !important;
+  }
+  .bg_bar h3>a>svg {
+    margin-right: 50px !important;
+  }
+}
 
 /*---------- IE10+ ------------------------------*/
 @media all and (-ms-high-contrast: none),

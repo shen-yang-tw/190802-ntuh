@@ -57,41 +57,20 @@ header > :nth-child(2) > nav, header > :nth-child(2) > nav > :nth-child(2), #foo
   position: relative !important;
 }
 
-header > :nth-child(2) > nav, header > :nth-child(2) > nav > :first-child {
+header > :nth-child(2) > nav {
   background-color: #f38020 !important;
   color: #572a05;
+}
+
+header > :nth-child(2) > nav > :first-child {
+  background-color: white !important;
+  color: #757575;
 }
 
 #footer::before {
   position: relative;
   opacity: 1;
   transform: scaleX(1);
-}
-
-.bg_menu {
-  display: none;
-}
-
-#slideshow ~ section:nth-of-type(1) {
-  background-color: #f6efac;
-}
-
-#slideshow ~ section:nth-of-type(2) {
-  background-color: #f1e67e;
-}
-
-#slideshow ~ section:nth-of-type(1) h3 > a {
-  background-color: #f6efac;
-  color: #73690d;
-}
-
-#slideshow ~ section:nth-of-type(1) h3 > a:hover {
-  background-color: white;
-}
-
-#slideshow ~ section:nth-of-type(2) h3 > a {
-  background-color: #f1e67e;
-  color: #6e650c;
 }
 
 #slideshow ~ section > div > .uk-grid div > h4 {
@@ -111,11 +90,6 @@ header > :nth-child(2) > nav, header > :nth-child(2) > nav > :first-child {
 @media (min-width: 960px) {
   .logo_bg {
     width: 120px !important;
-  }
-
-  header > :nth-child(2) > nav > :nth-child(2) {
-    background-color: white;
-    color: #757575;
   }
 }
 @media (min-width: 1200px) {
