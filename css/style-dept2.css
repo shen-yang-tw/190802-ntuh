@@ -4,16 +4,13 @@ header {
   box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.1) !important;
 }
 
-header > nav {
-  background-color: white !important;
+header > div:nth-of-type(1) > nav > :nth-child(2) {
+  box-shadow: none;
 }
 
-header > :nth-child(2) > nav > :nth-child(2) .logo_text {
-  justify-content: center;
-}
-
-header > :nth-child(2) > nav, header > :nth-child(2) > nav > :nth-child(2) {
-  position: relative !important;
+.uk-slideshow a.uk-position-cover > img {
+  height: 100%;
+  object-fit: contain;
 }
 
 .bg_menu {

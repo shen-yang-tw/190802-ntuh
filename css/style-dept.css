@@ -5,20 +5,28 @@ header {
 }
 
 header > nav {
-  background-color: #f6efac !important;
+  background-color: rgba(246, 239, 172, 0.85) !important;
 }
 
-header > :nth-child(2) > nav > :nth-child(2) .logo_text {
+header > div:nth-of-type(1) > nav > :nth-child(2) .logo_text {
   justify-content: center;
 }
 
-header > :nth-child(2) > nav, header > :nth-child(2) > nav > :nth-child(2) {
-  position: relative !important;
-  background-color: transparent;
+header > div:nth-of-type(1) > nav, header > div:nth-of-type(1) > nav > :nth-child(2) {
+  background-color: white !important;
 }
 
-.bg_menu {
+header > div:nth-of-type(1) > nav > :nth-child(1), .bg_menu, header::before {
   display: none;
+}
+
+header .border_black_opacity-20 {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.uk-slideshow a.uk-position-cover > img {
+  height: 100%;
+  object-fit: contain;
 }
 
 .bg_bar {
@@ -38,12 +46,16 @@ header > :nth-child(2) > nav, header > :nth-child(2) > nav > :nth-child(2) {
 }
 
 @media (min-width: 960px) {
-  header > :nth-child(2) > nav {
+  header > div:nth-of-type(1) > nav > :nth-child(2) .logo_text {
+    justify-content: center;
+  }
+
+  header > div:nth-of-type(1) > nav {
     background-color: rgba(255, 255, 255, 0.9) !important;
   }
 
-  header > :nth-child(2) > nav > div {
-    background-color: transparent;
+  header > div:nth-of-type(1) > nav > :nth-child(2) {
+    background-color: rgba(255, 255, 255, 0.7) !important;
   }
 
   .logo_text .flex {

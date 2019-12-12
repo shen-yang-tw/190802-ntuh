@@ -53,16 +53,16 @@ header > nav {
   background-color: #eeeeee !important;
 }
 
-header > :nth-child(2) > nav, header > :nth-child(2) > nav > :nth-child(2), #footer::before {
+header > div:nth-of-type(1) > nav, header > div:nth-of-type(1) > nav > :nth-child(2), #footer::before {
   position: relative !important;
 }
 
-header > :nth-child(2) > nav {
+header > div:nth-of-type(1) > nav {
   background-color: #f38020 !important;
   color: #572a05;
 }
 
-header > :nth-child(2) > nav > :first-child {
+header > div:nth-of-type(1) > nav > :first-child {
   background-color: white !important;
   color: #757575;
 }

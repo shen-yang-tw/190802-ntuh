@@ -164,6 +164,12 @@ function viewHeightMiddle(sel, upperSelector, lowerSelector) {
   }
 }
 
+function sameHeight(sel, target1, target2) {
+  if (document.querySelector(sel) != null && document.querySelector(target1) != null && document.querySelector(target2) != null) {
+    document.querySelector(sel).style.height = document.querySelector(target1).clientHeight + document.querySelector(target2).clientHeight + "px"; //CANNOT use "px !important"
+  }
+}
+
 //------------- font resize ------------------------------------------------//
 function fontResize(classFontM, classFontL, classButtonFont, classButtonFontS, classButtonFontM, classButtonFontL, classActive) {
   if (document.querySelector("." + classButtonFontS).classList.contains(classActive)) {
@@ -268,9 +274,11 @@ if (document.querySelector(".logo_cht, logo_eng") != null) {
 //uk-slideshow height, working with CSS {min-height: auto !important}
 window.onload = function() {
   viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
+  sameHeight(".bg_menu", ".bg_menu~section:nth-of-type(1)", ".bg_menu~section:nth-of-type(2)")
 };
 window.onresize = function() {
   viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
+  sameHeight(".bg_menu", ".bg_menu~section:nth-of-type(1)", ".bg_menu~section:nth-of-type(2)")
 };
 
 // document.querySelector(".list>li>div>a").onmouseover = function() {toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'uk-text-truncate', 'hover', this)};
