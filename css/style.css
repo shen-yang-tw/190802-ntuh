@@ -179,6 +179,10 @@ a.bg_facebook * {
 .editor .uk-card h1, .editor .uk-card h2, .editor .uk-card h3, .editor .uk-card h4, .editor .uk-card h5, .editor .uk-card h6 {
   color: #333 !important;
 }
+.editor h3 {
+  position: relative;
+  padding-left: 20px;
+}
 .editor h3::before {
   display: inline-block;
   font-style: normal;
@@ -187,6 +191,11 @@ a.bg_facebook * {
   -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0da";
   padding-right: 10px;
+  content: "▶";
+  font-size: 0.9rem;
+  position: absolute;
+  top: calc(50% - 24px/2);
+  left: 0;
 }
 .editor .uk-card h3::before {
   display: none;
