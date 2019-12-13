@@ -196,7 +196,7 @@ a.bg_facebook * {
   position: absolute;
   top: calc(50% - 24px/2);
   left: 0;
-  transform: scaleX(.8) translate(-2px, 0);
+  transform: scaleX(.7) translate(-4px, 0);
 }
 .editor .uk-card h3::before {
   display: none;
