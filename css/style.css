@@ -143,9 +143,9 @@ a.bg_facebook * {
 .editor table[border="0"] {
   border-collapse: inherit;
 }
-.editor table,
-.editor th,
-.editor td {
+.editor table:not([border="0"]),
+.editor table:not([border="0"]) th,
+.editor table:not([border="0"]) td {
   border: 1px solid black;
   
 }
@@ -162,13 +162,20 @@ a.bg_facebook * {
 .editor ul.list_arrow {
   padding-left: 0;
 }
+.editor ul>li>* {
+  vertical-align: top;
+  margin: 0 !important;
+}
 .editor h1, .editor h2, .editor h3, .editor h4, .editor h5, .editor h6, .editor a {
   color: #f38020 !important;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   margin-bottom: 20px;
 }
-.editor a {
+.editor a, .editor u, .editor u * {
   text-decoration: underline;
+  margin: 5px 0 !important;
+}
+.editor a {
   margin: 5px 0 !important;
 }
 .editor a:hover, .editor a:hover * {
@@ -377,6 +384,9 @@ a.bg_facebook * {
   }
   .bg_bar h3>a>svg {
     margin-right: 50px !important;
+  }
+  #slideshow~section:nth-of-type(2) h4>a {
+    padding: 1rem 0.5rem!important;
   }
 }
 
