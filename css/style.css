@@ -346,6 +346,12 @@ a.bg_facebook * {
   }
 }
 
+/* @media (max-width: 959px) {
+  .uk-table-responsive, .uk-table-responsive tbody, .uk-table-responsive td, .uk-table-responsive th, .uk-table-responsive tr {
+    display: inherit;
+    width: 100% !important;
+  }
+} */
 @media (min-width: 480px) {
   .logo_cht {
       font-size: 1.2rem !important;
