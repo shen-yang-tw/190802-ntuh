@@ -123,7 +123,7 @@ a.bg_facebook * {
   background: linear-gradient(to bottom, #007ebd 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 20) 100%);
 }
 
-.editor {
+.editor, #content {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -133,6 +133,8 @@ a.bg_facebook * {
 }
 .editor table {
   border-collapse: inherit;
+  word-break: break-all;
+  min-width: 600px;
 }
 .editor table[border] {
   border-collapse: collapse;
@@ -164,20 +166,20 @@ a.bg_facebook * {
 }
 .editor ul>li>* {
   vertical-align: top;
-  margin: 0 !important;
+  /* margin: 0 !important; */
 }
 .editor h1, .editor h2, .editor h3, .editor h4, .editor h5, .editor h6, .editor a {
   color: #f38020 !important;
   /* margin-top: 40px; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 .editor a, .editor u, .editor u * {
   text-decoration: underline;
-  margin: 5px 0 !important;
+  /* margin: 5px 0 !important; */
 }
-.editor a {
+/* .editor a {
   margin: 5px 0 !important;
-}
+} */
 .editor a:hover, .editor a:hover * {
   /* color: #d5670b !important; */
   color: #000 !important;
@@ -208,8 +210,8 @@ a.bg_facebook * {
 .editor .uk-card h3::before {
   display: none;
 }
-.editor p {
-  margin: 5px 0;
+.editor * {
+  margin: 0;
 }
 .editor img {
   display: inherit;
