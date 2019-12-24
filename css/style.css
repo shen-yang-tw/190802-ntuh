@@ -123,18 +123,16 @@ a.bg_facebook * {
   background: linear-gradient(to bottom, #007ebd 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 20) 100%);
 }
 
-.editor, #content {
+/* .editor, #content {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-}
+} */
 .editor table {
   margin: 20px 0;
-  width: 100%;
-}
-.editor table {
+  width: 100% !important;
   border-collapse: inherit;
-  word-break: break-all;
-  min-width: 600px;
+  /* white-space: nowrap; */
+  /* min-width: 600px; */
 }
 .editor table[border] {
   border-collapse: collapse;
@@ -378,7 +376,7 @@ a.bg_facebook * {
     margin-right: 0.25rem !important;
   }
   .editor table {
-    width: auto;
+    width: auto !important;
   }
 }
 
@@ -398,6 +396,13 @@ a.bg_facebook * {
   }
   #slideshow~section:nth-of-type(2) h4>a {
     padding: 1rem 0.5rem!important;
+  }
+}
+
+/*---------- Only landscape in mobile ------------------------------*/
+@media screen and (orientation:landscape) and (max-device-width: 959px) {
+  #slideshow {
+    display: none;
   }
 }
 
