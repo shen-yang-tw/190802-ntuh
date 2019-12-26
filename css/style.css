@@ -13,6 +13,7 @@ footer .logo_bg {
 header {
   position: relative;
 }
+/* .nav_bar-primary::before, .bg_menu::before, #footer::before */
 header::before, .bg_menu::before, #footer::before {
   background: url(../img/bg_header.jpg) no-repeat center center;
   background-size: cover;
@@ -129,7 +130,6 @@ a.bg_facebook * {
 } */
 .editor table {
   margin: 20px 0;
-  width: 100% !important;
   border-collapse: inherit;
   /* white-space: nowrap; */
   /* min-width: 600px; */
@@ -216,6 +216,9 @@ a.bg_facebook * {
 }
 .editor img {
   display: inherit;
+}
+.editor p *:not(span) {
+  display: inline;
 }
 
 .logo_cht {
@@ -374,9 +377,6 @@ a.bg_facebook * {
   .bg_bar h3>a>svg {
     display: inline-block !important;
     margin-right: 0.25rem !important;
-  }
-  .editor table {
-    width: auto !important;
   }
 }
 
