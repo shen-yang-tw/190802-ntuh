@@ -271,14 +271,27 @@ if (document.querySelector(".logo_cht, logo_eng") != null) {
     maxFontSize: '16px'
   });
 }
+
+function tableWidth(el) {
+
+}
 //uk-slideshow height, working with CSS {min-height: auto !important}
 window.onload = function() {
   viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
   sameHeight(".bg_menu", ".bg_menu~section:nth-of-type(1)", ".bg_menu~section:nth-of-type(2)")
+  //Table width in editor
+  if (document.querySelector(".editor table") != null) {
+    if (window.innerWidth <= 959 || document.documentElement.clientWidth <= 959) {
+      document.querySelector(".editor table").style.setProperty("width", "100%", "important");
+    } else {
+      document.querySelector(".editor table").style.setProperty("width", "inherit");
+    }
+  }
 };
 window.onresize = function() {
   viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
   sameHeight(".bg_menu", ".bg_menu~section:nth-of-type(1)", ".bg_menu~section:nth-of-type(2)")
+
 };
 
 // document.querySelector(".list>li>div>a").onmouseover = function() {toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'uk-text-truncate', 'hover', this)};
