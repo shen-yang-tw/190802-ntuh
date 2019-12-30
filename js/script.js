@@ -249,6 +249,38 @@ function toggleCheckAll(thisClick, inputClass) {
 
 //------------- End Form ------------------------------------------------//
 
+//Table width in editor
+function tableWidth(el) {
+  var target = document.querySelectorAll(el);
+  const w = [], sw = [];
+  for (var i = 0; i < target.length; i++) {
+    if (target[i].getAttribute("width") == null) {
+      w[i] = "";
+    }
+    else {
+     w[i] = target[i].getAttribute("width");
+    }
+  }
+  for (var i = 0; i < target.length; i++) {
+    sw[i] = target[i].style.width;
+  }
+  if (window.innerWidth <= 959 || document.documentElement.clientWidth <= 959) {
+    for (var i = 0; i < target.length; i++) {
+      target[i].style.setProperty("width", "100%", "important");
+    }
+  } else {
+    for (var i = 0; i < target.length; i++) {
+      if (target[i].getAttribute("width") != null) {
+        target[i].setAttribute("width", w[i]);
+      }
+      if (target[i].style.width != "") {
+        target[i].style.setProperty("width", sw[i]);
+      }
+    }
+  }
+}
+
+
 if (document.querySelector(".text_size") != null) {
   window.fontResize("text-m", "text-l", "text_size", "text_size-s", "text_size-m", "text_size-l", "active");
 }
@@ -272,26 +304,17 @@ if (document.querySelector(".logo_cht, logo_eng") != null) {
   });
 }
 
-function tableWidth(el) {
-
-}
 //uk-slideshow height, working with CSS {min-height: auto !important}
 window.onload = function() {
   viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
   sameHeight(".bg_menu", ".bg_menu~section:nth-of-type(1)", ".bg_menu~section:nth-of-type(2)")
-  //Table width in editor
   if (document.querySelector(".editor table") != null) {
-    if (window.innerWidth <= 959 || document.documentElement.clientWidth <= 959) {
-      document.querySelector(".editor table").style.setProperty("width", "100%", "important");
-    } else {
-      document.querySelector(".editor table").style.setProperty("width", "inherit");
-    }
+    tableWidth(".editor table")
   }
 };
 window.onresize = function() {
   viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
   sameHeight(".bg_menu", ".bg_menu~section:nth-of-type(1)", ".bg_menu~section:nth-of-type(2)")
-
 };
 
 // document.querySelector(".list>li>div>a").onmouseover = function() {toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'uk-text-truncate', 'hover', this)};

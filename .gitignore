@@ -1,10 +1,14 @@
-﻿node_modules
-scss
+﻿.tmp
+dist
+node_modules
 Assets
 temp
+documentation
+scss
+build
+pages
+gulp-cache
 gulpfile*
-package*
-README*
 *.psd
 *.ai
 *.zip
@@ -12,3 +16,8 @@ README*
 *old*
 *-i.*
 *css.map
+*.lock
+.DS_Store
+package.json
+package-lock.json
+*.md
