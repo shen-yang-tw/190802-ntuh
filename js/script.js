@@ -130,7 +130,7 @@ function plusHeight(sel, plusSelector) {
   // var el2 = document.querySelector(plusSelector);
   // var el2class = document.querySelector(plusSelector).className;
   // el2.style.visibility = 'hidden';
-  const h0 = plusSelector.getBoundingClientRect().height;
+  // const h0 = plusSelector.getBoundingClientRect().height;
   plusSelector.style.display = 'block';
   if (plusSelector.getBoundingClientRect().bottom > el1.getBoundingClientRect().bottom) {
     var h = el1.getBoundingClientRect().height + plusSelector.getBoundingClientRect().bottom - el1.getBoundingClientRect().bottom;
@@ -252,7 +252,7 @@ function toggleCheckAll(thisClick, inputClass) {
 //Table width in editor
 function tableWidth(el) {
   var target = document.querySelectorAll(el);
-  const w = [], sw = [];
+  var w = [], sw = [];
   for (var i = 0; i < target.length; i++) {
     if (target[i].getAttribute("width") == null) {
       w[i] = "";

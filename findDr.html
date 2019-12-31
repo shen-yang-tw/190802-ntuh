@@ -331,7 +331,7 @@
                 <div class="uk-width-1-2@m uk-width-1-3@xl">
                   <div class="uk-flex">
                     <div class="flex-auto"><input id="search_input" class="uk-input" type="text" placeholder="請輸入姓名、科部或病症"></div>
-                    <div class="flex-auto"><a class="btn_secondary min_width-100! w-full uk-button uk-button-primary" href="#search" uk-toggle>病症瀏覽</a></div>
+                    <!-- <div class="flex-auto"><a class="btn_secondary min_width-100! w-full uk-button uk-button-primary" href="#search" uk-toggle>病症瀏覽</a></div> -->
                   </div>
                 </div>
                 <div class="uk-width-1-4@m uk-width-expand@l">
@@ -349,6 +349,7 @@
                   </select>
                 </div>
                 <div class="uk-width-expand"><button class="btn_primary w-full uk-button uk-button-primary">搜尋</button></div>
+                <div class="uk-width-expand"><a class="btn_secondary min_width-100! w-full uk-button uk-button-primary" href="#search" uk-toggle>病症瀏覽</a></div>
                 <div class="uk-width-1-1" uk-filter="target: .list">
                   <div class="btm_line border-dashed">
                     <div class="uk-grid-small uk-flex-bottom" uk-grid>
@@ -393,7 +394,7 @@
                     </div>
                   </div>
                   <!-- pagination / select number -->
-                  <ul class="list uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@xl" uk-grid uk-height-match="target: > li > div >.uk-card-body">
+                  <ul class="list uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@xl" uk-grid>
                     <li data-tags="單位 綜合內科部 癌症 肺癌" data-date="2018-01-03" data-name="4">
                       <div class="bg-gray-200 p-2 uk-card uk-card-hover">
                         <div onmouseover="toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'm:flex-no-wrap', 'm:truncate')" onmouseout="toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'm:flex-no-wrap', 'm:truncate')">
@@ -406,7 +407,13 @@
                           <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
                           <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">肺癌</span><span class="mr-3">綜合內科部</span><span class="mr-3">綜合內科部</span><span class="mr-3">綜合內科部</span><span class="mr-3">綜合內科部</span><span class="mr-3">綜合內科部</span><span class="mr-3">綜合內科部</span></p>
                           <p class="ifEmpty margin_x_child border-solid border-white border-t m-0" hidden><small class="ifEmpty"></small><span class="ifEmpty bg-black uk-label">未開放</span><span class="ifEmpty bg-black uk-label">回院支援</span></p>
-                          <a class="block bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" href="#">more</a>
+                          <button class="w-full bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" type="button">more</button>
+                          <div class="uk-dropdown-small" uk-dropdown>
+                            <ul class="uk-nav uk-dropdown-nav">
+                              <li uk-filter-control="sort: data-date; order: desc"><a href="#">外科部</a></li>
+                              <li uk-filter-control="sort: data-date"><a href="#">臨床神經暨行為醫學中心</a></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </li>
@@ -422,7 +429,13 @@
                           <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
                           <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">乳癌</span><span class="mr-3">血液腫瘤部</span><span class="mr-3">乳癌</span><span class="mr-3">血液腫瘤部</span><span class="mr-3">乳癌</span><span class="mr-3">血液腫瘤部</span></p>
                           <p class="ifEmpty margin_x_child border-solid border-white border-t m-0" hidden><small class="ifEmpty"></small><span class="ifEmpty bg-black uk-label">未開放</span><span class="ifEmpty bg-black uk-label">回院支援</span></p>
-                          <a class="block bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" href="#">more</a>
+                          <button class="w-full bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" type="button">more</button>
+                          <div class="uk-dropdown-small" uk-dropdown>
+                            <ul class="uk-nav uk-dropdown-nav">
+                              <li uk-filter-control="sort: data-date; order: desc"><a href="#">外科部</a></li>
+                              <li uk-filter-control="sort: data-date"><a href="#">臨床神經暨行為醫學中心</a></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </li>
@@ -438,7 +451,13 @@
                           <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
                           <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">一般腫瘤</span><span class="mr-3">腫瘤內科部</span></p>
                           <p class="ifEmpty margin_x_child border-solid border-white border-t m-0" hidden><small class="ifEmpty"></small><span class="ifEmpty bg-black uk-label">未開放</span><span class="ifEmpty bg-black uk-label">回院支援</span></p>
-                          <a class="block bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" href="#">more</a>
+                          <button class="w-full bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" type="button">more</button>
+                          <div class="uk-dropdown-small" uk-dropdown>
+                            <ul class="uk-nav uk-dropdown-nav">
+                              <li uk-filter-control="sort: data-date; order: desc"><a href="#">外科部</a></li>
+                              <li uk-filter-control="sort: data-date"><a href="#">臨床神經暨行為醫學中心</a></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </li>
@@ -454,7 +473,13 @@
                           <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
                           <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">肝癌</span><span class="mr-3">血液腫瘤部</span></p>
                           <p class="ifEmpty margin_x_child border-solid border-white border-t m-0" hidden><small class="ifEmpty"></small><span class="ifEmpty bg-black uk-label">未開放</span><span class="ifEmpty bg-black uk-label">回院支援</span></p>
-                          <a class="block bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" href="#">more</a>
+                          <button class="w-full bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" type="button">more</button>
+                          <div class="uk-dropdown-small" uk-dropdown>
+                            <ul class="uk-nav uk-dropdown-nav">
+                              <li uk-filter-control="sort: data-date; order: desc"><a href="#">外科部</a></li>
+                              <li uk-filter-control="sort: data-date"><a href="#">臨床神經暨行為醫學中心</a></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </li>
@@ -470,7 +495,13 @@
                           <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
                           <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">一般腫瘤</span><span class="mr-3">腫瘤內科部</span></p>
                           <p class="ifEmpty margin_x_child border-solid border-white border-t m-0" hidden><small class="ifEmpty"></small><span class="ifEmpty bg-black uk-label">未開放</span><span class="ifEmpty bg-black uk-label">回院支援</span></p>
-                          <a class="block bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" href="#">more</a>
+                          <button class="w-full bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" type="button">more</button>
+                          <div class="uk-dropdown-small" uk-dropdown>
+                            <ul class="uk-nav uk-dropdown-nav">
+                              <li uk-filter-control="sort: data-date; order: desc"><a href="#">外科部</a></li>
+                              <li uk-filter-control="sort: data-date"><a href="#">臨床神經暨行為醫學中心</a></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </li>
@@ -486,7 +517,13 @@
                           <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
                           <p class="listFaIcon_indent m-0 flex-wrap m:flex-no-wrap m:truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">一般腫瘤</span><span class="mr-3">腫瘤內科部</span></p>
                           <p class="ifEmpty margin_x_child border-solid border-white border-t m-0" hidden><small class="ifEmpty"></small><span class="ifEmpty bg-black uk-label">未開放</span><span class="ifEmpty bg-black uk-label">回院支援</span></p>
-                          <a class="block bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" href="#">more</a>
+                          <button class="w-full bg-gray-700 text-white font-light mt-2 button uk-button uk-button-small uk-button-primary" type="button">more</button>
+                          <div class="uk-dropdown-small" uk-dropdown>
+                            <ul class="uk-nav uk-dropdown-nav">
+                              <li uk-filter-control="sort: data-date; order: desc"><a href="#">外科部</a></li>
+                              <li uk-filter-control="sort: data-date"><a href="#">臨床神經暨行為醫學中心</a></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </li>
@@ -536,7 +573,8 @@
       </div>
       <div class="uk-modal-body">
         <ul class="uk-list uk-list-divider" uk-accordion="multiple: true">
-          <li class="uk-open"><!-- 只有第一個<li>才能加上class="uk-open" -->
+          <li class="uk-open">
+            <!-- 只有第一個<li>才能加上class="uk-open" -->
             <a class="font-medium text-base uk-accordion-title" href="#">內科部</a>
             <div class="m-0 uk-accordion-content">
               <p class="flex flex-wrap items-center m-0">

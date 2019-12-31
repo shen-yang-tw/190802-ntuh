@@ -65,10 +65,6 @@ header .border_black_opacity-20 {
   .logo_cht {
     font-size: 1.7rem !important;
   }
-
-  [uk-slideshow] {
-    margin-top: -128px;
-  }
 }
 @media (min-width: 1200px) {
   body::before {
@@ -92,10 +88,6 @@ header .border_black_opacity-20 {
 
   .logo_text .flex {
     margin-top: 15px;
-  }
-
-  [uk-slideshow] {
-    margin-top: -158px;
   }
 
   .bg_bar {
