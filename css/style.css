@@ -91,6 +91,9 @@ header .border_black_opacity-20 {
 #slideshow~section:nth-of-type(1), #slideshow~section:nth-of-type(2) {
   background-color: rgba(255, 236, 54, 0.6);
 }
+.at-share-btn-elements>* {
+  margin-bottom: 5px !important;
+}
 
 #footer::before {
   background: url(../img/bg_menu.jpg) no-repeat center center;
