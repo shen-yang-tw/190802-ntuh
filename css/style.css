@@ -140,6 +140,10 @@ a.bg_facebook * {
   -webkit-overflow-scrolling: touch;
 } */
 @media (max-width: 959px) {
+  .editor.table table * {
+    word-break: break-all;
+    white-space: normal;
+  }
   .editor.tablescroll {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -159,31 +163,34 @@ a.bg_facebook * {
     min-width: 400px;
   }
 }
+div.editor.table {
+  display: block !important;
+}
 .editor table {
   margin: 20px 0;
   border-collapse: inherit;
   /* white-space: nowrap; */
   /* min-width: 600px; */
 }
-.editor table[border] {
+.editor table[border]:not(.uk-table) {
   border-collapse: collapse;
 }
-.editor table[border]:not([border="0"]) th, .editor table[border]:not([border="0"]) td {
+.editor table[border]:not([border="0"]):not(.uk-table) th, .editor table[border]:not([border="0"]):not(.uk-table) td {
   padding: 0 5px;
 }
-.editor table[border="0"] {
+.editor table[border="0"]:not(.uk-table) {
   border-collapse: inherit;
 }
-.editor table:not([border="0"]),
-.editor table:not([border="0"]) th,
-.editor table:not([border="0"]) td {
+.editor table:not([border="0"]):not(.uk-table),
+.editor table:not([border="0"]):not(.uk-table) th,
+.editor table:not([border="0"]):not(.uk-table) td {
   border: 1px solid black;
   
 }
-.editor table td * {
+/* .editor table td * {
   white-space: normal;
   word-break: break-all;
-}
+} */
 .editor ul:not(.list_arrow) {
   list-style: disc;
 }

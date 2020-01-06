@@ -252,13 +252,13 @@ function toggleCheckAll(thisClick, inputClass) {
 //Table width in editor
 function tableWidth(el) {
   var target = document.querySelectorAll(el);
-  var w = [], sw = [];
+  var w = [],
+    sw = [];
   for (var i = 0; i < target.length; i++) {
     if (target[i].getAttribute("width") == null) {
       w[i] = "";
-    }
-    else {
-     w[i] = target[i].getAttribute("width");
+    } else {
+      w[i] = target[i].getAttribute("width");
     }
   }
   for (var i = 0; i < target.length; i++) {
@@ -267,6 +267,24 @@ function tableWidth(el) {
   if (window.innerWidth <= 959 || document.documentElement.clientWidth <= 959) {
     for (var i = 0; i < target.length; i++) {
       target[i].style.setProperty("width", "100%", "important");
+      var th = target[i].querySelectorAll("th");
+      var td = target[i].querySelectorAll("td");
+      for (var j = 0; j < th.length; j++) {
+        if (th[j].style.width != null) {
+          th[j].style.setProperty("width", "auto", "important");
+        }
+        if (th[j].getAttribute("width") != null) {
+          th[j].setAttribute("width", "auto");
+        }
+      }
+      for (var k = 0; k < td.length; k++) {
+        if (td[k].style.width != null) {
+          td[k].style.setProperty("width", "auto");
+        }
+        if (td[k].getAttribute("width") != null) {
+          td[k].setAttribute("width", "auto");
+        }
+      }
     }
   } else {
     for (var i = 0; i < target.length; i++) {
