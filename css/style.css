@@ -144,14 +144,6 @@ a.bg_facebook * {
     word-break: break-all;
     white-space: normal;
   }
-  .editor.tablescroll {
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    display: block !important;
-  }
-  .editor.tablescroll table {
-    min-width: 1000px;
-  }
   .editor.tableblock table, .editor.tableblock table caption, .editor.tableblock table thead, .editor.tableblock table tbody, .editor.tableblock table th, .editor.tableblock table td, .editor.tableblock table tr {
     display: block;
     width: 100% !important;
@@ -159,9 +151,22 @@ a.bg_facebook * {
   .editor.tableblock.table4896 table tr:first-child td:not(:last-child) {
     display: none;
   }
-  .editor.tablescroll.table3276 table {
-    min-width: 400px;
+}
+@media (max-width: 1119px) {
+  .editor.tablescroll #content {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    display: block !important;
   }
+  .editor.tablescroll table {
+    min-width: 1000px;
+  }
+  .editor.tablescroll table:last-of-type {
+    margin-bottom: 0;
+  }
+  /* .editor.tablescroll.table3276 table {
+    min-width: 400px;
+  } */
 }
 div.editor.table {
   display: block !important;

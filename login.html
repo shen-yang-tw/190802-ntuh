@@ -289,7 +289,7 @@
 
   <section class="relative" uk-height-viewport="expand: true">
     <!-- <div class="bg_primary opacity10 uk-position-cover"></div> -->
-    <div class="container_responsive@s uk-container uk-container-large">
+    <div class="container_responsive@s uk-container">
       <ul class="px-2 s:p-0 uk-breadcrumb">
         <li><a href="#">首頁</a></li>
         <li><a href="#">Link</a></li>
@@ -298,137 +298,49 @@
       <!-- End uk-breadcrumb -->
       <div class="h-0 relative uk-visible@m"><a class="no-underline px-1 uk-position-absolute" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px; top:15px;">:::</a></div>
       <div class="s:mb-2 uk-card uk-card-small uk-card-default uk-card-body" uk-height-viewport="min-height: 200">
-        <h2 class="btm_line text-2xl">標題</h2>
+        <h2 class="btm_line text-2xl">會員登入</h2>
         <div id="content">
-          <div class="uk-grid-medium" uk-grid>
-            <div class="text-center uk-width-1-6@s uk-width-1-3@m uk-width-1-4@l">
-              <img class="rounded-0 border p-2 w-full" data-src="img/man-user.svg" alt="#" uk-img>
+          <form>
+            <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+              <div class="min_width-1/2!@m">
+                <label class="w-full" for="#acc">帳 號</label>
+                <input id="acc" class="uk-input" type="email" placeholder="">
+                <p class="mt-1 uk-text-small">驗證提示語</p>
+              </div>
+              <div class="min_width-1/2!@m">
+                <label class="w-full" for="#pas">密 碼</label>
+                <input id="pas" class="uk-input" type="password" placeholder="">
+                <p class="mt-1 uk-text-small">驗證提示語</p>
+              </div>
+              <div class="min_width-1/2!@m">
+                <label class="w-full" for="#cap">驗證碼</label>
+                <input id="cap" class="uk-input" type="text" placeholder="">
+                <!-- <img src="http://fakeimg.pl/150x40/" width="150" height="40" alt="驗證碼"> -->
+              </div>
+              <div class="min_width-1/2!@m">
+                <!-- <img src="http://fakeimg.pl/150x40/"> -->
+                <span class="w-full uk-visible@m"></span>
+                <img class="inline-block mr-2" data-src="http://fakeimg.pl/150x40/" width="150" height="40" alt="驗證碼" uk-img>
+                <a href="#" title="重新換圖"><i class="fas fa-redo"></i></a>
+              </div>
+              <div class="m:mt-8 uk-width-1-1">
+                <div class="uk-grid-small uk-child-width-expand" uk-grid>
+                  <div class="min_width-1/2!@m">
+                    <a href="#" class="btn_primary w-full uk-button uk-button-primary">確定</a>
+                  </div>
+                  <div class="min_width-1/2!@m">
+                    <a href="#" class="w-full uk-button uk-button-default">取消</a>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="margin_x_child mt-4 uk-flex uk-flex-center uk-width-1-1">
+                <a href="#" class="btn_primary min_width-120 uk-button uk-button-primary">確定</a>
+                <a href="#" class="min_width-120 uk-button uk-button-default">取消</a>
+                <button class="min_width-120 uk-button uk-button-default uk-modal-close" type="button">取消</button>
+              </div> -->
             </div>
-            <div class="uk-width-5-6@s uk-width-expand@m">
-              <h2 class="margin_x_child font-medium uk-card-title"><span class="cht">陳大明</span><span class="eng">Shih-Pu Wang</span><a class="btn_secondary my-2 uk-button uk-button-primary uk-width-1-1 uk-width-auto@s" href="#">我要掛號</a></h2>
-              <ul class="uk-subnav uk-subnav-pill uk-margin" uk-switcher>
-                <li class="uk-active"><a class="uk-button uk-button-default" href="#">外科部</a class="uk-button uk-button-default"></li>
-                <li><a class="uk-button uk-button-default" href="#">臨床神經暨行為醫學中心</a class="uk-button uk-button-default"></li>
-              </ul>
-              <p class="listFaIcon_indent m-0"><i class="fas fa-user-md fa-fw"></i><span class="pseudo:comma_dot mr-0 pr-0">放射腫瘤部主治醫師</span><span class="pseudo:comma_dot mr-0 pr-0">綜合內科部主任</span></p>
-              <p class="listFaIcon_indent m-0"><i class="fas fa-notes-medical fa-fw"></i><span class="pseudo:line_v mr-0 pr-0">大脖子</span><span class="pseudo:line_v mr-0 pr-0">甲狀腺疾病</span><span class="pseudo:line_v mr-0 pr-0">內分泌疾病</span><span class="pseudo:line_v mr-0 pr-0">血壓高</span><span class="pseudo:line_v mr-0 pr-0">膽固醇過高</span><span class="pseudo:line_v mr-0 pr-0">Big neck</span><span class="pseudo:line_v mr-0 pr-0">thyroid disease</span><span class="pseudo:line_v mr-0 pr-0">endocrine disease</span></p>
-              <!-- <a class="btn_primary my-2 uk-button uk-button-default" href="#">外科部</a>
-              <a class="my-2 uk-button uk-button-default" href="#">臨床神經暨行為醫學中心</a> -->
-              <ul class="uk-switcher uk-margin">
-                <li>
-                  <ul class="border2 border_primary-dark" uk-tab>
-                    <li class="uk-active"><a href="#">現職</a></li>
-                    <li><a href="#">學歷</a></li>
-                    <li><a href="#">經歷</a></li>
-                  </ul>
-                  <ul class="uk-switcher uk-margin">
-                    <li>
-                      <div class="urlFix" uk-margin>
-                        <table class="uk-table uk-table-small uk-table-striped">
-                          <tbody>
-                            <tr class="mx-0 uk-grid-collapse" uk-grid>
-                              <td class="uk-width-1-1 uk-width-2-5@s">臺北榮民總醫院身障重建中心</td>
-                              <td class="uk-width-1-1 uk-width-2-5@s">中心主任</td>
-                              <td class="uk-width-1-1 uk-width-1-5@s">2015-迄今</td>
-                            </tr>
-                            <tr class="mx-0 uk-grid-collapse" uk-grid>
-                              <td class="uk-width-1-1 uk-width-2-5@s">Director</td>
-                              <td class="uk-width-1-1 uk-width-2-5@s">Rehabilitation and Technical Aid Center, Taipei Veterans General Hospital, Taiwan</td>
-                              <td class="uk-width-1-1 uk-width-1-5@s">2015-present</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="urlFix" uk-margin>
-                        <table class="uk-table uk-table-small uk-table-striped">
-                          <tbody>
-                            <tr class="mx-0 uk-grid-collapse" uk-grid>
-                              <td class="uk-width-1-1 uk-width-1-3@s">國立台灣大學醫學院</td>
-                              <td class="uk-width-1-1 uk-width-1-3@s">腫瘤醫學研究所</td>
-                              <td class="uk-width-1-1 uk-width-1-6@s">碩士</td>
-                              <td class="uk-width-1-1 uk-width-1-6@s">1994-1998</td>
-                            </tr>
-                            <tr class="mx-0 uk-grid-collapse" uk-grid>
-                              <td class="uk-width-1-1 uk-width-1-3@s">National Taiwan University</td>
-                              <td class="uk-width-1-1 uk-width-1-3@s">Department of Medicine</td>
-                              <td class="uk-width-1-1 uk-width-1-6@s">BA</td>
-                              <td class="uk-width-1-1 uk-width-1-6@s">1994-1998</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="urlFix" uk-margin>
-                        <table class="uk-table uk-table-small uk-table-striped">
-                          <tbody>
-                            <tr class="mx-0 uk-grid-collapse" uk-grid>
-                              <td class="uk-width-1-1 uk-width-2-5@s">臺北榮民總醫院身障重建中心</td>
-                              <td class="uk-width-1-1 uk-width-2-5@s">中心主任</td>
-                              <td class="uk-width-1-1 uk-width-1-5@s">2015-迄今</td>
-                            </tr>
-                            <tr class="mx-0 uk-grid-collapse" uk-grid>
-                              <td class="uk-width-1-1 uk-width-2-5@s">Director</td>
-                              <td class="uk-width-1-1 uk-width-2-5@s">Rehabilitation and Technical Aid Center, Taipei Veterans General Hospital, Taiwan</td>
-                              <td class="uk-width-1-1 uk-width-1-5@s">2015-present</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul class="border2 border_primary-dark" uk-tab>
-                    <li class="uk-active"><a href="#">Tab1</a></li>
-                    <li><a href="#">Tab2</a></li>
-                  </ul>
-                  <ul class="uk-switcher uk-margin">
-                    <li>
-                      <div class="urlFix" uk-margin>
-                        <table class="uk-table uk-table-small uk-table-striped">
-                          <tbody>
-                            <tr class="mx-0 uk-grid-collapse" uk-grid>
-                              <td class="uk-width-1-1 uk-width-2-5@s">臺北榮民總醫院身障重建中心</td>
-                              <td class="uk-width-1-1 uk-width-2-5@s">中心主任</td>
-                              <td class="uk-width-1-1 uk-width-1-5@s">2015-迄今</td>
-                            </tr>
-                            <tr class="mx-0 uk-grid-collapse" uk-grid>
-                              <td class="uk-width-1-1 uk-width-2-5@s">Director</td>
-                              <td class="uk-width-1-1 uk-width-2-5@s">Rehabilitation and Technical Aid Center, Taipei Veterans General Hospital, Taiwan</td>
-                              <td class="uk-width-1-1 uk-width-1-5@s">2015-present</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="urlFix" uk-margin>
-                        <table class="uk-table uk-table-small uk-table-striped">
-                          <tbody>
-                            <tr class="mx-0 uk-grid-collapse" uk-grid>
-                              <td class="uk-width-1-1 uk-width-1-3@s">國立台灣大學醫學院</td>
-                              <td class="uk-width-1-1 uk-width-1-3@s">腫瘤醫學研究所</td>
-                              <td class="uk-width-1-1 uk-width-1-6@s">碩士</td>
-                              <td class="uk-width-1-1 uk-width-1-6@s">1994-1998</td>
-                            </tr>
-                            <tr class="mx-0 uk-grid-collapse" uk-grid>
-                              <td class="uk-width-1-1 uk-width-1-3@s">National Taiwan University</td>
-                              <td class="uk-width-1-1 uk-width-1-3@s">Department of Medicine</td>
-                              <td class="uk-width-1-1 uk-width-1-6@s">BA</td>
-                              <td class="uk-width-1-1 uk-width-1-6@s">1994-1998</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
+          </form>
+
         </div>
         <!-- End #content -->
       </div>
