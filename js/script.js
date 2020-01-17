@@ -267,6 +267,9 @@ function tableWidth(el) {
   if (window.innerWidth <= 959 || document.documentElement.clientWidth <= 959) {
     for (var i = 0; i < target.length; i++) {
       target[i].style.setProperty("width", "100%", "important");
+      if (target[i].getAttribute("width") != null) {
+        target[i].setAttribute("width", "auto");
+      }
       var th = target[i].querySelectorAll("th");
       var td = target[i].querySelectorAll("td");
       for (var j = 0; j < th.length; j++) {
