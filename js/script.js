@@ -252,18 +252,21 @@ function toggleCheckAll(thisClick, inputClass) {
 //Table width in editor
 function tableWidth(el) {
   var target = document.querySelectorAll(el);
-  var w = [],
-    sw = [];
-  for (var i = 0; i < target.length; i++) {
-    if (target[i].getAttribute("width") == null) {
-      w[i] = "";
-    } else {
-      w[i] = target[i].getAttribute("width");
-    }
-  }
-  for (var i = 0; i < target.length; i++) {
-    sw[i] = target[i].style.width;
-  }
+  // const w = [],
+  //   sw = [];
+  // for (var i = 0; i < target.length; i++) {
+  //   if (target[i].getAttribute("width") == null) {
+  //     w[i] = "";
+  //     w.push(w[i]);
+  //   } else {
+  //     w[i] = target[i].getAttribute("width");
+  //     w.push(w[i]);
+  //   }
+  // }
+  // for (var i = 0; i < target.length; i++) {
+  //   sw[i] = target[i].style.width;
+  //   sw.push(sw[i]);
+  // }
   if (window.innerWidth <= 959 || document.documentElement.clientWidth <= 959) {
     for (var i = 0; i < target.length; i++) {
       target[i].style.setProperty("width", "100%", "important");
@@ -289,16 +292,17 @@ function tableWidth(el) {
         }
       }
     }
-  } else {
-    for (var i = 0; i < target.length; i++) {
-      if (target[i].getAttribute("width") != null) {
-        target[i].setAttribute("width", w[i]);
-      }
-      if (target[i].style.width != "") {
-        target[i].style.setProperty("width", sw[i]);
-      }
-    }
   }
+  // else {
+  //   for (var i = 0; i < target.length; i++) {
+  //     if (target[i].getAttribute("width") != null) {
+  //       target[i].setAttribute("width", w[i]);
+  //     }
+  //     if (target[i].style.width != "") {
+  //       target[i].style.setProperty("width", sw[i]);
+  //     }
+  //   }
+  // }
 }
 
 
