@@ -1,5 +1,5 @@
 .text-justify * {
-  text-align: left;
+  text-align: left !important;
 }
 
 @media (min-width: 480px) {
