@@ -95,6 +95,31 @@ header .border_black_opacity-20 {
   margin-bottom: 5px !important;
 }
 
+.color_primary-text, .color_primary-text > * {
+    color: #7b710e;
+}
+a.color_primary-text:hover, a.color_primary-text:hover * {
+    color: #4d4709;
+}
+.color_secondary, .color_secondary > * {
+    color: #a45009;
+}
+/* .uk-visible-toggle:not(:hover):not(:focus) .uk-hidden-hover:not(:focus-within) {
+  visibility: visible;
+  width: auto !important;
+  height: auto !important;
+  padding: 10px !important;
+} */
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}
+
 #footer::before {
   background: url(../img/bg_menu.jpg) no-repeat center center;
   background-size: cover;
@@ -214,7 +239,7 @@ div.editor.table {
   /* margin: 0 !important; */
 }
 .editor h1, .editor h2, .editor h3, .editor h4, .editor h5, .editor h6, .editor a {
-  color: #f38020 !important;
+  color: #a45009 !important;
   /* margin-top: 40px; */
   /* margin-bottom: 20px; */
 }
