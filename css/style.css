@@ -193,6 +193,37 @@ div.editor.table {
 } */
 
 @media (max-width: 959px) {
+  .editor.table table * {
+    word-break: break-all;
+    white-space: normal;
+  }
+  .editor.tableblock table, .editor.tableblock table caption, .editor.tableblock table thead, .editor.tableblock table tbody, .editor.tableblock table th, .editor.tableblock table td, .editor.tableblock table tr {
+    display: block;
+    width: 100% !important;
+  }
+  .editor.tableblock.table4896 table tr:first-child td:not(:last-child) {
+    display: none;
+  }
+}
+@media (max-width: 1119px) {
+  .editor.tablescroll #content {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    display: block !important;
+  }
+  .editor.tablescroll table {
+    min-width: 1000px;
+  }
+  .editor.tablescroll table:last-of-type {
+    margin-bottom: 0;
+  }
+  /* .editor.tablescroll.table3276 table {
+    min-width: 400px;
+  } */
+}
+
+/* For stack table */
+/* @media (max-width: 959px) {
   .editor.table table:not(.uk-table) * {
     word-break: break-all;
     white-space: normal;
@@ -201,10 +232,6 @@ div.editor.table {
     display: block;
     width: 100% !important;
   }
-  /* .editor.tableblock table, .editor.tableblock table caption, .editor.tableblock table thead, .editor.tableblock table tbody, .editor.tableblock table th, .editor.tableblock table td, .editor.tableblock table tr {
-    display: block;
-    width: 100% !important;
-  } */
   .editor table:not(.uk-table) thead, .editor table:not(.uk-table) th, .editor.tableblock.table4896 table tr:first-child td:not(:last-child) {
     display: none;
   }
@@ -253,15 +280,12 @@ div.editor.table {
   .editor.tablescroll table:last-of-type {
     margin-bottom: 0;
   }
-  /* .editor.tablescroll.table3276 table {
-    min-width: 400px;
-  } */
 }
 @media (min-width: 1200px) {
   .editor table:not(.uk-table) span.heading {
     display: none;
   }
-}
+} */
 
 .editor ul:not(.list_arrow) {
   list-style: disc;
