@@ -292,7 +292,7 @@ div.editor.table {
   color: #000 !important;
   text-decoration: underline;
 }
-.editor h1, .editor h2, .editor h3, .editor h4, .editor h5, .editor h6, .editor a, .editor p.h3, .editor p.h4, .editor p.h5, .editor p.h6 {
+.editor h1, .editor h2, .editor h3, .editor h4, .editor h5, .editor h6, .editor a, .editor .h3, .editor .h4, .editor .h5, .editor .h6 {
   color: #a45009 !important;
   /* margin-top: 40px; */
   /* margin-bottom: 20px; */
@@ -300,11 +300,11 @@ div.editor.table {
 .editor .uk-card h1, .editor .uk-card h2, .editor .uk-card h3, .editor .uk-card h4, .editor .uk-card h5, .editor .uk-card h6 {
   color: #333 !important;
 }
-.editor h3, .editor p.h3 {
+.editor h3, .editor .h3 {
   position: relative;
   padding-left: 17px;
 }
-.editor h3::before, .editor p.h3::before {
+.editor h3::before, .editor .h3::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -328,19 +328,19 @@ div.editor.table {
 .editor h1, .editor h2, .editor h3, .editor h4, .editor h5, .editor h6, .editor p {
   margin: 5px 0;
 }
-.editor p.h3, .editor p.h4, .editor p.h5, .editor p.h6 {
+.editor .h3, .editor .h4, .editor .h5, .editor .h6 {
   font-weight: 400;
 }
-.editor p.h3 {
+.editor .h3 {
   font-size: calc(27rem/18);
 }
-.editor p.h4 {
+.editor .h4 {
   font-size: calc(22.5rem/18);
 }
-.editor p.h5 {
+.editor .h5 {
   font-size: calc(18rem/18);
 }
-.editor p.h6 {
+.editor .h6 {
   font-size: calc(15.75rem/18);
 }
 .editor p *:not(span) {
