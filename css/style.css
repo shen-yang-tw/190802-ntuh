@@ -217,9 +217,6 @@ div.editor.table {
   .editor.tablescroll table:last-of-type {
     margin-bottom: 0;
   }
-  /* .editor.tablescroll.table3276 table {
-    min-width: 400px;
-  } */
 }
 
 /* For stack table */
