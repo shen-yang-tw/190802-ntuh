@@ -409,5 +409,23 @@ window.onresize = function() {
   )
 }
 
+//Slideshow tab focus
+function slideShowFocus(slideshow, tabsArray, thisFocus) {
+  var slideshow = document.querySelector(slideshow)
+  var tabs = document.querySelectorAll(tabsArray)
+  for (var i = 0; i < tabs.length; i++) {
+    // tabs[i] = UIkit.slideshow(slideshow).show(i)
+    if (thisFocus == tabs[i]) {
+      UIkit.slideshow(slideshow).show(i)
+    }
+    thisFocus.addEventListener('keyup', function(event) {
+      // Number 13 is the "Enter" key on the keyboard
+      if (event.keyCode === 13) {
+        window.open(thisFocus.getAttribute('href'), '_blank')
+      }
+    })
+  }
+}
+
 // document.querySelector(".list>li>div>a").onmouseover = function() {toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'uk-text-truncate', 'hover', this)};
 //--------------- end pure js ----------------------------------------------------------//
