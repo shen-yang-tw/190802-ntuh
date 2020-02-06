@@ -419,12 +419,11 @@ function slideShowFocus(slideshow, tabsArray, thisFocus) {
       UIkit.slideshow(slideshow).show(i)
     }
   }
-  thisFocus.addEventListener('keyup', function(event) {
-    // Number 13 is the "Enter" key on the keyboard
-    if (event.keyCode === 13) {
-      window.open(thisFocus.getAttribute('href'), '_blank')
-    }
-  })
+}
+function enterOpenUrl(targetWindow, thisKeyDown, event) {
+  if (event.keyCode === 13) {
+    window.open(thisKeyDown.getAttribute('href'), targetWindow)
+  }
 }
 
 // document.querySelector(".list>li>div>a").onmouseover = function() {toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'uk-text-truncate', 'hover', this)};
