@@ -217,6 +217,9 @@ div.editor.table {
   .editor.tablescroll table:last-of-type {
     margin-bottom: 0;
   }
+  .editor table {
+    width: 100%;
+  }
 }
 
 /* For stack table */
