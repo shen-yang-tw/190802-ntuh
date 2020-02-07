@@ -465,7 +465,7 @@
             <div class="s:flex-auto">
               <div class="h-full uk-card uk-card-default uk-card-hover">
                 <!-- <div uk-slideshow="autoplay: true; min-height: 300; max-height:350"> -->
-                <div class="h-full" uk-slideshow="min-height: 300;">
+                <div id="smallslide" class="h-full" uk-slideshow="min-height: 300;">
                   <div class="h-full uk-position-relative uk-visible-toggle uk-light">
                     <ul class="h-full uk-slideshow-items">
                       <li class="bg-black">
@@ -494,9 +494,12 @@
                     <a class="px-lg-5 uk-width-1-5 uk-position-right uk-flex uk-flex-right uk-flex-middle uk-slidenav-large uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next" aria-label="next"><span class="sr-only">下一張圖</span></a>
                     <div class="uk-position-bottom-center uk-position-small">
                       <ul class="uk-dotnav">
-                        <li uk-slideshow-item="0"><a href="#">Banner1</a></li>
-                        <li uk-slideshow-item="1"><a href="#">Banner2</a></li>
-                        <li uk-slideshow-item="2"><a href="#">Banner3</a></li>
+                        <li uk-slideshow-item="0"><a href="https://www.google.com.tw/" onfocus="slideShowFocus('#smallslide', '.uk-dotnav a', this)" onkeydown="enterOpenUrl('_blank', this, event)">Banner1</a>
+                        </li>
+                        <li uk-slideshow-item="1"><a href="https://www.google.com.tw/" onfocus="slideShowFocus('#smallslide', '.uk-dotnav a', this)" onkeydown="enterOpenUrl('_self', this, event)">Banner2</a>
+                        </li>
+                        <li uk-slideshow-item="2"><a href="#" onfocus="slideShowFocus('#smallslide', '.uk-dotnav a', this)" onkeydown="enterOpenUrl('_self', this, event)">Banner3</a>
+                        </li>
                       </ul>
                     </div>
                   </div>
