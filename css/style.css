@@ -1,4 +1,9 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -13,9 +18,12 @@ footer .logo_bg {
 header {
   position: relative;
 }
+
 /* header::before, .bg_menu::before, #footer::before */
 /* .nav_bar-primary::before, .bg_menu::before, #footer::before */
-.nav_bar-primary::before, .bg_menu::before, #footer::before {
+.nav_bar-primary::before,
+.bg_menu::before,
+#footer::before {
   background: url(../img/bg_header.jpg) no-repeat center center;
   background-size: cover;
   content: "";
@@ -27,12 +35,15 @@ header {
   position: absolute;
   opacity: .5;
 }
+
 header>nav.nav_reset {
   z-index: 1;
 }
+
 header nav>.uk-position-cover {
   opacity: .9;
 }
+
 /* #slideshow~section:nth-of-type(1)::before, #slideshow~section:nth-of-type(2)::before {
   background: url(../img/bg_menu.jpg) no-repeat center center;
   background-size: 100%;
@@ -44,66 +55,85 @@ header div:nth-of-type(1)>nav {
   background-color: #ffe600 !important;
   width: 100%;
 }
+
 header .uk-sticky.uk-active>nav {
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)!important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06) !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
+
 /* header div:nth-of-type(1)>nav>:nth-child(1) {
   display: none;
 } */
 header div:nth-of-type(1)>nav>:nth-child(1) {
   /* box-shadow: 0 5px 15px rgba(0,0,0,0.08); */
-  box-shadow: 0 3px 10px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 10px 10px rgba(0, 0, 0, 0.08);
   background-color: #fff05f;
 }
+
 header div:nth-of-type(1)>nav>:nth-child(2) {
   position: inherit !important;
   /* background-color: #f1e67e; */
   width: 100%;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-}
-header .nav_bar>li>a {
-    font-weight: 500;
-}
-header .border_black_opacity-20 {
-    border-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-#slideshow~section:nth-of-type(1) h3>a, #slideshow~section:nth-of-type(2) h4>a {
+header .nav_bar>li>a {
+  font-weight: 500;
+}
+
+header .border_black_opacity-20 {
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+#slideshow~section:nth-of-type(1) h3>a,
+#slideshow~section:nth-of-type(2) h4>a {
   background-color: transparent;
 }
-#slideshow~section:nth-of-type(1) h3>a:hover, #slideshow~section:nth-of-type(2) h4>a:hover {
+
+#slideshow~section:nth-of-type(1) h3>a:hover,
+#slideshow~section:nth-of-type(2) h4>a:hover {
   background-color: white;
 }
 
-#slideshow~section:nth-of-type(1), #slideshow~section:nth-of-type(2) {
+#slideshow~section:nth-of-type(1),
+#slideshow~section:nth-of-type(2) {
   background-color: #ece279;
 }
 
 .bg_menu {
   width: 100%;
 }
+
 .bg_menu::before {
   background: url(../img/bg_menu.jpg) no-repeat center top;
   background-size: 100% 100%;
   opacity: .5;
 }
-#slideshow~section:nth-of-type(1), #slideshow~section:nth-of-type(2) {
+
+#slideshow~section:nth-of-type(1),
+#slideshow~section:nth-of-type(2) {
   background-color: rgba(255, 236, 54, 0.6);
 }
+
 .at-share-btn-elements>* {
   margin-bottom: 5px !important;
 }
 
-.color_primary-text, .color_primary-text > * {
-    color: #7b710e;
+.color_primary-text,
+.color_primary-text>* {
+  color: #7b710e;
 }
-a.color_primary-text:hover, a.color_primary-text:hover * {
-    color: #4d4709;
+
+a.color_primary-text:hover,
+a.color_primary-text:hover * {
+  color: #4d4709;
 }
-.color_secondary, .color_secondary > * {
-    color: #a45009;
+
+.color_secondary,
+.color_secondary>* {
+  color: #a45009;
 }
+
 /* .uk-visible-toggle:not(:hover):not(:focus) .uk-hidden-hover:not(:focus-within) {
   visibility: visible;
   width: auto !important;
@@ -111,24 +141,39 @@ a.color_primary-text:hover, a.color_primary-text:hover * {
   padding: 10px !important;
 } */
 
-.sr-only-focusable:active, .sr-only-focusable:focus {
-    position: static;
-    width: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    clip: auto;
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+footer>.uk-visible\@m {
+  display: block !important;
+}
+
+@media (max-width: 959px) {
+  footer>.uk-visible\@m a {
+    max-width: 200px;
+    display: block;
+    margin: auto;
+  }
 }
 
 #footer::before {
   background: url(../img/bg_menu.jpg) no-repeat center center;
   background-size: cover;
-  transform:scaleX(-1);
+  transform: scaleX(-1);
   opacity: .3;
 }
+
 footer {
   background: transparent;
 }
+
 /* header .uk-sticky {
   background: transparent;
 } */
@@ -167,26 +212,33 @@ a.bg_facebook * {
 div.editor.table {
   display: block !important;
 }
+
 .editor table {
   margin: 20px 0;
   border-collapse: inherit;
   /* white-space: nowrap; */
   /* min-width: 600px; */
 }
+
 .editor table[border]:not(.uk-table) {
   border-collapse: collapse;
 }
-.editor table[border]:not([border="0"]):not(.uk-table) th, .editor table[border]:not([border="0"]):not(.uk-table) td {
+
+.editor table[border]:not([border="0"]):not(.uk-table) th,
+.editor table[border]:not([border="0"]):not(.uk-table) td {
   padding: 0 5px;
 }
+
 .editor table[border="0"]:not(.uk-table) {
   border-collapse: inherit;
 }
+
 .editor table:not([border="0"]):not(.uk-table),
 .editor table:not([border="0"]):not(.uk-table) th,
 .editor table:not([border="0"]):not(.uk-table) td {
   border: 1px solid black;
 }
+
 /* .editor table td * {
   white-space: normal;
   word-break: break-all;
@@ -197,26 +249,38 @@ div.editor.table {
     word-break: break-all;
     white-space: normal;
   }
-  .editor.tableblock table, .editor.tableblock table caption, .editor.tableblock table thead, .editor.tableblock table tbody, .editor.tableblock table th, .editor.tableblock table td, .editor.tableblock table tr {
+
+  .editor.tableblock table,
+  .editor.tableblock table caption,
+  .editor.tableblock table thead,
+  .editor.tableblock table tbody,
+  .editor.tableblock table th,
+  .editor.tableblock table td,
+  .editor.tableblock table tr {
     display: block;
     width: 100% !important;
   }
+
   .editor.tableblock.table4896 table tr:first-child td:not(:last-child) {
     display: none;
   }
 }
+
 @media (max-width: 1119px) {
   .editor.tablescroll #content {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     display: block !important;
   }
+
   .editor.tablescroll table {
     min-width: 1000px;
   }
+
   .editor.tablescroll table:last-of-type {
     margin-bottom: 0;
   }
+
   .editor table {
     width: 100%;
   }
@@ -290,51 +354,83 @@ div.editor.table {
 .editor ul:not(.list_arrow) {
   list-style: disc;
 }
+
 .editor ol {
   list-style: decimal;
 }
+
 .editor ul,
 .editor ol {
   padding-left: 35px;
 }
+
 .editor ul.list_arrow {
   padding-left: 0;
 }
+
 .editor ul>li>* {
   vertical-align: top;
   /* margin: 0 !important; */
 }
-.editor a, .editor u, .editor u * {
+
+.editor a,
+.editor u,
+.editor u * {
   text-decoration: underline;
   /* margin: 5px 0 !important; */
 }
+
 /* .editor a {
   margin: 5px 0 !important;
 } */
-.editor a:hover, .editor a:hover * {
+.editor a:hover,
+.editor a:hover * {
   /* color: #d5670b !important; */
   color: #000 !important;
   text-decoration: underline;
 }
-.editor h1, .editor h2, .editor h3, .editor h4, .editor h5, .editor h6, .editor a, .editor .h3, .editor .h4, .editor .h5, .editor .h6 {
+
+.editor h1,
+.editor h2,
+.editor h3,
+.editor h4,
+.editor h5,
+.editor h6,
+.editor a,
+.editor .h3,
+.editor .h4,
+.editor .h5,
+.editor .h6 {
   color: #a45009 !important;
   /* margin-top: 40px; */
   /* margin-bottom: 20px; */
 }
-.editor .uk-card h1, .editor .uk-card h2, .editor .uk-card h3, .editor .uk-card h4, .editor .uk-card h5, .editor .uk-card h6 {
+
+.editor .uk-card h1,
+.editor .uk-card h2,
+.editor .uk-card h3,
+.editor .uk-card h4,
+.editor .uk-card h5,
+.editor .uk-card h6 {
   color: #333 !important;
 }
-.editor h3, .editor .h3 {
+
+.editor h3,
+.editor .h3 {
   position: relative;
   padding-left: 17px;
 }
-.editor h3::before, .editor .h3::before {
+
+.editor h3::before,
+.editor .h3::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0da";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0da";
   padding-right: 10px;
   content: "▶";
   font-size: 0.9rem;
@@ -343,42 +439,62 @@ div.editor.table {
   left: 0;
   transform: scaleX(.7) translate(-4px, 0);
 }
+
 .editor .uk-card h3::before {
   display: none;
 }
+
 .editor *:not([class*=uk]) {
   margin: 0;
 }
-.editor h1, .editor h2, .editor h3, .editor h4, .editor h5, .editor h6, .editor p {
+
+.editor h1,
+.editor h2,
+.editor h3,
+.editor h4,
+.editor h5,
+.editor h6,
+.editor p {
   margin: 5px 0;
 }
-.editor .h3, .editor .h4, .editor .h5, .editor .h6 {
+
+.editor .h3,
+.editor .h4,
+.editor .h5,
+.editor .h6 {
   font-weight: 400;
 }
+
 .editor .h3 {
   font-size: calc(27rem/18);
 }
+
 .editor .h4 {
   font-size: calc(22.5rem/18);
 }
+
 .editor .h5 {
   font-size: calc(18rem/18);
 }
+
 .editor .h6 {
   font-size: calc(15.75rem/18);
 }
+
 .editor p *:not(span) {
   display: inline;
 }
+
 .editor img {
   display: inherit;
 }
 
 .logo_cht {
-    font-size: 0.7rem !important;
+  font-size: 0.7rem !important;
 }
+
 .logo_eng {
-    font-size: 0.5rem !important;
+  font-size: 0.5rem !important;
 }
 
 .bg_bar h3>a>svg {
@@ -404,8 +520,9 @@ div.editor.table {
 }
 
 .uk-cover-container>img[src="img/ntuhgroup-bg.jpg"] {
-    display: none;
+  display: none;
 }
+
 body>.uk-cover-container {
   background: url(../img/ntuhgroup-bg.jpg) no-repeat center center;
   background-size: cover;
@@ -521,20 +638,23 @@ body>.uk-cover-container {
 } */
 @media (min-width: 480px) {
   .logo_cht {
-      font-size: 1.2rem !important;
+    font-size: 1.2rem !important;
   }
+
   .logo_eng {
-      font-size: 0.8rem !important;
+    font-size: 0.8rem !important;
   }
 }
-@media (min-width: 640px) {
-}
+
+@media (min-width: 640px) {}
+
 @media (min-width: 960px) {
   .clouds {
     width: 150%;
     height: 40%;
     top: -5%;
   }
+
   .bg_bar h3>a>svg {
     display: inline-block !important;
     margin-right: 0.25rem !important;
@@ -552,11 +672,13 @@ body>.uk-cover-container {
   .bg_bar h3>a {
     font-size: 2.2rem !important;
   }
+
   .bg_bar h3>a>svg {
     margin-right: 50px !important;
   }
+
   #slideshow~section:nth-of-type(2) h4>a {
-    padding: 1rem 0.5rem!important;
+    padding: 1rem 0.5rem !important;
   }
 }
 
@@ -578,10 +700,7 @@ body>.uk-cover-container {
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .logo_bg {
     background: url('../img/logo-ntuh.png') no-repeat left center;
   }
@@ -594,10 +713,7 @@ body>.uk-cover-container {
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   .logo_bg {
     background: url('../img/logo-ntuh.png') no-repeat left center;
   }
@@ -610,10 +726,7 @@ body>.uk-cover-container {
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .logo_bg {
     background: url('../img/logo-ntuh.png') no-repeat left center;
   }
@@ -626,10 +739,7 @@ body>.uk-cover-container {
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   .logo_bg {
     background: url('../img/logo-ntuh.png') no-repeat left center;
   }
@@ -642,8 +752,4 @@ body>.uk-cover-container {
 /* ----------- iPhone X ----------- */
 
 /* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
