@@ -20,6 +20,10 @@ header > div:nth-of-type(1) > nav > :nth-child(1), .bg_menu, .nav_bar-primary::b
   display: none;
 }
 
+header > div:nth-of-type(1) > nav > :nth-child(2) {
+  box-shadow: none;
+}
+
 header .border_black_opacity-20 {
   border-color: rgba(0, 0, 0, 0.3);
 }

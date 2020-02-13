@@ -23,7 +23,7 @@
   <div class="uk-position-top-left"><a href="#content" id="gotocenter" title="跳到主要內容" class="sr-only sr-only-focusable">跳到主要內容</a></div>
   <a id="gototop" class="color_white bg_black_opacity-50 hover:bg_black_opacity-70 opacity-0 no-underline p-2 rounded uk-text-center uk-position-fixed uk-position-small uk-position-bottom-right uk-position-z-index" href="#top" title="回到最上" uk-scroll uk-totop><span hidden>回到最上</span></a>
   <header class="shadow">
-    <nav class="nav_reset shadow-none py-1 text-center relative uk-visible@m" uk-margin>
+    <nav class="nav_reset shadow-none py-1 text-center relative" uk-margin>
       <div class="sub_nav margin_x_child text-sm h-full uk-flex uk-flex-center uk-flex-middle" uk-margin>
         <span class="uk-visible@m"><a class="px-2" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="padding-bottom: 3px;">:::</a></span>
         <span><a class="px-2" href="#">回醫療體系首頁</a></span>
@@ -299,7 +299,7 @@
       <!-- End uk-breadcrumb -->
       <div class="h-0 relative uk-visible@m"><a class="no-underline px-1 uk-position-absolute" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px; top:15px;">:::</a></div>
       <div class="s:mb-2 uk-card uk-card-small uk-card-default uk-card-body" uk-height-viewport="min-height: 200">
-        <div class="uk-grid-medium" uk-grid>
+        <div class="uk-grid-medium uk-grid" uk-grid>
           <div class="uk-width-1-4@m uk-width-1-5@l">
             <div class="max_height-200 max_height-700@m uk-overflow-auto">
               <ul class="list_tabs uk-nav-parent-icon" uk-nav="multiple: true; animation: false">
@@ -338,7 +338,7 @@
               <ul class="uk-switcher uk-margin">
                 <li>
                   <p>病友您好，預約領藥需於<br><time class="color_secondary text-2xl">2019 年 9 月 26 日 10:00~19:00</time><br>來院領藥！<br>領藥前請先過健保卡<br>開放預約領藥時間為隔日或下一個工作日<br>藥局預約領藥服務時間 上午10點開始 (不可提前)<br>僅提供總院西址門診藥局連續處方箋預約領藥服務，本院其他藥局暫不提供預約服務</p>
-                  <div class="uk-grid-small uk-child-width-expand@s" uk-grid>
+                  <div class="uk-grid-small uk-child-width-expand@s uk-grid" uk-grid>
                     <div><button class="btn_primary w-full uk-button uk-button-primary" uk-toggle="target: #reservation">同意領藥時限，確定預約</button></div>
                     <div><a class="btn_secondary w-full uk-button uk-button-primary" href="https://www.ntuh.gov.tw/default_SP.aspx">不同意 (放棄預約)</a></div>
                     <form id="reservation" class="uk-width-1-1" hidden>
@@ -593,7 +593,7 @@
                         請確定是否取消 預約日:<time class="color_secondary">2019/08/23</time> 領藥號:<span class="color_secondary">H-1</span>的預約
                       </div>
                       <div class="uk-modal-footer">
-                        <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+                        <div class="uk-grid-small uk-child-width-expand@m uk-grid" uk-grid>
                           <div class="margin_y_child-all min_width-1/2!@m s:text-right">
                             <button class="btn_primary min_width-120 uk-button uk-button-primary uk-modal-close" type="button">確定</button>
                             <button class="min_width-120 uk-button uk-button-default uk-modal-close" type="button">取消</button>
@@ -628,7 +628,7 @@
           <input id="input_txt" class="uk-input" type="text" placeholder="請點選輸入">
         </div>
         <div class="uk-modal-footer">
-          <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+          <div class="uk-grid-small uk-child-width-expand@m uk-grid" uk-grid>
             <div class="margin_y_child-all min_width-1/2!@m s:text-right">
               <button class="btn_primary min_width-120 uk-button uk-button-primary uk-modal-close" type="button">確定</button>
               <button class="btn_secondary min_width-120 uk-button uk-button-primary uk-modal-close" type="button">尚未領取第二次處方者請按此</button>
@@ -650,7 +650,7 @@
         請輸入驗證碼
       </div>
       <div class="uk-modal-footer">
-        <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+        <div class="uk-grid-small uk-child-width-expand@m uk-grid" uk-grid>
           <div class="margin_y_child-all min_width-1/2!@m s:text-right">
             <button class="btn_primary min_width-120 uk-button uk-button-primary uk-modal-close" type="button">確定</button>
           </div>
@@ -668,7 +668,7 @@
       </div>
       <div class="uk-modal-body">
         <form>
-          <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+          <div class="uk-grid-small uk-child-width-expand@m uk-grid" uk-grid>
             <div class="min_width-1/2!@m">
               <input class="uk-input" type="email" placeholder="請輸入個人信箱">
             </div>
@@ -688,7 +688,7 @@
         </form>
       </div>
       <div class="uk-modal-footer">
-        <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+        <div class="uk-grid-small uk-child-width-expand@m uk-grid" uk-grid>
           <div class="min_width-1/2!@m">
             <a class="" href="#register" uk-toggle>會員註冊</a>
             <a class="" href="#">忘記密碼</a>
@@ -735,7 +735,7 @@
           <div>
             <label class="uk-form-label" aria-labelledby="form_birth">生日</label>
             <div class="uk-form-controls">
-              <div id="form_birth" class="uk-child-width-1-3" uk-grid>
+              <div id="form_birth" class="uk-child-width-1-3 uk-grid" uk-grid>
                 <div>
                   <select id="form_birth_y" class="uk-select">
                     <option>年</option>
@@ -851,7 +851,7 @@
           <hr class="border-light">
         </div>
         <!-- End #sitemap -->
-        <footer class="uk-grid-small uk-child-width-expand" uk-grid>
+        <footer class="uk-grid-small uk-child-width-expand uk-grid" uk-grid>
           <div class="uk-width-1-4@m uk-width-1-5@l uk-width-1-6@xl uk-visible@m">
             <div class="logo_position">
               <a class="w-full bg_white text-center p-2" href="#" title="臺大醫院行動服務"><img class="w-full" src="img/qrcod-ntuh.svg" width="100" alt="臺大醫院QRcode"><span class="color_grey-800!">臺大醫院行動服務</span></a>
