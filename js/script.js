@@ -130,10 +130,6 @@ function thisYear(thisSelector) {
 // onclick="plusHeight('.uk-table', findChild(findParent(this, 'DIV'), '[uk-dropdown]'))"
 function plusHeight(sel, plusSelector) {
   var el1 = document.querySelector(sel)
-  // var el2 = document.querySelector(plusSelector);
-  // var el2class = document.querySelector(plusSelector).className;
-  // el2.style.visibility = 'hidden';
-  // const h0 = plusSelector.getBoundingClientRect().height;
   plusSelector.style.display = 'block'
   if (
     plusSelector.getBoundingClientRect().bottom >
@@ -210,24 +206,24 @@ function fontResize(
 ) {
   if (
     document
-      .querySelector('.' + classButtonFontS)
-      .classList.contains(classActive)
+    .querySelector('.' + classButtonFontS)
+    .classList.contains(classActive)
   ) {
     document.querySelector('html').classList.remove(classFontM)
     document.querySelector('html').classList.remove(classFontL)
   }
   if (
     document
-      .querySelector('.' + classButtonFontM)
-      .classList.contains(classActive)
+    .querySelector('.' + classButtonFontM)
+    .classList.contains(classActive)
   ) {
     document.querySelector('html').classList.remove(classFontL)
     document.querySelector('html').classList.add(classFontM)
   }
   if (
     document
-      .querySelector('.' + classButtonFontL)
-      .classList.contains(classActive)
+    .querySelector('.' + classButtonFontL)
+    .classList.contains(classActive)
   ) {
     document.querySelector('html').classList.remove(classFontM)
     document.querySelector('html').classList.add(classFontL)
@@ -302,21 +298,6 @@ function toggleCheckAll(thisClick, inputClass) {
 //Table width in editor
 function tableWidth(el) {
   var target = document.querySelectorAll(el)
-  // const w = [],
-  //   sw = [];
-  // for (var i = 0; i < target.length; i++) {
-  //   if (target[i].getAttribute("width") == null) {
-  //     w[i] = "";
-  //     w.push(w[i]);
-  //   } else {
-  //     w[i] = target[i].getAttribute("width");
-  //     w.push(w[i]);
-  //   }
-  // }
-  // for (var i = 0; i < target.length; i++) {
-  //   sw[i] = target[i].style.width;
-  //   sw.push(sw[i]);
-  // }
   if (window.innerWidth <= 959 || document.documentElement.clientWidth <= 959) {
     for (var i = 0; i < target.length; i++) {
       target[i].style.setProperty('width', '100%', 'important')
@@ -343,16 +324,6 @@ function tableWidth(el) {
       }
     }
   }
-  // else {
-  //   for (var i = 0; i < target.length; i++) {
-  //     if (target[i].getAttribute("width") != null) {
-  //       target[i].setAttribute("width", w[i]);
-  //     }
-  //     if (target[i].style.width != "") {
-  //       target[i].style.setProperty("width", sw[i]);
-  //     }
-  //   }
-  // }
 }
 
 if (document.querySelector('.text_size') != null) {
@@ -420,11 +391,15 @@ function slideShowFocus(slideshow, tabsArray, thisFocus) {
     }
   }
 }
+
 function enterOpenUrl(targetWindow, thisKeyDown, event) {
   if (event.keyCode === 13) {
     window.open(thisKeyDown.getAttribute('href'), targetWindow)
   }
 }
 
-// document.querySelector(".list>li>div>a").onmouseover = function() {toggleAllClass(findChildren(findParent(this, 'LI'), 'p'), 'uk-text-truncate', 'hover', this)};
+document.addEventListener('DOMContentLoaded', function() {
+
+}, false);
+
 //--------------- end pure js ----------------------------------------------------------//

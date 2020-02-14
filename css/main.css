@@ -2783,7 +2783,7 @@ button:focus {
 }
 
 /* Optional: Customize Class .focus-visible */
-.focus-visible, a:focus {
+.focus-visible, a:focus, button:focus {
   border: 1px solid rgba(30, 135, 240, 0.85) !important;
   -webkit-box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important;
   box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important;

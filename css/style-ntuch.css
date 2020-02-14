@@ -96,6 +96,14 @@ header div:nth-of-type(1) > nav > :nth-child(2) {
   display: none !important;
 }
 
+header > div:nth-of-type(1) > nav {
+  background: linear-gradient(to bottom, #ff9933 60%, #f3800d 100%) !important;
+}
+
+.nav_bar a {
+  color: #663300 !important;
+}
+
 @media (min-width: 960px) {
   .logo_bg {
     width: 120px !important;
