@@ -368,7 +368,7 @@ div.editor.table {
   padding-left: 0;
 }
 
-.editor ul>li>* {
+.editor ul>li>*, .editor ol>li>* {
   vertical-align: top;
   /* margin: 0 !important; */
 }
