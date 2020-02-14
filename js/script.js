@@ -398,8 +398,4 @@ function enterOpenUrl(targetWindow, thisKeyDown, event) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-
-}, false);
-
 //--------------- end pure js ----------------------------------------------------------//
