@@ -2,6 +2,18 @@
   text-align: left !important;
 }
 
+.uk-slideshow-items .uk-overlay {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.uk-slideshow-items h2 {
+  font-size: 0.8rem !important;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 @media (min-width: 480px) {
 }
 @media (min-width: 640px) {
