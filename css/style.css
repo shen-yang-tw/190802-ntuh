@@ -203,7 +203,7 @@ a.bg_facebook * {
 }
 
 .smallslide .uk-overlay-primary {
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
 .smallslide .uk-slideshow-items .uk-overlay {
@@ -216,10 +216,6 @@ a.bg_facebook * {
   max-width: 100%;
   overflow: hidden;
   max-height: 50px;
-  
-  /* text-overflow: ellipsis;
-  white-space: nowrap; */
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 100%); */
 }
 
 .smallslide .uk-slideshow-items h2::after {
@@ -229,7 +225,7 @@ a.bg_facebook * {
   bottom: 30px;
   width: 25%;
   height: 18px;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1) 65%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1) 65%);
   pointer-events: none;
 }
 
