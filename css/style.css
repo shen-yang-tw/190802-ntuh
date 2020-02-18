@@ -202,6 +202,42 @@ a.bg_facebook * {
   min-height: auto !important;
 }
 
+.smallslide .uk-overlay-primary {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.smallslide .uk-slideshow-items .uk-overlay {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.smallslide .uk-slideshow-items h2 {
+  font-size: 0.8rem !important;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 50px;
+  
+  /* text-overflow: ellipsis;
+  white-space: nowrap; */
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 100%); */
+}
+
+.smallslide .uk-slideshow-items h2::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  width: 25%;
+  height: 18px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1) 65%);
+  pointer-events: none;
+}
+
+.smallslide .uk-dotnav>*>* {
+  width: 10px;
+  height: 10px;
+}
+
 .gradient {
   background: linear-gradient(to bottom, #007ebd 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 20) 100%);
 }
