@@ -206,8 +206,10 @@ a.bg_facebook * {
   background: linear-gradient(to bottom, #007ebd 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 20) 100%);
 }
 
-.list_tabs div.active {
+.list_tabs div.active, .list_tabs div.active a:hover {
   background-color: #e9d839 !important;
+}
+.list_tabs div.active {
   border-color: #e9d839;
 }
 
