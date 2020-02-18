@@ -216,13 +216,15 @@ a.bg_facebook * {
   max-width: 100%;
   overflow: hidden;
   max-height: 50px;
+  position: relative;
+  padding-bottom: 15px !important;
 }
 
 .smallslide .uk-slideshow-items h2::after {
   content: "";
   position: absolute;
   right: 0;
-  bottom: 30px;
+  bottom: 0;
   width: 25%;
   height: 18px;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1) 65%);
