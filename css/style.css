@@ -206,6 +206,11 @@ a.bg_facebook * {
   background: linear-gradient(to bottom, #007ebd 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 20) 100%);
 }
 
+.list_tabs div.active {
+  background-color: #e9d839 !important;
+  border-color: #e9d839;
+}
+
 /* .editor, #content {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
