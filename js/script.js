@@ -1,3 +1,32 @@
+//Check all exist
+function allExist(el) {
+  var exist = true
+  k = document.querySelectorAll(el);
+  for (var i = 0; i < k.length; i++) {
+    if (k[i] == null) {
+      exist = false
+      return exist
+    } else {
+      exist = true
+    }
+  }
+  return exist
+}
+
+//Check one exist
+function oneExist(el) {
+  var exist = true
+  k = document.querySelectorAll(el);
+  for (var i = 0; i < k.length; i++) {
+    if (k[i] != null) {
+      return exist
+    } else {
+      exist = false
+    }
+  }
+  return exist
+}
+
 //Show
 function show(el) {
   var target = document.querySelector(el)
@@ -98,6 +127,10 @@ function findParent(thisElement, parentTagName) {
 
 function findChildren(parentEL, sl) {
   return parentEL.querySelectorAll(sl)
+}
+
+function findAll(sl) {
+  return document.querySelectorAll(sl)
 }
 
 function findChild(parentEL, sl) {
@@ -326,58 +359,62 @@ function tableWidth(el) {
   }
 }
 
-if (document.querySelector('.text_size') != null) {
-  window.fontResize(
-    'text-m',
-    'text-l',
-    'text_size',
-    'text_size-s',
-    'text_size-m',
-    'text_size-l',
-    'active'
-  )
-}
-window.removeAll(
-  'p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty, .ifEmpty:empty'
-)
 
-window.onload = function() {
-  gotoTop('#gototop', 'opacity-100')
-}
-window.onscroll = function() {
-  gotoTop('#gototop', 'opacity-100')
-}
 
-if (document.querySelector('.logo_cht, logo_eng') != null) {
-  window.fitText(document.querySelector('.logo_cht'), 2.2, {
+if (oneExist("p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty, .ifEmpty:empty") == true) {
+  removeAll("p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty, .ifEmpty:empty")
+}
+if (oneExist("#gototop") == true) {
+  gotoTop("#gototop", "opacity-100")
+  window.onscroll = function() {
+    gotoTop("#gototop", "opacity-100")
+  };
+}
+if (allExist(".logo_cht, logo_eng") == true) {
+  // var fitText = require("FitText-UMD");
+  // fitText = window.fitText
+  window.fitText = fitText
+  // fitText( document.getElementById("responsive_headline") );
+  window.fitText(document.querySelector(".logo_cht"), 2.2, {
     minFontSize: '10px',
     maxFontSize: '20px'
-  })
-  window.fitText(document.querySelector('.logo_eng'), 3, {
+  });
+  window.fitText(document.querySelector(".logo_eng"), 3, {
     minFontSize: '7px',
     maxFontSize: '16px'
-  })
+  });
+}
+if (allExist("text-m", "text-l", "text_size", "text_size-s", "text_size-m", "text_size-l", "active") == true) {
+  fontResize("text-m", "text-l", "text_size", "text_size-s", "text_size-m", "text_size-l", "active");
+}
+if (allExist("#slideshow .uk-slideshow-items, header, .bg_bar") == true) {
+  window.viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
+  window.onload = function() {
+    viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
+  }
+  window.onresize = function() {
+    viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
+  }
 }
 
 //uk-slideshow height, working with CSS {min-height: auto !important}
 window.onload = function() {
-  viewHeightMiddle('#slideshow .uk-slideshow-items', 'header', '.bg_bar')
-  sameHeight(
-    '.bg_menu',
-    '.bg_menu~section:nth-of-type(1)',
-    '.bg_menu~section:nth-of-type(2)'
-  )
-  if (document.querySelector('.editor table') != null) {
+  // viewHeightMiddle('#slideshow .uk-slideshow-items', 'header', '.bg_bar')
+  if (allExist('.bg_menu', '.bg_menu~section:nth-of-type(1)', '.bg_menu~section:nth-of-type(2)') == true) {
+    sameHeight('.bg_menu', '.bg_menu~section:nth-of-type(1)', '.bg_menu~section:nth-of-type(2)')
+  }
+  if (oneExist('.editor table')) {
     tableWidth('.editor table')
+  }
+  if (allExist('.list_tabs .uk-open') == true) {
+    toggleAllClass(findAll('.list_tabs .uk-open .toggle'), 'hidden')
   }
 }
 window.onresize = function() {
-  viewHeightMiddle('#slideshow .uk-slideshow-items', 'header', '.bg_bar')
-  sameHeight(
-    '.bg_menu',
-    '.bg_menu~section:nth-of-type(1)',
-    '.bg_menu~section:nth-of-type(2)'
-  )
+  // viewHeightMiddle('#slideshow .uk-slideshow-items', 'header', '.bg_bar')
+  if (allExist('.bg_menu', '.bg_menu~section:nth-of-type(1)', '.bg_menu~section:nth-of-type(2)') == true) {
+    sameHeight('.bg_menu', '.bg_menu~section:nth-of-type(1)', '.bg_menu~section:nth-of-type(2)')
+  }
 }
 
 //Slideshow tab focus

@@ -38,6 +38,7 @@ header {
 
 header>nav.nav_reset {
   z-index: 1;
+  display: none;
 }
 
 header nav>.uk-position-cover {
@@ -368,7 +369,8 @@ div.editor.table {
   padding-left: 0;
 }
 
-.editor ul>li>*, .editor ol>li>* {
+.editor ul>li>*,
+.editor ol>li>* {
   vertical-align: top;
   /* margin: 0 !important; */
 }
@@ -649,6 +651,10 @@ body>.uk-cover-container {
 @media (min-width: 640px) {}
 
 @media (min-width: 960px) {
+  header>nav.nav_reset {
+    display: block;
+  }
+
   .clouds {
     width: 150%;
     height: 40%;

@@ -2,65 +2,85 @@
   text-align: left !important;
 }
 
-.uk-slideshow-items .uk-overlay {
+#smallslide-eng .uk-slideshow-items .uk-overlay {
   padding-left: 10px;
   padding-right: 10px;
 }
-.uk-slideshow-items h2 {
+
+#smallslide-eng .uk-slideshow-items h2 {
   font-size: 0.8rem !important;
   max-width: 100%;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  max-height: 50px;
+  /* text-overflow: ellipsis;
+  white-space: nowrap; */
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
-@media (min-width: 480px) {
+/* #smallslide-eng .uk-slideshow-items h2::before {
+  content: "...";
+  position: absolute;
+  right: 23px;
+  bottom: 32px;
+  z-index: 1;
+} */
+
+#smallslide-eng .uk-slideshow-items h2::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  width: 25%;
+  height: 18px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 1) 65%);
+  pointer-events: none;
 }
-@media (min-width: 640px) {
+
+[class*=min_width] .uk-light .uk-dotnav>*>* {
+  width: 10px;
+  height: 10px;
 }
-@media (min-width: 960px) {
-}
+
+@media (min-width: 480px) {}
+
+@media (min-width: 640px) {}
+
+@media (min-width: 960px) {}
 
 /**** Just replace the right logo ratio '1.96' or the background-position and the background-size ****/
-@media (min-width: 1200px) {
-}
+@media (min-width: 1200px) {}
 
 @media (min-width: 1600px) {
-  .bg_bar h3 > a {
+  .bg_bar h3>a {
     font-size: 1.5rem !important;
   }
 }
 
 /*---------- IE10+ ------------------------------*/
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-}
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {}
 
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {}
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
 
 /* ----------- iPhone X ----------- */
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
