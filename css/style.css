@@ -535,6 +535,9 @@ div.editor.table {
 .editor img {
   display: inherit;
 }
+.editor table img {
+  display: inline-block;
+}
 
 .logo_cht {
   font-size: 0.7rem !important;
