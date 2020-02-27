@@ -240,6 +240,10 @@ body>.uk-position-top-left {
   z-index: 2;
 }
 
+em {
+  color: #a45009;
+}
+
 .gradient {
   background: linear-gradient(to bottom, #007ebd 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 20) 100%);
 }
