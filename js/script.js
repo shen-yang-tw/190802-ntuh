@@ -388,13 +388,13 @@ if (allExist("text-m", "text-l", "text_size", "text_size-s", "text_size-m", "tex
   fontResize("text-m", "text-l", "text_size", "text_size-s", "text_size-m", "text_size-l", "active");
 }
 if (allExist("#slideshow .uk-slideshow-items, header, .bg_bar") == true) {
-  // window.viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
-  // window.onload = function() {
-  //   viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
-  // }
-  // window.onresize = function() {
-  //   viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
-  // }
+  window.viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
+  window.onload = function() {
+    viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
+  }
+  window.onresize = function() {
+    viewHeightMiddle("#slideshow .uk-slideshow-items", "header", ".bg_bar")
+  }
 }
 
 //uk-slideshow height, working with CSS {min-height: auto !important}
