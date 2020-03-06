@@ -22,7 +22,7 @@ body * {
 }
 
 [class*=fa-]:not(.fa-layers-text):not(.font_default) {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
 }
 
 [class*=material-] {
@@ -10237,7 +10237,7 @@ a, span, label, strong, small {
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
   left: 0;
   padding: 0;
@@ -10251,7 +10251,7 @@ a, span, label, strong, small {
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
   left: 0;
   padding: 0;
@@ -76221,7 +76221,7 @@ a, span, label, strong, small {
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
 }
 
@@ -76334,7 +76334,7 @@ a, span, label, strong, small {
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
   line-height: calc(18rem/16);
   text-align: center;
