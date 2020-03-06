@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional");
 /*---------- Text ------------------------------*/
 html {
   font-size: calc(16rem/16);
@@ -13,11 +12,10 @@ html.text-l {
 
 body {
   background-color: #F7FAFC;
-  font-weight: 300;
+  font-weight: 400;
 }
 body * {
-  font-family: 微軟正黑體, "Microsoft JhengHei", "PingFang TC", "Heiti TC", "Microsoft YaHei", Helvetica, Arial, Verdana, sans-serif;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "微軟正黑體", "Microsoft JhengHei", "PingFang TC", "Heiti TC", "Microsoft YaHei", Helvetica, Arial, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -76527,7 +76525,7 @@ nav.nav_reset {
 }
 .logo_control .logo_text_control .logo_position .logo_text *, .logo_control .logo_text_control .logo_position-up .logo_text * {
   line-height: 1;
-  font-weight: 400;
+  font-weight: bold;
 }
 .logo_control .logo_text_control .logo_position .logo_text .logo_bg, .logo_control .logo_text_control .logo_position-up .logo_text .logo_bg {
   width: 120px;

@@ -5,6 +5,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-weight: bold;
 }
 
 .logo_bg {
@@ -79,7 +80,7 @@ header div:nth-of-type(1)>nav>:nth-child(2) {
 }
 
 header .nav_bar>li>a {
-  font-weight: 500;
+  font-weight: bold;
 }
 
 header .border_black_opacity-20 {
