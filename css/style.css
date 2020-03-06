@@ -197,7 +197,7 @@ a.bg_facebook * {
 }
 
 #slideshow .uk-slideshow-items {
-  min-height: auto !important;
+  /* min-height: auto !important; */
 }
 
 .smallslide .uk-overlay-primary {
