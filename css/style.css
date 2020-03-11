@@ -1,7 +1,25 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
-h1, h2, h3, h4, h5, h6, h1>*, h2>*, h3>*, h4>*, h5>*, h6>*, h3>.font-normal {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1>*,
+h2>*,
+h3>*,
+h4>*,
+h5>*,
+h6>*,
+h3>.font-normal {
   font-weight: bold !important;
 }
 
@@ -201,7 +219,7 @@ a.bg_facebook * {
 }
 
 .smallslide .uk-overlay-primary {
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
 .smallslide .uk-slideshow-items .uk-overlay {
@@ -246,9 +264,11 @@ em {
   background: linear-gradient(to bottom, #007ebd 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 20) 100%);
 }
 
-.list_tabs div.active, .list_tabs div.active a:hover {
+.list_tabs div.active,
+.list_tabs div.active a:hover {
   background-color: #e9d839 !important;
 }
+
 .list_tabs div.active {
   border-color: #e9d839;
 }
@@ -537,6 +557,7 @@ div.editor.table {
 .editor img {
   display: inherit;
 }
+
 .editor table img {
   display: inline-block;
 }
@@ -715,7 +736,7 @@ body>.uk-cover-container {
     display: inline-block !important;
     margin-right: 0.25rem !important;
   }
-  
+
 }
 
 /**** Just replace the right logo ratio '1.96' or the background-position and the background-size ****/
@@ -723,6 +744,7 @@ body>.uk-cover-container {
   #slideshow~section:nth-of-type(3) .min_height-100\@m .min_height-440\@l {
     min-height: 576px;
   }
+
   #slideshow~section.relative .min_width-2\/3\!\@s .max_height-255\@l {
     max-height: 400px;
   }
@@ -752,9 +774,9 @@ body>.uk-cover-container {
 /*---------- IE10+ ------------------------------*/
 @media all and (-ms-high-contrast: none),
 (-ms-high-contrast: active) {
-  /* .logo_control .logo_bg {
-    background: url('../img/logo-ntuh.svg#svgView(preserveAspectRatio(xMinYMax))') no-repeat left center;
-  } */
+  .uk-card[uk-height-viewport] {
+    height: auto !important;
+  }
 }
 
 /* ----------- iPhone 4 and 4S ----------- */
