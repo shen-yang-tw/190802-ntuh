@@ -1,0 +1,17 @@
+@media (max-width: 1119px) {
+  .divTable {
+    min-width: 1200px;
+  }
+}
+
+/* Below For English Html */
+@media (max-width: 1119px) {
+  .editor #content {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    display: block !important;
+  }
+  .divTable {
+    min-width: 1200px;
+  }
+}
