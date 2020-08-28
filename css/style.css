@@ -430,6 +430,7 @@ div.editor.table {
 .editor ul,
 .editor ol {
   padding-left: 35px;
+  list-style-position: inside;
 }
 
 .editor ul.list_arrow {
