@@ -598,6 +598,16 @@ body>.uk-cover-container {
   background-size: cover;
 }
 
+.hot {
+  background-color: #a62e2e;
+}
+.new {
+  background-color: #da8008;
+}
+.closed {
+  background-color: #b948a2;
+}
+
 @keyframes move-background {
   0% {
     transform: translate3d(0px, 0px, 0px);
