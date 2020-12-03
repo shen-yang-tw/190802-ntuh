@@ -411,19 +411,15 @@
                       }
 
                       //load active tab (or with switcher) from url [[for another page]]. Usage: page.html#3
-                      function urlShowTab() {
-                        if (window.location.hash == true) {
-                          var hash = window.location.hash
-                          var index = hash.slice(1) //Extract string from the second position and to the end
-                          var tabContent = document.getElementById(index);
-                          tabContent.style.display = "block";
-                          console.log(index)
-                          var tabs = document.querySelectorAll(".tabs-menu");
-                          tabs[index.slice(3)].classList.add("tabs-menu-active");
-                          return false;
-                        }
+                      if (window.location.hash == true) {
+                        var hash = window.location.hash
+                        var index = hash.slice(1) //Extract string from the second position and to the end
+                        var tabContent = document.getElementById(index);
+                        tabContent.style.display = "block";
+                        console.log(index)
+                        var tabs = document.querySelectorAll(".tabs-menu");
+                        tabs[index.slice(3)].classList.add("tabs-menu-active");
                       }
-                      urlShowTab()
                     </script>
                   </div>
                   <ul>
