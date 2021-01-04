@@ -608,6 +608,12 @@ body>.uk-cover-container {
   background-color: #b948a2;
 }
 
+/* 2021-1-4 */
+h2~hr.border-white~.uk-flex>.uk-inline>.uk-dropdown>a {
+  display: block;
+}
+/* 2021-1-4 */
+
 @keyframes move-background {
   0% {
     transform: translate3d(0px, 0px, 0px);
