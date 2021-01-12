@@ -1,30 +1,30 @@
 //Check all exist
 function allExist(el) {
   var exist = true
-  k = document.querySelectorAll(el);
-  for (var i = 0; i < k.length; i++) {
+  k = document.querySelectorAll(el)
+  for (var i = 0;i < k.length;i++) {
     if (k[i] == null) {
       exist = false
       return exist
     } else {
       exist = true
+      return exist
     }
   }
-  return exist
 }
 
 //Check one exist
 function oneExist(el) {
   var exist = true
-  k = document.querySelectorAll(el);
-  for (var i = 0; i < k.length; i++) {
+  k = document.querySelectorAll(el)
+  for (var i = 0;i < k.length;i++) {
     if (k[i] != null) {
       return exist
     } else {
       exist = false
+      return exist
     }
   }
-  return exist
 }
 
 //Show
@@ -364,6 +364,7 @@ function tableWidth(el) {
 if (oneExist("p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty, .ifEmpty:empty") == true) {
   removeAll("p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty, .ifEmpty:empty")
 }
+console.log(oneExist("#gototop"))
 if (oneExist("#gototop") == true) {
   gotoTop("#gototop", "opacity-100")
   window.onscroll = function() {
