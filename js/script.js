@@ -364,7 +364,6 @@ function tableWidth(el) {
 if (oneExist("p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty, .ifEmpty:empty") == true) {
   removeAll("p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty, .ifEmpty:empty")
 }
-console.log(oneExist("#gototop"))
 if (oneExist("#gototop") == true) {
   gotoTop("#gototop", "opacity-100")
   window.onscroll = function() {
